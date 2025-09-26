@@ -11,6 +11,7 @@ import networkx as nx
 from collections import deque
 from scipy.sparse import csr_matrix
 from multiprocessing.dummy import Pool as ThreadPool
+from concurrent.futures import ThreadPoolExecutor
 from numba import njit, prange
 import hnswlib
 import matplotlib.pyplot as plt
@@ -1274,3 +1275,101 @@ def compute_all_distances_batch(dis_tables, codes, n_subquantizers, batch_size=1
 def adc_distances_all_optimized(query_idx, dis_tables, codes, n_subquantizers):
     """Optimized single query distance computation"""
     return adc_distances_single_query_numba(dis_tables[query_idx], codes, n_subquantizers)
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#                          LSQ ADC functions
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+def lsq_dot_tables_vectorized(queries, codebooks):
+    """
+    queries:   (nq, d) float32
+    codebooks: (m, ksub, d) float32
+    returns:   (nq, m, ksub) float32 where out[q,j,c] = queries[q] · codebooks[j,c]
+    """
+    nq, d = queries.shape
+    m, ksub, d2 = codebooks.shape
+    assert d == d2
+    # For each stage j, compute queries @ codebooks[j].T
+    dot_tables = np.empty((nq, m, ksub), dtype=np.float32)
+    for j in range(m):
+        # (nq, d) @ (d, ksub) -> (nq, ksub)
+        dot_tables[:, j, :] = queries @ codebooks[j].T
+    return dot_tables
+
+def lsq_alpha_from_codes(codebooks, codes, block=200_000):
+    """
+    codebooks: (m, ksub, d)
+    codes:     (nb, m)  ints
+    returns:   alpha: (nb,) float32, where alpha[i] = || sum_j codebooks[j, codes[i,j], :] ||^2
+    """
+    nb, m = codes.shape
+    d = codebooks.shape[2]
+    alpha = np.empty(nb, dtype=np.float32)
+    for start in range(0, nb, block):
+        end = min(start + block, nb)
+        cb = codes[start:end]              # (B, m)
+        # Reconstruct sums: sum over stages of selected rows
+        # Build (m, B, d) and sum over axis=0 -> (B, d)
+        accum = np.zeros((end - start, d), dtype=np.float32)
+        for j in range(m):
+            accum += codebooks[j][cb[:, j]]   # (B, d)
+        alpha[start:end] = np.einsum('bd,bd->b', accum, accum)
+    return alpha
+
+
+@njit(parallel=True)
+def lsq_distances_batch_numba(dot_tables, codes, alpha, qnorms):
+    """
+    dot_tables: (nq, m, ksub)
+    codes:      (nb, m)
+    alpha:      (nb,)
+    qnorms:     (nq,)
+    returns:    (nq, nb) float32 of squared distances
+    """
+    nq, m, ksub = dot_tables.shape
+    nb = codes.shape[0]
+    out = np.empty((nq, nb), dtype=np.float32)
+    for q in prange(nq):
+        qn = qnorms[q]
+        for i in range(nb):
+            s = 0.0
+            for j in range(m):
+                s += dot_tables[q, j, codes[i, j]]
+            out[q, i] = qn + alpha[i] - 2.0 * s
+    return out
+
+@njit(parallel=False)
+def lsq_distances_single_query_numba(dot_table_q, codes, alpha, qnorm):
+    """
+    dot_table_q: (m, ksub)
+    codes:       (nb, m)
+    alpha:       (nb,)
+    qnorm:       float
+    returns:     (nb,) float32
+    """
+    nb, m = codes.shape
+    out = np.empty(nb, dtype=np.float32)
+    for i in range(nb):
+        s = 0.0
+        for j in range(m):
+            s += dot_table_q[j, codes[i, j]]
+        out[i] = qnorm + alpha[i] - 2.0 * s
+    return out
+
+
+
+def lsq_dot_tables_threaded(queries, codebooks, n_threads=4):
+    nq = queries.shape[0]
+    m, ksub, _ = codebooks.shape
+    out = np.empty((nq, m, ksub), dtype=np.float32)
+    chunk = (nq + n_threads - 1) // n_threads
+
+    def worker(a, b):
+        out[a:b] = lsq_dot_tables_vectorized(queries[a:b], codebooks)
+
+    with ThreadPoolExecutor(max_workers=n_threads) as ex:
+        futs = [ex.submit(worker, i, min(i + chunk, nq)) for i in range(0, nq, chunk)]
+        _ = [f.result() for f in futs]
+    return out
