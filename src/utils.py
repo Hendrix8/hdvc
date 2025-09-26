@@ -19,6 +19,7 @@ from requests import delete
 from scipy.spatial import distance as p_dist_func
 import struct
 import csv
+from numba import jit, prange
 
 plt.rcParams['mathtext.fontset'] = "stix"
 plt.rcParams['font.family'] = 'calibri'
@@ -1165,3 +1166,111 @@ def append_or_create_csv(file_name, header, rows):
         
         # Append the rows
         writer.writerows(rows)
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#                           ADC functions
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# OPTIMIZATION 1: Vectorized distance table computation
+def compute_distance_tables_vectorized(queries, centroids, n_subquantizers, ksub, dim):
+    """Optimized vectorized distance table computation"""
+    nq = queries.shape[0]
+    subvec_dim = dim // n_subquantizers
+    dis_tables = np.zeros((nq, n_subquantizers, ksub), dtype=np.float32)
+    
+    for j in range(n_subquantizers):
+        start_idx = j * subvec_dim
+        end_idx = (j + 1) * subvec_dim
+        
+        # Extract all query subvectors for this subquantizer (nq, subvec_dim)
+        query_subs = queries[:, start_idx:end_idx]
+        
+        # Get centroids for this subquantizer (ksub, subvec_dim)
+        centroids_j = centroids[j]
+        
+        # Vectorized computation: (nq, 1, subvec_dim) - (1, ksub, subvec_dim)
+        diff = query_subs[:, np.newaxis, :] - centroids_j[np.newaxis, :, :]
+        dis_tables[:, j, :] = np.sum(diff * diff, axis=2)
+    
+    return dis_tables
+
+# OPTIMIZATION 2: JIT-compiled ADC distance computation
+@jit(nopython=True, parallel=True)
+def adc_distances_batch_numba(dis_tables, codes, n_subquantizers):
+    """Numba-optimized batch ADC distance computation"""
+    nq, nb = dis_tables.shape[0], codes.shape[0]
+    distances = np.zeros((nq, nb), dtype=np.float32)
+    
+    for q in prange(nq):
+        for i in prange(nb):
+            dist = 0.0
+            for j in range(n_subquantizers):
+                subcode = codes[i, j]
+                dist += dis_tables[q, j, subcode]
+            distances[q, i] = dist
+    
+    return distances
+
+@jit(nopython=True, parallel=True)
+def adc_distances_single_query_numba(dis_table_q, codes, n_subquantizers):
+    """Numba-optimized single query ADC distance computation"""
+    nb = codes.shape[0]
+    distances = np.zeros(nb, dtype=np.float32)
+    
+    for i in prange(nb):
+        dist = 0.0
+        for j in range(n_subquantizers):
+            subcode = codes[i, j]
+            dist += dis_table_q[j, subcode]
+        distances[i] = dist
+    
+    return distances
+
+# OPTIMIZATION 3: Threaded distance table computation for very large query sets
+def compute_distance_tables_threaded(queries, centroids, n_subquantizers, ksub, dim, n_threads=4):
+    """Multi-threaded distance table computation"""
+    nq = queries.shape[0]
+    chunk_size = (nq + n_threads - 1) // n_threads
+    
+    def compute_chunk(start_idx, end_idx):
+        return compute_distance_tables_vectorized(
+            queries[start_idx:end_idx], centroids, n_subquantizers, ksub, dim
+        )
+    
+    with ThreadPoolExecutor(max_workers=n_threads) as executor:
+        futures = []
+        for i in range(0, nq, chunk_size):
+            end_idx = min(i + chunk_size, nq)
+            futures.append(executor.submit(compute_chunk, i, end_idx))
+        
+        results = [future.result() for future in futures]
+    
+    return np.vstack(results)
+
+
+# OPTIMIZATION 4: Batch processing for distance computation
+def compute_all_distances_batch(dis_tables, codes, n_subquantizers, batch_size=1000):
+    """Compute all query-database distances in batches"""
+    nq = dis_tables.shape[0]
+    nb = codes.shape[0]
+    all_distances = np.zeros((nq, nb), dtype=np.float32)
+    
+    for start_q in range(0, nq, batch_size):
+        end_q = min(start_q + batch_size, nq)
+        batch_dis_tables = dis_tables[start_q:end_q]
+        
+        # Use numba-optimized computation
+        batch_distances = adc_distances_batch_numba(batch_dis_tables, codes, n_subquantizers)
+        all_distances[start_q:end_q] = batch_distances
+        
+        if start_q % (batch_size * 10) == 0:
+            print(f"  Processed {end_q}/{nq} queries")
+    
+    return all_distances
+
+# Legacy functions for compatibility (optimized versions)
+def adc_distances_all_optimized(query_idx, dis_tables, codes, n_subquantizers):
+    """Optimized single query distance computation"""
+    return adc_distances_single_query_numba(dis_tables[query_idx], codes, n_subquantizers)
