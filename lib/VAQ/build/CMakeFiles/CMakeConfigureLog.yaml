@@ -1,0 +1,2062 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/cpanourg/local/armadillo/bin/"
+      - "/home/cpanourg/local/armadillo/sbin/"
+      - "/home/cpanourg/local/armadillo/"
+      - "/home/cpanourg/local/glpk/bin/"
+      - "/home/cpanourg/local/glpk/sbin/"
+      - "/home/cpanourg/local/glpk/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/home/cpanourg/.miniconda3/sbin/"
+      - "/home/cpanourg/.miniconda3/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/home/cpanourg/local/armadillo/bin/uname"
+      - "/home/cpanourg/local/armadillo/sbin/uname"
+      - "/home/cpanourg/local/armadillo/uname"
+      - "/home/cpanourg/local/glpk/bin/uname"
+      - "/home/cpanourg/local/glpk/sbin/uname"
+      - "/home/cpanourg/local/glpk/uname"
+      - "/home/cpanourg/.miniconda3/bin/uname"
+      - "/home/cpanourg/.miniconda3/sbin/uname"
+      - "/home/cpanourg/.miniconda3/uname"
+      - "/usr/local/cuda-12.4/bin/uname"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/uname"
+      - "/home/cpanourg/.local/bin/uname"
+      - "/home/cpanourg/.miniconda3/bin/uname"
+      - "/opt/anaconda3/condabin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 5.15.0-153-generic - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/cpanourg/local/armadillo/bin/"
+      - "/home/cpanourg/local/armadillo/sbin/"
+      - "/home/cpanourg/local/armadillo/"
+      - "/home/cpanourg/local/glpk/bin/"
+      - "/home/cpanourg/local/glpk/sbin/"
+      - "/home/cpanourg/local/glpk/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/home/cpanourg/.miniconda3/sbin/"
+      - "/home/cpanourg/.miniconda3/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/home/cpanourg/local/armadillo/bin/gmake"
+      - "/home/cpanourg/local/armadillo/sbin/gmake"
+      - "/home/cpanourg/local/armadillo/gmake"
+      - "/home/cpanourg/local/glpk/bin/gmake"
+      - "/home/cpanourg/local/glpk/sbin/gmake"
+      - "/home/cpanourg/local/glpk/gmake"
+      - "/home/cpanourg/.miniconda3/bin/gmake"
+      - "/home/cpanourg/.miniconda3/sbin/gmake"
+      - "/home/cpanourg/.miniconda3/gmake"
+      - "/usr/local/cuda-12.4/bin/gmake"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/gmake"
+      - "/home/cpanourg/.local/bin/gmake"
+      - "/home/cpanourg/.miniconda3/bin/gmake"
+      - "/opt/anaconda3/condabin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/sbin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/home/cpanourg/local/armadillo/bin/"
+      - "/home/cpanourg/local/armadillo/sbin/"
+      - "/home/cpanourg/local/armadillo/"
+      - "/home/cpanourg/local/glpk/bin/"
+      - "/home/cpanourg/local/glpk/sbin/"
+      - "/home/cpanourg/local/glpk/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/home/cpanourg/.miniconda3/sbin/"
+      - "/home/cpanourg/.miniconda3/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/home/cpanourg/local/armadillo/bin/c++"
+      - "/home/cpanourg/local/armadillo/sbin/c++"
+      - "/home/cpanourg/local/armadillo/c++"
+      - "/home/cpanourg/local/glpk/bin/c++"
+      - "/home/cpanourg/local/glpk/sbin/c++"
+      - "/home/cpanourg/local/glpk/c++"
+      - "/home/cpanourg/.miniconda3/bin/c++"
+      - "/home/cpanourg/.miniconda3/sbin/c++"
+      - "/home/cpanourg/.miniconda3/c++"
+      - "/usr/local/cuda-12.4/bin/c++"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/c++"
+      - "/home/cpanourg/.local/bin/c++"
+      - "/home/cpanourg/.miniconda3/bin/c++"
+      - "/opt/anaconda3/condabin/c++"
+      - "/usr/local/sbin/c++"
+      - "/usr/local/bin/c++"
+      - "/usr/sbin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/"
+    found: "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/4.1.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/strip"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/ld"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/nm"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/objdump"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/readelf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/usr/local/cuda-12.4/bin/dlltool"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/dlltool"
+      - "/home/cpanourg/.local/bin/dlltool"
+      - "/home/cpanourg/.miniconda3/bin/dlltool"
+      - "/opt/anaconda3/condabin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/games/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/snap/bin/dlltool"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/usr/local/cuda-12.4/bin/tapi"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/tapi"
+      - "/home/cpanourg/.local/bin/tapi"
+      - "/home/cpanourg/.miniconda3/bin/tapi"
+      - "/opt/anaconda3/condabin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+      - "/usr/games/tapi"
+      - "/usr/local/games/tapi"
+      - "/snap/bin/tapi"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-11.4"
+      - "gcc-ar-11"
+      - "gcc-ar11"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-11.4"
+      - "/usr/local/cuda-12.4/bin/gcc-ar-11.4"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/gcc-ar-11.4"
+      - "/home/cpanourg/.local/bin/gcc-ar-11.4"
+      - "/home/cpanourg/.miniconda3/bin/gcc-ar-11.4"
+      - "/opt/anaconda3/condabin/gcc-ar-11.4"
+      - "/usr/local/sbin/gcc-ar-11.4"
+      - "/usr/local/bin/gcc-ar-11.4"
+      - "/usr/sbin/gcc-ar-11.4"
+      - "/sbin/gcc-ar-11.4"
+      - "/bin/gcc-ar-11.4"
+      - "/usr/games/gcc-ar-11.4"
+      - "/usr/local/games/gcc-ar-11.4"
+      - "/snap/bin/gcc-ar-11.4"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-11.4"
+    found: "/usr/bin/gcc-ar-11"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-11.4"
+      - "gcc-ranlib-11"
+      - "gcc-ranlib11"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-11.4"
+      - "/usr/local/cuda-12.4/bin/gcc-ranlib-11.4"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/gcc-ranlib-11.4"
+      - "/home/cpanourg/.local/bin/gcc-ranlib-11.4"
+      - "/home/cpanourg/.miniconda3/bin/gcc-ranlib-11.4"
+      - "/opt/anaconda3/condabin/gcc-ranlib-11.4"
+      - "/usr/local/sbin/gcc-ranlib-11.4"
+      - "/usr/local/bin/gcc-ranlib-11.4"
+      - "/usr/sbin/gcc-ranlib-11.4"
+      - "/sbin/gcc-ranlib-11.4"
+      - "/bin/gcc-ranlib-11.4"
+      - "/usr/games/gcc-ranlib-11.4"
+      - "/usr/local/games/gcc-ranlib-11.4"
+      - "/snap/bin/gcc-ranlib-11.4"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-11.4"
+    found: "/usr/bin/gcc-ranlib-11"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD'
+        
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b4b0f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b4b0f.dir/build.make CMakeFiles/cmTC_b4b0f.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD'
+        Building CXX object CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b4b0f.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b4b0f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0sdwuP.s
+        GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b4b0f.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc0sdwuP.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/cpanourg/local/glpk/lib/../lib/:/home/cpanourg/local/armadillo/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/home/cpanourg/local/glpk/lib/:/home/cpanourg/local/armadillo/lib/:./:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b4b0f
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4b0f.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/cpanourg/local/glpk/lib/../lib/:/home/cpanourg/local/armadillo/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/home/cpanourg/local/glpk/lib/:/home/cpanourg/local/armadillo/lib/:./:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_b4b0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b4b0f.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM3u0h7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b4b0f /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/home/cpanourg/local/glpk/lib/../lib -L/home/cpanourg/local/armadillo/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L. -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM3u0h7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b4b0f /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/home/cpanourg/local/glpk/lib/../lib -L/home/cpanourg/local/armadillo/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L. -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_b4b0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b4b0f.'
+        /usr/bin/c++ -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -v -Wl,-v CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b4b0f
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/11]
+          add: [/usr/include/x86_64-linux-gnu/c++/11]
+          add: [/usr/include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b4b0f/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b4b0f.dir/build.make CMakeFiles/cmTC_b4b0f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KB2tlD']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b4b0f.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b4b0f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0sdwuP.s]
+        ignore line: [GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b4b0f.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc0sdwuP.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/cpanourg/local/glpk/lib/../lib/:/home/cpanourg/local/armadillo/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/home/cpanourg/local/glpk/lib/:/home/cpanourg/local/armadillo/lib/:./:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b4b0f]
+        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4b0f.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/cpanourg/local/glpk/lib/../lib/:/home/cpanourg/local/armadillo/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/home/cpanourg/local/glpk/lib/:/home/cpanourg/local/armadillo/lib/:./:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_b4b0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b4b0f.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM3u0h7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b4b0f /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/home/cpanourg/local/glpk/lib/../lib -L/home/cpanourg/local/armadillo/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L. -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccM3u0h7.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b4b0f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/home/cpanourg/.miniconda3/lib] ==> dir [/home/cpanourg/.miniconda3/lib]
+          arg [-L/home/cpanourg/local/glpk/lib] ==> dir [/home/cpanourg/local/glpk/lib]
+          arg [-L/home/cpanourg/local/armadillo/lib] ==> dir [/home/cpanourg/local/armadillo/lib]
+          arg [-L/home/cpanourg/local/glpk/lib/../lib] ==> dir [/home/cpanourg/local/glpk/lib/../lib]
+          arg [-L/home/cpanourg/local/armadillo/lib/../lib] ==> dir [/home/cpanourg/local/armadillo/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/home/cpanourg/local/glpk/lib] ==> dir [/home/cpanourg/local/glpk/lib]
+          arg [-L/home/cpanourg/local/armadillo/lib] ==> dir [/home/cpanourg/local/armadillo/lib]
+          arg [-L.] ==> ignore
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM3u0h7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b4b0f /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/home/cpanourg/local/glpk/lib/../lib -L/home/cpanourg/local/armadillo/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L. -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_b4b0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/home/cpanourg/.miniconda3/lib] ==> [/home/cpanourg/.miniconda3/lib]
+        collapse library dir [/home/cpanourg/local/glpk/lib] ==> [/home/cpanourg/local/glpk/lib]
+        collapse library dir [/home/cpanourg/local/armadillo/lib] ==> [/home/cpanourg/local/armadillo/lib]
+        collapse library dir [/home/cpanourg/local/glpk/lib/../lib] ==> [/home/cpanourg/local/glpk/lib]
+        collapse library dir [/home/cpanourg/local/armadillo/lib/../lib] ==> [/home/cpanourg/local/armadillo/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/home/cpanourg/local/glpk/lib] ==> [/home/cpanourg/local/glpk/lib]
+        collapse library dir [/home/cpanourg/local/armadillo/lib] ==> [/home/cpanourg/local/armadillo/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/cpanourg/.miniconda3/lib;/home/cpanourg/local/glpk/lib;/home/cpanourg/local/armadillo/lib;/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindArmadillo.cmake:65 (find_path)"
+      - "CMakeLists.txt:32 (find_package)"
+    mode: "path"
+    variable: "ARMADILLO_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "armadillo"
+    candidate_directories:
+      - "/home/cpanourg/local/armadillo/include/x86_64-linux-gnu/"
+      - "/home/cpanourg/local/armadillo/include/"
+      - "/home/cpanourg/local/armadillo/"
+      - "/home/cpanourg/local/glpk/include/x86_64-linux-gnu/"
+      - "/home/cpanourg/local/glpk/include/"
+      - "/home/cpanourg/local/glpk/"
+      - "/home/cpanourg/.miniconda3/include/x86_64-linux-gnu/"
+      - "/home/cpanourg/.miniconda3/include/"
+      - "/home/cpanourg/.miniconda3/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/usr/local/include/x86_64-linux-gnu/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/x86_64-linux-gnu/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/x86_64-linux-gnu/"
+      - "/include/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/include/x86_64-linux-gnu/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/include/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/"
+      - "/usr/X11R6/include/x86_64-linux-gnu/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/x86_64-linux-gnu/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/x86_64-linux-gnu/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/Armadillo/include/"
+    searched_directories:
+      - "/home/cpanourg/local/armadillo/include/x86_64-linux-gnu/armadillo"
+    found: "/home/cpanourg/local/armadillo/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindArmadillo.cmake:117 (find_library)"
+      - "CMakeLists.txt:32 (find_package)"
+    mode: "library"
+    variable: "ARMADILLO_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "armadillo"
+    candidate_directories:
+      - "/home/cpanourg/local/armadillo/lib/x86_64-linux-gnu/"
+      - "/home/cpanourg/local/armadillo/lib/"
+      - "/home/cpanourg/local/armadillo/"
+      - "/home/cpanourg/local/glpk/lib/x86_64-linux-gnu/"
+      - "/home/cpanourg/local/glpk/lib/"
+      - "/home/cpanourg/local/glpk/"
+      - "/home/cpanourg/.miniconda3/lib/x86_64-linux-gnu/"
+      - "/home/cpanourg/.miniconda3/lib/"
+      - "/home/cpanourg/.miniconda3/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/lib/x86_64-linux-gnu/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/lib/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/Armadillo/lib/"
+      - "/Armadillo/lib64/"
+      - "/Armadillo/"
+    searched_directories:
+      - "/home/cpanourg/local/armadillo/lib/x86_64-linux-gnu/"
+    found: "/home/cpanourg/local/armadillo/lib/libarmadillo.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:251 (try_compile)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:78 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV'
+        
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8c18/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8c18.dir/build.make CMakeFiles/cmTC_b8c18.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV'
+        Building CXX object CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV/OpenMPTryFlag.cpp
+        Linking CXX executable cmTC_b8c18
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8c18.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/cpanourg/local/glpk/lib/../lib/:/home/cpanourg/local/armadillo/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/home/cpanourg/local/glpk/lib/:/home/cpanourg/local/armadillo/lib/:./:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_b8c18' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_b8c18.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cckTgEKU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b8c18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/home/cpanourg/local/glpk/lib/../lib -L/home/cpanourg/local/armadillo/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L. -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_b8c18' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_b8c18.'
+        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  -v CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o -o cmTC_b8c18
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:295 (message)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:78 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8c18/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b8c18.dir/build.make CMakeFiles/cmTC_b8c18.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-dAA4hV/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX executable cmTC_b8c18]
+        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8c18.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/cpanourg/local/glpk/lib/../lib/:/home/cpanourg/local/armadillo/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/home/cpanourg/local/glpk/lib/:/home/cpanourg/local/armadillo/lib/:./:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_b8c18' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_b8c18.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cckTgEKU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b8c18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/home/cpanourg/local/glpk/lib/../lib -L/home/cpanourg/local/armadillo/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L. -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckTgEKU.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b8c18] ==> ignore
+          arg [-L/home/cpanourg/.miniconda3/lib] ==> dir [/home/cpanourg/.miniconda3/lib]
+          arg [-L/home/cpanourg/local/glpk/lib] ==> dir [/home/cpanourg/local/glpk/lib]
+          arg [-L/home/cpanourg/local/armadillo/lib] ==> dir [/home/cpanourg/local/armadillo/lib]
+          arg [-L/home/cpanourg/local/glpk/lib/../lib] ==> dir [/home/cpanourg/local/glpk/lib/../lib]
+          arg [-L/home/cpanourg/local/armadillo/lib/../lib] ==> dir [/home/cpanourg/local/armadillo/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/home/cpanourg/local/glpk/lib] ==> dir [/home/cpanourg/local/glpk/lib]
+          arg [-L/home/cpanourg/local/armadillo/lib] ==> dir [/home/cpanourg/local/armadillo/lib]
+          arg [-L.] ==> ignore
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_b8c18.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/home/cpanourg/.miniconda3/lib] ==> [/home/cpanourg/.miniconda3/lib]
+        collapse library dir [/home/cpanourg/local/glpk/lib] ==> [/home/cpanourg/local/glpk/lib]
+        collapse library dir [/home/cpanourg/local/armadillo/lib] ==> [/home/cpanourg/local/armadillo/lib]
+        collapse library dir [/home/cpanourg/local/glpk/lib/../lib] ==> [/home/cpanourg/local/glpk/lib]
+        collapse library dir [/home/cpanourg/local/armadillo/lib/../lib] ==> [/home/cpanourg/local/armadillo/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/home/cpanourg/local/glpk/lib] ==> [/home/cpanourg/local/glpk/lib]
+        collapse library dir [/home/cpanourg/local/armadillo/lib] ==> [/home/cpanourg/local/armadillo/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/home/cpanourg/.miniconda3/lib;/home/cpanourg/local/glpk/lib;/home/cpanourg/local/armadillo/lib;/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:313 (find_library)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:78 (find_package)"
+    mode: "library"
+    variable: "OpenMP_gomp_LIBRARY"
+    description: "Path to the gomp library for OpenMP"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "/home/cpanourg/.miniconda3/lib/"
+      - "/home/cpanourg/local/glpk/lib/"
+      - "/home/cpanourg/local/armadillo/lib/"
+      - "/usr/lib/gcc/x86_64-linux-gnu/11/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/lib/x86_64-linux-gnu/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/lib/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    found: "/home/cpanourg/.miniconda3/lib/libgomp.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:313 (find_library)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:78 (find_package)"
+    mode: "library"
+    variable: "OpenMP_pthread_LIBRARY"
+    description: "Path to the pthread library for OpenMP"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pthread"
+    candidate_directories:
+      - "/home/cpanourg/.miniconda3/lib/"
+      - "/home/cpanourg/local/glpk/lib/"
+      - "/home/cpanourg/local/armadillo/lib/"
+      - "/usr/lib/gcc/x86_64-linux-gnu/11/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/"
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli/"
+      - "/home/cpanourg/.local/bin/"
+      - "/home/cpanourg/.miniconda3/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/lib/x86_64-linux-gnu/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/lib/"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/cpanourg/.miniconda3/lib/"
+      - "/home/cpanourg/local/glpk/lib/"
+      - "/home/cpanourg/local/armadillo/lib/"
+      - "/usr/lib/gcc/x86_64-linux-gnu/11/"
+    found: "/usr/lib/x86_64-linux-gnu/libpthread.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/cpanourg/local/armadillo"
+        - "/home/cpanourg/local/glpk"
+        - "/home/cpanourg/.miniconda3"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/bin/remote-cli"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/cuda-12.4/bin"
+        - "/home/cpanourg/.miniconda3/bin"
+        - "/opt/anaconda3/condabin"
+        - "/home/cpanourg/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/cpanourg/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:492 (try_compile)"
+      - "/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindOpenMP.cmake:632 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:78 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mX4uMF"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mX4uMF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mX4uMF'
+        
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f3af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6f3af.dir/build.make CMakeFiles/cmTC_6f3af.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mX4uMF'
+        Building CXX object CMakeFiles/cmTC_6f3af.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_6f3af.dir/OpenMPCheckVersion.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mX4uMF/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_6f3af
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f3af.dir/link.txt --verbose=1
+        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  CMakeFiles/cmTC_6f3af.dir/OpenMPCheckVersion.cpp.o -o cmTC_6f3af
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mX4uMF'
+        
+      exitCode: 0
+...

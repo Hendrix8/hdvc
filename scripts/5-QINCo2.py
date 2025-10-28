@@ -10,6 +10,7 @@ from pathlib import Path
 import hydra
 from omegaconf import OmegaConf
 from datetime import datetime
+from tslearn.preprocessing import TimeSeriesScalerMeanVariance
 
 module_path = '/home/cpanourg/projects/2-hdvc/'
 
@@ -34,6 +35,7 @@ from lib.Qinco.qinco.search.search_tasks import (
 root = 'data'
 data_fp = f'/{root}/cpanourg/2-hdvc/data/' 
 temp_fp = f'/{root}/cpanourg/2-hdvc/temp/' 
+results_fp = f'/{root}/cpanourg/2-hdvc/results/'
 
 dataset_name = 'deep'
 
@@ -63,21 +65,79 @@ print(f"Dimension: {dim}")
 dim = db.shape[1]
 nbits = dim 
 
-# sampling for training 
+import numpy as np
+
+def check_znorm(dataset, name="dataset", sample_size=1000):
+    """Check approximate z-normalization on a random sample of a large time series dataset."""
+    n_sample = min(sample_size, len(dataset))
+    idx = np.random.choice(len(dataset), size=n_sample, replace=False)
+    X_sample = dataset[idx]
+
+    # Compute per-series mean and std
+    means = X_sample.mean(axis=1)
+    stds = X_sample.std(axis=1)
+
+    # Aggregate summary stats
+    mean_of_means = means.mean()
+    mean_of_stds = stds.mean()
+    std_of_means = means.std()
+    std_of_stds = stds.std()
+
+    print(f"\n{name}")
+    print(f"Sampled {n_sample} / {len(dataset)} series")
+    print(f"Average mean across sampled series: {mean_of_means:.5f} ± {std_of_means:.5f}")
+    print(f"Average std  across sampled series: {mean_of_stds:.5f} ± {std_of_stds:.5f}")
+
+    return mean_of_means, mean_of_stds
+
+
+check_znorm(db, name="db", sample_size=10000)
+check_znorm(qr, name="queries", sample_size=10000)
+
+
+
+scaler = TimeSeriesScalerMeanVariance(mu=0.0, std=1.0)
+db = scaler.fit_transform(db).squeeze()
+qr = scaler.fit_transform(qr).squeeze()
+
+check_znorm(db, name="db", sample_size=10000)
+check_znorm(qr, name="qr", sample_size=10000)
+
+
+# --- Configuration ---
 sampling = 'random'
-train_ratio = 0.001 
-val_ratio = 0.2
+train_ratio = 0.8   # portion for training
+val_ratio = 0.1     # portion for validation
+test_ratio = 0.1    # portion for testing
+assert abs(train_ratio + val_ratio + test_ratio - 1.0) < 1e-6, "Ratios must sum to 1."
 
-n_samples = int(train_ratio * db.shape[0])
-n_val_samples = int(n_samples * val_ratio)
+# --- Shuffle the dataset ---
+if sampling == 'random':
+    perm = np.random.permutation(len(db))
+    db = db[perm]  # shuffle along first dim
+else:
+    print("⚠️ Sampling is not random — keeping original order.")
 
-train_set_fp = f'{temp_fp}{dataset_name}_train_ratio{train_ratio}.fvecs'
-train_set = db[np.random.choice(db.shape[0], size=n_samples, replace=False)]
+# --- Compute split indices ---
+n_total = len(db)
+n_train = int(train_ratio * n_total)
+n_val = int(val_ratio * n_total)
+n_test = n_total - n_train - n_val  # ensures total matches exactly
 
-print(f"Train set size: {n_samples}")
-print(f'Validation set size: {n_val_samples}')
+# --- Slice into splits ---
+train_set = db[:n_train]
+val_set = db[n_train:n_train + n_val]
+test_set = db[n_train + n_val:]
 
-write_fvecs(train_set_fp, train_set)
+# --- Display summary ---
+print(f"Train set size: {len(train_set)}")
+print(f"Validation set size: {len(val_set)}")
+print(f"Test set size: {len(test_set)}")
+
+train_val_set_fp = f"{temp_fp}{dataset_name}_train_ratio{train_ratio}.fvecs"
+write_fvecs(train_val_set_fp, np.concatenate([train_set,val_set]))
+
+
 
 cfg = OmegaConf.load("/home/cpanourg/projects/2-hdvc/lib/Qinco/config/qinco_cfg.yaml")
 
@@ -108,23 +168,40 @@ print(datetime_str)
 cfg.task = 'train'
 cfg.output = f'/{root}/cpanourg/2-hdvc/results/qinco2/qinco_weights_{datetime_str}.pt'
 
-cfg.L = 16
-cfg.de = 384
-cfg.dh = 384
+# cfg.L = 16 # num of resblocks in each step
+# cfg.dh = 384
 
-cfg.A = 16
-cfg.B = 32
-cfg.M = 8
-cfg.K = 256
-cfg.ivf_K = 1048576
+# # ----------------------------------------------------------------
+# # these values can be set as 0 to disable these components 
+# cfg.de = 384 # embedding dimension (if 0 dimension is the same as data)
+# cfg.A = 16 # num of fast pre-selected candidates (if 0 no beam search)
+# cfg.B = 32 # size of beam search (if 0 then no pre-selected candidates) 
+# # ----------------------------------------------------------------
 
-cfg.epochs = 10 # note that it runs along with the patience (=10 by default)
+# cfg.M = 8 # number of codebooks
+# cfg.K = 256 # codebook size 
+# cfg.ivf_K = 1048576
+
+# cfg.epochs = 70 # note that it runs along with the patience (=10 by default)
+
+cfg.L = 16        # paper default
+cfg.dh = 384      # paper default
+cfg.de = 384      # paper default
+cfg.M = 8         # paper default
+cfg.K = 256       # paper default
+cfg.A = 16        # paper default
+cfg.B = 32        # paper default
+cfg.ivf_K = 1048576  # paper default (1M centroids)
+cfg.epochs = 70   # paper default
+cfg.optimizer = "adamw"
+cfg.lr = 8e-4
+cfg.wd = 0.1
+cfg.grad_clip = 0.1
+cfg.batch = 1024
 
 cfg.db = db_fp
-cfg.trainset = train_set_fp 
-cfg.ds.valset = n_val_samples
-
-print(f"Checking epochs setting: {cfg.epochs}")  # Add this to verify the value
+cfg.trainset = train_val_set_fp 
+cfg.ds.valset = n_val
 
 expe = EXPERIMENTS[cfg.task](cfg)
 

@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cpanourg/projects/2-hdvc/lib/VAQ/build/cmake_install.cmake",
+		"/home/cpanourg/projects/2-hdvc/lib/VAQ/build/bitvecengine/cmake_install.cmake",
+		"/home/cpanourg/projects/2-hdvc/lib/VAQ/build/examples/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
