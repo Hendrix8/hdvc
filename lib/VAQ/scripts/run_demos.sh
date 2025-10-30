@@ -1,3 +1,5 @@
+export LD_LIBRARY_PATH=$HOME/local/glpk/lib:$HOME/local/armadillo/lib:$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+
 DATASET_PATH=../data
 SIFTSMALL_PATH=$DATASET_PATH/siftsmall
 BIN_PATH=../build/examples
@@ -7,6 +9,7 @@ NNSTRATEGY=HEAP
 VAQPARAM=VAQ256m32min7max8var1
 METHOD=${VAQPARAM},${NNSTRATEGY}
 REFINE=100,200
+CODES_PATH=/data/cpanourg/2-hdvc/results/vaq/codes.fvecs
 
 $BIN_PATH/demo_vaq --dataset $SIFTSMALL_PATH/siftsmall_base.fvecs\
   --queries $SIFTSMALL_PATH/siftsmall_query.fvecs\
@@ -19,4 +22,5 @@ $BIN_PATH/demo_vaq --dataset $SIFTSMALL_PATH/siftsmall_base.fvecs\
   --groundtruth-format ivecs\
   --method $METHOD\
   --k 100\
-  --refine $REFINE
+  --refine $REFINE \
+  --save-enc $CODES_PATH
