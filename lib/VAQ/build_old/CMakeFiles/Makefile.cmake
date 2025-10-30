@@ -124,5 +124,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "bitvecengine/CMakeFiles/VAQ.dir/DependInfo.cmake"
   "bitvecengine/CMakeFiles/FPGrowth.dir/DependInfo.cmake"
-  "examples/CMakeFiles/run_vaq.dir/DependInfo.cmake"
+  "examples/CMakeFiles/demo_vaq.dir/DependInfo.cmake"
   )

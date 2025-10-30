@@ -2,6 +2,7 @@
 cd ~/projects/2-hdvc/lib/VAQ
 rm -rf build
 mkdir build && cd build
+conda activate base
 
 cmake .. \
   -DCMAKE_CXX_STANDARD=14 \

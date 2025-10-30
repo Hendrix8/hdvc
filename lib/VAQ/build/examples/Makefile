@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/demo_vaq.dir/rule:
-	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/demo_vaq.dir/rule
-.PHONY : examples/CMakeFiles/demo_vaq.dir/rule
+examples/CMakeFiles/run_vaq.dir/rule:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/run_vaq.dir/rule
+.PHONY : examples/CMakeFiles/run_vaq.dir/rule
 
 # Convenience name for target.
-demo_vaq: examples/CMakeFiles/demo_vaq.dir/rule
-.PHONY : demo_vaq
+run_vaq: examples/CMakeFiles/run_vaq.dir/rule
+.PHONY : run_vaq
 
 # fast build rule for target.
-demo_vaq/fast:
-	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/build
-.PHONY : demo_vaq/fast
+run_vaq/fast:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/build
+.PHONY : run_vaq/fast
 
-demo_vaq.o: demo_vaq.cpp.o
-.PHONY : demo_vaq.o
+run_vaq.o: run_vaq.cpp.o
+.PHONY : run_vaq.o
 
 # target to build an object file
-demo_vaq.cpp.o:
-	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/demo_vaq.cpp.o
-.PHONY : demo_vaq.cpp.o
+run_vaq.cpp.o:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/run_vaq.cpp.o
+.PHONY : run_vaq.cpp.o
 
-demo_vaq.i: demo_vaq.cpp.i
-.PHONY : demo_vaq.i
+run_vaq.i: run_vaq.cpp.i
+.PHONY : run_vaq.i
 
 # target to preprocess a source file
-demo_vaq.cpp.i:
-	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/demo_vaq.cpp.i
-.PHONY : demo_vaq.cpp.i
+run_vaq.cpp.i:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/run_vaq.cpp.i
+.PHONY : run_vaq.cpp.i
 
-demo_vaq.s: demo_vaq.cpp.s
-.PHONY : demo_vaq.s
+run_vaq.s: run_vaq.cpp.s
+.PHONY : run_vaq.s
 
 # target to generate assembly for a file
-demo_vaq.cpp.s:
-	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/demo_vaq.cpp.s
-.PHONY : demo_vaq.cpp.s
+run_vaq.cpp.s:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/run_vaq.cpp.s
+.PHONY : run_vaq.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... demo_vaq"
-	@echo "... demo_vaq.o"
-	@echo "... demo_vaq.i"
-	@echo "... demo_vaq.s"
+	@echo "... run_vaq"
+	@echo "... run_vaq.o"
+	@echo "... run_vaq.i"
+	@echo "... run_vaq.s"
 .PHONY : help
 
 

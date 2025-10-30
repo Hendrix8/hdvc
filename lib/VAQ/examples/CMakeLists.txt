@@ -10,12 +10,20 @@ ENDIF()
 
 # link_directories("/CUSTOM_LIB_DIR/usr/lib")
 
-add_executable(demo_vaq "demo_vaq.cpp")
-target_link_libraries(demo_vaq PRIVATE VAQ)
-target_link_libraries(demo_vaq PRIVATE FPGrowth)
-target_link_libraries(demo_vaq PRIVATE -lglpk)
-target_link_libraries(demo_vaq PRIVATE -lblas -llapacke)
-target_link_libraries(demo_vaq PRIVATE -larmadillo)
+# add_executable(demo_vaq "demo_vaq.cpp")
+# target_link_libraries(demo_vaq PRIVATE VAQ)
+# target_link_libraries(demo_vaq PRIVATE FPGrowth)
+# target_link_libraries(demo_vaq PRIVATE -lglpk)
+# target_link_libraries(demo_vaq PRIVATE -lblas -llapacke)
+# target_link_libraries(demo_vaq PRIVATE -larmadillo)
+
+add_executable(run_vaq "run_vaq.cpp")
+target_link_libraries(run_vaq PRIVATE VAQ)
+target_link_libraries(run_vaq PRIVATE FPGrowth)
+target_link_libraries(run_vaq PRIVATE -lglpk)
+target_link_libraries(run_vaq PRIVATE -lblas -llapacke)
+target_link_libraries(run_vaq PRIVATE -larmadillo)
+
 
 # add_executable(demo_vaq_paramsearch "demo_vaq_paramsearch.cpp")
 # target_link_libraries(demo_vaq_paramsearch PRIVATE VAQ)

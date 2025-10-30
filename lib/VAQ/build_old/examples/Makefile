@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles /home/cpanourg/projects/2-hdvc/lib/VAQ/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles /home/cpanourg/projects/2-hdvc/lib/VAQ/build/examples//CMakeFiles/progress.marks
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named VAQ
+# Convenience name for target.
+examples/CMakeFiles/demo_vaq.dir/rule:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/demo_vaq.dir/rule
+.PHONY : examples/CMakeFiles/demo_vaq.dir/rule
 
-# Build rule for target.
-VAQ: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VAQ
-.PHONY : VAQ
-
-# fast build rule for target.
-VAQ/fast:
-	$(MAKE) $(MAKESILENT) -f bitvecengine/CMakeFiles/VAQ.dir/build.make bitvecengine/CMakeFiles/VAQ.dir/build
-.PHONY : VAQ/fast
-
-#=============================================================================
-# Target rules for targets named FPGrowth
-
-# Build rule for target.
-FPGrowth: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FPGrowth
-.PHONY : FPGrowth
+# Convenience name for target.
+demo_vaq: examples/CMakeFiles/demo_vaq.dir/rule
+.PHONY : demo_vaq
 
 # fast build rule for target.
-FPGrowth/fast:
-	$(MAKE) $(MAKESILENT) -f bitvecengine/CMakeFiles/FPGrowth.dir/build.make bitvecengine/CMakeFiles/FPGrowth.dir/build
-.PHONY : FPGrowth/fast
+demo_vaq/fast:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/build
+.PHONY : demo_vaq/fast
 
-#=============================================================================
-# Target rules for targets named run_vaq
+demo_vaq.o: demo_vaq.cpp.o
+.PHONY : demo_vaq.o
 
-# Build rule for target.
-run_vaq: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_vaq
-.PHONY : run_vaq
+# target to build an object file
+demo_vaq.cpp.o:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/demo_vaq.cpp.o
+.PHONY : demo_vaq.cpp.o
 
-# fast build rule for target.
-run_vaq/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/build
-.PHONY : run_vaq/fast
+demo_vaq.i: demo_vaq.cpp.i
+.PHONY : demo_vaq.i
+
+# target to preprocess a source file
+demo_vaq.cpp.i:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/demo_vaq.cpp.i
+.PHONY : demo_vaq.cpp.i
+
+demo_vaq.s: demo_vaq.cpp.s
+.PHONY : demo_vaq.s
+
+# target to generate assembly for a file
+demo_vaq.cpp.s:
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/demo_vaq.cpp.s
+.PHONY : demo_vaq.cpp.s
 
 # Help Target
 help:
@@ -163,9 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FPGrowth"
-	@echo "... VAQ"
-	@echo "... run_vaq"
+	@echo "... demo_vaq"
+	@echo "... demo_vaq.o"
+	@echo "... demo_vaq.i"
+	@echo "... demo_vaq.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cpanourg/projects/2-hdvc/lib/VAQ/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

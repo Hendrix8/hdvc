@@ -108,11 +108,11 @@ bitvecengine/clean: bitvecengine/CMakeFiles/FPGrowth.dir/clean
 # Directory level rules for directory examples
 
 # Recursive "all" directory target.
-examples/all: examples/CMakeFiles/run_vaq.dir/all
+examples/all: examples/CMakeFiles/demo_vaq.dir/all
 .PHONY : examples/all
 
 # Recursive "codegen" directory target.
-examples/codegen: examples/CMakeFiles/run_vaq.dir/codegen
+examples/codegen: examples/CMakeFiles/demo_vaq.dir/codegen
 .PHONY : examples/codegen
 
 # Recursive "preinstall" directory target.
@@ -120,7 +120,7 @@ examples/preinstall:
 .PHONY : examples/preinstall
 
 # Recursive "clean" directory target.
-examples/clean: examples/CMakeFiles/run_vaq.dir/clean
+examples/clean: examples/CMakeFiles/demo_vaq.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -188,37 +188,37 @@ bitvecengine/CMakeFiles/FPGrowth.dir/clean:
 .PHONY : bitvecengine/CMakeFiles/FPGrowth.dir/clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/run_vaq.dir
+# Target rules for target examples/CMakeFiles/demo_vaq.dir
 
 # All Build rule for target.
-examples/CMakeFiles/run_vaq.dir/all: bitvecengine/CMakeFiles/FPGrowth.dir/all
-examples/CMakeFiles/run_vaq.dir/all: bitvecengine/CMakeFiles/VAQ.dir/all
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles --progress-num=6,7 "Built target run_vaq"
-.PHONY : examples/CMakeFiles/run_vaq.dir/all
+examples/CMakeFiles/demo_vaq.dir/all: bitvecengine/CMakeFiles/VAQ.dir/all
+examples/CMakeFiles/demo_vaq.dir/all: bitvecengine/CMakeFiles/FPGrowth.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles --progress-num=6,7 "Built target demo_vaq"
+.PHONY : examples/CMakeFiles/demo_vaq.dir/all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/run_vaq.dir/rule: cmake_check_build_system
+examples/CMakeFiles/demo_vaq.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/run_vaq.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/demo_vaq.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/run_vaq.dir/rule
+.PHONY : examples/CMakeFiles/demo_vaq.dir/rule
 
 # Convenience name for target.
-run_vaq: examples/CMakeFiles/run_vaq.dir/rule
-.PHONY : run_vaq
+demo_vaq: examples/CMakeFiles/demo_vaq.dir/rule
+.PHONY : demo_vaq
 
 # codegen rule for target.
-examples/CMakeFiles/run_vaq.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles --progress-num=6,7 "Finished codegen for target run_vaq"
-.PHONY : examples/CMakeFiles/run_vaq.dir/codegen
+examples/CMakeFiles/demo_vaq.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles --progress-num=6,7 "Finished codegen for target demo_vaq"
+.PHONY : examples/CMakeFiles/demo_vaq.dir/codegen
 
 # clean rule for target.
-examples/CMakeFiles/run_vaq.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/clean
-.PHONY : examples/CMakeFiles/run_vaq.dir/clean
+examples/CMakeFiles/demo_vaq.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/clean
+.PHONY : examples/CMakeFiles/demo_vaq.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

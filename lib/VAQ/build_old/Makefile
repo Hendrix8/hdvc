@@ -143,17 +143,17 @@ FPGrowth/fast:
 .PHONY : FPGrowth/fast
 
 #=============================================================================
-# Target rules for targets named run_vaq
+# Target rules for targets named demo_vaq
 
 # Build rule for target.
-run_vaq: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_vaq
-.PHONY : run_vaq
+demo_vaq: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_vaq
+.PHONY : demo_vaq
 
 # fast build rule for target.
-run_vaq/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/build
-.PHONY : run_vaq/fast
+demo_vaq/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/demo_vaq.dir/build.make examples/CMakeFiles/demo_vaq.dir/build
+.PHONY : demo_vaq/fast
 
 # Help Target
 help:
@@ -165,7 +165,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... FPGrowth"
 	@echo "... VAQ"
-	@echo "... run_vaq"
+	@echo "... demo_vaq"
 .PHONY : help
 
 

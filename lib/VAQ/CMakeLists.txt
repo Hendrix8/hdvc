@@ -8,6 +8,10 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare")
 
+# # Prevent Eigen deprecation warnings from becoming errors
+# string(REPLACE "-Werror" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+# add_compile_options(-Wno-error=deprecated-copy -Wno-deprecated-copy -Wno-error)
+
 # Optimization levels
 if (NOT OPTIMIZATION_LEVEL)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -ffast-math -mfma")
