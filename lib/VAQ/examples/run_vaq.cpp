@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
   args.printArgs();
 
   // check if dataset and queries exist
-  if (!isFileExists(args["dataset"]) || !isFileExists(args["queries"])) {
+  if (!isFileExists(args["dataset"]) || !isFileExists(args["queries"]) || !isFileExists(args["trainset"])) {
     std::cerr << "Dataset or queries file doesn't exists" << std::endl;
     return 1;
   }
