@@ -95,6 +95,8 @@ int main(int argc, char **argv) {
     } else if (args["file-format-ori"] == "bin") {
       readFromExternalBin(args["trainset"], trainset, args.at<int>("timeseries-size"), args.at<int>("trainset-size"));
     }
+    std::cout << "trainset mean: " << trainset.mean() << " std: " << sqrt((trainset.array() - trainset.mean()).square().mean()) << std::endl;
+    std::cout << "dataset mean: " << dataset.mean() << " std: " << sqrt((dataset.array() - dataset.mean()).square().mean()) << std::endl;
 
     std::cout << "Training & encoding phase" << std::endl;
     if (args["save"] != "" && isFileExists(args["save"])) {
