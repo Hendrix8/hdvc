@@ -1,0 +1,1 @@
+nohup bash run_exp.sh > logs/run_exp_$(date +%F_%H-%M).log 2>&1 &
