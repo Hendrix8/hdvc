@@ -1171,8 +1171,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX"
-      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX"
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1182,13 +1182,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX'
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL'
         
-        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58538/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_58538.dir/build.make CMakeFiles/cmTC_58538.dir/build
-        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX'
-        Building CXX object CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2fc5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e2fc5.dir/build.make CMakeFiles/cmTC_e2fc5.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL'
+        Building CXX object CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1198,8 +1198,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
-        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58538.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_58538.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccY1tRFc.s
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2fc5.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e2fc5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccs3fxi7.s
         GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -1223,14 +1223,14 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886
-        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58538.dir/'
-         as -v --64 -o CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccY1tRFc.s
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2fc5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccs3fxi7.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_58538
-        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58538.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_e2fc5
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2fc5.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -1243,14 +1243,14 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_58538' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_58538.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRFuhsJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58538 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_e2fc5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e2fc5.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM2DeJn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2fc5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         collect2 version 11.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRFuhsJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58538 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM2DeJn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2fc5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.38
-        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_58538' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_58538.'
-        /usr/bin/c++ -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -v -Wl,-v CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_58538
-        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX'
+        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_e2fc5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e2fc5.'
+        /usr/bin/c++ -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -v -Wl,-v CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e2fc5
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL'
         
       exitCode: 0
   -
@@ -1291,13 +1291,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX']
+        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58538/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_58538.dir/build.make CMakeFiles/cmTC_58538.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-CLspgX']
-        ignore line: [Building CXX object CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2fc5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e2fc5.dir/build.make CMakeFiles/cmTC_e2fc5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-tMOMwL']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1307,8 +1307,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58538.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_58538.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccY1tRFc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2fc5.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e2fc5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccs3fxi7.s]
         ignore line: [GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -1332,14 +1332,14 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886]
-        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58538.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccY1tRFc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2fc5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccs3fxi7.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_58538]
-        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58538.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_e2fc5]
+        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2fc5.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -1352,13 +1352,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_58538' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_58538.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRFuhsJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58538 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_e2fc5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e2fc5.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM2DeJn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2fc5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccRFuhsJ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccM2DeJn.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1376,7 +1376,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_58538] ==> ignore
+          arg [cmTC_e2fc5] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -1392,7 +1392,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1403,7 +1403,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 11.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRFuhsJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58538 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_58538.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM2DeJn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2fc5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e2fc5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1649,8 +1649,8 @@ events:
       - "CMakeLists.txt:82 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL"
-      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL"
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1659,15 +1659,15 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL'
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ'
         
-        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a25f7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a25f7.dir/build.make CMakeFiles/cmTC_a25f7.dir/build
-        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL'
-        Building CXX object CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o
-        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL/OpenMPTryFlag.cpp
-        Linking CXX executable cmTC_a25f7
-        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a25f7.dir/link.txt --verbose=1
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae174/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae174.dir/build.make CMakeFiles/cmTC_ae174.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ'
+        Building CXX object CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ/OpenMPTryFlag.cpp
+        Linking CXX executable cmTC_ae174
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae174.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -1681,11 +1681,11 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_a25f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a25f7.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2WRWbT.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a25f7 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_a25f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a25f7.'
-        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  -v CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o -o cmTC_a25f7
-        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL'
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_ae174' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_ae174.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGP5YWj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ae174 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_ae174' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_ae174.'
+        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  -v CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o -o cmTC_ae174
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ'
         
       exitCode: 0
   -
@@ -1697,15 +1697,15 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL']
+        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a25f7/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a25f7.dir/build.make CMakeFiles/cmTC_a25f7.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL']
-        ignore line: [Building CXX object CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-VutohL/OpenMPTryFlag.cpp]
-        ignore line: [Linking CXX executable cmTC_a25f7]
-        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a25f7.dir/link.txt --verbose=1]
+        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae174/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ae174.dir/build.make CMakeFiles/cmTC_ae174.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-7r4MWJ/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX executable cmTC_ae174]
+        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae174.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -1719,13 +1719,13 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_a25f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a25f7.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2WRWbT.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a25f7 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_ae174' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_ae174.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGP5YWj.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ae174 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc2WRWbT.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGP5YWj.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -1744,7 +1744,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a25f7] ==> ignore
+          arg [cmTC_ae174] ==> ignore
           arg [-L/home/cpanourg/.miniconda3/lib] ==> dir [/home/cpanourg/.miniconda3/lib]
           arg [-L/home/cpanourg/local/glpk/lib] ==> dir [/home/cpanourg/local/glpk/lib]
           arg [-L/home/cpanourg/local/armadillo/lib] ==> dir [/home/cpanourg/local/armadillo/lib]
@@ -1756,7 +1756,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_a25f7.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_ae174.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgomp] ==> lib [gomp]
@@ -1994,8 +1994,8 @@ events:
       - "CMakeLists.txt:82 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-NGlZgs"
-      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-NGlZgs"
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KdcPaJ"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KdcPaJ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2004,17 +2004,17 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-NGlZgs'
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KdcPaJ'
         
-        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4497c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4497c.dir/build.make CMakeFiles/cmTC_4497c.dir/build
-        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-NGlZgs'
-        Building CXX object CMakeFiles/cmTC_4497c.dir/OpenMPCheckVersion.cpp.o
-        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_4497c.dir/OpenMPCheckVersion.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-NGlZgs/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_4497c
-        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4497c.dir/link.txt --verbose=1
-        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  CMakeFiles/cmTC_4497c.dir/OpenMPCheckVersion.cpp.o -o cmTC_4497c
-        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-NGlZgs'
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17c55/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_17c55.dir/build.make CMakeFiles/cmTC_17c55.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KdcPaJ'
+        Building CXX object CMakeFiles/cmTC_17c55.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_17c55.dir/OpenMPCheckVersion.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KdcPaJ/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_17c55
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17c55.dir/link.txt --verbose=1
+        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  CMakeFiles/cmTC_17c55.dir/OpenMPCheckVersion.cpp.o -o cmTC_17c55
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-KdcPaJ'
         
       exitCode: 0
 ...

@@ -191,8 +191,8 @@ bitvecengine/CMakeFiles/FPGrowth.dir/clean:
 # Target rules for target examples/CMakeFiles/run_vaq.dir
 
 # All Build rule for target.
-examples/CMakeFiles/run_vaq.dir/all: bitvecengine/CMakeFiles/VAQ.dir/all
 examples/CMakeFiles/run_vaq.dir/all: bitvecengine/CMakeFiles/FPGrowth.dir/all
+examples/CMakeFiles/run_vaq.dir/all: bitvecengine/CMakeFiles/VAQ.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/run_vaq.dir/build.make examples/CMakeFiles/run_vaq.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles --progress-num=6,7 "Built target run_vaq"

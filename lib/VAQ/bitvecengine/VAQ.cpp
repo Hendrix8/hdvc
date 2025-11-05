@@ -51,10 +51,14 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
         if ((b == batchNum-1) && (XTrain.rows() % bs > 0)) {
           currBatchRows = XTrain.rows() % bs;
         }
-        covmat.noalias() += (XTrain.block(b*bs, 0, currBatchRows, XTrain.cols()).transpose() * XTrain.block(b*bs, 0, currBatchRows, XTrain.cols()));
+        // Explicitly evaluate blocks to avoid issues with const XTrain
+        RowMatrixXf block = XTrain.block(b*bs, 0, currBatchRows, XTrain.cols());
+        covmat.noalias() += block.transpose() * block;
       }
     } else {
-      covmat.noalias() = XTrain.transpose() * XTrain;
+      // Explicitly evaluate the expression to avoid issues with const XTrain
+      RowMatrixXf XTrainTrans = XTrain.transpose();
+      covmat.noalias() = XTrainTrans * XTrain;
     }
   }
 
