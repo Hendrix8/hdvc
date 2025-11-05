@@ -90,7 +90,7 @@ public:
   ColVector<float> mScale;
   int mStartShufIdx = 0;
 
-  void train(RowMatrixXf &XTrain, bool verbose = false);
+  void train(const RowMatrixXf &XTrain, bool verbose = false);
 
   void encode(const RowMatrixXf &XTrain);
   

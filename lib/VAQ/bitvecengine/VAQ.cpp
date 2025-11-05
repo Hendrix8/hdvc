@@ -8,7 +8,7 @@
 /**
  * Core Functions
  */
-void VAQ::train(RowMatrixXf &XTrain, bool verbose) {
+void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
   START_TIMING(PCA);
   std::cout << XTrain.rows() << " " << XTrain.cols() << std::endl;
   RowMatrixXf covmat(XTrain.cols(), XTrain.cols());
