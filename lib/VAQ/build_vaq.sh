@@ -13,6 +13,6 @@ cmake .. \
   -DLAPACK_LIBRARIES=$CONDA_PREFIX/lib/libopenblas.so \
   -DLAPACKE_LIBRARIES=$CONDA_PREFIX/lib/liblapacke.so \
   -DARMA_DONT_USE_WRAPPER=ON \
-  -DCMAKE_EXE_LINKER_FLAGS="-L$CONDA_PREFIX/lib -L$HOME/local/glpk/lib -L$HOME/local/armadillo/lib"
+  -DCMAKE_EXE_LINKER_FLAGS="-L$CONDA_PREFIX/lib -L$HOME/local/glpk/lib -L$HOME/local/armadillo/lib" \
 
 make -j

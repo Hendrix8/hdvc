@@ -6,5 +6,5 @@ CXX_DEFINES = -DARMA_DONT_USE_WRAPPER -DVAQ_EXPORTS -DVAQ_OPTIMIZE
 
 CXX_INCLUDES = -I/home/cpanourg/projects/2-hdvc/lib/VAQ/external/eigen -I/home/cpanourg/local/armadillo/include -I/home/cpanourg/local/glpk/include
 
-CXX_FLAGS = -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -fPIC   -march=haswell -mavx -mavx2 -fopenmp
+CXX_FLAGS = -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -fPIC   -march=haswell -mavx -mavx2 -Wno-error=deprecated-copy -Wno-deprecated-copy -Wno-error -fopenmp
 

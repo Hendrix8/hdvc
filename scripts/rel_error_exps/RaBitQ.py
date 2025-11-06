@@ -145,7 +145,7 @@ def run_rabitq_eval(
     out_bin = out_dir / f"rel_error_bits{bits_per_vector}_db{sample_db//1000}k_qr{sample_queries//1000}k.bin"
     rel_error.astype(np.float32).tofile(out_bin)
 
-    csv_path = Path(data_root) / results_dir / f"{dataset_name}_adc_vs_exact_eval.csv"
+    csv_path = Path(data_root) / results_dir / f"{dataset_name}_RaBitQ_adc_vs_exact_eval.csv"
     summary = {
         "method": "RaBitQ",
         "dataset": dataset_name,
@@ -153,13 +153,11 @@ def run_rabitq_eval(
         "nb": nb,
         "nb_sample": len(db_idx),
         "dim": dim,
-        "n_subquantizers": 1,
-        "nbits": bits_per_vector,
+        "bits_per_dim": Bq,
         "bits_per_vector": bits_per_vector,
         "train_size": train_size,
         "train_time_s": float(train_time),
         "encoding_time_s": float(encoding_time),
-        "distance_table_time_s": 0.0,
         "cdist_time_s": float(cdist_time),
         "adc_time_s": float(adc_time),
         "rel_error_mean": float(mean_rel),

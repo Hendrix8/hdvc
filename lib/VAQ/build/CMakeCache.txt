@@ -60,10 +60,13 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=
+CMAKE_CXX_FLAGS:STRING=-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
+
+//No help, variable specified on the command line.
+CMAKE_CXX_FLAGS_INIT:UNINITIALIZED=-Wno-deprecated-copy -Wno-error=deprecated-copy
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
 CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG

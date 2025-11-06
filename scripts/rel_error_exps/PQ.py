@@ -145,7 +145,7 @@ def run_pq_eval(
     out_bin = out_dir / f"rel_error_subq{n_subquantizers}_nbits{nbits}_db{sample_db//1000}k_qr{sample_queries//1000}k.bin"
     rel_error.astype(np.float32).tofile(out_bin)
 
-    csv_path = Path(data_root) / results_dir / f"{dataset_name}_adc_vs_exact_eval.csv"
+    csv_path = Path(data_root) / results_dir / f"{dataset_name}_PQ_adc_vs_exact_eval.csv"
     summary = {
         "method": "PQ",
         "dataset": dataset_name,

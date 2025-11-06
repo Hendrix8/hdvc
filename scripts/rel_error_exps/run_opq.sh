@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==========================================================
-#  Multi-experiment launcher — dynamically calls ${METHOD}.py
+#  Multi-experiment launcher for OPQ — dynamically calls OPQ.py
 # ==========================================================
 
 export OMP_NUM_THREADS=16
@@ -17,7 +17,7 @@ DATA_ROOT="${DATA_FP}"
 RESULTS_DIR="${DATA_FP}/results/relerr"
 
 # ---- Hyperparameter grids ----
-METHODS=("PQ")
+METHODS=("OPQ")
 N_SUBQUANTIZERS_LIST=(4 8 16 32)
 NBITS_LIST=(8 9 10)
 TRAIN_SIZES=(10000 100000 1000000)
@@ -67,3 +67,4 @@ echo "============================================"
 echo "All ${#METHODS[@]} method experiments completed!"
 echo "Results at: ${DATA_ROOT}/${RESULTS_DIR}/${DATASET_NAME}_adc_vs_exact_eval.csv"
 echo "============================================"
+

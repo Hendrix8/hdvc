@@ -11,6 +11,10 @@
 void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
   START_TIMING(PCA);
   std::cout << XTrain.rows() << " " << XTrain.cols() << std::endl;
+  
+  // Make a copy of XTrain since we need to modify it for projection but don't want to modify the original
+  RowMatrixXf XTrainCopy = XTrain;
+  
   RowMatrixXf covmat(XTrain.cols(), XTrain.cols());
 
   const int bs = 256 * 1024;
@@ -295,7 +299,7 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
   #endif
 
   START_TIMING(PROJECTION);
-  this->ProjectOnEigenVectorsInPlace(XTrain, /*withChecking =*/ false);
+  this->ProjectOnEigenVectorsInPlace(XTrainCopy, /*withChecking =*/ false);
   END_TIMING_V(PROJECTION, "== PROJECTION computation time: ", verbose);
 
   /* Allocate bits per dimension */
@@ -537,13 +541,13 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
       bool isBitsGtStandard = (mBitsAlloc[iSubs] > standardBitAlloc);
 
       int sampleSize = std::max(currCentroidsNum * 256, 256*(1 << (mBitBudget/mSubspaceNum)));
-      sampleSize = std::min(sampleSize, (int)XTrain.rows());
+      sampleSize = std::min(sampleSize, (int)XTrainCopy.rows());
       RowMatrixXf XTrainSlice(sampleSize, mSubsLen);
-      if (sampleSize == XTrain.rows()) {
-        std::vector<int> perm(XTrain.rows());
+      if (sampleSize == XTrainCopy.rows()) {
+        std::vector<int> perm(XTrainCopy.rows());
         randomPermutation(perm);
         for (int i=0; i<sampleSize; i++) {
-          XTrainSlice.row(i).noalias() = XTrain.block(perm[i], iSubs * mSubsLen, 1, mSubsLen);
+          XTrainSlice.row(i).noalias() = XTrainCopy.block(perm[i], iSubs * mSubsLen, 1, mSubsLen);
         }
       }
 
@@ -600,7 +604,7 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
         // maybe for the next project        
         #if 0
         // last update
-        RowMatrixXf XTrainFullSlice = XTrain.block(0, iSubs * mSubsLen, XTrain.rows(), mSubsLen);
+        RowMatrixXf XTrainFullSlice = XTrainCopy.block(0, iSubs * mSubsLen, XTrainCopy.rows(), mSubsLen);
         arma::fmat allmeans(mCentroidsPerSubs[iSubs].data(), mSubsLen, currCentroidsNum, false, false);
         arma::fmat alldata(XTrainFullSlice.data(), XTrainFullSlice.cols(), XTrainFullSlice.rows(), false, false);
         status = arma::kmeans(allmeans, alldata, currCentroidsNum, arma::keep_existing, 1, false);
@@ -637,7 +641,7 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
         // Maybe for the next project
         #if 0
         // last update
-        RowMatrixXf XTrainFullSlice = XTrain.block(0, iSubs * mSubsLen, XTrain.rows(), mSubsLen);
+        RowMatrixXf XTrainFullSlice = XTrainCopy.block(0, iSubs * mSubsLen, XTrainCopy.rows(), mSubsLen);
         arma::fmat alldata(XTrainFullSlice.data(), XTrainFullSlice.cols(), XTrainFullSlice.rows(), false, false);
         status = arma::kmeans(means, alldata, currCentroidsNum, arma::keep_existing, 1, false);
         if (status == false) {
@@ -646,7 +650,7 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
         }
 
         mCentroidsPerSubs[iSubs] = KMeans::staticFitSampling(
-          XTrain.block(0, iSubs * mSubsLen, XTrain.rows(), mSubsLen),
+          XTrainCopy.block(0, iSubs * mSubsLen, XTrainCopy.rows(), mSubsLen),
           currCentroidsNum,
           25,
           verbose
