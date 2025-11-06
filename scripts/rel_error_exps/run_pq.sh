@@ -18,11 +18,18 @@ RESULTS_DIR="${DATA_FP}/results/relerr"
 
 # ---- Hyperparameter grids ----
 METHODS=("PQ")
-N_SUBQUANTIZERS_LIST=(4 8 16 32)
-NBITS_LIST=(8 9 10)
-TRAIN_SIZES=(10000 100000 1000000)
+# first hp test : 
+# N_SUBQUANTIZERS_LIST=(4 8 16 32)
+# NBITS_LIST=(8 9 10)
+# TRAIN_SIZES=(10000 100000 1000000)
+
+# second hp test : 
+N_SUBQUANTIZERS_LIST=(8)
+NBITS_LIST=(14 16 18 20)
+TRAIN_SIZES=(10000 99000000)
+
 SAMPLE_DB=10000
-SAMPLE_QUERIES=1000
+SAMPLE_QUERIES=10000
 
 # ==========================================================
 # Run experiments
