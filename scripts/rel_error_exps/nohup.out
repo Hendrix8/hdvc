@@ -1,43 +1,50 @@
 
 CondaError: Run 'conda init' before 'conda activate'
 
-Checking for missing experiments (train_size <= 100k)...
-✅ All experiments with train_size <= 100k are already completed!
-No experiments to run.
+
+--------------------------------------------
+Running PQ | subq=8, nbits=14, train=99000000
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x14, train=99000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=99000000
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x16, train=99000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=18, train=99000000
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x18, train=99000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=20, train=99000000
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x20, train=99000000)
+============================================
+All 1 method experiments completed!
+Results at: /data/cpanourg/2-hdvc//data/cpanourg/2-hdvc/results/relerr/deep_adc_vs_exact_eval.csv
+============================================
 
 CondaError: Run 'conda init' before 'conda activate'
 
-Checking for missing experiments (train_size < 1M)...
-✅ All experiments with train_size < 1M are already completed!
-No experiments to run.
-
-CondaError: Run 'conda init' before 'conda activate'
-
-Checking for missing experiments (train_size = 1M)...
-============================================
-Running remaining LSQ++ experiments
-Only train_size = 1M
-============================================
-Total missing: 4 experiments
-
 
 --------------------------------------------
-Running LSQ++ | subq=16, nbits=10, train=1000000
---------------------------------------------
-📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
-Loaded database shape: (100000000, 96), queries: (1000, 96)
-Training on 1000000 samples, testing on 1000000, dim=96
-Training LSQ++ with 16x10 => 160 bits/vector
-✅ LSQ++ trained in 5673.98s
-Encoding database...
-✅ Encoding done in 386.35s | Codes shape: (1000000, 21)
-Computing distance tables...
-✅ Distance computation done in 0.72s
-Mean rel. error: 0.4059, std: 0.1084
-✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_LSQpp_adc_vs_exact_eval.csv
-Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/lsq_pp/deep/rel_error_subq16_nbits10_db10k_qr1k.bin
-✅ Completed LSQ++ (16x10, train=1000000)
-
---------------------------------------------
-Running LSQ++ | subq=32, nbits=8, train=1000000
+Running PQ | subq=8, nbits=14, train=99000000
 --------------------------------------------

@@ -9,6 +9,8 @@ conda activate dtwrl_env2
 
 # ---- Paths ----
 DATA_FP="/data/cpanourg/2-hdvc"
+# DATASET_PATH="${DATA_FP}/data/yandex/deep1b/base.1B.fbin"
+# QUERY_PATH="${DATA_FP}/data/yandex/deep1b/query.public.10K.fbin"
 DATASET_PATH="${DATA_FP}/data/deep1b/dataset/deep1b-96-100m.bin"
 QUERY_PATH="${DATA_FP}/data/deep1b/queries/queries-hard10p-deep1b-len96-1000.bin"
 DATASET_NAME="deep"
@@ -26,10 +28,10 @@ METHODS=("PQ")
 # second hp test : 
 N_SUBQUANTIZERS_LIST=(8)
 NBITS_LIST=(14 16 18 20)
-TRAIN_SIZES=(10000 99000000)
+TRAIN_SIZES=(99000000)
 
 SAMPLE_DB=10000
-SAMPLE_QUERIES=10000
+SAMPLE_QUERIES=1000
 
 # ==========================================================
 # Run experiments

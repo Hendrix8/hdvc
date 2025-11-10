@@ -21,41 +21,8 @@ if module_path not in sys.path:
 
 from src.utils import (
     read_fvecs, compute_distance_tables_threaded, compute_distance_tables_vectorized,
-    adc_distances_batch_numba
+    adc_distances_batch_numba, read_fbin, load_dataset, ensure_dir
 )
-
-
-# =====================================================
-# === Helper functions for data loading and IO setup ===
-# =====================================================
-def load_dataset(dataset_path, query_path=None, dim=None):
-    """
-    Loads dataset (supports .fvecs and .bin)
-    Returns database vectors (db) and query vectors (qr)
-    """
-    if dataset_path.endswith('.fvecs'):
-        db = np.array(read_fvecs(dataset_path))
-    elif dataset_path.endswith('.bin'):
-        db = np.fromfile(dataset_path, dtype=np.float32).reshape(-1, dim)
-    else:
-        raise ValueError(f"Unsupported dataset format: {dataset_path}")
-
-    if query_path:
-        if query_path.endswith('.fvecs'):
-            qr = np.array(read_fvecs(query_path))
-        elif query_path.endswith('.bin'):
-            qr = np.fromfile(query_path, dtype=np.float32).reshape(-1, dim)
-        else:
-            raise ValueError(f"Unsupported query format: {query_path}")
-    else:
-        qr = db.copy()
-
-    return db.astype(np.float32), qr.astype(np.float32)
-
-
-def ensure_dir(path):
-    """Create directory if it doesn’t exist."""
-    Path(path).mkdir(parents=True, exist_ok=True)
 
 
 # =============================
@@ -76,8 +43,117 @@ def run_pq_eval(
 ):
     # --- Load dataset ---
     print(f"📂 Loading dataset from {dataset_path}")
-    db, qr = load_dataset(dataset_path, query_path, dim)
+    db, qr = load_dataset(dataset_path, query_path, dim, db_chunk_size=train_size + 1_000_000, qr_chunk_size=sample_queries)
     print(f"Loaded database shape: {db.shape}, queries: {qr.shape}")
+
+    # --- Validate and clean data (remove NaN/Inf by loading more clean data) ---
+    def clean_data_by_reloading(data, filepath, initial_size):
+        """Remove rows with NaN/Inf by loading additional clean data from file. Optimized for large datasets."""
+        # Fast check: use vectorized operations on flattened view for better cache performance
+        # Check for NaN/Inf more efficiently
+        data_flat = data.view(np.float32).reshape(-1)
+        has_nan = np.isnan(data_flat).any()
+        has_inf = np.isinf(data_flat).any()
+        
+        if not has_nan and not has_inf:
+            return data
+        
+        # Find invalid rows - optimized for large arrays
+        # Use sum along axis which is faster than any() for large arrays
+        nan_rows = np.isnan(data).sum(axis=1) > 0
+        inf_rows = np.isinf(data).sum(axis=1) > 0
+        has_invalid = nan_rows | inf_rows
+        invalid_count = has_invalid.sum()
+        
+        if invalid_count == 0:
+            return data
+        
+        print(f"⚠️  Warning: Found {invalid_count} rows with NaN/Inf ({invalid_count/len(data)*100:.2f}%). Loading clean replacements...")
+        
+        # Keep only valid rows - use boolean indexing (faster than copy for large arrays)
+        valid_mask = ~has_invalid
+        valid_data = data[valid_mask]
+        remaining_invalid = invalid_count
+        
+        # If file is .fbin, load additional clean data
+        if filepath.endswith('.fbin'):
+            # Start loading from beyond what we initially loaded
+            replacement_start = initial_size
+            # Load larger chunks for better performance (min 100k, or 5x what we need)
+            chunk_size = max(remaining_invalid * 5, 100000)
+            max_attempts = 50  # More attempts for large datasets
+            attempt = 0
+            
+            # Pre-allocate list to collect clean replacements (faster than repeated vstack)
+            clean_replacement_list = []
+            total_loaded = 0
+            
+            while remaining_invalid > 0 and attempt < max_attempts:
+                try:
+                    # Load replacement data
+                    replacement = read_fbin(filepath, start_idx=replacement_start, chunk_size=chunk_size)
+                    
+                    if len(replacement) == 0:
+                        # Reached end of file
+                        break
+                    
+                    # Fast check for clean replacements
+                    replacement_nan = np.isnan(replacement).sum(axis=1) == 0
+                    replacement_inf = np.isinf(replacement).sum(axis=1) == 0
+                    replacement_valid = replacement_nan & replacement_inf
+                    clean_replacements = replacement[replacement_valid]
+                    
+                    if len(clean_replacements) > 0:
+                        # Collect clean replacements
+                        n_needed = remaining_invalid
+                        n_available = len(clean_replacements)
+                        n_to_add = min(n_needed, n_available)
+                        
+                        clean_replacement_list.append(clean_replacements[:n_to_add])
+                        total_loaded += n_to_add
+                        remaining_invalid -= n_to_add
+                        
+                        if remaining_invalid == 0:
+                            print(f"✅ Replaced all {invalid_count} invalid rows with clean data")
+                            break
+                        
+                        # Move forward for next attempt
+                        replacement_start += len(replacement)
+                    else:
+                        # All replacements were invalid, try further with larger step
+                        replacement_start += chunk_size
+                    
+                    attempt += 1
+                except (ValueError, IndexError, IOError) as e:
+                    # Reached end of file or other error
+                    print(f"⚠️  Reached end of file or error loading more data (attempt {attempt+1}/{max_attempts})")
+                    break
+            
+            # Concatenate all clean replacements at once (much faster than repeated vstack)
+            if clean_replacement_list:
+                all_replacements = np.vstack(clean_replacement_list)
+                valid_data = np.vstack([valid_data, all_replacements])
+            
+            if remaining_invalid > 0:
+                print(f"⚠️  Warning: Could not replace {remaining_invalid} invalid rows. Removing them...")
+                print(f"   Final data size: {len(valid_data)} (removed {remaining_invalid} invalid rows)")
+        else:
+            # For non-.fbin files, just remove invalid rows
+            print(f"⚠️  Removing {invalid_count} invalid rows (file format doesn't support chunked reloading)")
+        
+        return valid_data
+    
+    # Clean database
+    initial_db_size = train_size + 1_000_000
+    db = clean_data_by_reloading(db, dataset_path, initial_size=initial_db_size)
+    
+    # Clean queries
+    if query_path:
+        qr = clean_data_by_reloading(qr, query_path, initial_size=sample_queries)
+    else:
+        qr = clean_data_by_reloading(qr, dataset_path, initial_size=sample_queries)
+    
+    print(f"Final database shape: {db.shape}, queries: {qr.shape}")
 
     # --- Split into train/test ---
     test_size = min(1_000_000, len(db))
@@ -131,11 +207,50 @@ def run_pq_eval(
     adc_time = time.time() - start
 
     start = time.time()
-    exact_sample = cdist(qr_sample, db_sample, metric="sqeuclidean").astype(np.float32)
+    # Compute exact distances with overflow protection
+    # Use float64 for computation, then clip before converting to float32
+    with np.errstate(over='ignore'):
+        exact_sample_64 = cdist(qr_sample, db_sample, metric="sqeuclidean")
+    # Clip to safe float32 range before conversion (use conservative threshold)
+    max_safe_value = np.finfo(np.float32).max / 10.0
+    exact_sample = np.clip(exact_sample_64, 0, max_safe_value).astype(np.float32)
     cdist_time = time.time() - start
 
-    rel_error = np.abs(adc_sample - exact_sample) / (exact_sample + 1e-12)
-    mean_rel, std_rel = rel_error.mean(), rel_error.std()
+    # Handle overflow: clip ADC distances to prevent inf
+    adc_sample = np.clip(adc_sample, 0, max_safe_value)
+
+    # Compute relative error with better numerical stability
+    # Use a larger epsilon and handle zero/very small exact distances
+    epsilon = 1e-6
+    denominator = np.maximum(exact_sample, epsilon)
+    
+    # Compute relative error with overflow protection
+    # Use float64 for intermediate computation to avoid overflow
+    diff_64 = np.abs(adc_sample.astype(np.float64) - exact_sample.astype(np.float64))
+    denominator_64 = denominator.astype(np.float64)
+    rel_error_64 = diff_64 / denominator_64
+    # Clip to reasonable range and convert back to float32
+    rel_error = np.clip(rel_error_64, 0, 1e6).astype(np.float32)
+    
+    # Filter out invalid values (inf, nan) before computing statistics
+    # Use more robust filtering
+    valid_mask = np.isfinite(rel_error) & (rel_error >= 0) & (rel_error < 1e6)
+    if valid_mask.sum() == 0:
+        print("⚠️  Warning: All relative errors are invalid (inf/nan)")
+        mean_rel, std_rel = np.nan, np.nan
+    else:
+        rel_error_clean = rel_error[valid_mask].astype(np.float64)  # Use float64 for stats
+        # Double-check for any remaining invalid values
+        rel_error_clean = rel_error_clean[np.isfinite(rel_error_clean)]
+        if len(rel_error_clean) == 0:
+            print("⚠️  Warning: All relative errors became invalid after filtering")
+            mean_rel, std_rel = np.nan, np.nan
+        else:
+            mean_rel = float(rel_error_clean.mean())
+            std_rel = float(rel_error_clean.std())
+            invalid_count = (~valid_mask).sum()
+            if invalid_count > 0:
+                print(f"⚠️  Warning: {invalid_count}/{rel_error.size} relative errors were invalid (inf/nan) and excluded")
 
     print(f"Mean rel. error: {mean_rel:.4f}, std: {std_rel:.4f}")
 

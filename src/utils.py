@@ -21,6 +21,7 @@ from scipy.spatial import distance as p_dist_func
 import struct
 import csv
 from numba import jit, prange
+from pathlib import Path
 
 plt.rcParams['mathtext.fontset'] = "stix"
 plt.rcParams['font.family'] = 'calibri'
@@ -220,6 +221,70 @@ def read_ibin_simple(fname: str):
 def read_fbin_simple(fname: str):
     print(f"read simple fbin {fname}")
     return np.fromfile(fname , dtype='float32')
+
+def read_fbin(filename, start_idx=0, chunk_size=None):
+    """ Read *.fbin file that contains float32 vectors
+
+    Args:
+        :param filename (str): path to *.fbin file
+        :param start_idx (int): start reading vectors from this index
+        :param chunk_size (int): number of vectors to read. 
+                                 If None, read all vectors
+    Returns:
+        Array of float32 vectors (numpy.ndarray)
+    """
+    with open(filename, "rb") as f:
+        nvecs, dim = np.fromfile(f, count=2, dtype=np.int32)
+        nvecs = (nvecs - start_idx) if chunk_size is None else chunk_size
+        arr = np.fromfile(f, count=nvecs * dim, dtype=np.float32, 
+                          offset=start_idx * 4 * dim)
+    return arr.reshape(nvecs, dim)
+
+def read_ibin(filename, start_idx=0, chunk_size=None):
+    """ Read *.ibin file that contains int32 vectors
+
+    Args:
+        :param filename (str): path to *.ibin file
+        :param start_idx (int): start reading vectors from this index
+        :param chunk_size (int): number of vectors to read.
+                                 If None, read all vectors
+    Returns:
+        Array of int32 vectors (numpy.ndarray)
+    """
+    with open(filename, "rb") as f:
+        nvecs, dim = np.fromfile(f, count=2, dtype=np.int32)
+        nvecs = (nvecs - start_idx) if chunk_size is None else chunk_size
+        arr = np.fromfile(f, count=nvecs * dim, dtype=np.int32, 
+                          offset=start_idx * 4 * dim)
+    return arr.reshape(nvecs, dim)
+
+def write_fbin(filename, vecs):
+    """ Write an array of float32 vectors to *.fbin file
+
+    Args:
+        :param filename (str): path to *.fbin file
+        :param vecs (numpy.ndarray): array of float32 vectors to write
+    """
+    assert len(vecs.shape) == 2, "Input array must have 2 dimensions"
+    with open(filename, "wb") as f:
+        nvecs, dim = vecs.shape
+        f.write(struct.pack('<i', nvecs))
+        f.write(struct.pack('<i', dim))
+        vecs.astype('float32').flatten().tofile(f)
+
+def write_ibin(filename, vecs):
+    """ Write an array of int32 vectors to *.ibin file
+
+    Args:
+        :param filename (str): path to *.ibin file
+        :param vecs (numpy.ndarray): array of int32 vectors to write
+    """
+    assert len(vecs.shape) == 2, "Input array must have 2 dimensions"
+    with open(filename, "wb") as f:
+        nvecs, dim = vecs.shape
+        f.write(struct.pack('<i', nvecs))
+        f.write(struct.pack('<i', dim))
+        vecs.astype('int32').flatten().tofile(f)
 
 def write_obj(path, obj):
     print(f'write obj to {path}')
@@ -1193,7 +1258,18 @@ def compute_distance_tables_vectorized(queries, centroids, n_subquantizers, ksub
         
         # Vectorized computation: (nq, 1, subvec_dim) - (1, ksub, subvec_dim)
         diff = query_subs[:, np.newaxis, :] - centroids_j[np.newaxis, :, :]
-        dis_tables[:, j, :] = np.sum(diff * diff, axis=2)
+        # Clip diff values BEFORE squaring to prevent overflow
+        # For float32, max is ~3.4e38, so we clip diff to prevent overflow when squared
+        # Use a conservative threshold: sqrt(max/10) to be safe
+        max_safe_diff = np.sqrt(np.finfo(np.float32).max / 10.0)
+        diff = np.clip(diff, -max_safe_diff, max_safe_diff)
+        # Now safe to square (with overflow protection)
+        with np.errstate(over='ignore'):
+            squared_diff = diff * diff
+        # Clip squared values as well for extra safety
+        max_safe_sq = np.finfo(np.float32).max / (subvec_dim * 2)
+        squared_diff = np.clip(squared_diff, 0, max_safe_sq)
+        dis_tables[:, j, :] = np.sum(squared_diff, axis=2)
     
     return dis_tables
 
@@ -1373,3 +1449,51 @@ def lsq_dot_tables_threaded(queries, codebooks, n_threads=4):
         futs = [ex.submit(worker, i, min(i + chunk, nq)) for i in range(0, nq, chunk)]
         _ = [f.result() for f in futs]
     return out
+
+def load_dataset(dataset_path, query_path=None, dim=None, start_idx=0, db_chunk_size=None, qr_chunk_size=None):
+    """
+    Loads dataset (supports .fvecs, .bin, and .fbin)
+    Returns database vectors (db) and query vectors (qr)
+    
+    Args:
+        dataset_path (str): path to dataset file
+        query_path (str, optional): path to query file. If None, uses dataset as queries
+        dim (int, optional): dimension for .bin files (required for .bin format)
+        start_idx (int, optional): start reading vectors from this index (for .fbin files)
+        db_chunk_size (int, optional): number of vectors to read (for .fbin files). 
+                                    If None, read all vectors
+        qr_chunk_size (int, optional): number of vectors to read (for .fbin files). 
+                                    If None, read all vectors
+    """
+    if dataset_path.endswith('.fvecs'):
+        db = np.array(read_fvecs(dataset_path))
+    elif dataset_path.endswith('.bin'):
+        if dim is None:
+            raise ValueError("dim parameter is required for .bin files")
+        db = np.fromfile(dataset_path, dtype=np.float32).reshape(-1, dim)
+    elif dataset_path.endswith('.fbin'):
+        db = read_fbin(dataset_path, start_idx=start_idx, chunk_size=db_chunk_size)
+    else:
+        raise ValueError(f"Unsupported dataset format: {dataset_path}")
+
+    if query_path:
+        if query_path.endswith('.fvecs'):
+            qr = np.array(read_fvecs(query_path))
+        elif query_path.endswith('.bin'):
+            if dim is None:
+                raise ValueError("dim parameter is required for .bin files")
+            qr = np.fromfile(query_path, dtype=np.float32).reshape(-1, dim)
+        elif query_path.endswith('.fbin'):
+            qr = read_fbin(query_path, start_idx=start_idx, chunk_size=qr_chunk_size)
+        else:
+            raise ValueError(f"Unsupported query format: {query_path}")
+    else:
+        qr = db.copy()
+
+    return db.astype(np.float32), qr.astype(np.float32)
+
+
+def ensure_dir(path):
+    """Create directory if it doesn't exist."""
+    Path(path).mkdir(parents=True, exist_ok=True)
+
