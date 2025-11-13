@@ -48,3 +48,62 @@ CondaError: Run 'conda init' before 'conda activate'
 --------------------------------------------
 Running PQ | subq=8, nbits=14, train=99000000
 --------------------------------------------
+📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
+Loaded database shape: (100000000, 96), queries: (1000, 96)
+Final database shape: (100000000, 96), queries: (1000, 96)
+Training on 99000000 samples, testing on 1000000, dim=96
+Training PQ with 8x14 => 112 bits/vector
+✅ PQ trained in 830.11s
+Encoding database...
+✅ Encoding done in 65.88s | Codes shape: (1000000, 14)
+Computing distance tables...
+✅ Distance tables computed in 24.08s
+Mean rel. error: 0.1633, std: 0.0949
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_error_subq8_nbits14_db10k_qr1k.bin
+✅ Completed PQ (8x14, train=99000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=99000000
+--------------------------------------------
+
+CondaError: Run 'conda init' before 'conda activate'
+
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=99000000
+--------------------------------------------
+📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
+Loaded database shape: (100000000, 96), queries: (1000, 96)
+Final database shape: (100000000, 96), queries: (1000, 96)
+Training on 99000000 samples, testing on 1000000, dim=96
+Training PQ with 8x16 => 128 bits/vector
+✅ PQ trained in 12257.00s
+Encoding database...
+✅ Encoding done in 402.93s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 124.61s
+Mean rel. error: 0.1369, std: 0.0896
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_error_subq8_nbits16_db10k_qr1k.bin
+📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
+Loaded database shape: (100000000, 96), queries: (1000, 96)
+Final database shape: (100000000, 96), queries: (1000, 96)
+Training on 99000000 samples, testing on 1000000, dim=96
+Training PQ with 8x16 => 128 bits/vector
+✅ PQ trained in 12743.27s
+Encoding database...
+✅ Encoding done in 341.49s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 101.80s
+Mean rel. error: 0.1359, std: 0.0887
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_error_subq8_nbits16_db10k_qr1k.bin
+✅ Completed PQ (8x16, train=99000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=18, train=99000000
+--------------------------------------------
+
+CondaError: Run 'conda init' before 'conda activate'
+

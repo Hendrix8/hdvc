@@ -1,0 +1,177 @@
+{
+    "configurations": [
+    
+  
+          {
+        "name": "Chronos Train (tsfm)",
+        "type": "python",
+        "request": "launch",
+        "program": "/home/cpanourg/projects/3-tsfm/lib/chronos/scripts/training/train.py",
+        "args": [
+          "['/data/cpanourg/3-tsfm/temp/data/continuous/train.json']",
+          "--output-dir", "/data/cpanourg/3-tsfm/temp/output/chronos_tsfm_debug",
+          "--context-length", "256",
+          "--prediction-length", "64",
+          "--max-steps", "20000"
+        ],
+        "python": "/home/cpanourg/.miniconda3/envs/tsfm/bin/python",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+  
+      {
+        "name": "Python Debugger: dtwrl_env2",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "python": "/home/cpanourg/.miniconda3/envs/dtwrl_env2/bin/python",
+        "justMyCode": true
+      },
+      {
+        "name": "WETW MESSI",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "/home/cpanourg/projects/1-dtwrl/lib/messi_wetw/bin/MESSI",
+        "args": [
+          "--dataset", "/data/cpanourg/1-dtwrl/data/sald/dataset/sald-128-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/astro/dataset/astro-256-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/rw/dataset/rw-1023-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/rw/dataset/rw-255-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/seismic/dataset/seismic-256-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k2025-01-20-17-25-16_snum0.bin",
+          // "--db-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k2025-01-20-17-25-16_snum0.bin",
+          "--db-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet64/sald-128-1m-100k2025-05-08-23-16-58_snum0.bin",
+          "--in-memory",
+          "--initial-lbl-size", "2000",
+          "--leaf-size", "2000",
+          "--min-leaf-size", "2000",
+          "--function-type", "3",
+          "--cpu-type", "81",
+          "--dataset-size", "1000000",
+          "--flush-limit", "300000",
+          "--read-block", "20000",
+          "--dtwwindowsize", "25",
+          "--queries", "/data/cpanourg/1-dtwrl/data/sald/queries/queries-hard10p-sald-len128-1000-znorm.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/astro/queries/queries_hard10p_astro1k_len256_znorm.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/rw/queries/rw-1023-1k.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/rw/queries/rw-255-1k.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/seismic/queries/queries-hard10p-seismic-len256-1k-znorm.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k-1k2025-01-20-17-25-16_snum0.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k-1k2025-01-20-17-25-16_snum0.bin",
+          // "--query-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k-1k2025-01-20-17-25-16_snum0.bin",
+          "--query-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet64/sald-128-1m-100k-1k2025-05-08-23-16-58_snum0.bin",
+          "--queries-size", "1",
+          "--queue-number", "4",
+          "--topk",
+          "--k-size", "1",
+          // "--knn", // for euclidean (dtwwindowsize=0)
+          // "--timeseries-size", "128",
+          // "--timeseries-size", "256",
+          // "--timeseries-size", "1023",
+          // "--timeseries-size", "255",
+          "--timeseries-size", "128",
+          "--emb-dim", "64",
+          "--results-path", "/data/cpanourg/1-dtwrl/data/sald/test1.csv"
+        ],
+        "stopAtEntry": false,
+        "cwd": "/home/cpanourg/projects/1-dtwrl/lib/paris_plus_and_messidtw-main/bin/",
+        "environment": [ {
+          "name": "LD_LIBRARY_PATH",
+          "value": "/home/cpanourg/projects/1-dtwrl/lib/paris_plus_and_messidtw-main/src/ads/cpp_lib/build"
+        }],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/home/cpanourg/gdb/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+  
+      {
+        "name": "DTW MESSI",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "/home/cpanourg/projects/1-dtwrl/lib/messi_wetw/dtw_bin/MESSI",
+        "args": [
+          "--dataset", "/data/cpanourg/1-dtwrl/data/sald/dataset/sald-128-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/astro/dataset/astro-256-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/rw/dataset/rw-1023-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/rw/dataset/rw-255-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/data/seismic/dataset/seismic-256-1m.bin",
+          // "--dataset", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k2025-01-20-17-25-16_snum0.bin",
+          // "--db-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k2025-01-20-17-25-16_snum0.bin",
+          "--db-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet64/sald-128-1m-100k2025-05-08-23-16-58_snum0.bin",
+          "--in-memory",
+          "--initial-lbl-size", "2000",
+          "--leaf-size", "2000",
+          "--min-leaf-size", "2000",
+          "--function-type", "3",
+          "--cpu-type", "81",
+          "--dataset-size", "1000000",
+          "--flush-limit", "300000",
+          "--read-block", "20000",
+          "--dtwwindowsize", "25",
+          "--queries", "/data/cpanourg/1-dtwrl/data/sald/queries/queries-hard10p-sald-len128-1000-znorm.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/astro/queries/queries_hard10p_astro1k_len256_znorm.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/rw/queries/rw-1023-1k.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/rw/queries/rw-255-1k.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/data/seismic/queries/queries-hard10p-seismic-len256-1k-znorm.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k-1k2025-01-20-17-25-16_snum0.bin",
+          // "--queries", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k-1k2025-01-20-17-25-16_snum0.bin",
+          // "--query-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet/sald-128-1m-100k-1k2025-01-20-17-25-16_snum0.bin",
+          "--query-emb-path", "/data/cpanourg/1-dtwrl/results/eval_results/sald/ww_snet64/sald-128-1m-100k-1k2025-05-08-23-16-58_snum0.bin",
+          "--queries-size", "1",
+          "--queue-number", "4",
+          "--topk",
+          "--k-size", "1",
+          // "--knn", // for euclidean (dtwwindowsize=0)
+          // "--timeseries-size", "128",
+          // "--timeseries-size", "256",
+          // "--timeseries-size", "1023",
+          // "--timeseries-size", "255",
+          "--timeseries-size", "128",
+          "--emb-dim", "64",
+          "--results-path", "/data/cpanourg/1-dtwrl/data/sald/test1.csv"
+        ],
+        "stopAtEntry": false,
+        "cwd": "/home/cpanourg/projects/1-dtwrl/lib/paris_plus_and_messidtw-main/bin/",
+        "environment": [ {
+          "name": "LD_LIBRARY_PATH",
+          "value": "/home/cpanourg/projects/1-dtwrl/lib/paris_plus_and_messidtw-main/src/ads/cpp_lib/build"
+        }],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/home/cpanourg/gdb/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "C/C++ Runner: Debug Session",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [],
+        "stopAtEntry": false,
+        "externalConsole": false,
+        "cwd": "/home/cpanourg/projects/1-dtwrl/lib/messi/src/utils",
+        "program": "/home/cpanourg/projects/1-dtwrl/lib/messi/src/utils/build/Debug/outDebug",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }

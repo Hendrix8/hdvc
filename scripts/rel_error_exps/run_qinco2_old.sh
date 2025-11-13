@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==========================================================
-#  Multi-experiment launcher — dynamically calls ${METHOD}.py
+#  Multi-experiment launcher for QINCo2 — dynamically calls QINCo2.py
 # ==========================================================
 
 export OMP_NUM_THREADS=16
@@ -9,8 +9,6 @@ conda activate dtwrl_env2
 
 # ---- Paths ----
 DATA_FP="/data/cpanourg/2-hdvc"
-# DATASET_PATH="${DATA_FP}/data/yandex/deep1b/base.1B.fbin"
-# QUERY_PATH="${DATA_FP}/data/yandex/deep1b/query.public.10K.fbin"
 DATASET_PATH="${DATA_FP}/data/deep1b/dataset/deep1b-96-100m.bin"
 QUERY_PATH="${DATA_FP}/data/deep1b/queries/queries-hard10p-deep1b-len96-1000.bin"
 DATASET_NAME="deep"
@@ -19,16 +17,13 @@ DATA_ROOT="${DATA_FP}"
 RESULTS_DIR="${DATA_FP}/results/relerr"
 
 # ---- Hyperparameter grids ----
-METHODS=("PQ")
-# first hp test : 
-# N_SUBQUANTIZERS_LIST=(4 8 16 32)
-# NBITS_LIST=(8 9 10)
-# TRAIN_SIZES=(10000 100000 1000000)
-
-# second hp test : 
-N_SUBQUANTIZERS_LIST=(8)
-NBITS_LIST=(16 18 20)
-TRAIN_SIZES=(99000000)
+METHODS=("QINCo2")
+# M: Number of codebooks (similar to n_subquantizers)
+M_LIST=(4 8 16 32)
+# K: Codebook size (typically 256 for 8 bits, but can vary)
+K_LIST=(256)
+# Train sizes
+TRAIN_SIZES=(10000 100000 1000000)
 
 SAMPLE_DB=10000
 SAMPLE_QUERIES=1000
@@ -44,13 +39,13 @@ for METHOD in "${METHODS[@]}"; do
     continue
   fi
 
-  for N_SUBQ in "${N_SUBQUANTIZERS_LIST[@]}"; do
-    for NBITS in "${NBITS_LIST[@]}"; do
+  for M in "${M_LIST[@]}"; do
+    for K in "${K_LIST[@]}"; do
       for TRAIN_SIZE in "${TRAIN_SIZES[@]}"; do
 
         echo ""
         echo "--------------------------------------------"
-        echo "Running ${METHOD} | subq=${N_SUBQ}, nbits=${NBITS}, train=${TRAIN_SIZE}"
+        echo "Running ${METHOD} | M=${M}, K=${K}, train=${TRAIN_SIZE}"
         echo "--------------------------------------------"
 
         python3 "${PY_FILE}" \
@@ -59,14 +54,14 @@ for METHOD in "${METHODS[@]}"; do
           --dim ${DIM} \
           --dataset_name "${DATASET_NAME}" \
           --data_root "${DATA_ROOT}" \
-          --n_subquantizers ${N_SUBQ} \
-          --nbits ${NBITS} \
+          --M ${M} \
+          --K ${K} \
           --train_size ${TRAIN_SIZE} \
           --sample_db ${SAMPLE_DB} \
           --sample_queries ${SAMPLE_QUERIES} \
           --results_dir "${RESULTS_DIR}"
 
-        echo "✅ Completed ${METHOD} (${N_SUBQ}x${NBITS}, train=${TRAIN_SIZE})"
+        echo "✅ Completed ${METHOD} (M=${M}, K=${K}, train=${TRAIN_SIZE})"
       done
     done
   done
@@ -74,5 +69,6 @@ done
 
 echo "============================================"
 echo "All ${#METHODS[@]} method experiments completed!"
-echo "Results at: ${DATA_ROOT}/${RESULTS_DIR}/${DATASET_NAME}_adc_vs_exact_eval.csv"
+echo "Results at: ${DATA_ROOT}/${RESULTS_DIR}/${DATASET_NAME}_QINCo2_adc_vs_exact_eval.csv"
 echo "============================================"
+
