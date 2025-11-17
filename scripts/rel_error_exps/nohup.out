@@ -107,3 +107,80 @@ Running PQ | subq=8, nbits=18, train=99000000
 
 CondaError: Run 'conda init' before 'conda activate'
 
+
+CondaError: Run 'conda init' before 'conda activate'
+
+
+--------------------------------------------
+Running PQ | subq=8, nbits=18, train=10000000
+--------------------------------------------
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
+Loaded database shape: (100000000, 96), queries: (1000, 96)
+Final database shape: (100000000, 96), queries: (1000, 96)
+Training on 99000000 samples, testing on 1000000, dim=96
+Training PQ with 8x18 => 144 bits/vector
+✅ PQ trained in 243403.12s
+Encoding database...
+✅ Encoding done in 1590.62s | Codes shape: (1000000, 18)
+Computing distance tables...
+✅ Distance tables computed in 1568.43s
+Mean rel. error: 0.1210, std: 0.0846
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_error_subq8_nbits18_db10k_qr1k.bin
+✅ Completed PQ (8x18, train=99000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=20, train=99000000
+--------------------------------------------
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+WARNING clustering 10000000 points to 262144 centroids: please provide at least 10223616 training points
+📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
+Loaded database shape: (100000000, 96), queries: (1000, 96)
+Final database shape: (100000000, 96), queries: (1000, 96)
+Training on 10000000 samples, testing on 1000000, dim=96
+Training PQ with 8x18 => 144 bits/vector
+✅ PQ trained in 35397.94s
+Encoding database...
+✅ Encoding done in 1737.76s | Codes shape: (1000000, 18)
+Computing distance tables...
+✅ Distance tables computed in 3251.31s
+Mean rel. error: 0.1154, std: 0.0826
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_error_subq8_nbits18_db10k_qr1k.bin
+✅ Completed PQ (8x18, train=10000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=20, train=10000000
+--------------------------------------------
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+WARNING clustering 10000000 points to 1048576 centroids: please provide at least 40894464 training points
+📂 Loading dataset from /data/cpanourg/2-hdvc/data/deep1b/dataset/deep1b-96-100m.bin
+Loaded database shape: (100000000, 96), queries: (1000, 96)
+Final database shape: (100000000, 96), queries: (1000, 96)
+Training on 10000000 samples, testing on 1000000, dim=96
+Training PQ with 8x20 => 160 bits/vector
+✅ PQ trained in 234644.19s
+Encoding database...
+✅ Encoding done in 14448.43s | Codes shape: (1000000, 20)
+Computing distance tables...
+✅ Distance tables computed in 19051.65s
+Mean rel. error: 0.1136, std: 0.0861
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_error_subq8_nbits20_db10k_qr1k.bin
+✅ Completed PQ (8x20, train=10000000)
+============================================
+All 1 method experiments completed!
+Results at: /data/cpanourg/2-hdvc//data/cpanourg/2-hdvc/results/relerr/deep_adc_vs_exact_eval.csv
+============================================
