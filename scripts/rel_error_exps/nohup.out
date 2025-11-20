@@ -184,3 +184,1907 @@ Binary rel. error saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/rel_erro
 All 1 method experiments completed!
 Results at: /data/cpanourg/2-hdvc//data/cpanourg/2-hdvc/results/relerr/deep_adc_vs_exact_eval.csv
 ============================================
+
+CondaError: Run 'conda init' before 'conda activate'
+
+
+--------------------------------------------
+Running PQ | subq=4, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (4x16, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (8x16, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (12x16, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 9, in <module>
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+✅ Completed PQ (16x16, train=100000000)
+============================================
+All 1 method experiments completed!
+Results at: /data/cpanourg/2-hdvc//data/cpanourg/2-hdvc/results/relerr/deep_adc_vs_exact_eval.csv
+============================================
+
+CondaError: Run 'conda init' before 'conda activate'
+
+
+--------------------------------------------
+Running PQ | subq=4, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x4 => 16 bits/vector
+✅ PQ trained in 4.70s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits4_train10000_20251118_122420/pq_model.index
+Encoding database...
+✅ Encoding done in 1.36s | Codes shape: (1000000, 2)
+Computing distance tables...
+✅ Distance tables computed in 0.34s
+⚠️  Warning: 437/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 1.2974, std: 55.9403
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits4_train10000_20251118_122420
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x4 => 16 bits/vector
+✅ PQ trained in 3.66s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits4_train100000_20251118_125614/pq_model.index
+Encoding database...
+✅ Encoding done in 1.15s | Codes shape: (1000000, 2)
+Computing distance tables...
+✅ Distance tables computed in 0.20s
+⚠️  Warning: 22751/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.3401, std: 0.1729
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits4_train100000_20251118_125614
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x4 => 16 bits/vector
+✅ PQ trained in 127.69s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits4_train100000000_20251118_132733/pq_model.index
+Encoding database...
+✅ Encoding done in 1.11s | Codes shape: (1000000, 2)
+Computing distance tables...
+✅ Distance tables computed in 0.28s
+⚠️  Warning: 8824/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.4073, std: 5.6020
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits4_train100000000_20251118_132733
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x8 => 32 bits/vector
+✅ PQ trained in 3.76s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits8_train10000_20251118_141001/pq_model.index
+Encoding database...
+✅ Encoding done in 4.56s | Codes shape: (1000000, 4)
+Computing distance tables...
+✅ Distance tables computed in 4.07s
+Mean rel. error: 0.2274, std: 0.0839
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits8_train10000_20251118_141001
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x8 => 32 bits/vector
+✅ PQ trained in 4.85s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits8_train100000_20251118_144416/pq_model.index
+Encoding database...
+✅ Encoding done in 3.84s | Codes shape: (1000000, 4)
+Computing distance tables...
+✅ Distance tables computed in 2.86s
+Mean rel. error: 0.2373, std: 0.0837
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits8_train100000_20251118_144416
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x8 => 32 bits/vector
+✅ PQ trained in 193.55s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits8_train100000000_20251118_151539/pq_model.index
+Encoding database...
+✅ Encoding done in 5.60s | Codes shape: (1000000, 4)
+Computing distance tables...
+✅ Distance tables computed in 4.02s
+Mean rel. error: 0.2371, std: 0.0840
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits8_train100000000_20251118_151539
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x12 => 48 bits/vector
+✅ PQ trained in 5.45s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits12_train10000_20251118_155515/pq_model.index
+Encoding database...
+✅ Encoding done in 38.24s | Codes shape: (1000000, 6)
+Computing distance tables...
+✅ Distance tables computed in 41.12s
+Mean rel. error: 0.1769, std: 0.2336
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits12_train10000_20251118_155515
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x12 => 48 bits/vector
+✅ PQ trained in 15.93s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits12_train100000_20251118_161656/pq_model.index
+Encoding database...
+✅ Encoding done in 35.65s | Codes shape: (1000000, 6)
+Computing distance tables...
+✅ Distance tables computed in 43.15s
+Mean rel. error: 0.2095, std: 0.1994
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits12_train100000_20251118_161656
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x12 => 48 bits/vector
+✅ PQ trained in 339.08s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits12_train100000000_20251118_165712/pq_model.index
+Encoding database...
+✅ Encoding done in 38.48s | Codes shape: (1000000, 6)
+Computing distance tables...
+✅ Distance tables computed in 47.72s
+Mean rel. error: 0.2176, std: 0.1898
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq4_nbits12_train100000000_20251118_165712
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 4x16 => 64 bits/vector
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 314, in <module>
+    run_pq_eval(**vars(args))
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 130, in run_pq_eval
+    pq.train(train_db)
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/class_wrappers.py", line 150, in replacement_train
+    self.train_c(n, swig_ptr(x))
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/swigfaiss_avx512.py", line 3215, in train
+    return _swigfaiss_avx512.ProductQuantizer_train(self, n, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in void faiss::Clustering::train_encoded(faiss::idx_t, const uint8_t*, const faiss::Index*, faiss::Index&, const float*) at /home/circleci/miniconda/conda-bld/faiss-pkg_1709244517602/work/faiss/Clustering.cpp:261: Error: 'nx >= k' failed: Number of training points (10000) should be at least as large as number of clusters (65536)
+✅ Completed PQ (4x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+run_pq.sh: line 60: 289667 Killed                  python3 "${PY_FILE}" "${CMD_ARGS[@]}"
+✅ Completed PQ (4x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+run_pq.sh: line 60: 461661 Killed                  python3 "${PY_FILE}" "${CMD_ARGS[@]}"
+✅ Completed PQ (4x16, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x4 => 32 bits/vector
+✅ PQ trained in 2.45s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits4_train10000_20251119_022300/pq_model.index
+Encoding database...
+✅ Encoding done in 0.27s | Codes shape: (1000000, 4)
+Computing distance tables...
+✅ Distance tables computed in 0.21s
+⚠️  Warning: 1986/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.3145, std: 3.6986
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits4_train10000_20251119_022300
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x4 => 32 bits/vector
+✅ PQ trained in 5.02s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits4_train100000_20251119_023822/pq_model.index
+Encoding database...
+✅ Encoding done in 0.28s | Codes shape: (1000000, 4)
+Computing distance tables...
+✅ Distance tables computed in 0.24s
+⚠️  Warning: 7322/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.3240, std: 3.0346
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits4_train100000_20251119_023822
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x4 => 32 bits/vector
+✅ PQ trained in 162.22s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits4_train100000000_20251119_030337/pq_model.index
+Encoding database...
+✅ Encoding done in 0.42s | Codes shape: (1000000, 4)
+Computing distance tables...
+✅ Distance tables computed in 0.26s
+Mean rel. error: 0.3043, std: 0.1681
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits4_train100000000_20251119_030337
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x8 => 64 bits/vector
+✅ PQ trained in 6.25s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits8_train10000_20251119_032305/pq_model.index
+Encoding database...
+✅ Encoding done in 2.76s | Codes shape: (1000000, 8)
+Computing distance tables...
+✅ Distance tables computed in 2.53s
+Mean rel. error: 0.1709, std: 0.0729
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits8_train10000_20251119_032305
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x8 => 64 bits/vector
+✅ PQ trained in 8.28s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits8_train100000_20251119_034408/pq_model.index
+Encoding database...
+✅ Encoding done in 3.96s | Codes shape: (1000000, 8)
+Computing distance tables...
+✅ Distance tables computed in 2.68s
+Mean rel. error: 0.1812, std: 0.0725
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits8_train100000_20251119_034408
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x8 => 64 bits/vector
+✅ PQ trained in 167.33s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits8_train100000000_20251119_041146/pq_model.index
+Encoding database...
+✅ Encoding done in 2.84s | Codes shape: (1000000, 8)
+Computing distance tables...
+✅ Distance tables computed in 2.42s
+Mean rel. error: 0.1809, std: 0.0724
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits8_train100000000_20251119_041146
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x12 => 96 bits/vector
+✅ PQ trained in 8.94s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits12_train10000_20251119_043145/pq_model.index
+Encoding database...
+✅ Encoding done in 37.58s | Codes shape: (1000000, 12)
+Computing distance tables...
+✅ Distance tables computed in 48.43s
+Mean rel. error: 0.1759, std: 0.2419
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits12_train10000_20251119_043145
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x12 => 96 bits/vector
+✅ PQ trained in 17.58s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits12_train100000_20251119_045559/pq_model.index
+Encoding database...
+✅ Encoding done in 40.91s | Codes shape: (1000000, 12)
+Computing distance tables...
+✅ Distance tables computed in 46.45s
+Mean rel. error: 0.1792, std: 0.2233
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits12_train100000_20251119_045559
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x12 => 96 bits/vector
+✅ PQ trained in 291.13s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits12_train100000000_20251119_052142/pq_model.index
+Encoding database...
+✅ Encoding done in 48.75s | Codes shape: (1000000, 12)
+Computing distance tables...
+✅ Distance tables computed in 57.49s
+Mean rel. error: 0.1849, std: 0.2042
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits12_train100000000_20251119_052142
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x16 => 128 bits/vector
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 314, in <module>
+    run_pq_eval(**vars(args))
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 130, in run_pq_eval
+    pq.train(train_db)
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/class_wrappers.py", line 150, in replacement_train
+    self.train_c(n, swig_ptr(x))
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/swigfaiss_avx512.py", line 3215, in train
+    return _swigfaiss_avx512.ProductQuantizer_train(self, n, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in void faiss::Clustering::train_encoded(faiss::idx_t, const uint8_t*, const faiss::Index*, faiss::Index&, const float*) at /home/circleci/miniconda/conda-bld/faiss-pkg_1709244517602/work/faiss/Clustering.cpp:261: Error: 'nx >= k' failed: Number of training points (10000) should be at least as large as number of clusters (65536)
+✅ Completed PQ (8x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x16 => 128 bits/vector
+✅ PQ trained in 178.39s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits16_train100000_20251119_060524/pq_model.index
+Encoding database...
+✅ Encoding done in 667.46s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 616.20s
+Mean rel. error: 0.1762, std: 0.2504
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits16_train100000_20251119_060524
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits16_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 8x16 => 128 bits/vector
+✅ PQ trained in 28776.66s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits16_train100000000_20251119_144050/pq_model.index
+Encoding database...
+✅ Encoding done in 719.03s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 1440.55s
+Mean rel. error: 0.1743, std: 0.2322
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq8_nbits16_train100000000_20251119_144050
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits16_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x16, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x4 => 48 bits/vector
+✅ PQ trained in 10.43s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits4_train10000_20251119_153816/pq_model.index
+Encoding database...
+✅ Encoding done in 0.30s | Codes shape: (1000000, 6)
+Computing distance tables...
+✅ Distance tables computed in 0.33s
+⚠️  Warning: 6414/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.2730, std: 0.7060
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits4_train10000_20251119_153816
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x4 => 48 bits/vector
+✅ PQ trained in 4.20s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits4_train100000_20251119_155724/pq_model.index
+Encoding database...
+✅ Encoding done in 0.24s | Codes shape: (1000000, 6)
+Computing distance tables...
+✅ Distance tables computed in 0.31s
+⚠️  Warning: 5682/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.4484, std: 214.0100
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits4_train100000_20251119_155724
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x4 => 48 bits/vector
+✅ PQ trained in 200.87s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits4_train100000000_20251119_161214/pq_model.index
+Encoding database...
+✅ Encoding done in 0.28s | Codes shape: (1000000, 6)
+Computing distance tables...
+✅ Distance tables computed in 0.31s
+⚠️  Warning: 4266/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.2703, std: 0.1801
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits4_train100000000_20251119_161214
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x8 => 96 bits/vector
+✅ PQ trained in 8.36s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits8_train10000_20251119_163006/pq_model.index
+Encoding database...
+✅ Encoding done in 1.54s | Codes shape: (1000000, 12)
+Computing distance tables...
+✅ Distance tables computed in 2.01s
+Mean rel. error: 0.1249, std: 0.0640
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits8_train10000_20251119_163006
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x8 => 96 bits/vector
+✅ PQ trained in 8.71s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits8_train100000_20251119_164212/pq_model.index
+Encoding database...
+✅ Encoding done in 1.29s | Codes shape: (1000000, 12)
+Computing distance tables...
+✅ Distance tables computed in 2.11s
+Mean rel. error: 0.1329, std: 0.0645
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits8_train100000_20251119_164212
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x8 => 96 bits/vector
+✅ PQ trained in 204.76s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits8_train100000000_20251119_170946/pq_model.index
+Encoding database...
+✅ Encoding done in 1.90s | Codes shape: (1000000, 12)
+Computing distance tables...
+✅ Distance tables computed in 2.66s
+Mean rel. error: 0.1324, std: 0.0642
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits8_train100000000_20251119_170946
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x12 => 144 bits/vector
+✅ PQ trained in 12.05s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits12_train10000_20251119_172657/pq_model.index
+Encoding database...
+✅ Encoding done in 31.02s | Codes shape: (1000000, 18)
+Computing distance tables...
+✅ Distance tables computed in 52.98s
+Mean rel. error: 0.1779, std: 0.2565
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits12_train10000_20251119_172657
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x12 => 144 bits/vector
+✅ PQ trained in 24.22s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits12_train100000_20251119_174806/pq_model.index
+Encoding database...
+✅ Encoding done in 22.72s | Codes shape: (1000000, 18)
+Computing distance tables...
+✅ Distance tables computed in 55.27s
+Mean rel. error: 0.1717, std: 0.2435
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits12_train100000_20251119_174806
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x12 => 144 bits/vector
+✅ PQ trained in 324.42s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits12_train100000000_20251119_181315/pq_model.index
+Encoding database...
+✅ Encoding done in 22.07s | Codes shape: (1000000, 18)
+Computing distance tables...
+✅ Distance tables computed in 49.55s
+Mean rel. error: 0.1716, std: 0.2307
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits12_train100000000_20251119_181315
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x16 => 192 bits/vector
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 314, in <module>
+    run_pq_eval(**vars(args))
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 130, in run_pq_eval
+    pq.train(train_db)
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/class_wrappers.py", line 150, in replacement_train
+    self.train_c(n, swig_ptr(x))
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/swigfaiss_avx512.py", line 3215, in train
+    return _swigfaiss_avx512.ProductQuantizer_train(self, n, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in void faiss::Clustering::train_encoded(faiss::idx_t, const uint8_t*, const faiss::Index*, faiss::Index&, const float*) at /home/circleci/miniconda/conda-bld/faiss-pkg_1709244517602/work/faiss/Clustering.cpp:261: Error: 'nx >= k' failed: Number of training points (10000) should be at least as large as number of clusters (65536)
+✅ Completed PQ (12x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x16 => 192 bits/vector
+✅ PQ trained in 165.21s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits16_train100000_20251119_184544/pq_model.index
+Encoding database...
+✅ Encoding done in 505.47s | Codes shape: (1000000, 24)
+Computing distance tables...
+✅ Distance tables computed in 665.45s
+Mean rel. error: 0.1763, std: 0.2497
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits16_train100000_20251119_184544
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits16_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=12, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 12x16 => 192 bits/vector
+✅ PQ trained in 27418.05s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits16_train100000000_20251120_025725/pq_model.index
+Encoding database...
+✅ Encoding done in 585.45s | Codes shape: (1000000, 24)
+Computing distance tables...
+✅ Distance tables computed in 1299.88s
+Mean rel. error: 0.1762, std: 0.2611
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq12_nbits16_train100000000_20251120_025725
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq12_nbits16_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (12x16, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=4, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x4 => 64 bits/vector
+✅ PQ trained in 14.89s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits4_train10000_20251120_035313/pq_model.index
+Encoding database...
+✅ Encoding done in 0.95s | Codes shape: (1000000, 8)
+Computing distance tables...
+✅ Distance tables computed in 0.23s
+⚠️  Warning: 3241/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.2444, std: 0.1941
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits4_train10000_20251120_035313
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x4, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=4, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x4 => 64 bits/vector
+✅ PQ trained in 14.06s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits4_train100000_20251120_042452/pq_model.index
+Encoding database...
+✅ Encoding done in 0.96s | Codes shape: (1000000, 8)
+Computing distance tables...
+✅ Distance tables computed in 0.33s
+⚠️  Warning: 5160/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 1.9996, std: 1190.3484
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits4_train100000_20251120_042452
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x4, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=4, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x4 => 64 bits/vector
+✅ PQ trained in 449.39s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits4_train100000000_20251120_045518/pq_model.index
+Encoding database...
+✅ Encoding done in 1.00s | Codes shape: (1000000, 8)
+Computing distance tables...
+✅ Distance tables computed in 0.43s
+⚠️  Warning: 5316/10000000 relative errors were invalid (inf/nan) and excluded
+Mean rel. error: 0.3628, std: 207.2557
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits4_train100000000_20251120_045518
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits4_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x4, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=8, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x8 => 128 bits/vector
+✅ PQ trained in 12.51s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits8_train10000_20251120_051504/pq_model.index
+Encoding database...
+✅ Encoding done in 12.95s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 3.65s
+Mean rel. error: 0.0915, std: 0.0539
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits8_train10000_20251120_051504
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x8, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=8, train=100000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x8 => 128 bits/vector
+✅ PQ trained in 15.02s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits8_train100000_20251120_054034/pq_model.index
+Encoding database...
+✅ Encoding done in 12.09s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 3.18s
+Mean rel. error: 0.0958, std: 0.0544
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits8_train100000_20251120_054034
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x8, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=8, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x8 => 128 bits/vector
+✅ PQ trained in 307.10s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits8_train100000000_20251120_060624/pq_model.index
+Encoding database...
+✅ Encoding done in 10.72s | Codes shape: (1000000, 16)
+Computing distance tables...
+✅ Distance tables computed in 2.98s
+Mean rel. error: 0.0956, std: 0.0545
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits8_train100000000_20251120_060624
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits8_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x8, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=12, train=10000 [TRAINING]
+--------------------------------------------
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 10000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x12 => 192 bits/vector
+✅ PQ trained in 11.94s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits12_train10000_20251120_063707/pq_model.index
+Encoding database...
+✅ Encoding done in 154.32s | Codes shape: (1000000, 24)
+Computing distance tables...
+✅ Distance tables computed in 60.01s
+Mean rel. error: 0.1784, std: 0.2557
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits12_train10000_20251120_063707
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x12, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=12, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+WARNING clustering 100000 points to 4096 centroids: please provide at least 159744 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x12 => 192 bits/vector
+✅ PQ trained in 27.98s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits12_train100000_20251120_070052/pq_model.index
+Encoding database...
+✅ Encoding done in 168.47s | Codes shape: (1000000, 24)
+Computing distance tables...
+✅ Distance tables computed in 65.13s
+Mean rel. error: 0.1770, std: 0.2648
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits12_train100000_20251120_070052
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x12, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=12, train=100000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+⚠️  Training data has only 100000000 samples, using all of them
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x12 => 192 bits/vector
+✅ PQ trained in 385.62s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits12_train100000000_20251120_073515/pq_model.index
+Encoding database...
+✅ Encoding done in 137.07s | Codes shape: (1000000, 24)
+Computing distance tables...
+✅ Distance tables computed in 56.57s
+Mean rel. error: 0.1771, std: 0.2586
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits12_train100000000_20251120_073515
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits12_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x12, train=100000000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=16, train=10000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 10000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x16 => 256 bits/vector
+Traceback (most recent call last):
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 314, in <module>
+    run_pq_eval(**vars(args))
+  File "/home/cpanourg/projects/2-hdvc/scripts/rel_error_exps/PQ.py", line 130, in run_pq_eval
+    pq.train(train_db)
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/class_wrappers.py", line 150, in replacement_train
+    self.train_c(n, swig_ptr(x))
+  File "/home/cpanourg/.miniconda3/envs/dtwrl_env2/lib/python3.11/site-packages/faiss/swigfaiss_avx512.py", line 3215, in train
+    return _swigfaiss_avx512.ProductQuantizer_train(self, n, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in void faiss::Clustering::train_encoded(faiss::idx_t, const uint8_t*, const faiss::Index*, faiss::Index&, const float*) at /home/circleci/miniconda/conda-bld/faiss-pkg_1709244517602/work/faiss/Clustering.cpp:261: Error: 'nx >= k' failed: Number of training points (10000) should be at least as large as number of clusters (65536)
+✅ Completed PQ (16x16, train=10000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=16, train=100000 [TRAINING]
+--------------------------------------------
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+WARNING clustering 100000 points to 65536 centroids: please provide at least 2555904 training points
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin
+Loaded database shape: (1000000, 96)
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin
+Loaded training data shape: (100000000, 96)
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Loaded queries shape: (10000, 96)
+Final database shape: (1000000, 96)
+Final training data shape: (100000000, 96)
+Final queries shape: (10000, 96)
+✅ Using three separate files: train_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin, test_db from /data/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin, queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin
+Training on 100000 samples from train_db, testing on 1000000 samples from db, queries: 10000, dim=96
+Training PQ with 16x16 => 256 bits/vector
+✅ PQ trained in 248.85s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits16_train100000_20251120_082108/pq_model.index
+Encoding database...
+✅ Encoding done in 2622.75s | Codes shape: (1000000, 32)
+Computing distance tables...
+✅ Distance tables computed in 1322.54s
+Mean rel. error: 0.1770, std: 0.2515
+✅ Results appended to /data/cpanourg/2-hdvc/results/relerr/deep_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /data/cpanourg/2-hdvc/results/relerr/pq/deep/subq16_nbits16_train100000_20251120_082108
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq16_nbits16_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (16x16, train=100000)
+
+--------------------------------------------
+Running PQ | subq=16, nbits=16, train=100000000 [TRAINING]
+--------------------------------------------
