@@ -1504,3 +1504,20 @@ def ensure_dir(path):
     """Create directory if it doesn't exist."""
     Path(path).mkdir(parents=True, exist_ok=True)
 
+
+def divisors(n: int) -> list[int]:
+    if n <= 0:
+        raise ValueError("n must be a positive integer")
+
+    small, large = [], []
+    d = 1
+    while d * d <= n:
+        if n % d == 0:
+            small.append(d)
+            other = n // d
+            if other != d:
+                large.append(other)
+        d += 1
+
+    return small + large[::-1]  # sorted
+

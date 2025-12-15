@@ -4114,3 +4114,384 @@ Mean rel. error: 0.1448, std: 0.1249
 All 1 method experiments completed!
 Results at: /mnthdd/cpanourg/2-hdvc//mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_adc_vs_exact_eval.csv
 ============================================
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+
+--------------------------------------------
+Running PQ | subq=1, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 1x10 => 10 bits/vector
+✅ PQ trained in 2.48s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq1_nbits10_train1000000_20251215_175106/pq_model.index
+Encoding database...
+✅ Encoding done in 0.14s | Codes shape: (183514, 2)
+Computing distance tables...
+✅ Distance tables computed in 4.13s
+Mean rel. error: 0.3603, std: 0.1816
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq1_nbits10_train1000000_20251215_175106
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq1_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (1x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=2, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 2x10 => 20 bits/vector
+✅ PQ trained in 3.00s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq2_nbits10_train1000000_20251215_175119/pq_model.index
+Encoding database...
+✅ Encoding done in 0.26s | Codes shape: (183514, 3)
+Computing distance tables...
+✅ Distance tables computed in 4.10s
+Mean rel. error: 0.3643, std: 0.1745
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq2_nbits10_train1000000_20251215_175119
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq2_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (2x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=4, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 4x10 => 40 bits/vector
+✅ PQ trained in 3.82s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq4_nbits10_train1000000_20251215_175132/pq_model.index
+Encoding database...
+✅ Encoding done in 0.49s | Codes shape: (183514, 5)
+Computing distance tables...
+✅ Distance tables computed in 4.28s
+Mean rel. error: 0.3948, std: 0.1489
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq4_nbits10_train1000000_20251215_175132
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq4_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (4x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=5, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 5x10 => 50 bits/vector
+✅ PQ trained in 3.75s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq5_nbits10_train1000000_20251215_175145/pq_model.index
+Encoding database...
+✅ Encoding done in 0.54s | Codes shape: (183514, 7)
+Computing distance tables...
+✅ Distance tables computed in 4.34s
+Mean rel. error: 0.3900, std: 0.1434
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq5_nbits10_train1000000_20251215_175145
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq5_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (5x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=8, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 8x10 => 80 bits/vector
+✅ PQ trained in 3.87s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq8_nbits10_train1000000_20251215_175159/pq_model.index
+Encoding database...
+✅ Encoding done in 0.93s | Codes shape: (183514, 10)
+Computing distance tables...
+✅ Distance tables computed in 4.54s
+Mean rel. error: 0.3732, std: 0.1297
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq8_nbits10_train1000000_20251215_175159
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq8_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (8x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=10, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 10x10 => 100 bits/vector
+✅ PQ trained in 4.66s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq10_nbits10_train1000000_20251215_175214/pq_model.index
+Encoding database...
+✅ Encoding done in 1.10s | Codes shape: (183514, 13)
+Computing distance tables...
+✅ Distance tables computed in 4.73s
+Mean rel. error: 0.3465, std: 0.1295
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq10_nbits10_train1000000_20251215_175214
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq10_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (10x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=20, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 20x10 => 200 bits/vector
+✅ PQ trained in 6.06s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq20_nbits10_train1000000_20251215_175231/pq_model.index
+Encoding database...
+✅ Encoding done in 1.11s | Codes shape: (183514, 25)
+Computing distance tables...
+✅ Distance tables computed in 5.49s
+Mean rel. error: 0.2242, std: 0.1258
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq20_nbits10_train1000000_20251215_175231
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq20_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (20x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=25, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 25x10 => 250 bits/vector
+✅ PQ trained in 7.09s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq25_nbits10_train1000000_20251215_175249/pq_model.index
+Encoding database...
+✅ Encoding done in 0.20s | Codes shape: (183514, 32)
+Computing distance tables...
+✅ Distance tables computed in 5.92s
+Mean rel. error: 0.1811, std: 0.1201
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq25_nbits10_train1000000_20251215_175249
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq25_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (25x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=40, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 40x10 => 400 bits/vector
+✅ PQ trained in 10.37s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq40_nbits10_train1000000_20251215_175311/pq_model.index
+Encoding database...
+✅ Encoding done in 2.28s | Codes shape: (183514, 50)
+Computing distance tables...
+✅ Distance tables computed in 6.90s
+Mean rel. error: 0.1448, std: 0.1249
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq40_nbits10_train1000000_20251215_175311
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq40_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (40x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=50, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 50x10 => 500 bits/vector
+✅ PQ trained in 12.18s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq50_nbits10_train1000000_20251215_175337/pq_model.index
+Encoding database...
+✅ Encoding done in 0.24s | Codes shape: (183514, 63)
+Computing distance tables...
+✅ Distance tables computed in 7.78s
+Mean rel. error: 0.1604, std: 0.1424
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq50_nbits10_train1000000_20251215_175337
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq50_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (50x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=100, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 100x10 => 1000 bits/vector
+✅ PQ trained in 24.35s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq100_nbits10_train1000000_20251215_175414/pq_model.index
+Encoding database...
+✅ Encoding done in 0.24s | Codes shape: (183514, 125)
+Computing distance tables...
+✅ Distance tables computed in 10.28s
+Mean rel. error: 0.1513, std: 0.1277
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq100_nbits10_train1000000_20251215_175414
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq100_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (100x10, train=1000000)
+
+--------------------------------------------
+Running PQ | subq=200, nbits=10, train=1000000 [TRAINING]
+--------------------------------------------
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin
+Loaded database shape: (183514, 200)
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin
+Loaded training data shape: (1000000, 200)
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Loaded queries shape: (10000, 200)
+⚠️  Training data has only 1000000 samples, using all of them
+✅ Using three separate files: train_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/train.bin, test_db from /mnthdd/cpanourg/2-hdvc/data/glove/splits/test.bin, queries from /mnthdd/cpanourg/2-hdvc/data/glove/splits/queries.bin
+Final database shape: (183514, 200)
+Final training data shape: (1000000, 200)
+Final queries shape: (10000, 200)
+Training on 1000000 samples from train_db, testing on 183514 samples from db, queries: 10000, dim=200
+Training PQ with 200x10 => 2000 bits/vector
+✅ PQ trained in 45.48s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq200_nbits10_train1000000_20251215_175515/pq_model.index
+Encoding database...
+✅ Encoding done in 3.05s | Codes shape: (183514, 250)
+Computing distance tables...
+✅ Distance tables computed in 9.21s
+Mean rel. error: 0.1606, std: 0.1199
+✅ Results appended to /mnthdd/cpanourg/2-hdvc/results/relerr/glove_200d_PQ_adc_vs_exact_eval.csv
+✅ Run-specific results saved to /mnthdd/cpanourg/2-hdvc/results/relerr/pq/glove_200d/subq200_nbits10_train1000000_20251215_175515
+   - PQ model: pq_model.index
+   - Binary rel. error: rel_error_subq200_nbits10_db10k_qr1k.bin
+   - Summary CSV: summary.csv
+✅ Completed PQ (200x10, train=1000000)
+run_pq.sh: line 130: unexpected EOF while looking for matching `"'
+run_pq.sh: line 131: syntax error: unexpected end of file
