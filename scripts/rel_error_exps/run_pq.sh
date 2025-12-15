@@ -8,27 +8,37 @@ export MKL_NUM_THREADS=16
 conda activate dtwrl_env2
 
 # ---- Paths ----
-DATA_FP="/data/cpanourg/2-hdvc"
+DATA_FP="/mnthdd/cpanourg/2-hdvc"
 # Three separate files required: database (db), training (train_db), and queries (qr)
-DATASET_PATH="${DATA_FP}/data/deep1b/dataset/test_1m.bin"  # Database/test data
-TRAIN_PATH="${DATA_FP}/data/deep1b/dataset/learn_100m.bin"  # Training data (required)
-QUERY_PATH="${DATA_FP}/data/deep1b/dataset/query_10k.bin"  # Query data (required)
-DATASET_NAME="deep"
-DIM=96
+# DATASET_PATH="${DATA_FP}/data/deep1b/dataset/test_1m.bin"  # Database/test data dim = 96
+# TRAIN_PATH="${DATA_FP}/data/deep1b/dataset/learn_100m.bin"  # Training data (required)
+# QUERY_PATH="${DATA_FP}/data/deep1b/dataset/query_10k.bin"  # Query data (required)
+
+# DATASET_PATH="${DATA_FP}/data/gist/gist_base.fvecs"  # Database/test data dim = 960
+# TRAIN_PATH="${DATA_FP}/data/gist/gist_learn.fvecs"  # Training data (required)
+# QUERY_PATH="${DATA_FP}/data/gist/gist_query.fvecs"  # Query data (required)
+
+DATASET_PATH="${DATA_FP}/data/glove/splits/test.bin"  # Database/test data dim=200
+TRAIN_PATH="${DATA_FP}/data/glove/splits/train.bin"  # Training data (required)
+QUERY_PATH="${DATA_FP}/data/glove/splits/queries.bin"  # Query data (required)
+
+
+DATASET_NAME="glove_200d"
+DIM=200
 DATA_ROOT="${DATA_FP}"
 RESULTS_DIR="${DATA_FP}/results/relerr"
 
 # ---- Hyperparameter grids ----
 METHODS=("PQ")
-# first hp test : 
+# archived hp test : 
 # N_SUBQUANTIZERS_LIST=(4 8 16 32)
 # NBITS_LIST=(8 9 10)
 # TRAIN_SIZES=(10000 100000 1000000)
 
-# second hp test : 
-N_SUBQUANTIZERS_LIST=(16)
-NBITS_LIST=(16)
-TRAIN_SIZES=(10000 100000 100000000)
+#hp test : 
+N_SUBQUANTIZERS_LIST=(8 40)
+NBITS_LIST=(4 5 6 7 9 10)
+TRAIN_SIZES=(1000000)
 
 SAMPLE_DB=10000
 SAMPLE_QUERIES=1000

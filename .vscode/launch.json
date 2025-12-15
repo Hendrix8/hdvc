@@ -1,6 +1,33 @@
 {
     "configurations": [
     
+      {
+        "name": "PQ Debug",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/scripts/rel_error_exps/PQ.py",
+        "args": [
+          "--dataset_path", "/mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/test_1m.bin",
+          "--train_path", "/mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/learn_100m.bin",
+          "--query_path", "/mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/query_10k.bin",
+          "--dim", "96",
+          "--dataset_name", "deep",
+          "--data_root", "/mnthdd/cpanourg/2-hdvc",
+          "--n_subquantizers", "4",
+          "--nbits", "8",
+          "--train_size", "100000",
+          "--sample_db", "10000",
+          "--sample_queries", "10000",
+          "--results_dir", "/mnthdd/cpanourg/2-hdvc/results/relerr"
+        ],
+        "python": "/home/cpanourg/.conda/envs/dtwrl_env2/bin/python",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "env": {
+          "OMP_NUM_THREADS": "16",
+          "MKL_NUM_THREADS": "16"
+        }
+      },
   
           {
         "name": "Chronos Train (tsfm)",

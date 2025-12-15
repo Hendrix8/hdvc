@@ -69,10 +69,6 @@ def run_pq_eval(
     qr, _ = load_dataset(query_path, None, dim, db_chunk_size=None, qr_chunk_size=sample_queries)
     print(f"Loaded queries shape: {qr.shape}")
 
-    # Data is already clean, no cleaning needed
-    print(f"Final database shape: {db.shape}")
-    print(f"Final training data shape: {train_db_full.shape}")
-    print(f"Final queries shape: {qr.shape}")
 
     # --- Prepare train/test sets ---
     # We have three separate files: db (database/test), train_db (training), qr (queries)
@@ -85,13 +81,18 @@ def run_pq_eval(
     else:
         train_db = train_db_full
         print(f"⚠️  Training data has only {len(train_db)} samples, using all of them")
+        train_size = len(train_db)
     
     # Use database (db) as test set - take first test_size samples
     test_size = min(1_000_000, len(db))
     test_db = db[:test_size]
     
     print(f"✅ Using three separate files: train_db from {train_path}, test_db from {dataset_path}, queries from {query_path}")
-    
+        # Data is already clean, no cleaning needed
+    print(f"Final database shape: {db.shape}")
+    print(f"Final training data shape: {train_db.shape}")
+    print(f"Final queries shape: {qr.shape}")
+
     nb, nq, dim = test_db.shape[0], qr.shape[0], test_db.shape[1]
     print(f"Training on {len(train_db)} samples from train_db, testing on {nb} samples from db, queries: {nq}, dim={dim}")
 

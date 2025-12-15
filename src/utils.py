@@ -1244,7 +1244,8 @@ def compute_distance_tables_vectorized(queries, centroids, n_subquantizers, ksub
     """Optimized vectorized distance table computation"""
     nq = queries.shape[0]
     subvec_dim = dim // n_subquantizers
-    dis_tables = np.zeros((nq, n_subquantizers, ksub), dtype=np.float32)
+    # dis_tables = np.zeros((nq, n_subquantizers, ksub), dtype=np.float32)
+    dis_tables = np.full((nq, n_subquantizers, ksub), np.nan).astype(np.float32)
     
     for j in range(n_subquantizers):
         start_idx = j * subvec_dim
@@ -1305,22 +1306,28 @@ def adc_distances_single_query_numba(dis_table_q, codes, n_subquantizers):
     
     return distances
 
+# Helper function for threaded computation (defined at module level to avoid redefinition)
+def _compute_chunk_distance_tables(queries_slice, centroids, n_subquantizers, ksub, dim):
+    """Helper function for computing distance tables on a chunk of queries"""
+    return compute_distance_tables_vectorized(
+        queries_slice, centroids, n_subquantizers, ksub, dim
+    )
+
 # OPTIMIZATION 3: Threaded distance table computation for very large query sets
 def compute_distance_tables_threaded(queries, centroids, n_subquantizers, ksub, dim, n_threads=4):
     """Multi-threaded distance table computation"""
     nq = queries.shape[0]
     chunk_size = (nq + n_threads - 1) // n_threads
     
-    def compute_chunk(start_idx, end_idx):
-        return compute_distance_tables_vectorized(
-            queries[start_idx:end_idx], centroids, n_subquantizers, ksub, dim
-        )
-    
     with ThreadPoolExecutor(max_workers=n_threads) as executor:
         futures = []
         for i in range(0, nq, chunk_size):
             end_idx = min(i + chunk_size, nq)
-            futures.append(executor.submit(compute_chunk, i, end_idx))
+            queries_slice = queries[i:end_idx]
+            futures.append(executor.submit(
+                _compute_chunk_distance_tables, 
+                queries_slice, centroids, n_subquantizers, ksub, dim
+            ))
         
         results = [future.result() for future in futures]
     
