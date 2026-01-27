@@ -1,0 +1,480 @@
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 2x4 => 8 bits/vector
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 1x4 => 4 bits/vector
+✅ PQ trained in 31.9028s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq2_nbits4_train1000000_20260122_090958/pq_model.index
+Encoding database...
+✅ Encoding done in 1.05101s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.0705107s
+Computing ADC distances...
+✅ ADC distances computed in 0.119087s
+Computing exact distances...
+✅ Exact distances computed in 0.674159s
+Mean rel. error: 0.365886, std: 0.100274
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq2_nbits4_train1000000_20260122_091000"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 4x4 => 16 bits/vector
+✅ PQ trained in 19.8656s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq1_nbits4_train1000000_20260122_091016/pq_model.index
+Encoding database...
+✅ Encoding done in 0.722199s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.0519352s
+Computing ADC distances...
+✅ ADC distances computed in 0.0927316s
+Computing exact distances...
+✅ Exact distances computed in 0.711826s
+Mean rel. error: 0.377059, std: 0.110243
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq1_nbits4_train1000000_20260122_091017"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 3x4 => 12 bits/vector
+✅ PQ trained in 64.7997s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq4_nbits4_train1000000_20260122_091107/pq_model.index
+Encoding database...
+✅ PQ trained in 47.6422s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq3_nbits4_train1000000_20260122_091107/pq_model.index
+Encoding database...
+✅ Encoding done in 1.92473s | Codes shape: 1000000 x 2
+Computing distance tables...
+✅ Distance tables computed in 0.180496s
+Computing ADC distances...
+✅ Encoding done in 2.3334s | Codes shape: 1000000 x 2
+Computing distance tables...
+✅ ADC distances computed in 0.127927s
+Computing exact distances...
+✅ Distance tables computed in 0.11765s
+Computing ADC distances...
+✅ ADC distances computed in 0.111351s
+Computing exact distances...
+✅ Exact distances computed in 0.724067s
+✅ Exact distances computed in 0.65871s
+Mean rel. error: 0.352977, std: 0.096824
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq3_nbits4_train1000000_20260122_091110"
+Mean rel. error: 0.342392, std: 0.0932437
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq4_nbits4_train1000000_20260122_091110"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 6x4 => 24 bits/vector
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 8x4 => 32 bits/vector
+✅ PQ trained in 94.2045s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq6_nbits4_train1000000_20260122_091247/pq_model.index
+Encoding database...
+✅ Encoding done in 2.64895s | Codes shape: 1000000 x 3
+Computing distance tables...
+✅ Distance tables computed in 0.129778s
+Computing ADC distances...
+✅ ADC distances computed in 0.145475s
+Computing exact distances...
+✅ Exact distances computed in 0.693111s
+Mean rel. error: 0.320574, std: 0.0877193
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq6_nbits4_train1000000_20260122_091250"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 12x4 => 48 bits/vector
+✅ PQ trained in 123.213s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq8_nbits4_train1000000_20260122_091316/pq_model.index
+Encoding database...
+✅ Encoding done in 0.533752s | Codes shape: 1000000 x 4
+Computing distance tables...
+✅ Distance tables computed in 0.00914504s
+Computing ADC distances...
+✅ ADC distances computed in 0.184011s
+Computing exact distances...
+✅ Exact distances computed in 0.658377s
+Mean rel. error: 0.298953, std: 0.0836078
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq8_nbits4_train1000000_20260122_091317"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 16x4 => 64 bits/vector
+✅ PQ trained in 178.765s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq12_nbits4_train1000000_20260122_091552/pq_model.index
+Encoding database...
+✅ Encoding done in 0.661297s | Codes shape: 1000000 x 6
+Computing distance tables...
+✅ Distance tables computed in 0.00843189s
+Computing ADC distances...
+✅ ADC distances computed in 0.33881s
+Computing exact distances...
+✅ Exact distances computed in 0.657105s
+Mean rel. error: 0.257354, std: 0.0787742
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq12_nbits4_train1000000_20260122_091553"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 24x4 => 96 bits/vector
+✅ PQ trained in 243.945s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq16_nbits4_train1000000_20260122_091723/pq_model.index
+Encoding database...
+✅ Encoding done in 0.58393s | Codes shape: 1000000 x 8
+Computing distance tables...
+✅ Distance tables computed in 0.00830196s
+Computing ADC distances...
+✅ ADC distances computed in 0.308548s
+Computing exact distances...
+✅ Exact distances computed in 0.640273s
+Mean rel. error: 0.219779, std: 0.0755407
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq16_nbits4_train1000000_20260122_091725"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 32x4 => 128 bits/vector
+✅ PQ trained in 355.677s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq24_nbits4_train1000000_20260122_092151/pq_model.index
+Encoding database...
+✅ Encoding done in 0.624316s | Codes shape: 1000000 x 12
+Computing distance tables...
+✅ Distance tables computed in 0.00968771s
+Computing ADC distances...
+✅ ADC distances computed in 0.542497s
+Computing exact distances...
+✅ Exact distances computed in 0.653114s
+Mean rel. error: 0.156664, std: 0.0672562
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq24_nbits4_train1000000_20260122_092153"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 48x4 => 192 bits/vector
+✅ PQ trained in 474.554s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq32_nbits4_train1000000_20260122_092521/pq_model.index
+Encoding database...
+✅ Encoding done in 0.909127s | Codes shape: 1000000 x 16
+Computing distance tables...
+✅ Distance tables computed in 0.0172167s
+Computing ADC distances...
+✅ ADC distances computed in 0.704703s
+Computing exact distances...
+✅ Exact distances computed in 0.659912s
+Mean rel. error: 0.110543, std: 0.0587314
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq32_nbits4_train1000000_20260122_092524"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 96x4 => 384 bits/vector
+✅ PQ trained in 710.789s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq48_nbits4_train1000000_20260122_093346/pq_model.index
+Encoding database...
+✅ Encoding done in 0.698824s | Codes shape: 1000000 x 24
+Computing distance tables...
+✅ Distance tables computed in 0.0129373s
+Computing ADC distances...
+✅ ADC distances computed in 0.952525s
+Computing exact distances...
+✅ Exact distances computed in 0.678589s
+Mean rel. error: 0.0578524, std: 0.039789
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq48_nbits4_train1000000_20260122_093349"
+✅ PQ trained in 1380.12s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq96_nbits4_train1000000_20260122_094825/pq_model.index
+Encoding database...
+✅ Encoding done in 0.990269s | Codes shape: 1000000 x 48
+Computing distance tables...
+✅ Distance tables computed in 0.0085476s
+Computing ADC distances...
+✅ ADC distances computed in 1.79733s
+Computing exact distances...
+✅ Exact distances computed in 0.655907s
+Mean rel. error: 0.018239, std: 0.0146367
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq96_nbits4_train1000000_20260122_094829"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 1x8 => 8 bits/vector
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 2x8 => 16 bits/vector
+✅ PQ trained in 691.492s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq1_nbits8_train1000000_20260122_104311/pq_model.index
+Encoding database...
+✅ Encoding done in 1.40291s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.135283s
+Computing ADC distances...
+✅ ADC distances computed in 0.0628219s
+Computing exact distances...
+✅ Exact distances computed in 0.859869s
+Mean rel. error: 0.280651, std: 0.103311
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq1_nbits8_train1000000_20260122_104314"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 3x8 => 24 bits/vector
+✅ PQ trained in 1434.93s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq2_nbits8_train1000000_20260122_105555/pq_model.index
+Encoding database...
+✅ Encoding done in 2.05574s | Codes shape: 1000000 x 2
+Computing distance tables...
+✅ Distance tables computed in 0.251831s
+Computing ADC distances...
+✅ ADC distances computed in 0.0916741s
+Computing exact distances...
+✅ Exact distances computed in 0.97195s
+Mean rel. error: 0.267283, std: 0.0944102
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq2_nbits8_train1000000_20260122_105559"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 4x8 => 32 bits/vector
+✅ PQ trained in 2157.63s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq3_nbits8_train1000000_20260122_111915/pq_model.index
+Encoding database...
+✅ Encoding done in 2.78761s | Codes shape: 1000000 x 3
+Computing distance tables...
+✅ Distance tables computed in 0.274793s
+Computing ADC distances...
+✅ ADC distances computed in 0.0789536s
+Computing exact distances...
+✅ Exact distances computed in 0.857004s
+Mean rel. error: 0.253596, std: 0.0884654
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq3_nbits8_train1000000_20260122_111919"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 6x8 => 48 bits/vector
+✅ PQ trained in 2857.1s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq4_nbits8_train1000000_20260122_114339/pq_model.index
+Encoding database...
+✅ Encoding done in 2.78811s | Codes shape: 1000000 x 4
+Computing distance tables...
+✅ Distance tables computed in 0.273505s
+Computing ADC distances...
+✅ ADC distances computed in 0.107341s
+Computing exact distances...
+✅ Exact distances computed in 0.829259s
+Mean rel. error: 0.239578, std: 0.0839462
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq4_nbits8_train1000000_20260122_114343"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 8x8 => 64 bits/vector
+✅ PQ trained in 3762.58s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq6_nbits8_train1000000_20260122_122205/pq_model.index
+Encoding database...
+✅ Encoding done in 3.96739s | Codes shape: 1000000 x 6
+Computing distance tables...
+✅ Distance tables computed in 0.332904s
+Computing ADC distances...
+✅ ADC distances computed in 0.109073s
+Computing exact distances...
+✅ Exact distances computed in 0.675932s
+Mean rel. error: 0.211596, std: 0.0775642
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq6_nbits8_train1000000_20260122_122211"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 12x8 => 96 bits/vector
+✅ PQ trained in 2431.87s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq8_nbits8_train1000000_20260122_122418/pq_model.index
+Encoding database...
+✅ Encoding done in 3.50758s | Codes shape: 1000000 x 8
+Computing distance tables...
+✅ Distance tables computed in 0.0159463s
+Computing ADC distances...
+✅ ADC distances computed in 0.0864405s
+Computing exact distances...
+✅ Exact distances computed in 0.653448s
+Mean rel. error: 0.183767, std: 0.0724774
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq8_nbits8_train1000000_20260122_122422"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 16x8 => 128 bits/vector
+✅ PQ trained in 2256.99s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq12_nbits8_train1000000_20260122_125950/pq_model.index
+Encoding database...
+✅ Encoding done in 3.46858s | Codes shape: 1000000 x 12
+Computing distance tables...
+✅ Distance tables computed in 0.0159718s
+Computing ADC distances...
+✅ ADC distances computed in 0.113178s
+Computing exact distances...
+✅ Exact distances computed in 0.646062s
+Mean rel. error: 0.135295, std: 0.0642641
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq12_nbits8_train1000000_20260122_125954"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 24x8 => 192 bits/vector
+✅ PQ trained in 2872.93s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq16_nbits8_train1000000_20260122_131217/pq_model.index
+Encoding database...
+✅ Encoding done in 3.38334s | Codes shape: 1000000 x 16
+Computing distance tables...
+✅ Distance tables computed in 0.0162338s
+Computing ADC distances...
+✅ ADC distances computed in 0.14976s
+Computing exact distances...
+✅ Exact distances computed in 0.662593s
+Mean rel. error: 0.0972065, std: 0.0545699
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq16_nbits8_train1000000_20260122_131221"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 32x8 => 256 bits/vector
+✅ PQ trained in 3883.09s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq24_nbits8_train1000000_20260122_140439/pq_model.index
+Encoding database...
+✅ Encoding done in 3.65477s | Codes shape: 1000000 x 24
+Computing distance tables...
+✅ Distance tables computed in 0.0279254s
+Computing ADC distances...
+✅ ADC distances computed in 0.225695s
+Computing exact distances...
+✅ Exact distances computed in 0.678792s
+Mean rel. error: 0.0519564, std: 0.0356038
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq24_nbits8_train1000000_20260122_140444"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 48x8 => 384 bits/vector
+✅ PQ trained in 5090.08s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq32_nbits8_train1000000_20260122_143713/pq_model.index
+Encoding database...
+✅ Encoding done in 3.84698s | Codes shape: 1000000 x 32
+Computing distance tables...
+✅ Distance tables computed in 0.0278442s
+Computing ADC distances...
+✅ ADC distances computed in 0.300074s
+Computing exact distances...
+✅ Exact distances computed in 0.664519s
+Mean rel. error: 0.0304117, std: 0.0227305
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq32_nbits8_train1000000_20260122_143718"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 96x8 => 768 bits/vector
+✅ PQ trained in 7519.31s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq48_nbits8_train1000000_20260122_161005/pq_model.index
+Encoding database...
+✅ Encoding done in 4.4527s | Codes shape: 1000000 x 48
+Computing distance tables...
+✅ Distance tables computed in 0.0430508s
+Computing ADC distances...
+✅ ADC distances computed in 0.45135s
+Computing exact distances...
+✅ Exact distances computed in 0.702577s
+Mean rel. error: 0.0137747, std: 0.0109233
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq48_nbits8_train1000000_20260122_161011"
+✅ PQ trained in 15142.3s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq96_nbits8_train1000000_20260122_184943/pq_model.index
+Encoding database...
+✅ Encoding done in 9.4196s | Codes shape: 1000000 x 96
+Computing distance tables...
+✅ Distance tables computed in 0.0652046s
+Computing ADC distances...
+✅ ADC distances computed in 0.992452s
+Computing exact distances...
+✅ Exact distances computed in 0.668811s
+Mean rel. error: 0.00322379, std: 0.00335304
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq96_nbits8_train1000000_20260122_184954"

@@ -10,35 +10,35 @@ conda activate dtwrl_env2
 # ---- Paths ----
 DATA_FP="/mnthdd/cpanourg/2-hdvc"
 # Three separate files required: database (db), training (train_db), and queries (qr)
-# DATASET_PATH="${DATA_FP}/data/deep1b/dataset/test_1m.bin"  # Database/test data dim = 96
-# TRAIN_PATH="${DATA_FP}/data/deep1b/dataset/learn_100m.bin"  # Training data (required)
-# QUERY_PATH="${DATA_FP}/data/deep1b/dataset/query_10k.bin"  # Query data (required)
+DATASET_PATH="${DATA_FP}/data/deep1b/dataset/test_1m.bin"  # Database/test data dim = 96
+TRAIN_PATH="${DATA_FP}/data/deep1b/dataset/learn_100m.bin"  # Training data (required)
+QUERY_PATH="${DATA_FP}/data/deep1b/dataset/query_10k.bin"  # Query data (required)
 
-DATASET_PATH="${DATA_FP}/data/gist/gist_base.fvecs"  # Database/test data dim = 960
-TRAIN_PATH="${DATA_FP}/data/gist/gist_learn.fvecs"  # Training data (required)
-QUERY_PATH="${DATA_FP}/data/gist/gist_query.fvecs"  # Query data (required)
+# DATASET_PATH="${DATA_FP}/data/gist/gist_base.fvecs"  # Database/test data dim = 960
+# TRAIN_PATH="${DATA_FP}/data/gist/gist_learn.fvecs"  # Training data (required)
+# QUERY_PATH="${DATA_FP}/data/gist/gist_query.fvecs"  # Query data (required)
 
 # DATASET_PATH="${DATA_FP}/data/glove/splits/test.bin"  # Database/test data dim=200
 # TRAIN_PATH="${DATA_FP}/data/glove/splits/train.bin"  # Training data (required)
 # QUERY_PATH="${DATA_FP}/data/glove/splits/queries.bin"  # Query data (required)
 
 
-DATASET_NAME="gist"
-DIM=960
+DATASET_NAME="deep"
+DIM=96
 DATA_ROOT="${DATA_FP}"
 RESULTS_DIR="${DATA_FP}/results/relerr"
 
 # ---- Hyperparameter grids ----
 METHODS=("PQ")
 # archived hp test : 
-# N_SUBQUANTIZERS_LIST=(4 8 16 32)
-# NBITS_LIST=(8 9 10)
-# TRAIN_SIZES=(10000 100000 1000000)
+N_SUBQUANTIZERS_LIST=(1)
+NBITS_LIST=(10)
+TRAIN_SIZES=(1000000)
 
 #hp test : 
-N_SUBQUANTIZERS_LIST=(1 2 3 4 5 6 8 10 12 15 16 20 24 30 32 40 48 60 64 80 96 120 160 192 240 320 480 960)
-NBITS_LIST=(10)
-TRAIN_SIZES=(100000000)
+# N_SUBQUANTIZERS_LIST=(1 2 3 4 5 6 8 10 12 15 16 20 24 30 32 40 48 60 64 80 96 120 160 192 240 320 480 960)
+# NBITS_LIST=(10)
+# TRAIN_SIZES=(100000000)
 
 SAMPLE_DB=10000
 SAMPLE_QUERIES=1000

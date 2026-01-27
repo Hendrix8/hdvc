@@ -22,7 +22,7 @@
         ],
         "python": "/home/cpanourg/.conda/envs/dtwrl_env2/bin/python",
         "console": "integratedTerminal",
-        "justMyCode": true,
+        "justMyCode": false,
         "env": {
           "OMP_NUM_THREADS": "16",
           "MKL_NUM_THREADS": "16"
