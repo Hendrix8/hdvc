@@ -226,3 +226,39 @@ Computing exact distances...
 ✅ Exact distances computed in 11.1841s
 Mean rel. error: 0.00944971, std: 0.0137532
 ✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq480_nbits8_train500000_20260203_212140"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 1x10 => 10 bits/vector
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 4x10 => 40 bits/vector
+✅ PQ trained in 1197.05s
+✅ PQ model saved to /mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq1_nbits10_train500000_20260204_153603/pq_model.index
+Encoding database...
+✅ Encoding done in 9.77884s | Codes shape: 1000000 x 2
+Computing distance tables...
+✅ Distance tables computed in 0.342803s
+Computing ADC distances...
+✅ ADC distances computed in 0.116676s
+Computing exact distances...
+✅ Exact distances computed in 14.0007s
+Mean rel. error: 0.286583, std: 0.146378
+✅ Results saved to "/mnthdd/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq1_nbits10_train500000_20260204_153628"
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 8x10 => 80 bits/vector
