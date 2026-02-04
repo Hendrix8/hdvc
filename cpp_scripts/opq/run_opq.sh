@@ -12,6 +12,11 @@ RESULTS_DIR="/mnthdd/cpanourg/2-hdvc/results/relerr_cpp"
 #   --train_path "${DATA_ROOT}/gist/gist_learn.fvecs" \
 #   --dataset_name gist \
 
+    # --dataset_path "${DATA_ROOT}/deep1b/dataset/fvecs/test_1m.fvecs" \
+    # --query_path "${DATA_ROOT}/deep1b/dataset/fvecs/query_10k.fvecs" \
+    # --train_path "${DATA_ROOT}/deep1b/dataset/fvecs/learn_100m.fvecs" \
+    # --dataset_name deep \
+
 run_one () {
   local M="$1"
   local NBITS="$2"
@@ -20,10 +25,10 @@ run_one () {
   local SAMPLE_Q="$5"
 
   ./opq_eval \
-    --dataset_path "${DATA_ROOT}/deep1b/dataset/fvecs/test_1m.fvecs" \
-    --query_path "${DATA_ROOT}/deep1b/dataset/fvecs/query_10k.fvecs" \
-    --train_path "${DATA_ROOT}/deep1b/dataset/fvecs/learn_100m.fvecs" \
-    --dataset_name deep \
+    --dataset_path "${DATA_ROOT}/gist/gist_base.fvecs" \
+    --query_path "${DATA_ROOT}/gist/gist_query.fvecs" \
+    --train_path "${DATA_ROOT}/gist/gist_learn.fvecs" \
+    --dataset_name gist \
     --n_subquantizers "${M}" \
     --nbits "${NBITS}" \
     --train_size "${TRAIN_SIZE}" \
@@ -36,20 +41,38 @@ run_one () {
 
 # Run experiments sequentially to avoid RAM spikes
 # Format: M NBITS TRAIN_SIZE SAMPLE_DB SAMPLE_QUERIES
+# experiments=(
+# DEEP 
+#   # "1 8 1000000 10000 1000" 
+#   "2 4 1000000 10000 1000"
+#   # "3 4 1000000 10000 1000"
+#   "4 4 1000000 10000 1000"
+#   # "6 4 1000000 10000 1000"
+#   "8 4 1000000 10000 1000"
+#   # "12 4 1000000 10000 1000"
+#   "16 4 1000000 10000 1000"
+#   # "24 4 1000000 10000 1000"
+#   "32 4 1000000 10000 1000"
+#   # "48 4 1000000 10000 1000"
+#   "96 4 1000000 10000 1000"
+# )
+
 experiments=(
+  # GIST
   # "1 8 1000000 10000 1000"
-  "2 4 1000000 10000 1000"
-  # "3 4 1000000 10000 1000"
-  "4 4 1000000 10000 1000"
-  # "6 4 1000000 10000 1000"
-  "8 4 1000000 10000 1000"
-  # "12 4 1000000 10000 1000"
-  "16 4 1000000 10000 1000"
-  # "24 4 1000000 10000 1000"
-  "32 4 1000000 10000 1000"
-  # "48 4 1000000 10000 1000"
-  "96 4 1000000 10000 1000"
+  "4 8 1000000 10000 1000"
+  # "8 8 1000000 10000 1000"
+  "12 8 1000000 10000 1000"
+  # "16 8 1000000 10000 1000"
+  "24 8 1000000 10000 1000"
+  # "48 8 1000000 10000 1000"
+  "96 8 1000000 10000 1000"
+  # "192 8 1000000 10000 1000"
+  "320 8 1000000 10000 1000"
+  # "480 8 1000000 10000 1000"
+  "960 8 1000000 10000 1000"
 )
+
 
 for exp in "${experiments[@]}"; do
   run_one $exp

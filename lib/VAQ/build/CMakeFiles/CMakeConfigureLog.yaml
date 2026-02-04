@@ -29,6 +29,11 @@ events:
       - "/home/cpanourg/.miniconda3/bin/"
       - "/home/cpanourg/.miniconda3/sbin/"
       - "/home/cpanourg/.miniconda3/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -53,6 +58,11 @@ events:
       - "/home/cpanourg/.miniconda3/bin/uname"
       - "/home/cpanourg/.miniconda3/sbin/uname"
       - "/home/cpanourg/.miniconda3/uname"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/uname"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/uname"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/uname"
       - "/usr/local/cuda-12.4/bin/uname"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/uname"
@@ -123,6 +133,11 @@ events:
       - "/home/cpanourg/.miniconda3/bin/"
       - "/home/cpanourg/.miniconda3/sbin/"
       - "/home/cpanourg/.miniconda3/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -147,6 +162,11 @@ events:
       - "/home/cpanourg/.miniconda3/bin/gmake"
       - "/home/cpanourg/.miniconda3/sbin/gmake"
       - "/home/cpanourg/.miniconda3/gmake"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/gmake"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/gmake"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/gmake"
       - "/usr/local/cuda-12.4/bin/gmake"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/gmake"
@@ -218,6 +238,11 @@ events:
       - "/home/cpanourg/.miniconda3/bin/"
       - "/home/cpanourg/.miniconda3/sbin/"
       - "/home/cpanourg/.miniconda3/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -242,6 +267,11 @@ events:
       - "/home/cpanourg/.miniconda3/bin/c++"
       - "/home/cpanourg/.miniconda3/sbin/c++"
       - "/home/cpanourg/.miniconda3/c++"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/c++"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/c++"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/c++"
       - "/usr/local/cuda-12.4/bin/c++"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/c++"
@@ -367,6 +397,11 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -426,6 +461,11 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -485,6 +525,11 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -544,6 +589,11 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -603,6 +653,11 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -662,6 +717,11 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -721,6 +781,11 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -780,6 +845,11 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -839,6 +909,11 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -854,6 +929,11 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/dlltool"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/dlltool"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/dlltool"
       - "/usr/local/cuda-12.4/bin/dlltool"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/dlltool"
@@ -913,6 +993,11 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -972,6 +1057,11 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -987,6 +1077,11 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/tapi"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/tapi"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/tapi"
       - "/usr/local/cuda-12.4/bin/tapi"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/tapi"
@@ -1049,6 +1144,11 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -1064,6 +1164,11 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-11.4"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/gcc-ar-11.4"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/gcc-ar-11.4"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/gcc-ar-11.4"
       - "/usr/local/cuda-12.4/bin/gcc-ar-11.4"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/gcc-ar-11.4"
@@ -1126,6 +1231,11 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -1141,6 +1251,11 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-11.4"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/gcc-ranlib-11.4"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/gcc-ranlib-11.4"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/gcc-ranlib-11.4"
       - "/usr/local/cuda-12.4/bin/gcc-ranlib-11.4"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/gcc-ranlib-11.4"
@@ -1188,8 +1303,13 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc"
       binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc"
+=======
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1199,6 +1319,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc'
         
         Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed8d1/fast
@@ -1206,6 +1327,15 @@ events:
         gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc'
         Building CXX object CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o
         /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy  -std=gnu++14   -v -o CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+=======
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO'
+        
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8dd34/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8dd34.dir/build.make CMakeFiles/cmTC_8dd34.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO'
+        Building CXX object CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1215,8 +1345,13 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+<<<<<<< HEAD
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed8d1.dir/'
          /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ed8d1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccoWbrcm.s
+=======
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8dd34.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8dd34.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccE05cla.s
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -1240,6 +1375,7 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886
+<<<<<<< HEAD
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed8d1.dir/'
          as -v --64 -o CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccoWbrcm.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
@@ -1248,6 +1384,16 @@ events:
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.'
         Linking CXX executable cmTC_ed8d1
         /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed8d1.dir/link.txt --verbose=1
+=======
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8dd34.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccE05cla.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8dd34
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dd34.dir/link.txt --verbose=1
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -1260,6 +1406,7 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+<<<<<<< HEAD
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_ed8d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ed8d1.'
          /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKyny8Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ed8d1 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         collect2 version 11.4.0
@@ -1268,6 +1415,16 @@ events:
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_ed8d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ed8d1.'
         /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy  -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -v -Wl,-v CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ed8d1
         gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc'
+=======
+        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_8dd34' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8dd34.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyg5AOu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8dd34 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyg5AOu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8dd34 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_8dd34' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8dd34.'
+        /usr/bin/c++ -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -v -Wl,-v CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8dd34
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO'
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         
       exitCode: 0
   -
@@ -1308,6 +1465,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+<<<<<<< HEAD
         ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc']
         ignore line: []
         ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed8d1/fast]
@@ -1315,6 +1473,15 @@ events:
         ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-wtRWuc']
         ignore line: [Building CXX object CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o]
         ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy  -std=gnu++14   -v -o CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+=======
+        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8dd34/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8dd34.dir/build.make CMakeFiles/cmTC_8dd34.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-9NfNCO']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -c /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1324,8 +1491,13 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+<<<<<<< HEAD
         ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed8d1.dir/']
         ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ed8d1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -Wno-deprecated-copy -Wno-error=deprecated-copy -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccoWbrcm.s]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8dd34.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8dd34.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccE05cla.s]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         ignore line: [GNU C++14 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -1349,6 +1521,7 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886]
+<<<<<<< HEAD
         ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed8d1.dir/']
         ignore line: [ as -v --64 -o CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccoWbrcm.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
@@ -1357,6 +1530,16 @@ events:
         ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.']
         ignore line: [Linking CXX executable cmTC_ed8d1]
         ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed8d1.dir/link.txt --verbose=1]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8dd34.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccE05cla.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8dd34]
+        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dd34.dir/link.txt --verbose=1]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -1369,13 +1552,22 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+<<<<<<< HEAD
         ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-Wno-deprecated-copy' '-Wno-error=deprecated-copy' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_ed8d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ed8d1.']
         link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKyny8Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ed8d1 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_8dd34' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8dd34.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyg5AOu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8dd34 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+<<<<<<< HEAD
           arg [-plugin-opt=-fresolution=/tmp/ccKyny8Y.res] ==> ignore
+=======
+          arg [-plugin-opt=-fresolution=/tmp/ccyg5AOu.res] ==> ignore
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1393,7 +1585,11 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
+<<<<<<< HEAD
           arg [cmTC_ed8d1] ==> ignore
+=======
+          arg [cmTC_8dd34] ==> ignore
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -1409,7 +1605,11 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
           arg [-v] ==> ignore
+<<<<<<< HEAD
           arg [CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+=======
+          arg [CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1420,7 +1620,11 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 11.4.0]
+<<<<<<< HEAD
         ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKyny8Y.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ed8d1 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_ed8d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+=======
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyg5AOu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8dd34 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_8dd34.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1480,6 +1684,11 @@ events:
       - "/home/cpanourg/.miniconda3/include/x86_64-linux-gnu/"
       - "/home/cpanourg/.miniconda3/include/"
       - "/home/cpanourg/.miniconda3/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -1583,6 +1792,11 @@ events:
       - "/home/cpanourg/.miniconda3/lib/x86_64-linux-gnu/"
       - "/home/cpanourg/.miniconda3/lib/"
       - "/home/cpanourg/.miniconda3/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -1668,8 +1882,13 @@ events:
       - "CMakeLists.txt:82 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
+<<<<<<< HEAD
       source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu"
       binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu"
+=======
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1678,6 +1897,7 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu'
         
         Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be909/fast
@@ -1687,6 +1907,17 @@ events:
         /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_be909.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu/OpenMPTryFlag.cpp
         Linking CXX executable cmTC_be909
         /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be909.dir/link.txt --verbose=1
+=======
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz'
+        
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22a5a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_22a5a.dir/build.make CMakeFiles/cmTC_22a5a.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz'
+        Building CXX object CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz/OpenMPTryFlag.cpp
+        Linking CXX executable cmTC_22a5a
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22a5a.dir/link.txt --verbose=1
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -1700,11 +1931,19 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
+<<<<<<< HEAD
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_be909' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_be909.'
          /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMvNGaq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_be909 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_be909.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
         COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_be909' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_be909.'
         /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  -v CMakeFiles/cmTC_be909.dir/OpenMPTryFlag.cpp.o -o cmTC_be909
         gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu'
+=======
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_22a5a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_22a5a.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6Y8QTX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_22a5a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_22a5a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_22a5a.'
+        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  -v CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o -o cmTC_22a5a
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz'
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         
       exitCode: 0
   -
@@ -1716,6 +1955,7 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+<<<<<<< HEAD
         ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu']
         ignore line: []
         ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be909/fast]
@@ -1725,6 +1965,17 @@ events:
         ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_be909.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-cQTtJu/OpenMPTryFlag.cpp]
         ignore line: [Linking CXX executable cmTC_be909]
         ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be909.dir/link.txt --verbose=1]
+=======
+        ignore line: [Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22a5a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_22a5a.dir/build.make CMakeFiles/cmTC_22a5a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz']
+        ignore line: [Building CXX object CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-mqWjwz/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX executable cmTC_22a5a]
+        ignore line: [/home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22a5a.dir/link.txt --verbose=1]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -1738,13 +1989,22 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
+<<<<<<< HEAD
         ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_be909' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_be909.']
         link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMvNGaq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_be909 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_be909.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+=======
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Wno-psabi' '-Wno-sign-compare' '-O3' '-ffast-math' '-mfma' '-fopenmp' '-L/home/cpanourg/.miniconda3/lib' '-L/home/cpanourg/local/glpk/lib' '-L/home/cpanourg/local/armadillo/lib' '-v' '-o' 'cmTC_22a5a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_22a5a.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6Y8QTX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_22a5a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtfastmath.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+<<<<<<< HEAD
           arg [-plugin-opt=-fresolution=/tmp/ccMvNGaq.res] ==> ignore
+=======
+          arg [-plugin-opt=-fresolution=/tmp/cc6Y8QTX.res] ==> ignore
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -1763,7 +2023,11 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
+<<<<<<< HEAD
           arg [cmTC_be909] ==> ignore
+=======
+          arg [cmTC_22a5a] ==> ignore
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [-L/home/cpanourg/.miniconda3/lib] ==> dir [/home/cpanourg/.miniconda3/lib]
           arg [-L/home/cpanourg/local/glpk/lib] ==> dir [/home/cpanourg/local/glpk/lib]
           arg [-L/home/cpanourg/local/armadillo/lib] ==> dir [/home/cpanourg/local/armadillo/lib]
@@ -1775,7 +2039,11 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+<<<<<<< HEAD
           arg [CMakeFiles/cmTC_be909.dir/OpenMPTryFlag.cpp.o] ==> ignore
+=======
+          arg [CMakeFiles/cmTC_22a5a.dir/OpenMPTryFlag.cpp.o] ==> ignore
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgomp] ==> lib [gomp]
@@ -1830,6 +2098,11 @@ events:
       - "/usr/lib/"
       - "/lib/x86_64-linux-gnu/"
       - "/lib/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -1930,6 +2203,11 @@ events:
       - "/usr/lib/"
       - "/lib/x86_64-linux-gnu/"
       - "/lib/"
+<<<<<<< HEAD
+=======
+      - "/usr/local/cuda-12.4/bin/"
+      - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
       - "/home/cpanourg/.local/bin/"
       - "/usr/local/cuda-12.4/bin/"
       - "/home/cpanourg/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli/"
@@ -2015,8 +2293,13 @@ events:
       - "CMakeLists.txt:82 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
+<<<<<<< HEAD
       source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-qATYtI"
       binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-qATYtI"
+=======
+      source: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-r3KCUC"
+      binary: "/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-r3KCUC"
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2025,6 +2308,7 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-qATYtI'
         
         Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1a9c8/fast
@@ -2036,6 +2320,19 @@ events:
         /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a9c8.dir/link.txt --verbose=1
         /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  CMakeFiles/cmTC_1a9c8.dir/OpenMPCheckVersion.cpp.o -o cmTC_1a9c8
         gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-qATYtI'
+=======
+        Change Dir: '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-r3KCUC'
+        
+        Run Build Command(s): /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1e09/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1e09.dir/build.make CMakeFiles/cmTC_a1e09.dir/build
+        gmake[1]: Entering directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-r3KCUC'
+        Building CXX object CMakeFiles/cmTC_a1e09.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -std=gnu++14 -o CMakeFiles/cmTC_a1e09.dir/OpenMPCheckVersion.cpp.o -c /home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-r3KCUC/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_a1e09
+        /home/cpanourg/.local/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1e09.dir/link.txt --verbose=1
+        /usr/bin/c++ -Wall -Wextra -Wpedantic -Wno-psabi -Wno-sign-compare -O3 -ffast-math -mfma -fopenmp -L/home/cpanourg/.miniconda3/lib -L/home/cpanourg/local/glpk/lib -L/home/cpanourg/local/armadillo/lib  CMakeFiles/cmTC_a1e09.dir/OpenMPCheckVersion.cpp.o -o cmTC_a1e09
+        gmake[1]: Leaving directory '/home/cpanourg/projects/2-hdvc/lib/VAQ/build/CMakeFiles/CMakeScratch/TryCompile-r3KCUC'
+>>>>>>> 351e8376ea1f5b7500a68acb13ed33dc866cef63
         
       exitCode: 0
 ...

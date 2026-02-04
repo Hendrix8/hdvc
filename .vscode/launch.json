@@ -41,7 +41,7 @@
           "--prediction-length", "64",
           "--max-steps", "20000"
         ],
-        "python": "/home/cpanourg/.miniconda3/envs/tsfm/bin/python",
+        "python": "/home/cpanourg/.conda/envs/tsfm/bin/python",
         "console": "integratedTerminal",
         "justMyCode": true
       },
@@ -51,7 +51,7 @@
         "type": "debugpy",
         "request": "launch",
         "program": "${file}",
-        "python": "/home/cpanourg/.miniconda3/envs/dtwrl_env2/bin/python",
+        "python": "/home/cpanourg/.conda/envs/dtwrl_env2/bin/python",
         "justMyCode": true
       },
       {
