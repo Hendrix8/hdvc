@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/cpanourg/projects/2-hdvc/lib/faiss/build/_deps/googlebenchmark-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
