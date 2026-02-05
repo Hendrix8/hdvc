@@ -1,35 +1,0 @@
-
-CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
-To initialize your shell, run
-
-    $ conda init <SHELL_NAME>
-
-Currently supported shells are:
-  - bash
-  - fish
-  - tcsh
-  - xonsh
-  - zsh
-  - powershell
-
-See 'conda init --help' for more information and options.
-
-IMPORTANT: You may need to close and restart your shell after running 'conda init'.
-
-
-❌ Error: PQ.py not found!
-============================================
-All 1 method experiments completed!
-Results at: /mnthdd/cpanourg/2-hdvc//mnthdd/cpanourg/2-hdvc/results/relerr/deep_adc_vs_exact_eval.csv
-============================================
-Nothing to do: all outputs disabled.
-slicing npy -> fvecs:   0%|          | 0/2010000 [00:00<?, ?vec/s]slicing npy -> fvecs:  50%|████▉     | 1000000/2010000 [00:23<00:23, 42249.11vec/s]slicing npy -> fvecs:  50%|████▉     | 1000000/2010000 [00:40<00:23, 42249.11vec/s]slicing npy -> fvecs: 100%|█████████▉| 2000000/2010000 [01:02<00:00, 30592.73vec/s]slicing npy -> fvecs: 100%|██████████| 2010000/2010000 [01:03<00:00, 30353.75vec/s]slicing npy -> fvecs: 100%|██████████| 2010000/2010000 [01:03<00:00, 31429.67vec/s]
-[OK] Done.
-  base:   first 1,000,000 -> /mnthdd/cpanourg/2-hdvc/data/msmarco/base.fvecs
-  train:  next  1,000,000 -> /mnthdd/cpanourg/2-hdvc/data/msmarco/train.fvecs
-  query:  next  10,000 -> /mnthdd/cpanourg/2-hdvc/data/msmarco/query.fvecs (after 2,000,000)
-slicing OpenAI5M parquet -> fvecs:   0%|          | 0/2010000 [00:00<?, ?vec/s]slicing OpenAI5M parquet -> fvecs:  25%|██▍       | 500000/2010000 [15:01<45:23, 554.51vec/s]slicing OpenAI5M parquet -> fvecs:  25%|██▍       | 500000/2010000 [15:15<45:23, 554.51vec/s]slicing OpenAI5M parquet -> fvecs:  50%|████▉     | 1000000/2010000 [30:08<30:27, 552.79vec/s]slicing OpenAI5M parquet -> fvecs:  50%|████▉     | 1000000/2010000 [30:20<30:27, 552.79vec/s]slicing OpenAI5M parquet -> fvecs:  75%|███████▍  | 1500000/2010000 [45:19<15:25, 550.99vec/s]slicing OpenAI5M parquet -> fvecs:  75%|███████▍  | 1500000/2010000 [45:32<15:25, 550.99vec/s]slicing OpenAI5M parquet -> fvecs: 100%|█████████▉| 2000000/2010000 [1:00:19<00:18, 552.64vec/s]slicing OpenAI5M parquet -> fvecs: 100%|█████████▉| 2000000/2010000 [1:00:34<00:18, 552.64vec/s]slicing OpenAI5M parquet -> fvecs: 100%|██████████| 2010000/2010000 [1:14:58<00:00, 361.10vec/s]slicing OpenAI5M parquet -> fvecs: 100%|██████████| 2010000/2010000 [1:14:58<00:00, 446.83vec/s]
-[OK] Done slicing OpenAI5M.
-  base:   first 1,000,000 -> /mnthdd/cpanourg/2-hdvc/data/openai/openai5m_base.fvecs
-  train:  next  1,000,000 -> /mnthdd/cpanourg/2-hdvc/data/openai/openai5m_train.fvecs
-  query:  next  10,000 -> /mnthdd/cpanourg/2-hdvc/data/openai/openai5m_query.fvecs (after 2,000,000)

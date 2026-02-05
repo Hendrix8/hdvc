@@ -262,3 +262,19 @@ Loaded training data: 500000 vectors
 Loaded queries: 1000 vectors
 Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
 Training PQ with 8x10 => 80 bits/vector
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 12x10 => 120 bits/vector
+📂 Loading database from /mnthdd/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /mnthdd/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /mnthdd/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 16x10 => 160 bits/vector
