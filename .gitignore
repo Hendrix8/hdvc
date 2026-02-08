@@ -1,0 +1,45 @@
+# Build artifacts
+lib/faiss/build/
+lib/faiss_gpu_off/build/
+**/build/
+**/cmake-build-*/
+
+# Compiled binaries
+gpu_cpp_scripts/pq/pq_eval
+gpu_cpp_scripts/opq/opq_eval
+cpp_scripts/pq/pq_eval
+cpp_scripts/opq/opq_eval
+
+# Local OpenBLAS (built from source)
+local/openblas/
+
+# Object files
+*.o
+*.a
+*.so
+*.dylib
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temp
+nohup.out
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
