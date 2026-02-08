@@ -4,8 +4,8 @@ export LD_LIBRARY_PATH=/home/cpanourg/projects/2-hdvc/local/openblas/lib:$LD_LIB
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-DATA_ROOT="/data/cpanourg/2-hdvc/data"
-RESULTS_DIR="/data/cpanourg/2-hdvc/results/relerr_cpp"
+DATA_ROOT="/mnthdd/cpanourg/2-hdvc/data"
+RESULTS_DIR="/mnthdd/cpanourg/2-hdvc/results/relerr_cpp"
 
 #   --dataset_path "${DATA_ROOT}/gist/gist_base.fvecs" \
 #   --query_path "${DATA_ROOT}/gist/gist_query.fvecs" \
@@ -31,10 +31,10 @@ run_one () {
   local SAMPLE_Q="$5"
 
   ./pq_eval \
-    --dataset_path "${DATA_ROOT}/msmarco/base1m.fvecs" \
-    --query_path "${DATA_ROOT}/msmarco/query10k.fvecs" \
-    --train_path "${DATA_ROOT}/msmarco/train1m.fvecs" \
-    --dataset_name msmarco \
+    --dataset_path "${DATA_ROOT}/deep1b/dataset/fvecs/test_1m.fvecs" \
+    --query_path "${DATA_ROOT}/deep1b/dataset/fvecs/query_10k.fvecs" \
+    --train_path "${DATA_ROOT}/deep1b/dataset/fvecs/learn_100m.fvecs" \
+    --dataset_name deep \
     --n_subquantizers "${M}" \
     --nbits "${NBITS}" \
     --train_size "${TRAIN_SIZE}" \
@@ -46,20 +46,20 @@ run_one () {
 
 # Run experiments sequentially to avoid RAM spikes
 # Format: M NBITS TRAIN_SIZE SAMPLE_DB SAMPLE_QUERIES
-# experiments=(
-#   # "1 8 1000000 10000 1000"
-#   "2 8 1000000 10000 1000"
-#   # "3 8 1000000 10000 1000"
-#   "4 8 1000000 10000 1000"
-#   # "6 8 1000000 10000 1000"
-#   "8 8 1000000 10000 1000"
-#   # "12 8 1000000 10000 1000"
-#   "16 8 1000000 10000 1000"
-#   # "24 8 1000000 10000 1000"
-#   "32 8 1000000 10000 1000"
-#   # "48 8 1000000 10000 1000"
-#   "96 8 1000000 10000 1000"
-# )
+experiments=(
+  "1 12 1000000 10000 1000"
+  "2 12 1000000 10000 1000"
+  "3 12 1000000 10000 1000"
+  "4 12 1000000 10000 1000"
+  "6 12 1000000 10000 1000"
+  "8 12 1000000 10000 1000"
+  "12 12 1000000 10000 1000"
+  "16 12 1000000 10000 1000"
+  "24 12 1000000 10000 1000"
+  "32 12 1000000 10000 1000"
+  "48 12 1000000 10000 1000"
+  "96 12 1000000 10000 1000"
+)
 
 # experiments=(
 #   "1 4 1000000 10000 1000"
@@ -91,39 +91,41 @@ run_one () {
 #   "960 4 1000000 10000 1000"
 # )
 
-experiments=(
-  # GIST
-  # "1 10 1000000 10000 1000"
-  # "4 10 1000000 10000 1000"
-  # "8 10 1000000 10000 1000"
-  # "12 10 1000000 10000 1000"
-  # "16 10 1000000 10000 1000"
-  # "24 10 1000000 10000 1000"
-  # "48 10 1000000 10000 1000"
-  # "96 10 1000000 10000 1000"
-  # "192 10 1000000 10000 1000"
-  # "320 10 1000000 10000 1000"
-  # "480 10 1000000 10000 1000"
-  # "960 10 1000000 10000 1000"
-)
+# experiments=(
+#   # GIST
+#   "1 6 1000000 10000 1000"
+#   "4 6 1000000 10000 1000"
+#   "8 6 1000000 10000 1000"
+#   "12 6 1000000 10000 1000"
+#   "16 6 1000000 10000 1000"
+#   "24 6 1000000 10000 1000"
+#   "48 6 1000000 10000 1000"
+#   "96 6 1000000 10000 1000"
+#   "192 6 1000000 10000 1000"
+#   "320 6 1000000 10000 1000"
+#   "480 6 1000000 10000 1000"
+#   "960 6 1000000 10000 1000"
+# )
 
-experiments=(
+# experiments=(
   # MSMARCO
-  "1 4 1000000 10000 1000"
-  # "2 4 1000000 10000 1000"
-  "4 4 1000000 10000 1000"
-  # "8 4 1000000 10000 1000"
-  "16 4 1000000 10000 1000"
-  # "32 4 1000000 10000 1000"
-  "64 4 1000000 10000 1000"
-  # "128 4 1000000 10000 1000"
-  "256 4 1000000 10000 1000"
-  # "512 4 1000000 10000 1000"
-  "1024 4 1000000 10000 1000"
+  # "1 4 1000000 10000 1000"
+  # # "2 4 1000000 10000 1000"
+  # "4 4 1000000 10000 1000"
+  # # "8 4 1000000 10000 1000"
+  # "16 4 1000000 10000 1000"
+  # # "32 4 1000000 10000 1000"
+  # "64 4 1000000 10000 1000"
+  # # "128 4 1000000 10000 1000"
+  # "256 4 1000000 10000 1000"
+  # # "512 4 1000000 10000 1000"
+  # "1024 4 1000000 10000 1000"
 
-)
+# )
 
 
 for exp in "${experiments[@]}"; do
-  run_one $exp
+  read -r M NBITS TRAIN_SIZE SAMPLE_DB SAMPLE_Q <<< "$exp"
+  echo ">>> Running M=${M} nbits=${NBITS}"
+  run_one "$M" "$NBITS" "$TRAIN_SIZE" "$SAMPLE_DB" "$SAMPLE_Q"
 done
