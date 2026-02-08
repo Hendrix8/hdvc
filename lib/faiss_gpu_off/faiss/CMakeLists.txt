@@ -444,9 +444,7 @@ if(FAISS_USE_LTO)
   endif()
 endif()
 
-# Restrict to CXX only to avoid OpenMP_CUDA lookup (CUDA 10.x lacks OpenMP offload;
-# FAISS only needs OpenMP for CPU code)
-find_package(OpenMP REQUIRED COMPONENTS CXX)
+find_package(OpenMP REQUIRED)
 target_link_libraries(faiss PRIVATE OpenMP::OpenMP_CXX)
 target_link_libraries(faiss_avx2 PRIVATE OpenMP::OpenMP_CXX)
 target_link_libraries(faiss_avx512 PRIVATE OpenMP::OpenMP_CXX)
