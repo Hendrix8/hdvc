@@ -1,0 +1,20 @@
+📂 Loading database from /data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/learn_100m.fvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=96
+Training PQ with 2x10 => 20 bits/vector (GPU)
+✅ PQ trained in 91.3893s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq2_nbits10_train1000000_20260208_230250/pq_model.index
+Encoding database...
+✅ Encoding done in 18.0864s | Codes shape: 1000000 x 3
+Computing distance tables...
+✅ Distance tables computed in 2.51388s
+Computing ADC distances...
+✅ ADC distances computed in 1.10315s
+Computing exact distances...
+✅ Exact distances computed in 4.50082s
+Mean rel. error: 0.233946, std: 0.0910938
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq2_nbits10_train1000000_20260208_230318"

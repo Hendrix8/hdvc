@@ -1,5 +1,6 @@
 #include "io_utils.h"
 #include <algorithm>
+#include <cstdint>
 
 std::vector<std::vector<float>> read_fvecs(const std::string& filename, int max_vectors) {
     std::vector<std::vector<float>> data;
@@ -82,6 +83,43 @@ std::vector<std::vector<float>> read_fbin(const std::string& filename, int start
     return data;
 }
 
+std::vector<std::vector<float>> read_bvecs(const std::string& filename, int max_vectors) {
+    std::vector<std::vector<float>> data;
+    std::ifstream file(filename, std::ios::binary);
+
+    if (!file.is_open()) {
+        std::cerr << "Error: Cannot open file " << filename << std::endl;
+        return data;
+    }
+
+    int count = 0;
+    while (file.good() && (max_vectors < 0 || count < max_vectors)) {
+        int32_t dim;
+        file.read(reinterpret_cast<char*>(&dim), sizeof(int32_t));
+
+        if (!file.good() || file.eof()) {
+            break;
+        }
+
+        std::vector<uint8_t> raw(dim);
+        file.read(reinterpret_cast<char*>(raw.data()), dim * sizeof(uint8_t));
+
+        if (!file.good()) {
+            break;
+        }
+
+        std::vector<float> vec(dim);
+        for (int i = 0; i < dim; i++) {
+            vec[i] = static_cast<float>(raw[i]);
+        }
+        data.push_back(std::move(vec));
+        count++;
+    }
+
+    file.close();
+    return data;
+}
+
 std::vector<std::vector<float>> load_dataset(const std::string& filename, int dim, int max_vectors) {
     (void)dim; // Parameter kept for API compatibility but not used for format detection
     // Try to detect file format by extension
@@ -92,6 +130,8 @@ std::vector<std::vector<float>> load_dataset(const std::string& filename, int di
         return read_fvecs(filename, max_vectors);
     } else if (ext == "bin" || ext == "fbin") {
         return read_fbin(filename, 0, max_vectors);
+    } else if (ext == "bvecs") {
+        return read_bvecs(filename, max_vectors);
     } else {
         // Try fvecs first, then fbin
         auto data = read_fvecs(filename, max_vectors);

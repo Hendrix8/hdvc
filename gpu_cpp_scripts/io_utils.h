@@ -15,6 +15,10 @@ std::vector<std::vector<float>> read_fvecs(const std::string& filename, int max_
 // Format: [nvecs (int32), dim (int32), data (nvecs * dim * float32)]
 std::vector<std::vector<float>> read_fbin(const std::string& filename, int start_idx = 0, int chunk_size = -1);
 
+// Read .bvecs file format (SIFT/BIGANN)
+// Format: Each vector is [dim (int32), data (dim * uint8)]. Converts to float.
+std::vector<std::vector<float>> read_bvecs(const std::string& filename, int max_vectors = -1);
+
 // Auto-detect file format and read
 std::vector<std::vector<float>> load_dataset(const std::string& filename, int dim = -1, int max_vectors = -1);
 

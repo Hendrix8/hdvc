@@ -1,3 +1,5 @@
-# Rebuild pq_eval
-cd /home/cpanourg/projects/2-hdvc/cpp_scripts
-make clean && . ./compile.sh
+#!/usr/bin/env bash
+# Rebuild pq_eval (GPU version)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+make clean && make
