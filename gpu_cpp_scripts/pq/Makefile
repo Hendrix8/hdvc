@@ -13,7 +13,7 @@ CUDA_LDFLAGS = -L$(CUDA_HOME)/lib64 -lcudart -lcublas
 CXX = g++
 CXXFLAGS = -std=c++17 -O3 -Wall -Wextra -march=native
 INCLUDES = -I$(FAISS_INCLUDE) $(CUDA_INCLUDES) -I..
-LDFLAGS = -L$(FAISS_LIB_PATH) -lfaiss -fopenmp $(CUDA_LDFLAGS)
+LDFLAGS = -L$(FAISS_LIB_PATH) -lfaiss -fopenmp $(CUDA_LDFLAGS) -lrt
 
 # OpenBLAS (local or conda)
 CONDA_PREFIX ?= $(HOME)/.miniconda3
@@ -25,23 +25,37 @@ SOURCES = pq_eval.cpp ../io_utils.cpp
 OBJECTS = pq_eval.o io_utils.o
 TARGET = pq_eval
 
-# Default target
-all: $(TARGET)
+# ADC timing program
+ADC_TIMING_SOURCES = pq_adc_timing.cpp ../io_utils.cpp
+ADC_TIMING_OBJECTS = pq_adc_timing.o io_utils_adc.o
+ADC_TIMING_TARGET = pq_adc_timing
 
-# Build target
+# Default target
+all: $(TARGET) $(ADC_TIMING_TARGET)
+
+# Build targets
 $(TARGET): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJECTS) $(LDFLAGS)
+
+$(ADC_TIMING_TARGET): $(ADC_TIMING_OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $(ADC_TIMING_TARGET) $(ADC_TIMING_OBJECTS) $(LDFLAGS)
 
 # Compile source files
 pq_eval.o: pq_eval.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 
+pq_adc_timing.o: pq_adc_timing.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
 io_utils.o: ../io_utils.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+io_utils_adc.o: ../io_utils.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 
 # Clean build artifacts
 clean:
-	rm -f $(OBJECTS) $(TARGET)
+	rm -f $(OBJECTS) $(ADC_TIMING_OBJECTS) $(TARGET) $(ADC_TIMING_TARGET)
 
 # Check if FAISS (GPU) is found
 check:

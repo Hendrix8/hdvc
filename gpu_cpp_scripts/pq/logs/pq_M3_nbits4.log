@@ -18,3 +18,23 @@ Computing exact distances...
 ✅ Exact distances computed in 2.74613s
 Mean rel. error: 0.352983, std: 0.0968239
 ✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq3_nbits4_train1000000_20260208_225701"
+📂 Loading database from /data/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 3x4 => 12 bits/vector (GPU)
+✅ PQ trained in 81.8734s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq3_nbits4_train500000_20260209_005526/pq_model.index
+Encoding database...
+✅ Encoding done in 14.1831s | Codes shape: 1000000 x 2
+Computing distance tables...
+✅ Distance tables computed in 0.596107s
+Computing ADC distances...
+✅ ADC distances computed in 0.414652s
+Computing exact distances...
+✅ Exact distances computed in 38.578s
+Mean rel. error: 0.32812, std: 0.151148
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq3_nbits4_train500000_20260209_005621"

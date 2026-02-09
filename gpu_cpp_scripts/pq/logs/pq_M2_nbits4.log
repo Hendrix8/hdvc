@@ -38,3 +38,43 @@ Computing exact distances...
 ✅ Exact distances computed in 2.31878s
 Mean rel. error: 0.324652, std: 0.110849
 ✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq2_nbits4_train1000000_20260208_235810"
+📂 Loading database from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_base.bvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_learn.bvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_query.bvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=128
+Training PQ with 2x4 => 8 bits/vector (GPU)
+✅ PQ trained in 29.3674s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq2_nbits4_train1000000_20260209_105445/pq_model.index
+Encoding database...
+✅ Encoding done in 2.91645s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.309777s
+Computing ADC distances...
+✅ ADC distances computed in 0.420513s
+Computing exact distances...
+✅ Exact distances computed in 2.35567s
+Mean rel. error: 0.324652, std: 0.110849
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq2_nbits4_train1000000_20260209_105452"
+📂 Loading database from /data/cpanourg/2-hdvc/data/msmarco/base1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/msmarco/train1m.fvecs
+Loaded training data: 1000000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/msmarco/query10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=1024
+Training PQ with 2x4 => 8 bits/vector (GPU)
+✅ PQ trained in 93.0655s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/msmarco/subq2_nbits4_train1000000_20260209_113843/pq_model.index
+Encoding database...
+✅ Encoding done in 9.26543s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.351926s
+Computing ADC distances...
+✅ ADC distances computed in 0.190147s
+Computing exact distances...
+✅ Exact distances computed in 26.6764s
+Mean rel. error: 0.44721, std: 0.0425204
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/msmarco/subq2_nbits4_train1000000_20260209_113920"

@@ -38,3 +38,72 @@ Computing exact distances...
 ✅ Exact distances computed in 2.67548s
 Mean rel. error: 0.30797, std: 0.120075
 ✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits6_train1000000_20260209_000636"
+📂 Loading database from /data/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 1x6 => 6 bits/vector (GPU)
+📂 Loading database from /data/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+📂 Loading database from /data/cpanourg/2-hdvc/data/gist/gist_base.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/gist/gist_learn.fvecs
+Loaded training data: 500000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/gist/gist_query.fvecs
+Loaded queries: 1000 vectors
+Training on 500000 samples, testing on 1000000 samples, queries: 1000, dim=960
+Training PQ with 1x6 => 6 bits/vector (GPU)
+✅ PQ trained in 101.128s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq1_nbits6_train500000_20260209_100714/pq_model.index
+Encoding database...
+✅ Encoding done in 15.3603s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.466635s
+Computing ADC distances...
+✅ ADC distances computed in 0.30772s
+Computing exact distances...
+✅ Exact distances computed in 55.0454s
+Mean rel. error: 0.32778, std: 0.162743
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/gist/subq1_nbits6_train500000_20260209_100827"
+📂 Loading database from /data/cpanourg/2-hdvc/data/msmarco/base1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/msmarco/train1m.fvecs
+Loaded training data: 1000000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/msmarco/query10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=1024
+Training PQ with 1x6 => 6 bits/vector (GPU)
+✅ PQ trained in 115.722s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/msmarco/subq1_nbits6_train1000000_20260209_115128/pq_model.index
+Encoding database...
+✅ Encoding done in 16.383s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.336408s
+Computing ADC distances...
+✅ ADC distances computed in 0.137329s
+Computing exact distances...
+✅ Exact distances computed in 36.5528s
+Mean rel. error: 0.429444, std: 0.0473254
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/msmarco/subq1_nbits6_train1000000_20260209_115222"
+📂 Loading database from /data/cpanourg/2-hdvc/data/openai/openai_base1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/openai/openai_train1m.fvecs
+Loaded training data: 1000000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/openai/openai_query10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=1536
+Training PQ with 1x6 => 6 bits/vector (GPU)
+✅ PQ trained in 112.038s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/openai/subq1_nbits6_train1000000_20260209_160703/pq_model.index
+Encoding database...
+✅ Encoding done in 19.7643s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.239435s
+Computing ADC distances...
+✅ ADC distances computed in 0.189353s
+Computing exact distances...
+✅ Exact distances computed in 48.4946s
+Mean rel. error: 0.426347, std: 0.0497425
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/openai/subq1_nbits6_train1000000_20260209_160814"

@@ -207,3 +207,726 @@ Waiting for 8 jobs...
 >>> [00:21:20] Done M=16 nbits=12 (exit 0)
 >>> [00:22:15] Done M=32 nbits=10 (exit 0)
 >>> [00:24:15] Done M=32 nbits=12 (exit 0)
+>>> [00:25:21] Done M=64 nbits=8 (exit 0)
+>>> [00:25:34] Done M=64 nbits=10 (exit 0)
+>>> [00:29:07] Done M=64 nbits=12 (exit 0)
+>>> [00:30:09] Done M=128 nbits=8 (exit 0)
+All done. Failed: 0
+>>> [00:31:59] Done M=128 nbits=10 (exit 0)
+All done. Failed: 0
+>>> [00:50:54] Done M=128 nbits=12 (exit 0)
+All done. Failed: 0
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=4 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+>>> [00:53:55] Starting M=1 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits4.log
+>>> [00:53:55] Starting M=3 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits4.log
+Waiting for 13 jobs...
+>>> [00:53:55] Starting M=8 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits4.log
+>>> [00:53:55] Starting M=5 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits4.log
+>>> [00:53:55] Starting M=12 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits4.log
+>>> [00:53:55] Starting M=20 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits4.log
+>>> [00:53:55] Starting M=40 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits4.log
+>>> [00:53:55] Starting M=60 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits4.log
+>>> [00:53:55] Starting M=80 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits4.log
+>>> [00:53:55] Starting M=120 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits4.log
+>>> [00:53:55] Starting M=320 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M320_nbits4.log
+>>> [00:53:55] Starting M=480 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits4.log
+>>> [00:53:55] Starting M=960 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits4.log
+>>> [00:56:25] Done M=1 nbits=4 (exit 0)
+>>> [00:56:50] Done M=3 nbits=4 (exit 0)
+>>> [00:56:54] Done M=5 nbits=4 (exit 0)
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=6 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+>>> [00:57:08] Starting M=1 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits6.log
+Waiting for 13 jobs...
+>>> [00:57:08] Starting M=60 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits6.log
+>>> [00:57:08] Starting M=480 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits6.log
+>>> [00:57:08] Starting M=8 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits6.log
+>>> [00:57:08] Starting M=12 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits6.log
+>>> [00:57:08] Starting M=80 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits6.log
+>>> [00:57:08] Starting M=5 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits6.log
+>>> [00:57:08] Starting M=120 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits6.log
+>>> [00:57:08] Starting M=3 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits6.log
+>>> [00:57:08] Starting M=960 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits6.log
+>>> [00:57:08] Starting M=40 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits6.log
+>>> [00:57:08] Starting M=320 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M320_nbits6.log
+>>> [00:57:08] Starting M=20 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits6.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=8 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+Waiting for 13 jobs...
+>>> [00:57:15] Starting M=1 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits8.log
+>>> [00:57:15] Starting M=480 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits8.log
+>>> [00:57:15] Starting M=8 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [00:57:15] Starting M=80 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits8.log
+>>> [00:57:15] Starting M=5 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits8.log
+>>> [00:57:15] Starting M=40 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits8.log
+>>> [00:57:15] Starting M=60 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits8.log
+>>> [00:57:15] Starting M=120 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits8.log
+>>> [00:57:15] Starting M=3 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits8.log
+>>> [00:57:15] Starting M=20 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits8.log
+>>> [00:57:15] Starting M=12 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits8.log
+>>> [00:57:15] Starting M=960 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits8.log
+>>> [00:57:15] Starting M=320 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M320_nbits8.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=10 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+Waiting for 13 jobs...
+>>> [00:57:21] Starting M=5 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits10.log
+>>> [00:57:21] Starting M=60 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits10.log
+>>> [00:57:21] Starting M=20 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits10.log
+>>> [00:57:21] Starting M=1 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits10.log
+>>> [00:57:21] Starting M=3 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits10.log
+>>> [00:57:21] Starting M=8 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits10.log
+>>> [00:57:21] Starting M=480 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits10.log
+>>> [00:57:21] Starting M=320 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M320_nbits10.log
+>>> [00:57:21] Starting M=12 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits10.log
+>>> [00:57:21] Starting M=40 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits10.log
+>>> [00:57:21] Starting M=960 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits10.log
+>>> [00:57:21] Starting M=80 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits10.log
+>>> [00:57:21] Starting M=120 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits10.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+Waiting for 13 jobs...
+>>> [00:57:26] Starting M=80 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits12.log
+>>> [00:57:26] Starting M=480 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits12.log
+>>> [00:57:26] Starting M=960 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits12.log
+>>> [00:57:26] Starting M=120 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits12.log
+>>> [00:57:26] Starting M=60 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits12.log
+>>> [00:57:26] Starting M=20 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits12.log
+>>> [00:57:26] Starting M=3 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits12.log
+>>> [00:57:26] Starting M=5 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits12.log
+>>> [00:57:26] Starting M=1 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits12.log
+>>> [00:57:26] Starting M=12 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits12.log
+>>> [00:57:26] Starting M=320 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M320_nbits12.log
+>>> [00:57:26] Starting M=8 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [00:57:26] Starting M=40 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits12.log
+>>> [00:57:31] Done M=8 nbits=4 (exit 0)
+>>> [00:57:55] Done M=12 nbits=4 (exit 0)
+run_pq_eval_parallel_mult.sh: line 76: 135466 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:00:08] Done M=20 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 135472 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:00:09] Done M=480 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 135467 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:00:35] Done M=40 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 135473 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:02:07] Done M=960 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 135468 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:02:08] Done M=60 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 135470 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:02:30] Done M=120 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139067 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:02:34] Done M=1 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 135469 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:02:45] Done M=80 nbits=4 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139073 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:03:05] Done M=60 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139075 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:04:39] Done M=480 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139092 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:04:54] Done M=40 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139090 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:05:04] Done M=3 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139087 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:05:17] Done M=120 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139086 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:05:25] Done M=5 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139082 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:05:36] Done M=80 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139157 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:05:38] Done M=20 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 141389 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:06:03] Done M=3 nbits=10 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139080 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:06:32] Done M=8 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 140158 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:06:43] Done M=1 nbits=8 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 139081 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:06:58] Done M=12 nbits=6 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 140165 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:07:02] Done M=5 nbits=8 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 140173 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:08:27] Done M=3 nbits=8 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 140163 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:08:32] Done M=8 nbits=8 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 140174 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:09:09] Done M=20 nbits=8 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 141388 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:09:21] Done M=1 nbits=10 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 141382 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:09:46] Done M=5 nbits=10 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 142662 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:12:40] Done M=1 nbits=12 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 142661 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:14:45] Done M=5 nbits=12 (exit 137)
+run_pq_eval_parallel_mult.sh: line 76: 142671 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:15:46] Done M=8 nbits=12 (exit 137)
+>>> [01:15:49] Done M=3 nbits=12 (exit 0)
+run_pq_eval_parallel_mult.sh: line 76: 142666 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:17:05] Done M=12 nbits=12 (exit 137)
+>>> [01:18:18] Done M=12 nbits=8 (exit 0)
+>>> [01:19:27] Done M=8 nbits=10 (exit 0)
+>>> [01:20:04] Done M=12 nbits=10 (exit 0)
+>>> [01:23:52] Done M=20 nbits=10 (exit 0)
+run_pq_eval_parallel_mult.sh: line 76: 142676 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:26:03] Done M=40 nbits=12 (exit 137)
+>>> [01:27:23] Done M=20 nbits=12 (exit 0)
+>>> [01:27:52] Done M=40 nbits=8 (exit 0)
+run_pq_eval_parallel_mult.sh: line 76: 142653 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [01:32:13] Done M=60 nbits=12 (exit 137)
+>>> [01:33:10] Done M=40 nbits=10 (exit 0)
+>>> [01:37:28] Done M=60 nbits=8 (exit 0)
+>>> [01:37:52] Done M=60 nbits=10 (exit 0)
+>>> [01:42:54] Done M=80 nbits=8 (exit 0)
+>>> [01:51:51] Done M=80 nbits=10 (exit 0)
+>>> [01:54:42] Done M=120 nbits=8 (exit 0)
+>>> [02:03:35] Done M=120 nbits=10 (exit 0)
+>>> [02:15:38] Done M=80 nbits=12 (exit 0)
+>>> [02:23:09] Done M=320 nbits=4 (exit 0)
+All done. Failed: 7
+>>> [02:25:20] Done M=120 nbits=12 (exit 0)
+>>> [02:30:34] Done M=320 nbits=8 (exit 0)
+>>> [02:30:34] Done M=320 nbits=6 (exit 0)
+>>> [02:37:46] Done M=320 nbits=10 (exit 0)
+>>> [02:51:09] Done M=480 nbits=8 (exit 0)
+>>> [03:03:18] Done M=320 nbits=12 (exit 0)
+>>> [03:05:02] Done M=480 nbits=10 (exit 0)
+>>> [03:19:49] Done M=480 nbits=12 (exit 0)
+>>> [03:28:53] Done M=960 nbits=6 (exit 0)
+All done. Failed: 11
+>>> [03:29:08] Done M=960 nbits=8 (exit 0)
+All done. Failed: 5
+>>> [03:33:15] Done M=960 nbits=10 (exit 0)
+All done. Failed: 3
+>>> [04:59:31] Done M=960 nbits=12 (exit 0)
+All done. Failed: 6
+Using GPUs: 0 1 (2 device(s))
+Target nbits: 4 6 8 10 12
+Target M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+CSV: /data/cpanourg/2-hdvc/results/relerr_cpp/gist_PQ_adc_vs_exact_eval.csv
+Scanning CSV for existing (M, nbits) combinations...
+Missing experiments to run (32 total):
+  M=20, nbits=4
+  M=40, nbits=4
+  M=60, nbits=4
+  M=80, nbits=4
+  M=120, nbits=4
+  M=480, nbits=4
+  M=960, nbits=4
+  M=1, nbits=6
+  M=3, nbits=6
+  M=5, nbits=6
+  M=8, nbits=6
+  M=12, nbits=6
+  M=20, nbits=6
+  M=40, nbits=6
+  M=60, nbits=6
+  M=80, nbits=6
+  M=120, nbits=6
+  M=480, nbits=6
+  M=1, nbits=8
+  M=3, nbits=8
+  M=5, nbits=8
+  M=8, nbits=8
+  M=20, nbits=8
+  M=1, nbits=10
+  M=3, nbits=10
+  M=5, nbits=10
+  M=1, nbits=12
+  M=5, nbits=12
+  M=8, nbits=12
+  M=12, nbits=12
+  M=40, nbits=12
+  M=60, nbits=12
+>>> [10:04:56] Starting M=20 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits4.log
+>>> [10:04:56] Starting M=40 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits4.log
+>>> [10:04:56] Starting M=60 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits4.log
+>>> [10:04:56] Starting M=120 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits4.log
+>>> [10:04:56] Starting M=960 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits4.log
+>>> [10:04:56] Starting M=60 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits6.log
+>>> [10:04:56] Starting M=12 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits6.log
+>>> [10:04:56] Starting M=80 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits6.log
+>>> [10:04:56] Starting M=80 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits4.log
+>>> [10:04:56] Starting M=8 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits6.log
+>>> [10:04:56] Starting M=480 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits4.log
+>>> [10:04:56] Starting M=120 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits6.log
+>>> [10:04:56] Starting M=1 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits6.log
+>>> [10:04:56] Starting M=1 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits8.log
+>>> [10:04:56] Starting M=3 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits6.log
+Waiting for 32 jobs...
+>>> [10:04:56] Starting M=3 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits8.log
+>>> [10:04:56] Starting M=5 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits6.log
+>>> [10:04:56] Starting M=480 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits6.log
+>>> [10:04:56] Starting M=40 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits6.log
+>>> [10:04:56] Starting M=1 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits10.log
+>>> [10:04:56] Starting M=20 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits6.log
+>>> [10:04:56] Starting M=1 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits12.log
+>>> [10:04:56] Starting M=5 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits8.log
+>>> [10:04:56] Starting M=3 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits10.log
+>>> [10:04:56] Starting M=20 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits8.log
+>>> [10:04:56] Starting M=8 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [10:04:56] Starting M=5 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits10.log
+>>> [10:04:56] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [10:04:56] Starting M=5 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits12.log
+>>> [10:04:56] Starting M=40 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits12.log
+>>> [10:04:56] Starting M=60 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits12.log
+>>> [10:04:56] Starting M=12 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits12.log
+Using GPUs: 0 1 (2 device(s))
+Target nbits: 4 6 8 10 12
+Target M values: 1 3 5 8 12 20 40 60 80 120 320 480 960
+CSV: /data/cpanourg/2-hdvc/results/relerr_cpp/gist_PQ_adc_vs_exact_eval.csv
+Scanning CSV for existing (M, nbits) combinations...
+Missing experiments to run (32 total):
+  M=20, nbits=4
+  M=40, nbits=4
+  M=60, nbits=4
+  M=80, nbits=4
+  M=120, nbits=4
+  M=480, nbits=4
+  M=960, nbits=4
+  M=1, nbits=6
+  M=3, nbits=6
+  M=5, nbits=6
+  M=8, nbits=6
+  M=12, nbits=6
+  M=20, nbits=6
+  M=40, nbits=6
+  M=60, nbits=6
+  M=80, nbits=6
+  M=120, nbits=6
+  M=480, nbits=6
+  M=1, nbits=8
+  M=3, nbits=8
+  M=5, nbits=8
+  M=8, nbits=8
+  M=20, nbits=8
+  M=1, nbits=10
+  M=3, nbits=10
+  M=5, nbits=10
+  M=1, nbits=12
+  M=5, nbits=12
+  M=8, nbits=12
+  M=12, nbits=12
+  M=40, nbits=12
+  M=60, nbits=12
+>>> [10:05:23] Starting M=20 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits4.log
+>>> [10:05:23] Starting M=40 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits4.log
+>>> [10:05:23] Starting M=60 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits4.log
+>>> [10:05:23] Starting M=80 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits4.log
+>>> [10:05:23] Starting M=120 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits4.log
+>>> [10:05:23] Starting M=480 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits4.log
+>>> [10:05:23] Starting M=960 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M960_nbits4.log
+>>> [10:05:23] Starting M=1 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits6.log
+>>> [10:05:23] Starting M=3 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits6.log
+>>> [10:05:23] Starting M=5 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits6.log
+>>> [10:05:23] Starting M=8 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits6.log
+>>> [10:05:23] Starting M=40 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits6.log
+>>> [10:05:23] Starting M=20 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits6.log
+>>> [10:05:23] Starting M=12 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits6.log
+>>> [10:05:23] Starting M=60 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits6.log
+Waiting for 32 jobs...
+>>> [10:05:23] Starting M=80 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M80_nbits6.log
+>>> [10:05:23] Starting M=1 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits8.log
+>>> [10:05:23] Starting M=5 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits8.log
+>>> [10:05:23] Starting M=120 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M120_nbits6.log
+>>> [10:05:23] Starting M=480 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M480_nbits6.log
+>>> [10:05:23] Starting M=20 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M20_nbits8.log
+>>> [10:05:23] Starting M=3 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits8.log
+>>> [10:05:23] Starting M=8 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [10:05:23] Starting M=3 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M3_nbits10.log
+>>> [10:05:23] Starting M=12 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M12_nbits12.log
+>>> [10:05:23] Starting M=1 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits12.log
+>>> [10:05:23] Starting M=60 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits12.log
+>>> [10:05:23] Starting M=5 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits10.log
+>>> [10:05:23] Starting M=40 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M40_nbits12.log
+>>> [10:05:23] Starting M=5 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M5_nbits12.log
+>>> [10:05:23] Starting M=1 nbits=10 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits10.log
+>>> [10:05:23] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+run_pq_eval_parallel_mult_missing.sh: line 46: 385910 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [10:09:08] Done M=8 nbits=12 (exit 137)
+>>> [10:09:15] Done M=1 nbits=6 (exit 0)
+>>> [10:09:31] Done M=1 nbits=8 (exit 0)
+>>> [10:09:42] Done M=3 nbits=6 (exit 0)
+>>> [10:10:09] Done M=3 nbits=10 (exit 0)
+>>> [10:10:16] Done M=1 nbits=12 (exit 0)
+>>> [10:10:27] Done M=3 nbits=8 (exit 0)
+>>> [10:11:04] Done M=1 nbits=10 (exit 0)
+>>> [10:12:10] Done M=5 nbits=8 (exit 0)
+>>> [10:12:11] Done M=5 nbits=6 (exit 0)
+>>> [10:12:29] Done M=5 nbits=10 (exit 0)
+>>> [10:13:07] Done M=8 nbits=8 (exit 0)
+>>> [10:13:23] Done M=8 nbits=6 (exit 0)
+>>> [10:13:47] Done M=20 nbits=8 (exit 0)
+>>> [10:13:48] Done M=20 nbits=4 (exit 0)
+>>> [10:14:09] Done M=5 nbits=12 (exit 0)
+>>> [10:14:16] Done M=20 nbits=6 (exit 0)
+>>> [10:14:32] Done M=12 nbits=6 (exit 0)
+>>> [10:17:00] Done M=12 nbits=12 (exit 0)
+run_pq_eval_parallel_mult_missing.sh: line 46: 385905 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [10:19:55] Done M=60 nbits=12 (exit 137)
+>>> [10:19:56] Done M=40 nbits=6 (exit 0)
+>>> [10:20:17] Done M=40 nbits=4 (exit 0)
+>>> [10:20:47] Done M=60 nbits=4 (exit 0)
+>>> [10:23:00] Done M=60 nbits=6 (exit 0)
+>>> [10:23:53] Done M=80 nbits=6 (exit 0)
+>>> [10:24:06] Done M=80 nbits=4 (exit 0)
+>>> [10:24:17] Done M=40 nbits=12 (exit 0)
+>>> [10:25:18] Done M=120 nbits=4 (exit 0)
+>>> [10:26:07] Done M=120 nbits=6 (exit 0)
+>>> [10:41:12] Done M=480 nbits=4 (exit 0)
+>>> [10:41:13] Done M=480 nbits=6 (exit 0)
+Using GPUs: 0 1 (2 device(s))
+>>> [10:54:13] Starting M=1 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits4.log
+Waiting for 8 jobs...
+>>> [10:54:13] Starting M=2 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M2_nbits4.log
+>>> [10:54:13] Starting M=4 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits4.log
+>>> [10:54:13] Starting M=8 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits4.log
+>>> [10:54:13] Starting M=16 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits4.log
+>>> [10:54:13] Starting M=32 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits4.log
+>>> [10:54:13] Starting M=64 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits4.log
+>>> [10:54:13] Starting M=128 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits4.log
+>>> [10:54:46] Done M=1 nbits=4 (exit 0)
+>>> [10:54:55] Done M=2 nbits=4 (exit 0)
+>>> [10:55:08] Done M=4 nbits=4 (exit 0)
+>>> [10:55:32] Done M=8 nbits=4 (exit 0)
+>>> [10:56:08] Done M=16 nbits=4 (exit 0)
+>>> [10:57:07] Done M=32 nbits=4 (exit 0)
+>>> [10:59:06] Done M=64 nbits=4 (exit 0)
+Terminated
+>>> [10:59:07] Done M=128 nbits=4 (exit 143)
+All done. Failed: 1
+Terminated
+>>> [10:59:08] Done M=960 nbits=4 (exit 143)
+All done. Failed: 3
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=4 train=1000000 sample_db=10000 sample_q=1000
+M values: 2 4 8 16 32 64 128 256 512 1024
+Waiting for 10 jobs...
+>>> [11:36:59] Starting M=8 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits4.log
+>>> [11:36:59] Starting M=32 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits4.log
+>>> [11:36:59] Starting M=2 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M2_nbits4.log
+>>> [11:36:59] Starting M=128 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits4.log
+>>> [11:36:59] Starting M=16 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits4.log
+>>> [11:36:59] Starting M=4 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits4.log
+>>> [11:36:59] Starting M=512 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits4.log
+>>> [11:36:59] Starting M=64 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits4.log
+>>> [11:36:59] Starting M=256 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits4.log
+>>> [11:36:59] Starting M=1024 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1024_nbits4.log
+>>> [11:39:32] Done M=2 nbits=4 (exit 0)
+>>> [11:39:33] Done M=4 nbits=4 (exit 0)
+>>> [11:40:05] Done M=8 nbits=4 (exit 0)
+>>> [11:41:28] Done M=16 nbits=4 (exit 0)
+>>> [11:42:26] Done M=32 nbits=4 (exit 0)
+>>> [11:46:14] Done M=64 nbits=4 (exit 0)
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=6 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 2 4 8 16 32 64 128 256 512 1024
+>>> [11:49:09] Starting M=2 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M2_nbits6.log
+>>> [11:49:09] Starting M=1 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits6.log
+Waiting for 11 jobs...
+>>> [11:49:09] Starting M=8 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits6.log
+>>> [11:49:09] Starting M=4 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits6.log
+>>> [11:49:09] Starting M=16 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits6.log
+>>> [11:49:09] Starting M=32 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits6.log
+>>> [11:49:09] Starting M=128 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits6.log
+>>> [11:49:09] Starting M=64 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits6.log
+>>> [11:49:09] Starting M=256 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits6.log
+>>> [11:49:09] Starting M=512 nbits=6 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits6.log
+>>> [11:49:09] Starting M=1024 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1024_nbits6.log
+>>> [11:51:03] Done M=128 nbits=4 (exit 0)
+>>> [11:52:32] Done M=2 nbits=6 (exit 0)
+>>> [11:52:39] Done M=1 nbits=6 (exit 0)
+>>> [11:53:06] Done M=4 nbits=6 (exit 0)
+>>> [11:53:38] Done M=8 nbits=6 (exit 0)
+>>> [11:55:09] Done M=16 nbits=6 (exit 0)
+>>> [11:57:38] Done M=32 nbits=6 (exit 0)
+>>> [12:02:30] Done M=64 nbits=6 (exit 0)
+>>> [12:09:42] Done M=256 nbits=4 (exit 0)
+>>> [12:10:22] Done M=128 nbits=6 (exit 0)
+>>> [12:23:13] Done M=256 nbits=6 (exit 0)
+>>> [12:37:31] Done M=512 nbits=4 (exit 0)
+>>> [12:44:46] Done M=512 nbits=6 (exit 0)
+>>> [13:14:40] Done M=1024 nbits=6 (exit 0)
+All done. Failed: 0
+>>> [13:16:02] Done M=1024 nbits=4 (exit 0)
+All done. Failed: 0
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=8 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 2 4 8 16 32 64 128 256 512 1024
+Waiting for 11 jobs...
+>>> [13:16:33] Starting M=1 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits8.log
+>>> [13:16:33] Starting M=2 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M2_nbits8.log
+>>> [13:16:33] Starting M=4 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits8.log
+>>> [13:16:33] Starting M=16 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits8.log
+>>> [13:16:33] Starting M=8 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [13:16:33] Starting M=128 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits8.log
+>>> [13:16:33] Starting M=256 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits8.log
+>>> [13:16:33] Starting M=64 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits8.log
+>>> [13:16:33] Starting M=32 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits8.log
+>>> [13:16:33] Starting M=512 nbits=8 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits8.log
+>>> [13:16:33] Starting M=1024 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1024_nbits8.log
+>>> [13:18:51] Done M=1 nbits=8 (exit 0)
+>>> [13:19:09] Done M=4 nbits=8 (exit 0)
+>>> [13:19:10] Done M=2 nbits=8 (exit 0)
+>>> [13:19:42] Done M=8 nbits=8 (exit 0)
+>>> [13:20:47] Done M=16 nbits=8 (exit 0)
+>>> [13:22:48] Done M=32 nbits=8 (exit 0)
+>>> [13:25:48] Done M=64 nbits=8 (exit 0)
+==========================================
+Running PQ experiments for multiple nbits
+==========================================
+nbits values: 4 6 8 10 12
+Running sequentially (one nbits at a time)
+==========================================
+
+
+==========================================
+Starting experiments for nbits=4
+==========================================
+Time: 2026-02-09 13:27:29
+
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=4 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 4 8 16 32 64 128 256 512 768 1536
+Waiting for 11 jobs...
+>>> [13:27:29] Starting M=1 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits4.log
+>>> [13:27:29] Starting M=4 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits4.log
+>>> [13:27:29] Starting M=8 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits4.log
+>>> [13:27:29] Starting M=16 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits4.log
+>>> [13:27:29] Starting M=32 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits4.log
+>>> [13:27:29] Starting M=128 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits4.log
+>>> [13:27:29] Starting M=64 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits4.log
+>>> [13:27:29] Starting M=768 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M768_nbits4.log
+>>> [13:27:29] Starting M=512 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits4.log
+>>> [13:27:29] Starting M=256 nbits=4 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits4.log
+>>> [13:27:29] Starting M=1536 nbits=4 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1536_nbits4.log
+>>> [13:32:44] Done M=128 nbits=8 (exit 0)
+>>> [13:32:54] Done M=1 nbits=4 (exit 0)
+>>> [13:33:11] Done M=4 nbits=4 (exit 0)
+>>> [13:34:18] Done M=8 nbits=4 (exit 0)
+>>> [13:36:13] Done M=16 nbits=4 (exit 0)
+>>> [13:38:44] Done M=32 nbits=4 (exit 0)
+>>> [13:43:43] Done M=64 nbits=4 (exit 0)
+>>> [13:50:46] Done M=128 nbits=4 (exit 0)
+>>> [13:51:13] Done M=256 nbits=8 (exit 0)
+>>> [14:04:13] Done M=256 nbits=4 (exit 0)
+>>> [14:14:02] Done M=512 nbits=8 (exit 0)
+>>> [14:26:03] Done M=512 nbits=4 (exit 0)
+>>> [14:42:37] Done M=768 nbits=4 (exit 0)
+>>> [14:48:13] Done M=1024 nbits=8 (exit 0)
+All done. Failed: 0
+>>> [15:38:42] Done M=1536 nbits=4 (exit 0)
+All done. Failed: 0
+
+✓ Completed nbits=4 successfully
+
+Waiting a moment before starting next nbits...
+
+==========================================
+Starting experiments for nbits=6
+==========================================
+Time: 2026-02-09 15:38:44
+
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=6 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:38:44] Starting M=8 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits6.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=8 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:39:07] Starting M=8 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=8 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:39:11] Starting M=8 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [15:40:08] Done M=8 nbits=6 (exit 0)
+All done. Failed: 0
+
+✓ Completed nbits=6 successfully
+
+Waiting a moment before starting next nbits...
+
+==========================================
+Starting experiments for nbits=8
+==========================================
+Time: 2026-02-09 15:40:10
+
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=8 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:40:10] Starting M=8 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [15:40:38] Done M=8 nbits=8 (exit 0)
+All done. Failed: 0
+>>> [15:41:33] Done M=8 nbits=8 (exit 0)
+All done. Failed: 0
+
+✓ Completed nbits=8 successfully
+
+Waiting a moment before starting next nbits...
+
+==========================================
+Starting experiments for nbits=10
+==========================================
+Time: 2026-02-09 15:41:35
+
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=10 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:41:35] Starting M=8 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits10.log
+>>> [15:42:58] Done M=8 nbits=10 (exit 0)
+All done. Failed: 0
+
+✓ Completed nbits=10 successfully
+
+Waiting a moment before starting next nbits...
+
+==========================================
+Starting experiments for nbits=12
+==========================================
+Time: 2026-02-09 15:43:00
+
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:43:00] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [15:44:46] Done M=8 nbits=12 (exit 0)
+All done. Failed: 0
+
+✓ Completed nbits=12 successfully
+
+Waiting a moment before starting next nbits...
+run_pq_eval_multiple_nbits.sh: line 99: syntax error near unexpected token `>'
+run_pq_eval_multiple_nbits.sh: line 99: `        echo "  >>> nbits=${NBITS} (dataset: ${DATASET_NAME})"'
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:44:55] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 8
+Waiting for 1 jobs...
+>>> [15:45:00] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [15:46:42] Done M=8 nbits=12 (exit 0)
+All done. Failed: 0
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 8 60
+Waiting for 2 jobs...
+>>> [15:49:02] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [15:49:02] Starting M=60 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits12.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 8 60
+Waiting for 2 jobs...
+>>> [15:49:06] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [15:49:06] Starting M=60 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits12.log
+Using GPUs: 0 1 (2 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 8 60
+Waiting for 2 jobs...
+>>> [15:49:37] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [15:49:37] Starting M=60 nbits=12 (GPU 1) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M60_nbits12.log
+>>> [15:51:28] Done M=8 nbits=12 (exit 0)
+>>> [15:57:11] Done M=60 nbits=12 (exit 0)
+All done. Failed: 0
+==========================================
+Running PQ experiments for multiple datasets and nbits
+==========================================
+Datasets: openai
+nbits values: 6 8 10 12
+Running sequentially: datasets -> nbits
+==========================================
+
+
+==========================================
+>>> DATASET: openai
+==========================================
+Time: 2026-02-09 16:04:47
+
+M_VALUES for openai: 1 4 8 16 32 64 128 256 512 768 1536
+
+
+  ----------------------------------------
+  >>> nbits=6 (dataset: openai)
+  ----------------------------------------
+  Time: 2026-02-09 16:04:47
+
+Using GPUs: 0 (1 device(s))
+Fixed: nbits=6 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 4 8 16 32 64 128 256 512 768 1536
+Waiting for 11 jobs...
+>>> [16:04:47] Starting M=1 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits6.log
+>>> [16:04:47] Starting M=4 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits6.log
+>>> [16:04:47] Starting M=8 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits6.log
+>>> [16:04:47] Starting M=16 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits6.log
+>>> [16:04:47] Starting M=32 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits6.log
+>>> [16:04:47] Starting M=64 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits6.log
+>>> [16:04:47] Starting M=256 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits6.log
+>>> [16:04:47] Starting M=128 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits6.log
+>>> [16:04:47] Starting M=512 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits6.log
+>>> [16:04:47] Starting M=768 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M768_nbits6.log
+>>> [16:04:47] Starting M=1536 nbits=6 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1536_nbits6.log
+==========================================
+Running PQ experiments for multiple datasets and nbits
+==========================================
+Datasets: msmarco
+nbits values: 10 12
+Running sequentially: datasets -> nbits
+==========================================
+
+
+==========================================
+>>> DATASET: msmarco
+==========================================
+Time: 2026-02-09 16:07:50
+
+M_VALUES for msmarco: 1 2 4 8 16 32 64 128 256 512 1024
+
+
+  ----------------------------------------
+  >>> nbits=10 (dataset: msmarco)
+  ----------------------------------------
+  Time: 2026-02-09 16:07:50
+
+Using GPUs: 0 (1 device(s))
+Fixed: nbits=10 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 2 4 8 16 32 64 128 256 512 1024
+Waiting for 11 jobs...
+>>> [16:07:50] Starting M=1 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits10.log
+>>> [16:07:50] Starting M=4 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits10.log
+>>> [16:07:50] Starting M=2 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M2_nbits10.log
+>>> [16:07:50] Starting M=8 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits10.log
+>>> [16:07:50] Starting M=16 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits10.log
+>>> [16:07:50] Starting M=64 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits10.log
+>>> [16:07:50] Starting M=32 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits10.log
+>>> [16:07:50] Starting M=512 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits10.log
+>>> [16:07:50] Starting M=256 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits10.log
+>>> [16:07:50] Starting M=128 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits10.log
+>>> [16:07:50] Starting M=1024 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1024_nbits10.log
+./run_pq_eval_parallel_mult.sh: line 123: 581418 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [16:20:38] Done M=16 nbits=6 (exit 137)
+>>> [16:20:44] Done M=1 nbits=6 (exit 0)
+>>> [16:20:50] Done M=4 nbits=6 (exit 0)
+./run_pq_eval_parallel_mult.sh: line 123: 581419 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [16:21:34] Done M=32 nbits=6 (exit 137)
+>>> [16:21:58] Done M=8 nbits=6 (exit 0)
+>>> [16:24:54] Done M=1 nbits=10 (exit 0)
+>>> [16:25:03] Done M=2 nbits=10 (exit 0)
+>>> [16:25:43] Done M=4 nbits=10 (exit 0)
+>>> [16:26:57] Done M=8 nbits=10 (exit 0)
+>>> [16:29:02] Done M=16 nbits=10 (exit 0)
+>>> [16:32:47] Done M=32 nbits=10 (exit 0)
+>>> [16:34:18] Done M=64 nbits=6 (exit 0)
+>>> [16:39:30] Done M=64 nbits=10 (exit 0)
+>>> [16:45:11] Done M=128 nbits=6 (exit 0)
+>>> [16:50:55] Done M=128 nbits=10 (exit 0)
