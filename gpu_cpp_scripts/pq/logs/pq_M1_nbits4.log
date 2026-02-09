@@ -18,3 +18,48 @@ Computing exact distances...
 ✅ Exact distances computed in 2.70902s
 Mean rel. error: 0.377062, std: 0.110244
 ✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq1_nbits4_train1000000_20260208_225639"
+run_pq_eval_parallel.sh: line 85: ./pq_eval: No such file or directory
+bash: ./pq_eval: No such file or directory
+bash: ./pq_eval: No such file or directory
+bash: ./pq_eval: No such file or directory
+./run_pq_eval_parallel.sh: line 85: ./pq_eval: No such file or directory
+📂 Loading database from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_base.bvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_learn.bvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_query.bvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=128
+Training PQ with 1x4 => 4 bits/vector (GPU)
+✅ PQ trained in 7.57706s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits4_train1000000_20260208_235440/pq_model.index
+Encoding database...
+✅ Encoding done in 0.892484s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.0842597s
+Computing ADC distances...
+✅ ADC distances computed in 0.0572174s
+Computing exact distances...
+✅ Exact distances computed in 1.03153s
+Mean rel. error: 0.358833, std: 0.126268
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits4_train1000000_20260208_235443"
+📂 Loading database from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_base.bvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_learn.bvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_query.bvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=128
+Training PQ with 1x4 => 4 bits/vector (GPU)
+✅ PQ trained in 17.3801s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits4_train1000000_20260208_235754/pq_model.index
+Encoding database...
+✅ Encoding done in 2.26946s | Codes shape: 1000000 x 1
+Computing distance tables...
+✅ Distance tables computed in 0.130935s
+Computing ADC distances...
+✅ ADC distances computed in 0.208194s
+Computing exact distances...
+✅ Exact distances computed in 3.17039s
+Mean rel. error: 0.358833, std: 0.126268
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits4_train1000000_20260208_235800"

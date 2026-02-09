@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Run PQ experiments in parallel. Edit the experiments array below, then run this script.
+# Run PQ experiments in parallel. Set nbits, train_size, sample_db, sample_queries once,
+# then provide a list of M (n_subquantizers) values to run.
 #
 # Usage:
-#   ./run_pq_eval_parallel.sh
+#   ./run_pq_eval_parallel_mult.sh
 #
 # Options (env vars):
-#   GPU_DEVICES="0 1 2 3" - GPUs to use, round-robin across jobs (default: 0 only)
+#   GPU_DEVICES="0 1 2 3" - GPUs to use, round-robin (default: 0 1)
 #   DRY_RUN=1           - print commands without running
 
 export LD_LIBRARY_PATH=/home/cpanourg/projects/2-hdvc/local/openblas/lib:${CUDA_HOME:-/usr/local/cuda}/lib64:$LD_LIBRARY_PATH
@@ -18,61 +19,41 @@ RESULTS_DIR="/data/cpanourg/2-hdvc/results/relerr_cpp"
 LOG_DIR="${SCRIPT_DIR}/logs"
 mkdir -p "$LOG_DIR"
 
-# # Dataset config (change as needed)
-# DATASET_PATH="${DATA_ROOT}/deep1b/dataset/fvecs/test_1m.fvecs"
-# QUERY_PATH="${DATA_ROOT}/deep1b/dataset/fvecs/query_10k.fvecs"
-# TRAIN_PATH="${DATA_ROOT}/deep1b/dataset/fvecs/learn_100m.fvecs"
-# DATASET_NAME="deep"
-
 # Dataset config (change as needed)
 DATASET_PATH="${DATA_ROOT}/bigann/SIFT1M/bigann_base.bvecs"
 QUERY_PATH="${DATA_ROOT}/bigann/SIFT1M/bigann_query.bvecs"
 TRAIN_PATH="${DATA_ROOT}/bigann/SIFT1M/bigann_learn.bvecs"
 DATASET_NAME="bigann"
 
+# Fixed params (set once)
+NBITS=12
+TRAIN_SIZE=1000000
+SAMPLE_DB=10000
+SAMPLE_QUERIES=1000
 
-# Experiments: M NBITS TRAIN_SIZE SAMPLE_DB SAMPLE_QUERIES
-# experiments=(
-# # DEEP
-#   "1 12 1000000 10000 1000"
-#   "2 12 1000000 10000 1000"
-#   "3 12 1000000 10000 1000"
-#   "4 12 1000000 10000 1000"
-#   "6 12 1000000 10000 1000"
-#   "8 12 1000000 10000 1000"
-#   "12 12 1000000 10000 1000"
-#   "16 12 1000000 10000 1000"
-#   "24 12 1000000 10000 1000"
-#   "32 12 1000000 10000 1000"
-#   "48 12 1000000 10000 1000"
-#   "96 12 1000000 10000 1000"
-# )
-
-experiments=(
-# BigANN (SIFT1M)
-  "1 4 1000000 10000 1000"
-  "2 4 1000000 10000 1000"
-  "4 4 1000000 10000 1000"
-  "8 4 1000000 10000 1000"
-  "16 4 1000000 10000 1000"
-  "32 4 1000000 10000 1000"
-  "64 4 1000000 10000 1000"
-  "128 4 1000000 10000 1000"
+# List of M (n_subquantizers) values to run
+M_VALUES=(
+  # SIFT1M
+  1
+  2
+  4
+  8
+  16
+  32
+  64
+  128
 )
 
 # GPU assignment: space-separated list. Jobs use round-robin.
-# Default: both GPUs (0 1). Override: GPU_DEVICES="0 1 2" ./run_pq_eval_parallel.sh
 GPU_DEVICES=(${GPU_DEVICES:-0 1})
 echo "Using GPUs: ${GPU_DEVICES[*]} (${#GPU_DEVICES[@]} device(s))"
+echo "Fixed: nbits=${NBITS} train=${TRAIN_SIZE} sample_db=${SAMPLE_DB} sample_q=${SAMPLE_QUERIES}"
+echo "M values: ${M_VALUES[*]}"
 
 run_one() {
   local M="$1"
-  local NBITS="$2"
-  local TRAIN_SIZE="$3"
-  local SAMPLE_DB="$4"
-  local SAMPLE_Q="$5"
-  local GPU_IDX="$6"
-  local LOG_FILE="$7"
+  local GPU_IDX="$2"
+  local LOG_FILE="$3"
 
   local GpuDev="${GPU_DEVICES[$((GPU_IDX % ${#GPU_DEVICES[@]}))]}"
 
@@ -91,7 +72,7 @@ run_one() {
     --nbits "${NBITS}" \
     --train_size "${TRAIN_SIZE}" \
     --sample_db "${SAMPLE_DB}" \
-    --sample_queries "${SAMPLE_Q}" \
+    --sample_queries "${SAMPLE_QUERIES}" \
     --data_root "${DATA_ROOT}" \
     --results_dir "${RESULTS_DIR}" \
     --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
@@ -103,15 +84,14 @@ run_one() {
 # Run experiments in parallel
 pids=()
 
-for i in "${!experiments[@]}"; do
-  exp="${experiments[$i]}"
-  read -r M NBITS TRAIN_SIZE SAMPLE_DB SAMPLE_Q <<< "$exp"
+for i in "${!M_VALUES[@]}"; do
+  M="${M_VALUES[$i]}"
   log_file="${LOG_DIR}/pq_M${M}_nbits${NBITS}.log"
 
   if [[ -n "${DRY_RUN:-}" ]]; then
-    run_one "$M" "$NBITS" "$TRAIN_SIZE" "$SAMPLE_DB" "$SAMPLE_Q" "$i" "$log_file"
+    run_one "$M" "$i" "$log_file"
   else
-    run_one "$M" "$NBITS" "$TRAIN_SIZE" "$SAMPLE_DB" "$SAMPLE_Q" "$i" "$log_file" &
+    run_one "$M" "$i" "$log_file" &
     pids+=($!)
   fi
 done
@@ -125,6 +105,5 @@ if [[ -z "${DRY_RUN:-}" ]]; then
     fi
   done
   echo "All done. Failed: $failed"
-  # Use return when sourced (keeps terminal open), exit when run with ./
   [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 0 || exit 0
 fi

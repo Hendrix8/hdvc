@@ -18,3 +18,23 @@ Computing exact distances...
 ✅ Exact distances computed in 7.63375s
 Mean rel. error: 0.247944, std: 0.0996832
 ✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/deep/subq1_nbits10_train1000000_20260208_230225"
+📂 Loading database from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_base.bvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_learn.bvecs
+Loaded training data: 1010000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_query.bvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=128
+Training PQ with 1x10 => 10 bits/vector (GPU)
+✅ PQ trained in 30.5926s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits10_train1000000_20260209_001417/pq_model.index
+Encoding database...
+✅ Encoding done in 8.63193s | Codes shape: 1000000 x 2
+Computing distance tables...
+✅ Distance tables computed in 0.642659s
+Computing ADC distances...
+✅ ADC distances computed in 0.719441s
+Computing exact distances...
+✅ Exact distances computed in 5.11246s
+Mean rel. error: 0.235842, std: 0.10921
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/bigann/subq1_nbits10_train1000000_20260209_001433"
