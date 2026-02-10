@@ -20,28 +20,47 @@ CONDA_PREFIX ?= $(HOME)/.miniconda3
 OPENBLAS_PREFIX ?= $(CONDA_PREFIX)
 LDFLAGS += -L$(OPENBLAS_PREFIX)/lib -lopenblas -lgfortran
 
-# Source files
-SOURCES = opq_eval.cpp ../io_utils.cpp
-OBJECTS = opq_eval.o io_utils.o
-TARGET = opq_eval
+# Source files / objects / targets
+OPQ_EVAL_SRC = opq_eval.cpp
+LEARN_OPQ_SRC = learn_opq_rot.cpp
+TRAIN_OPQ_SRC = train_opq.cpp
+IO_SRC = ../io_utils.cpp
 
-# Default target
-all: $(TARGET)
+OPQ_EVAL_OBJ = opq_eval.o
+LEARN_OPQ_OBJ = learn_opq_rot.o
+TRAIN_OPQ_OBJ = train_opq.o
+IO_OBJ = io_utils.o
 
-# Build target
-$(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJECTS) $(LDFLAGS)
+TARGETS = opq_eval learn_opq_rot train_opq
+
+# Default target builds all binaries
+all: $(TARGETS)
+
+opq_eval: $(OPQ_EVAL_OBJ) $(IO_OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+learn_opq_rot: $(LEARN_OPQ_OBJ) $(IO_OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+train_opq: $(TRAIN_OPQ_OBJ) $(IO_OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Compile source files
-opq_eval.o: opq_eval.cpp
+opq_eval.o: $(OPQ_EVAL_SRC)
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 
-io_utils.o: ../io_utils.cpp
+learn_opq_rot.o: $(LEARN_OPQ_SRC)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+train_opq.o: $(TRAIN_OPQ_SRC)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+io_utils.o: $(IO_SRC)
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 
 # Clean build artifacts
 clean:
-	rm -f $(OBJECTS) $(TARGET)
+	rm -f $(OPQ_EVAL_OBJ) $(LEARN_OPQ_OBJ) $(TRAIN_OPQ_OBJ) $(IO_OBJ) $(TARGETS)
 
 # Check if FAISS (GPU) is found
 check:
@@ -55,7 +74,10 @@ check:
 # Help
 help:
 	@echo "Available targets:"
-	@echo "  all     - Build opq_eval (default)"
+	@echo "  all           - Build all OPQ binaries (opq_eval, learn_opq_rot, train_opq)"
+	@echo "  opq_eval      - Build combined OPQ+PQ evaluator"
+	@echo "  learn_opq_rot - Build OPQ-only rotation learner"
+	@echo "  train_opq     - Build PQ trainer + evaluator using cached OPQ"
 	@echo "  clean   - Remove build artifacts"
 	@echo "  check   - Verify FAISS installation"
 	@echo "  help    - Show this help message"
