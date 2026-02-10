@@ -6,6 +6,8 @@
 #include <faiss/gpu/GpuIndexFlat.h>
 #include "../io_utils.h"
 
+#include <cuda_runtime.h>
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -310,6 +312,8 @@ int main(int argc, char* argv[]) {
     faiss::IndexPQ* index_pq = nullptr;
     double train_time = 0.0;
     
+    // NOTE: we time only the actual training call (plus a GPU sync),
+    // not surrounding logging or I/O, to avoid measuring idle time.
     auto start = std::chrono::high_resolution_clock::now();
     
     if (load_model) {
@@ -341,12 +345,16 @@ int main(int argc, char* argv[]) {
         index_pq->pq.assign_index = &gpu_assign_index;
         
         auto train_data = flatten_vectors(train_db);
+
+        // Start a tight timing scope around the GPU‑accelerated training.
+        auto train_start = std::chrono::high_resolution_clock::now();
         index_pq->train(train_db.size(), train_data.data());
+        // Ensure all GPU work for training is finished before we stop the timer.
+        cudaDeviceSynchronize();
+        auto train_end = std::chrono::high_resolution_clock::now();
+        train_time = std::chrono::duration<double>(train_end - train_start).count();
         
         index_pq->pq.assign_index = nullptr;
-        
-        auto end = std::chrono::high_resolution_clock::now();
-        train_time = std::chrono::duration<double>(end - start).count();
         std::cout << "✅ PQ trained in " << train_time << "s" << std::endl;
         
         // Save model

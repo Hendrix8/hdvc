@@ -5,6 +5,8 @@
 #include <faiss/gpu/GpuIndexFlat.h>
 #include "../io_utils.h"
 
+#include <cuda_runtime.h>
+
 #include <algorithm>
 #include <chrono>
 #include <cmath>
@@ -140,6 +142,8 @@ void save_summary_csv(
         size_t nbits,
         size_t train_size,
         double train_time,
+        double opq_train_time,
+        double pq_train_time,
         double encoding_time,
         double distance_table_time,
         double cdist_time,
@@ -151,8 +155,9 @@ void save_summary_csv(
     std::ofstream file(csv_path, std::ios::app);
     if (need_header) {
         file << "method,dataset,experiment_folder,nq,nb,nb_sample,dim,n_subquantizers,nbits,"
-             << "bits_per_vector,train_size,train_time_s,encoding_time_s,distance_table_time_s,"
-             << "cdist_time_s,adc_time_s,rel_error_mean,rel_error_std\n";
+             << "bits_per_vector,train_size,train_time_s,opq_train_time_s,pq_train_time_s,"
+             << "encoding_time_s,distance_table_time_s,cdist_time_s,adc_time_s,"
+             << "rel_error_mean,rel_error_std\n";
     }
 
     file << "OPQ," << dataset_name << "," << experiment_folder << ","
@@ -160,8 +165,8 @@ void save_summary_csv(
          << M << "," << nbits << "," << (M * nbits) << ","
          << train_size << ","
          << std::fixed << std::setprecision(6)
-         << train_time << "," << encoding_time << ","
-         << distance_table_time << "," << cdist_time << ","
+         << train_time << "," << opq_train_time << "," << pq_train_time << ","
+         << encoding_time << "," << distance_table_time << "," << cdist_time << ","
          << adc_time << ",";
 
     if (std::isnan(mean_rel)) {
@@ -185,7 +190,7 @@ int main(int argc, char* argv[]) {
                   << "[--dim DIM] [--dataset_name NAME] [--data_root ROOT] "
                   << "[--n_subquantizers M] [--nbits BITS] [--train_size SIZE] "
                   << "[--sample_db SIZE] [--sample_queries SIZE] [--results_dir DIR] "
-                  << "[--opq_max_train_points N] [--gpu_device DEVICE]\n";
+                  << "[--opq_max_train_points N] [--opq_model_path PATH] [--gpu_device DEVICE]\n";
         return 1;
     }
 
@@ -200,6 +205,7 @@ int main(int argc, char* argv[]) {
     size_t sample_queries = 1000;
     std::string results_dir = "results/relerr";
     size_t opq_max_train_points = 256 * 256;
+    std::string opq_model_path;  // optional path to save/load OPQ rotation
     int gpu_device = 0;
 
     for (int i = 1; i < argc; i++) {
@@ -230,6 +236,8 @@ int main(int argc, char* argv[]) {
             results_dir = argv[++i];
         } else if (arg == "--opq_max_train_points" && i + 1 < argc) {
             opq_max_train_points = std::stoul(argv[++i]);
+        } else if (arg == "--opq_model_path" && i + 1 < argc) {
+            opq_model_path = argv[++i];
         } else if (arg == "--gpu_device" && i + 1 < argc) {
             gpu_device = std::stoi(argv[++i]);
         }
@@ -293,17 +301,68 @@ int main(int argc, char* argv[]) {
               << "testing on " << nb << " samples, "
               << "queries: " << nq << ", dim=" << dim << std::endl;
 
+    // We reuse these for later timing blocks (encoding, distance tables, etc.).
     auto start = std::chrono::high_resolution_clock::now();
+    auto end   = start;
 
     faiss::OPQMatrix opq(static_cast<int>(dim), static_cast<int>(M));
     opq.max_train_points = opq_max_train_points;
-    std::cout << "Training OPQ (max_train_points=" << opq.max_train_points << ")...\n";
+
+    double opq_train_time = 0.0;
 
     auto train_flat = flatten_vectors(train_db);
-    opq.train(train_db.size(), train_flat.data());
+
+    // Pointer to the transform we will use everywhere (OPQMatrix when training, or loaded VT).
+    std::unique_ptr<faiss::VectorTransform> opq_loaded;
+    faiss::VectorTransform* opq_vt = &opq;
+
+    // If an OPQ model path is provided and exists, load the rotation instead of retraining.
+    if (!opq_model_path.empty() && fs::exists(opq_model_path)) {
+        std::cout << "📥 Loading OPQ transform from " << opq_model_path << std::endl;
+        opq_loaded.reset(faiss::read_VectorTransform(opq_model_path.c_str()));
+        if (!opq_loaded) {
+            std::cerr << "Error: Failed to read OPQ transform" << std::endl;
+            return 1;
+        }
+        if (opq_loaded->d_in != static_cast<int>(dim) ||
+            opq_loaded->d_out != static_cast<int>(dim)) {
+            std::cerr << "Error: Loaded OPQ transform dimensions don't match current dim"
+                      << std::endl;
+            return 1;
+        }
+        opq_vt = opq_loaded.get();
+        std::cout << "✅ OPQ transform loaded (no additional OPQ training time)" << std::endl;
+        opq_train_time = 0.0;
+    } else {
+        std::cout << "Training OPQ (max_train_points=" << opq.max_train_points << ")...\n";
+        auto opq_start = std::chrono::high_resolution_clock::now();
+        opq.train(train_db.size(), train_flat.data());
+        auto opq_end = std::chrono::high_resolution_clock::now();
+        opq_train_time =
+                std::chrono::duration<double>(opq_end - opq_start).count();
+        std::cout << "✅ OPQ trained in " << opq_train_time << "s" << std::endl;
+
+        if (!opq_model_path.empty()) {
+            try {
+                fs::path opq_path(opq_model_path);
+                if (!opq_path.parent_path().empty()) {
+                    fs::create_directories(opq_path.parent_path());
+                }
+                faiss::write_VectorTransform(&opq, opq_model_path.c_str());
+                std::cout << "💾 OPQ transform saved to " << opq_model_path
+                          << std::endl;
+            } catch (const std::exception& e) {
+                std::cerr << "Warning: Failed to save OPQ transform: " << e.what()
+                          << std::endl;
+            }
+        }
+
+        // When we trained locally, use the in‑process OPQMatrix as the transform.
+        opq_vt = &opq;
+    }
 
     std::vector<float> train_rot(train_db.size() * dim);
-    opq.apply_noalloc(train_db.size(), train_flat.data(), train_rot.data());
+    opq_vt->apply_noalloc(train_db.size(), train_flat.data(), train_rot.data());
 
     faiss::ProductQuantizer pq(dim, M, nbits);
     std::cout << "Training PQ with " << M << "x" << nbits
@@ -315,11 +374,19 @@ int main(int argc, char* argv[]) {
     flat_config.device = gpu_device;
     faiss::gpu::GpuIndexFlatL2 gpu_assign_index(&gpu_res, pq.dsub, flat_config);
     pq.assign_index = &gpu_assign_index;
-    pq.train(train_db.size(), train_rot.data());
-    pq.assign_index = nullptr;
 
-    auto end = std::chrono::high_resolution_clock::now();
-    double train_time = std::chrono::duration<double>(end - start).count();
+    // Tight timing scope around PQ training (plus GPU sync).
+    auto pq_start = std::chrono::high_resolution_clock::now();
+    pq.train(train_db.size(), train_rot.data());
+    cudaDeviceSynchronize();
+    auto pq_end = std::chrono::high_resolution_clock::now();
+    double pq_train_time =
+            std::chrono::duration<double>(pq_end - pq_start).count();
+
+    // Total train time (OPQ + PQ) for backward compatibility.
+    double train_time = opq_train_time + pq_train_time;
+
+    pq.assign_index = nullptr;
     std::cout << "✅ OPQ+PQ trained in " << train_time << "s" << std::endl;
 
     std::cout << "Encoding database..." << std::endl;
@@ -327,7 +394,7 @@ int main(int argc, char* argv[]) {
 
     auto test_flat = flatten_vectors(test_db);
     std::vector<float> test_rot(nb * dim);
-    opq.apply_noalloc(nb, test_flat.data(), test_rot.data());
+    opq_vt->apply_noalloc(nb, test_flat.data(), test_rot.data());
 
     size_t code_size = pq.code_size;
     std::vector<uint8_t> codes(nb * code_size);
@@ -344,7 +411,7 @@ int main(int argc, char* argv[]) {
     size_t ksub = 1 << nbits;
     auto query_flat = flatten_vectors(qr_vecs);
     std::vector<float> query_rot(nq * dim);
-    opq.apply_noalloc(nq, query_flat.data(), query_rot.data());
+    opq_vt->apply_noalloc(nq, query_flat.data(), query_rot.data());
 
     std::vector<float> dis_tables(nq * M * ksub);
     pq.compute_distance_tables(nq, query_rot.data(), dis_tables.data());
@@ -465,6 +532,8 @@ int main(int argc, char* argv[]) {
             nbits,
             actual_train_size,
             train_time,
+            opq_train_time,
+            pq_train_time,
             encoding_time,
             distance_table_time,
             cdist_time,
@@ -485,6 +554,8 @@ int main(int argc, char* argv[]) {
             nbits,
             actual_train_size,
             train_time,
+            opq_train_time,
+            pq_train_time,
             encoding_time,
             distance_table_time,
             cdist_time,

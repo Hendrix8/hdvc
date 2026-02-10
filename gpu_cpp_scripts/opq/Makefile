@@ -6,18 +6,19 @@ FAISS_LIB_PATH = /home/cpanourg/projects/2-hdvc/lib/faiss/build/faiss
 
 # CUDA paths (for GPU-enabled FAISS)
 CUDA_HOME ?= /usr/local/cuda
+CUDA_INCLUDES = -I$(CUDA_HOME)/include
 CUDA_LDFLAGS = -L$(CUDA_HOME)/lib64 -lcudart -lcublas
 
 # Compiler and flags
 CXX = g++
 CXXFLAGS = -std=c++17 -O3 -Wall -Wextra -march=native
-INCLUDES = -I$(FAISS_INCLUDE) -I..
-LDFLAGS = -L$(FAISS_LIB_PATH) -lfaiss -fopenmp $(CUDA_LDFLAGS)
+INCLUDES = -I$(FAISS_INCLUDE) $(CUDA_INCLUDES) -I..
+LDFLAGS = -L$(FAISS_LIB_PATH) -lfaiss -fopenmp $(CUDA_LDFLAGS) -lrt
 
 # OpenBLAS (local or conda)
 CONDA_PREFIX ?= $(HOME)/.miniconda3
 OPENBLAS_PREFIX ?= $(CONDA_PREFIX)
-LDFLAGS += -L$(OPENBLAS_PREFIX)/lib -lopenblas
+LDFLAGS += -L$(OPENBLAS_PREFIX)/lib -lopenblas -lgfortran
 
 # Source files
 SOURCES = opq_eval.cpp ../io_utils.cpp

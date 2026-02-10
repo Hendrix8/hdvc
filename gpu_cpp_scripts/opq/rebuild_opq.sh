@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
-# Rebuild script for opq_eval binary
-
-set -e
+# Rebuild opq_eval (GPU version) – mirror PQ rebuild behaviour
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-echo "Cleaning previous build..."
-make clean
-
-echo "Building opq_eval..."
-make
-
-echo "✓ opq_eval rebuilt successfully"
+# Run make clean and then make. If either fails, the script exits with a non‑zero status.
+make clean && make

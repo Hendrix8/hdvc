@@ -58,3 +58,23 @@ Computing exact distances...
 ✅ Exact distances computed in 40.606s
 Mean rel. error: 0.21855, std: 0.0324521
 ✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/msmarco/subq32_nbits10_train1000000_20260209_163224"
+📂 Loading database from /data/cpanourg/2-hdvc/data/openai/openai_base1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/openai/openai_train1m.fvecs
+Loaded training data: 1000000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/openai/openai_query10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=1536
+Training PQ with 32x10 => 320 bits/vector (GPU)
+✅ PQ trained in 387.945s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/openai/subq32_nbits10_train1000000_20260209_210956/pq_model.index
+Encoding database...
+✅ Encoding done in 71.9659s | Codes shape: 1000000 x 40
+Computing distance tables...
+✅ Distance tables computed in 8.8565s
+Computing ADC distances...
+✅ ADC distances computed in 3.08682s
+Computing exact distances...
+✅ Exact distances computed in 32.611s
+Mean rel. error: 0.329093, std: 0.0392315
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/openai/subq32_nbits10_train1000000_20260209_211154"

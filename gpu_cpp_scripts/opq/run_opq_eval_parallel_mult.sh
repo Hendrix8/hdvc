@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# Run PQ experiments in parallel. Set nbits, train_size, sample_db, sample_queries once,
+# Run OPQ experiments in parallel. Set nbits, train_size, sample_db, sample_queries once,
 # then provide a list of M (n_subquantizers) values to run.
 #
 # Usage:
-#   ./run_pq_eval_parallel_mult.sh
+#   ./run_opq_eval_parallel_mult.sh
 #
 # Options (env vars):
 #   GPU_DEVICES="0 1 2 3" - GPUs to use, round-robin (default: 0 1)
-#   DRY_RUN=1           - print commands without running
+#   DRY_RUN=1             - print commands without running
 
 export LD_LIBRARY_PATH=/home/cpanourg/projects/2-hdvc/local/openblas/lib:${CUDA_HOME:-/usr/local/cuda}/lib64:$LD_LIBRARY_PATH
 
@@ -25,7 +25,7 @@ mkdir -p "$LOG_DIR"
 # Set DATASET_NAME here to use a specific dataset, or leave unset to use
 # environment variable or default (openai)
 # Options: "deep", "msmarco", "gist", "openai", "bigann"
-# DATASET_NAME="gist"  # Uncomment and set to override
+# DATASET_NAME="bigann"  # Uncomment and set to override
 
 # Dataset configuration - can be set in file above or via DATASET_NAME environment variable
 # If DATASET_NAME is set (either in file or env), it will use that dataset's config
@@ -52,9 +52,9 @@ if [[ -n "${DATASET_NAME:-}" ]]; then
       TRAIN_PATH="${DATA_ROOT}/openai/openai_train1m.fvecs"
       ;;
     deep)
-      DATASET_PATH="${DATA_ROOT}/deep1b/fvecs/test_1m.fvecs"
-      QUERY_PATH="${DATA_ROOT}/deep1b/fvecs/query_10k.fvecs"
-      TRAIN_PATH="${DATA_ROOT}/deep1b/fvecs/learn_100m.fvecs"
+      DATASET_PATH="${DATA_ROOT}/deep1b/dataset/fvecs/test_1m.fvecs"
+      QUERY_PATH="${DATA_ROOT}/deep1b/dataset/fvecs/query_10k.fvecs"
+      TRAIN_PATH="${DATA_ROOT}/deep1b/dataset/fvecs/learn_100m.fvecs"
       ;;
     *)
       echo "Error: Unknown dataset name: ${DATASET_NAME}"
@@ -70,12 +70,14 @@ else
   DATASET_NAME="openai"
 fi
 
-
-
+# Directory to store / reuse OPQ transforms per (dataset, M)
+OPQ_MODEL_ROOT="${RESULTS_DIR}/opq_transforms"
+OPQ_MODEL_DIR="${OPQ_MODEL_ROOT}/${DATASET_NAME}"
+mkdir -p "${OPQ_MODEL_DIR}"
 
 # Fixed params (set once)
 # NBITS can be overridden via environment variable
-NBITS=${NBITS:-6}
+NBITS=${NBITS:-4}
 TRAIN_SIZE=1000000
 SAMPLE_DB=10000
 SAMPLE_QUERIES=1000
@@ -90,18 +92,17 @@ else
   # Dataset-specific M_VALUES defaults
   case "${DATASET_NAME}" in
     bigann)
-      M_VALUES=(1 2 4 8 16 32 64 128)
+      # M_VALUES=(1 2 4 8 16 32 64 128)
+      M_VALUES=(1)
       ;;
     gist)
       M_VALUES=(1 3 5 8 12 20 40 60 80 120 320 480 960)
-      # M_VALUES=(8 60)
       ;;
     msmarco)
       M_VALUES=(1 2 4 8 16 32 64 128 256 512 1024)
       ;;
     openai)
-      # M_VALUES=(1 4 8 16 32 64 128 256 512 768 1536)
-      M_VALUES=(16 32)
+      M_VALUES=(1 4 8 16 32 64 128 256 512 768 1536)
       ;;
     deep)
       M_VALUES=(1 2 3 4 6 8 12 16 24 32 48 96)
@@ -113,9 +114,8 @@ else
   esac
 fi
 
-
 # GPU assignment: space-separated list. Jobs use round-robin.
-GPU_DEVICES=(${GPU_DEVICES:-0 1})
+# GPU_DEVICES=(${GPU_DEVICES:-0 1})
 GPU_DEVICES=(0)
 echo "Using GPUs: ${GPU_DEVICES[*]} (${#GPU_DEVICES[@]} device(s))"
 echo "Fixed: nbits=${NBITS} train=${TRAIN_SIZE} sample_db=${SAMPLE_DB} sample_q=${SAMPLE_QUERIES}"
@@ -128,13 +128,16 @@ run_one() {
 
   local GpuDev="${GPU_DEVICES[$((GPU_IDX % ${#GPU_DEVICES[@]}))]}"
 
+   # OPQ model path: shared across different nbits for the same (dataset, M)
+   local opq_model_path="${OPQ_MODEL_DIR}/opq_M${M}.vt"
+
   if [[ -n "${DRY_RUN:-}" ]]; then
     echo "[DRY_RUN] M=${M} nbits=${NBITS} gpu=${GpuDev} log=${LOG_FILE}"
     return 0
   fi
 
   echo ">>> [$(date +%H:%M:%S)] Starting M=${M} nbits=${NBITS} (GPU ${GpuDev}) -> ${LOG_FILE}"
-  ./pq_eval \
+  ./opq_eval \
     --dataset_path "${DATASET_PATH}" \
     --query_path "${QUERY_PATH}" \
     --train_path "${TRAIN_PATH}" \
@@ -146,6 +149,7 @@ run_one() {
     --sample_queries "${SAMPLE_QUERIES}" \
     --data_root "${DATA_ROOT}" \
     --results_dir "${RESULTS_DIR}" \
+    --opq_model_path "${opq_model_path}" \
     --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
   local rc=$?
   echo ">>> [$(date +%H:%M:%S)] Done M=${M} nbits=${NBITS} (exit $rc)"
@@ -157,7 +161,7 @@ pids=()
 
 for i in "${!M_VALUES[@]}"; do
   M="${M_VALUES[$i]}"
-  log_file="${LOG_DIR}/pq_M${M}_nbits${NBITS}.log"
+  log_file="${LOG_DIR}/opq_M${M}_nbits${NBITS}.log"
 
   if [[ -n "${DRY_RUN:-}" ]]; then
     run_one "$M" "$i" "$log_file"
@@ -178,3 +182,4 @@ if [[ -z "${DRY_RUN:-}" ]]; then
   echo "All done. Failed: $failed"
   [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 0 || exit 0
 fi
+

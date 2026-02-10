@@ -930,3 +930,197 @@ Waiting for 11 jobs...
 >>> [16:39:30] Done M=64 nbits=10 (exit 0)
 >>> [16:45:11] Done M=128 nbits=6 (exit 0)
 >>> [16:50:55] Done M=128 nbits=10 (exit 0)
+>>> [17:01:51] Done M=256 nbits=6 (exit 0)
+>>> [17:07:18] Done M=256 nbits=10 (exit 0)
+>>> [17:27:09] Done M=512 nbits=6 (exit 0)
+>>> [17:32:48] Done M=512 nbits=10 (exit 0)
+>>> [17:46:48] Done M=768 nbits=6 (exit 0)
+>>> [18:06:00] Done M=1024 nbits=10 (exit 0)
+All done. Failed: 0
+
+  ✓ Completed nbits=10 for msmarco successfully
+
+  Waiting a moment before starting next nbits...
+
+  ----------------------------------------
+  >>> nbits=12 (dataset: msmarco)
+  ----------------------------------------
+  Time: 2026-02-09 18:06:02
+
+Using GPUs: 0 (1 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 2 4 8 16 32 64 128 256 512 1024
+Waiting for 11 jobs...
+>>> [18:06:02] Starting M=1 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits12.log
+>>> [18:06:02] Starting M=4 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits12.log
+>>> [18:06:02] Starting M=2 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M2_nbits12.log
+>>> [18:06:02] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [18:06:02] Starting M=16 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits12.log
+>>> [18:06:02] Starting M=32 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits12.log
+>>> [18:06:02] Starting M=128 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits12.log
+>>> [18:06:02] Starting M=256 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits12.log
+>>> [18:06:02] Starting M=64 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits12.log
+>>> [18:06:02] Starting M=1024 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1024_nbits12.log
+>>> [18:06:02] Starting M=512 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits12.log
+>>> [18:09:36] Done M=1 nbits=12 (exit 0)
+>>> [18:09:50] Done M=2 nbits=12 (exit 0)
+>>> [18:10:08] Done M=4 nbits=12 (exit 0)
+>>> [18:11:25] Done M=8 nbits=12 (exit 0)
+>>> [18:13:19] Done M=16 nbits=12 (exit 0)
+>>> [18:16:39] Done M=32 nbits=12 (exit 0)
+>>> [18:23:31] Done M=64 nbits=12 (exit 0)
+>>> [18:39:35] Done M=128 nbits=12 (exit 0)
+>>> [18:55:51] Done M=1536 nbits=6 (exit 0)
+All done. Failed: 2
+
+  ✓ Completed nbits=6 for openai successfully
+
+  Waiting a moment before starting next nbits...
+
+  ----------------------------------------
+  >>> nbits=8 (dataset: openai)
+  ----------------------------------------
+  Time: 2026-02-09 18:55:53
+
+Using GPUs: 0 (1 device(s))
+Fixed: nbits=8 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 4 8 16 32 64 128 256 512 768 1536
+Waiting for 11 jobs...
+>>> [18:55:53] Starting M=16 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits8.log
+>>> [18:55:53] Starting M=512 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits8.log
+>>> [18:55:53] Starting M=4 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits8.log
+>>> [18:55:53] Starting M=1 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits8.log
+>>> [18:55:53] Starting M=32 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits8.log
+>>> [18:55:53] Starting M=256 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits8.log
+>>> [18:55:53] Starting M=8 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits8.log
+>>> [18:55:53] Starting M=1536 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1536_nbits8.log
+>>> [18:55:53] Starting M=64 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits8.log
+>>> [18:55:53] Starting M=128 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits8.log
+>>> [18:55:53] Starting M=768 nbits=8 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M768_nbits8.log
+>>> [19:00:50] Done M=1 nbits=8 (exit 0)
+>>> [19:01:36] Done M=256 nbits=12 (exit 0)
+>>> [19:01:39] Done M=4 nbits=8 (exit 0)
+>>> [19:02:15] Done M=8 nbits=8 (exit 0)
+>>> [19:03:30] Done M=16 nbits=8 (exit 0)
+>>> [19:06:09] Done M=32 nbits=8 (exit 0)
+>>> [19:10:40] Done M=64 nbits=8 (exit 0)
+>>> [19:17:43] Done M=128 nbits=8 (exit 0)
+>>> [19:39:48] Done M=256 nbits=8 (exit 0)
+>>> [19:45:45] Done M=512 nbits=12 (exit 0)
+>>> [20:01:43] Done M=512 nbits=8 (exit 0)
+>>> [20:16:10] Done M=768 nbits=8 (exit 0)
+>>> [20:52:37] Done M=1024 nbits=12 (exit 0)
+All done. Failed: 0
+
+  ✓ Completed nbits=12 for msmarco successfully
+
+  Waiting a moment before starting next nbits...
+
+==========================================
+✓ Completed all nbits for dataset: msmarco
+==========================================
+
+Waiting before starting next dataset...
+
+==========================================
+All experiments completed!
+==========================================
+Total time: 4h 44m 54s
+Completed datasets: msmarco
+Completed nbits values: 10 12
+==========================================
+>>> [21:03:05] Done M=1536 nbits=8 (exit 0)
+All done. Failed: 0
+
+  ✓ Completed nbits=8 for openai successfully
+
+  Waiting a moment before starting next nbits...
+
+  ----------------------------------------
+  >>> nbits=10 (dataset: openai)
+  ----------------------------------------
+  Time: 2026-02-09 21:03:07
+
+Using GPUs: 0 (1 device(s))
+Fixed: nbits=10 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 4 8 16 32 64 128 256 512 768 1536
+Waiting for 11 jobs...
+>>> [21:03:07] Starting M=1 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits10.log
+>>> [21:03:07] Starting M=4 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits10.log
+>>> [21:03:07] Starting M=8 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits10.log
+>>> [21:03:07] Starting M=16 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits10.log
+>>> [21:03:07] Starting M=32 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits10.log
+>>> [21:03:07] Starting M=64 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits10.log
+>>> [21:03:07] Starting M=256 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits10.log
+>>> [21:03:07] Starting M=128 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits10.log
+>>> [21:03:07] Starting M=512 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits10.log
+>>> [21:03:07] Starting M=1536 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1536_nbits10.log
+>>> [21:03:07] Starting M=768 nbits=10 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M768_nbits10.log
+>>> [21:06:13] Done M=1 nbits=10 (exit 0)
+>>> [21:07:07] Done M=4 nbits=10 (exit 0)
+>>> [21:08:06] Done M=8 nbits=10 (exit 0)
+>>> [21:09:14] Done M=16 nbits=10 (exit 0)
+>>> [21:12:04] Done M=32 nbits=10 (exit 0)
+>>> [21:16:21] Done M=64 nbits=10 (exit 0)
+>>> [21:25:42] Done M=128 nbits=10 (exit 0)
+>>> [21:37:44] Done M=256 nbits=10 (exit 0)
+>>> [21:59:48] Done M=512 nbits=10 (exit 0)
+>>> [22:16:08] Done M=768 nbits=10 (exit 0)
+>>> [22:53:31] Done M=1536 nbits=10 (exit 0)
+All done. Failed: 0
+
+  ✓ Completed nbits=10 for openai successfully
+
+  Waiting a moment before starting next nbits...
+
+  ----------------------------------------
+  >>> nbits=12 (dataset: openai)
+  ----------------------------------------
+  Time: 2026-02-09 22:53:33
+
+Using GPUs: 0 (1 device(s))
+Fixed: nbits=12 train=1000000 sample_db=10000 sample_q=1000
+M values: 1 4 8 16 32 64 128 256 512 768 1536
+Waiting for 11 jobs...
+>>> [22:53:33] Starting M=1 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1_nbits12.log
+>>> [22:53:33] Starting M=4 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M4_nbits12.log
+>>> [22:53:33] Starting M=32 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M32_nbits12.log
+>>> [22:53:33] Starting M=8 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M8_nbits12.log
+>>> [22:53:33] Starting M=768 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M768_nbits12.log
+>>> [22:53:33] Starting M=16 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M16_nbits12.log
+>>> [22:53:33] Starting M=128 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M128_nbits12.log
+>>> [22:53:33] Starting M=64 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M64_nbits12.log
+>>> [22:53:33] Starting M=256 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M256_nbits12.log
+>>> [22:53:33] Starting M=512 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M512_nbits12.log
+>>> [22:53:33] Starting M=1536 nbits=12 (GPU 0) -> /home/cpanourg/projects/2-hdvc/gpu_cpp_scripts/pq/logs/pq_M1536_nbits12.log
+>>> [22:58:18] Done M=1 nbits=12 (exit 0)
+>>> [22:59:27] Done M=4 nbits=12 (exit 0)
+>>> [23:00:11] Done M=8 nbits=12 (exit 0)
+>>> [23:02:16] Done M=16 nbits=12 (exit 0)
+>>> [23:06:32] Done M=32 nbits=12 (exit 0)
+./run_pq_eval_parallel_mult.sh: line 123: 758430 Killed                  ./pq_eval --dataset_path "${DATASET_PATH}" --query_path "${QUERY_PATH}" --train_path "${TRAIN_PATH}" --dataset_name "${DATASET_NAME}" --n_subquantizers "${M}" --nbits "${NBITS}" --train_size "${TRAIN_SIZE}" --sample_db "${SAMPLE_DB}" --sample_queries "${SAMPLE_QUERIES}" --data_root "${DATA_ROOT}" --results_dir "${RESULTS_DIR}" --gpu_device "${GpuDev}" >> "$LOG_FILE" 2>&1
+>>> [23:08:46] Done M=64 nbits=12 (exit 137)
+>>> [23:38:54] Done M=128 nbits=12 (exit 0)
+>>> [23:54:35] Done M=256 nbits=12 (exit 0)
+>>> [00:29:26] Done M=512 nbits=12 (exit 0)
+>>> [00:58:39] Done M=768 nbits=12 (exit 0)
+>>> [02:04:32] Done M=1536 nbits=12 (exit 0)
+All done. Failed: 1
+
+  ✓ Completed nbits=12 for openai successfully
+
+  Waiting a moment before starting next nbits...
+
+==========================================
+✓ Completed all nbits for dataset: openai
+==========================================
+
+Waiting before starting next dataset...
+
+==========================================
+All experiments completed!
+==========================================
+Total time: -491848h -4m -47s
+Completed datasets: openai
+Completed nbits values: 6 8 10 12
+==========================================

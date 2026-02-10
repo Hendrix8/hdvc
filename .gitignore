@@ -13,6 +13,9 @@ cpp_scripts/opq/opq_eval
 # Local OpenBLAS (built from source)
 local/openblas/
 
+#logs 
+gpu_cpp_scripts/pq/log
+
 # Object files
 *.o
 *.a

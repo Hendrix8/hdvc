@@ -66,3 +66,23 @@ Loaded training data: 1000000 vectors
 Loaded queries: 1000 vectors
 Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=1536
 Training PQ with 16x6 => 96 bits/vector (GPU)
+📂 Loading database from /data/cpanourg/2-hdvc/data/openai/openai_base1m.fvecs
+Loaded database: 1000000 vectors
+📂 Loading training data from /data/cpanourg/2-hdvc/data/openai/openai_train1m.fvecs
+Loaded training data: 1000000 vectors
+📂 Loading queries from /data/cpanourg/2-hdvc/data/openai/openai_query10k.fvecs
+Loaded queries: 1000 vectors
+Training on 1000000 samples, testing on 1000000 samples, queries: 1000, dim=1536
+Training PQ with 16x6 => 96 bits/vector (GPU)
+✅ PQ trained in 155.033s
+✅ PQ model saved to /data/cpanourg/2-hdvc/results/relerr_cpp/pq/openai/subq16_nbits6_train1000000_20260210_093505/pq_model.index
+Encoding database...
+✅ Encoding done in 18.0303s | Codes shape: 1000000 x 12
+Computing distance tables...
+✅ Distance tables computed in 2.51047s
+Computing ADC distances...
+✅ ADC distances computed in 1.6734s
+Computing exact distances...
+✅ Exact distances computed in 31.9793s
+Mean rel. error: 0.411901, std: 0.0417901
+✅ Results saved to "/data/cpanourg/2-hdvc/results/relerr_cpp/pq/openai/subq16_nbits6_train1000000_20260210_093600"
