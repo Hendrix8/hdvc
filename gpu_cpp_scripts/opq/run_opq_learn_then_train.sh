@@ -30,7 +30,7 @@ NBITS_VALUES=(4 6 8 10 12)
 # Number of vectors to use for OPQ rotation training (per dataset),
 # independent of the PQ train_size used later in Phase 2.
 ROT_TRAIN_SIZE=1000000
-OPQ_MAX_TRAIN_POINTS=50000 # $((256 * 256))
+OPQ_MAX_TRAIN_POINTS=100000 # $((256 * 256))
 
 # Number of training vectors to use for PQ (train_opq) in Phase 2.
 TRAIN_SIZE=1000000
