@@ -486,21 +486,17 @@ def run_evals(
 
 def main():
     parser = argparse.ArgumentParser(description="Run evals on PQ/OPQ models from CSV")
-    parser.add_argument("--input_csv", type=Path, default="/data/cpanourg/2-hdvc/results/relerr_cpp/deep_PQ_adc_vs_exact_eval.csv", help="Path to adc_vs_exact_eval CSV")
+    parser.add_argument("--input_csv", type=Path, default="/data/cpanourg/2-hdvc/results/relerr_cpp/bigann_PQ_adc_vs_exact_eval.csv", help="Path to adc_vs_exact_eval CSV")
     parser.add_argument("--output_dir", type=Path, default=None, help="Output directory (default: same as input)")
     parser.add_argument("--data_root", type=Path, default='/data/cpanourg/2-hdvc/data', help="Data root for dataset paths")
     parser.add_argument("--max_db", type=int, default=1_000_000, help="Max database vectors to load")
     parser.add_argument("--max_queries", type=int, default=1_000, help="Max query vectors")
     parser.add_argument("--max_rec_samples", type=int, default=10_000, help="Max samples for reconstruction error")
     parser.add_argument(
-        "--eval_measures",
-        type=str,
-        nargs="*",
-        default=['reconstruction_error', 'spearman', 'recall'], # ['compression_rate', 'reconstruction_error', 'spearman', 'recall']
-        help=f"Measures to compute (default: all). Options: {', '.join(VALID_EVAL_MEASURES)}. Example: --eval_measures compression_rate recall",
-    )
+        "--eval_measures", type=str, nargs="*", default=['compression_rate', 'reconstruction_error', 'spearman', 'recall'], # ['compression_rate', 'reconstruction_error', 'spearman', 'recall']
+        help=f"Measures to compute (default: all). Options: {', '.join(VALID_EVAL_MEASURES)}. Example: --eval_measures compression_rate recall")
+    
     args = parser.parse_args()
-
     output_dir = args.output_dir or args.input_csv.parent
     run_evals(
         input_csv=args.input_csv,
