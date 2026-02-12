@@ -30,7 +30,7 @@ NBITS_VALUES=(4 6 8 10 12)
 # Number of vectors to use for OPQ rotation training (per dataset),
 # independent of the PQ train_size used later in Phase 2.
 ROT_TRAIN_SIZE=1000000
-OPQ_MAX_TRAIN_POINTS=100000 # $((256 * 256))
+OPQ_MAX_TRAIN_POINTS=500000 # $((256 * 256))
 
 # Number of training vectors to use for PQ (train_opq) in Phase 2.
 TRAIN_SIZE=1000000
@@ -147,7 +147,8 @@ dataset_m_values() {
       echo "1 4 8 16 32 64 128 256 512 768 1536"
       ;;
     deep)
-      echo "1 2 3 4 6 8 12 16 24 32 48 96"
+      # echo "1 2 3 4 6 8 12 16 24 32 48 96"
+      echo "1 4 12 24 32 96"
       ;;
     *)
       echo "1 4 8 16 32 64 128"

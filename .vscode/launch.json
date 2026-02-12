@@ -51,7 +51,7 @@
         "type": "debugpy",
         "request": "launch",
         "program": "${file}",
-        "python": "/home/cpanourg/.conda/envs/dtwrl_env2/bin/python",
+        "python": "/home/cpanourg/.miniconda3/envs/dtwrl_env2/bin/python",
         "justMyCode": true
       },
       {
