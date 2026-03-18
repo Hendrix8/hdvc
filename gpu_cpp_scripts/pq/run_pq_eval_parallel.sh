@@ -14,7 +14,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 DATA_ROOT="/data/cpanourg/2-hdvc/data"
-RESULTS_DIR="/data/cpanourg/2-hdvc/results/relerr_cpp"
+RESULTS_DIR="/data/cpanourg/2-hdvc/results/train_size_exps"
 LOG_DIR="${SCRIPT_DIR}/logs"
 mkdir -p "$LOG_DIR"
 
@@ -48,18 +48,20 @@ DATASET_NAME="bigann"
 #   "96 12 1000000 10000 1000"
 # )
 
+# experiments=(
+# # BigANN (SIFT1M)
+#   "1 4 1000000 10000 1000"
+#   "2 4 1000000 10000 1000"
+#   "4 4 1000000 10000 1000"
+#   "8 4 1000000 10000 1000"
+#   "16 4 1000000 10000 1000"
+#   "32 4 1000000 10000 1000"
+#   "64 4 1000000 10000 1000"
+#   "128 4 1000000 10000 1000"
+# )
 experiments=(
-# BigANN (SIFT1M)
-  "1 4 1000000 10000 1000"
-  "2 4 1000000 10000 1000"
-  "4 4 1000000 10000 1000"
-  "8 4 1000000 10000 1000"
-  "16 4 1000000 10000 1000"
-  "32 4 1000000 10000 1000"
-  "64 4 1000000 10000 1000"
-  "128 4 1000000 10000 1000"
+  "8 8 1000000 10000 1000"
 )
-
 # GPU assignment: space-separated list. Jobs use round-robin.
 # Default: both GPUs (0 1). Override: GPU_DEVICES="0 1 2" ./run_pq_eval_parallel.sh
 GPU_DEVICES=(${GPU_DEVICES:-0 1})

@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 DATA_ROOT="/data/cpanourg/2-hdvc/data"
-RESULTS_DIR="/data/cpanourg/2-hdvc/results/relerr_cpp"
+RESULTS_DIR="/data/cpanourg/2-hdvc/results/train_size_exps"
 
 #   --dataset_path "${DATA_ROOT}/gist/gist_base.fvecs" \
 #   --query_path "${DATA_ROOT}/gist/gist_query.fvecs" \
@@ -22,6 +22,15 @@ RESULTS_DIR="/data/cpanourg/2-hdvc/results/relerr_cpp"
 # --train_path "${DATA_ROOT}/msmarco/train1m.fvecs" \
 # --dataset_name msmarco \
 
+# --dataset_path "${DATA_ROOT}/bigann/SIFT1M/bigann_base.bvecs" \
+# --query_path "${DATA_ROOT}/bigann/SIFT1M/bigann_query.bvecs" \
+# --train_path "${DATA_ROOT}/bigann/SIFT1M/bigann_learn.bvecs" \
+# --dataset_name bigann \
+
+# --dataset_path "${DATA_ROOT}/openai/openai_base1m.fvecs" \
+# --query_path "${DATA_ROOT}/openai/openai_query10k.fvecs" \
+# --train_path "${DATA_ROOT}/openai/openai_train1m.fvecs" \
+# --dataset_name openai \
 
 run_one () {
   local M="$1"
@@ -42,7 +51,7 @@ run_one () {
     --sample_queries "${SAMPLE_Q}" \
     --data_root "${DATA_ROOT}" \
     --results_dir "${RESULTS_DIR}" \
-    --gpu_device "${GPU_DEVICE:-0}"
+    --gpu_device "${GPU_DEVICE:-1}"
 }
 
 # Run experiments sequentially to avoid RAM spikes
@@ -54,7 +63,12 @@ experiments=(
 #   "3 12 1000000 10000 1000"
 #   "4 12 1000000 10000 1000"
 #   "6 12 1000000 10000 1000"
-#   "8 12 1000000 10000 1000"
+  "96 8 50000 10000 1000"
+  "96 8 100000  10000 1000"
+  "96 8 250000 10000 1000"
+  "96 8 500000 10000 1000"
+  "96 8 750000 10000 1000"
+  "96 8 1000000 10000 1000"
 #   "12 12 1000000 10000 1000"
 #   "16 12 1000000 10000 1000"
 #   "24 12 1000000 10000 1000"
