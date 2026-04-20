@@ -61,16 +61,77 @@ else()
 endif()
 
 # --------------------------------------------------------
-# BLAS / LAPACKE via Conda OpenBLAS
+# BLAS / LAPACKE (OpenBLAS preferred; conda path may not exist if env moved)
 # --------------------------------------------------------
-# Try to use Conda BLAS/LAPACKE if available
-if (DEFINED ENV{CONDA_PREFIX})
-    set(BLAS_LIBRARIES "$ENV{CONDA_PREFIX}/lib/libopenblas.so" CACHE FILEPATH "Path to OpenBLAS library")
-    set(LAPACKE_LIBRARIES "$ENV{CONDA_PREFIX}/lib/liblapacke.so" CACHE FILEPATH "Path to LAPACKE library")
-    message(STATUS "✅ Using OpenBLAS from Conda: ${BLAS_LIBRARIES}")
-    message(STATUS "✅ Using LAPACKE from Conda: ${LAPACKE_LIBRARIES}")
+# Allow override: cmake -DBLAS_LIBRARIES=... -DLAPACKE_LIBRARIES=...
+if(BLAS_LIBRARIES AND NOT EXISTS "${BLAS_LIBRARIES}")
+    message(WARNING "Clearing stale BLAS_LIBRARIES (file missing): ${BLAS_LIBRARIES}")
+    unset(BLAS_LIBRARIES CACHE)
+endif()
+if(LAPACKE_LIBRARIES AND NOT EXISTS "${LAPACKE_LIBRARIES}")
+    message(WARNING "Clearing stale LAPACKE_LIBRARIES (file missing): ${LAPACKE_LIBRARIES}")
+    unset(LAPACKE_LIBRARIES CACHE)
+endif()
+
+if(NOT BLAS_LIBRARIES)
+    set(_blas_candidates "")
+    if(DEFINED ENV{CONDA_PREFIX})
+        list(APPEND _blas_candidates "$ENV{CONDA_PREFIX}/lib/libopenblas.so")
+        list(APPEND _blas_candidates "$ENV{CONDA_PREFIX}/lib/libopenblasp-r0.3.so")
+    endif()
+    list(APPEND _blas_candidates "$ENV{HOME}/.miniconda3/lib/libopenblas.so")
+    list(APPEND _blas_candidates "$ENV{HOME}/anaconda3/lib/libopenblas.so")
+    list(APPEND _blas_candidates "$ENV{HOME}/mambaforge/lib/libopenblas.so")
+    foreach(_cand IN LISTS _blas_candidates)
+        if(EXISTS "${_cand}")
+            set(BLAS_LIBRARIES "${_cand}")
+            break()
+        endif()
+    endforeach()
+    if(NOT BLAS_LIBRARIES)
+        find_library(BLAS_LIBRARIES NAMES openblas openblasp-r0.3
+            PATHS
+                "$ENV{CONDA_PREFIX}/lib"
+                /usr/lib/x86_64-linux-gnu
+                /usr/lib64
+        )
+    endif()
+endif()
+
+if(NOT LAPACKE_LIBRARIES)
+    set(_lap_candidates "")
+    if(DEFINED ENV{CONDA_PREFIX})
+        list(APPEND _lap_candidates "$ENV{CONDA_PREFIX}/lib/liblapacke.so")
+    endif()
+    list(APPEND _lap_candidates "$ENV{HOME}/.miniconda3/lib/liblapacke.so")
+    foreach(_cand IN LISTS _lap_candidates)
+        if(EXISTS "${_cand}")
+            set(LAPACKE_LIBRARIES "${_cand}")
+            break()
+        endif()
+    endforeach()
+    if(NOT LAPACKE_LIBRARIES)
+        find_library(LAPACKE_LIBRARIES NAMES lapacke
+            PATHS
+                "$ENV{CONDA_PREFIX}/lib"
+                /usr/lib/x86_64-linux-gnu
+                /usr/lib64
+        )
+    endif()
+endif()
+
+if(BLAS_LIBRARIES)
+    set(BLAS_LIBRARIES "${BLAS_LIBRARIES}" CACHE FILEPATH "Path to OpenBLAS library" FORCE)
+    message(STATUS "✅ OpenBLAS: ${BLAS_LIBRARIES}")
 else()
-    message(WARNING "⚠️  CONDA_PREFIX not set — assuming system BLAS/LAPACKE")
+    message(FATAL_ERROR "OpenBLAS not found. Install openblas (conda: conda install openblas) or pass -DBLAS_LIBRARIES=/path/to/libopenblas.so")
+endif()
+
+if(LAPACKE_LIBRARIES)
+    set(LAPACKE_LIBRARIES "${LAPACKE_LIBRARIES}" CACHE FILEPATH "Path to LAPACKE library" FORCE)
+    message(STATUS "✅ LAPACKE: ${LAPACKE_LIBRARIES}")
+else()
+    message(FATAL_ERROR "LAPACKE not found. Install lapacke (conda: conda install lapack) or pass -DLAPACKE_LIBRARIES=/path/to/liblapacke.so")
 endif()
 
 # Avoid Armadillo's internal wrapper so it uses the above BLAS/LAPACK

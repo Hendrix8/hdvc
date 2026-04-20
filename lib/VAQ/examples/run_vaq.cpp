@@ -43,14 +43,19 @@ int main(int argc, char **argv) {
     {"hc-bitalloc", 's', ""},
     {"learn-ratio", 'f', "0.05"},
     {"visit-cluster", 'f', "1"},
-    {"kmeans-ver", 'i', "0"}
+    {"kmeans-ver", 'i', "0"},
+    // When non-zero: train/encode/save only; skip reading queries and ANN/refine.
+    {"skip-query", 'i', "0"}
   };
   ArgsParse args = ArgsParse(argc, argv, long_options, "HELP");
   args.printArgs();
 
-  // check if dataset and queries exist
-  if (!isFileExists(args["dataset"]) || !isFileExists(args["queries"]) || !isFileExists(args["trainset"])) {
-    std::cerr << "Dataset or queries file doesn't exists" << std::endl;
+  if (!isFileExists(args["dataset"]) || !isFileExists(args["trainset"])) {
+    std::cerr << "Dataset or trainset file doesn't exist" << std::endl;
+    return 1;
+  }
+  if (args.at<int>("skip-query") == 0 && !isFileExists(args["queries"])) {
+    std::cerr << "Queries file doesn't exist (omit skip-query to require queries)" << std::endl;
     return 1;
   }
 
@@ -291,6 +296,11 @@ int main(int argc, char **argv) {
       std::cout << "Saving codebook to " << args["save-enc"] << std::endl;
       saveCodebook(vaq.mCodebook, args["save-enc"]);
     }
+  }
+
+  if (args.at<int>("skip-query") != 0) {
+    std::cout << "skip-query: skipping ANN/query phase." << std::endl;
+    return 0;
   }
 
   {
