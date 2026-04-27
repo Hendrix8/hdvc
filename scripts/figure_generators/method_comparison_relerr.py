@@ -18,11 +18,15 @@ from relerr_quick_plot_style import COLOR_PALETTE, apply_relerr_cpp_rcparams
 
 @dataclass(frozen=True)
 class MethodSource:
-    """One method family: all rows must share the same `method` column value."""
+    """One method family loaded from CSV rows under ``results_dir`` / ``glob_pattern``."""
 
     label: str
     results_dir: Path
     glob_pattern: str
+    #: If set, keep only rows whose CSV ``method`` column equals this, then rename to ``label``.
+    method_in_csv: str | None = None
+    #: If set and the CSV has ``train_size``, keep only matching rows (e.g. align LSQ++ with PQ).
+    train_size_filter: int | None = None
 
 
 def load_concat_sources(sources: Iterable[MethodSource]) -> pd.DataFrame:
@@ -38,6 +42,17 @@ def load_concat_sources(sources: Iterable[MethodSource]) -> pd.DataFrame:
                 continue
             if "bits_per_vector" not in df.columns or "rel_error_mean" not in df.columns:
                 continue
+            if src.method_in_csv is not None:
+                df = df[df["method"] == src.method_in_csv].copy()
+                if df.empty:
+                    continue
+                df["method"] = src.label
+            if src.train_size_filter is not None and "train_size" in df.columns:
+                ts = pd.to_numeric(df["train_size"], errors="coerce")
+                want = float(src.train_size_filter)
+                df = df[ts.notna() & (ts == want)].copy()
+                if df.empty:
+                    continue
             frames.append(df)
     if not frames:
         return pd.DataFrame()
@@ -155,11 +170,34 @@ def plot_grouped_bar_relerr(
     return fig, ax
 
 
-DEFAULT_SOURCES: tuple[MethodSource, ...] = (
-    MethodSource("TQMSE", Path("/data/cpanourg/2-hdvc/results/turboquant"), "*_TQMSE_adc_vs_exact_eval.csv"),
-    MethodSource("TQProd", Path("/data/cpanourg/2-hdvc/results/turboquant"), "*_TQProd_adc_vs_exact_eval.csv"),
-    MethodSource("RaBitQ", Path("/data/cpanourg/2-hdvc/results/rabitq"), "*_RaBitQ_adc_vs_exact_eval.csv"),
-    MethodSource("VAQ", Path("/data/cpanourg/2-hdvc/results/vaq"), "*_VAQ_adc_vs_exact_eval.csv"),
-    MethodSource("PQ", Path("/data/cpanourg/2-hdvc/results/relerr_cpp"), "*_PQ_adc_vs_exact_eval.csv"),
-    MethodSource("OPQ", Path("/data/cpanourg/2-hdvc/results/relerr_cpp"), "*_OPQ_adc_vs_exact_eval.csv"),
-)
+def default_method_sources(
+    data_root: Path | str | None = None,
+    *,
+    lsq_train_size_filter: int | None = 1_000_000,
+) -> tuple[MethodSource, ...]:
+    """
+    Default result locations under ``data_root`` (same layout as eval export scripts).
+
+    LSQ++ rows use ``method`` = ``LSQpp`` in CSV; they are normalized to label ``LSQ++``.
+    ``lsq_train_size_filter`` picks one training budget when several share the same
+    ``bits_per_vector`` (defaults to 1e6 to match typical PQ/OPQ relerr_cpp runs).
+    """
+    root = Path(data_root or "/data/cpanourg/2-hdvc/results")
+    return (
+        MethodSource("TQMSE", root / "turboquant", "*_TQMSE_adc_vs_exact_eval.csv"),
+        MethodSource("TQProd", root / "turboquant", "*_TQProd_adc_vs_exact_eval.csv"),
+        MethodSource("RaBitQ", root / "rabitq", "*_RaBitQ_adc_vs_exact_eval.csv"),
+        MethodSource("VAQ", root / "vaq", "*_VAQ_adc_vs_exact_eval.csv"),
+        MethodSource("PQ", root / "relerr_cpp", "*_PQ_adc_vs_exact_eval.csv"),
+        MethodSource("OPQ", root / "relerr_cpp", "*_OPQ_adc_vs_exact_eval.csv"),
+        MethodSource(
+            "LSQ++",
+            root,
+            "*_LSQpp_adc_vs_exact_eval.csv",
+            method_in_csv="LSQpp",
+            train_size_filter=lsq_train_size_filter,
+        ),
+    )
+
+
+DEFAULT_SOURCES: tuple[MethodSource, ...] = default_method_sources()

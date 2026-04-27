@@ -234,3 +234,51 @@ def figure_relerr_vs_nbits_multi(
     )
     plt.tight_layout()
     return fig, ax
+
+
+def figure_relerr_vs_bits_per_vector_multi(
+    series: list[tuple[object, str]],
+    *,
+    y_col: str = "rel_error_mean",
+    y_axis_label: str | None = None,
+    x_axis_label: str = "Bits per vector",
+    title: str | None = None,
+):
+    """
+    Multiple curves: ``rel_error_mean`` vs ``bits_per_vector`` (sorted per series).
+    Uses the same line/marker style as ``figure_relerr_vs_nbits_multi``.
+    """
+    if y_axis_label is None:
+        y_axis_label = (
+            "Relative error"
+            if y_col == "rel_error_mean"
+            else y_col.replace("_", " ").title()
+        )
+
+    apply_relerr_cpp_rcparams()
+    fig, ax = plt.subplots()
+
+    for i, (df, label) in enumerate(series):
+        plot_curve_relerr_style(
+            ax,
+            df,
+            x_col="bits_per_vector",
+            y_col=y_col,
+            label=label,
+            color=COLOR_PALETTE[i % len(COLOR_PALETTE)],
+            marker=MARKER_PALETTE[i % len(MARKER_PALETTE)],
+        )
+
+    if title:
+        ax.set_title(title, fontsize=28)
+
+    style_axes_relerr_vs_metric(
+        ax,
+        x_label=x_axis_label,
+        y_label=y_axis_label,
+        x_col="bits_per_vector",
+        x_values=None,
+        legend_loc_outside=True,
+    )
+    plt.tight_layout()
+    return fig, ax

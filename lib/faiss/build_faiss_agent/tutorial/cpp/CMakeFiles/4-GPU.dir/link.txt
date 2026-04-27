@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/4-GPU.dir/4-GPU.cpp.o" -o 4-GPU  -Wl,-rpath,/home/cpanourg/projects/2-hdvc/lib/faiss/build_faiss_agent/faiss ../../faiss/libfaiss.so

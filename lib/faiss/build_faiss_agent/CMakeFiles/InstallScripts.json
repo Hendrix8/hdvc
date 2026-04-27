@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cpanourg/projects/2-hdvc/lib/faiss/build_faiss_agent/cmake_install.cmake",
+		"/home/cpanourg/projects/2-hdvc/lib/faiss/build_faiss_agent/faiss/cmake_install.cmake",
+		"/home/cpanourg/projects/2-hdvc/lib/faiss/build_faiss_agent/demos/cmake_install.cmake",
+		"/home/cpanourg/projects/2-hdvc/lib/faiss/build_faiss_agent/benchs/cmake_install.cmake",
+		"/home/cpanourg/projects/2-hdvc/lib/faiss/build_faiss_agent/tutorial/cpp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
