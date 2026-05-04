@@ -46,3 +46,5 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+local/dataset_subsets/openai/openai_base_10k.fvecs
