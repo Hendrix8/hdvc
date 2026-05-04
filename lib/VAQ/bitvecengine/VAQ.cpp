@@ -543,7 +543,12 @@ void VAQ::train(const RowMatrixXf &XTrain, bool verbose) {
       int sampleSize = std::max(currCentroidsNum * 256, 256*(1 << (mBitBudget/mSubspaceNum)));
       sampleSize = std::min(sampleSize, (int)XTrainCopy.rows());
       RowMatrixXf XTrainSlice(sampleSize, mSubsLen);
-      if (sampleSize == XTrainCopy.rows()) {
+      {
+        // Always fill XTrainSlice with a random sample from XTrainCopy.
+        // Previously only filled when sampleSize == XTrainCopy.rows(), leaving
+        // the buffer uninitialized (garbage) in the common case where the
+        // training set is larger than sampleSize, which caused armadillo kmeans
+        // to produce completely wrong centroids (NaN / huge values).
         std::vector<int> perm(XTrainCopy.rows());
         randomPermutation(perm);
         for (int i=0; i<sampleSize; i++) {

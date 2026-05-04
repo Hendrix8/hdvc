@@ -5,14 +5,25 @@ bits_per_vector (closest row per dataset + method).
 
 from __future__ import annotations
 
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
+
+for _anc in Path(__file__).resolve().parents:
+    if (_anc / "hdvc_paths.py").is_file():
+        if str(_anc) not in sys.path:
+            sys.path.insert(0, str(_anc))
+        break
+from hdvc_paths import get_results_root  # noqa: E402
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+_HERE = Path(__file__).resolve().parent
+if str(_HERE) not in sys.path:
+    sys.path.insert(0, str(_HERE))
 from relerr_quick_plot_style import COLOR_PALETTE, apply_relerr_cpp_rcparams
 
 
@@ -182,17 +193,18 @@ def default_method_sources(
     ``lsq_train_size_filter`` picks one training budget when several share the same
     ``bits_per_vector`` (defaults to 1e6 to match typical PQ/OPQ relerr_cpp runs).
     """
-    root = Path(data_root or "/data/cpanourg/2-hdvc/results")
+    root = Path(data_root) if data_root is not None else get_results_root()
     return (
         MethodSource("TQMSE", root / "turboquant", "*_TQMSE_adc_vs_exact_eval.csv"),
         MethodSource("TQProd", root / "turboquant", "*_TQProd_adc_vs_exact_eval.csv"),
         MethodSource("RaBitQ", root / "rabitq", "*_RaBitQ_adc_vs_exact_eval.csv"),
+        MethodSource("SAQ", root / "saq", "*_SAQ_adc_vs_exact_eval.csv"),
         MethodSource("VAQ", root / "vaq", "*_VAQ_adc_vs_exact_eval.csv"),
         MethodSource("PQ", root / "relerr_cpp", "*_PQ_adc_vs_exact_eval.csv"),
         MethodSource("OPQ", root / "relerr_cpp", "*_OPQ_adc_vs_exact_eval.csv"),
         MethodSource(
             "LSQ++",
-            root,
+            root / "lsqpp",
             "*_LSQpp_adc_vs_exact_eval.csv",
             method_in_csv="LSQpp",
             train_size_filter=lsq_train_size_filter,

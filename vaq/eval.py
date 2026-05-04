@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import re
 import shutil
@@ -126,6 +127,9 @@ def run_vaq_eval(
     seed: int = 123,
     sample_mode: str = "first",
     skip_search: bool = False,
+    reuse_artifact_dir: str | None = None,
+    train_time_override: float | None = None,
+    encoding_time_override: float | None = None,
 ):
     _ = seed
     if sample_mode not in ("first", "random"):
@@ -183,101 +187,128 @@ def run_vaq_eval(
         f"train_db={train_db.shape}, test_db={test_db.shape}, qr={qr.shape}, dim={dim}"
     )
 
-    temp_dir = Path(tempfile.mkdtemp(prefix="vaq_"))
-    train_fp = str(temp_dir / "trainset.fvecs")
-    dataset_fp = str(temp_dir / "dataset.fvecs")
-    queries_fp = str(temp_dir / "queries.fvecs")
-    write_fvecs(train_fp, train_db)
-    write_fvecs(dataset_fp, test_db)
-    if not skip_search:
-        write_fvecs(queries_fp, qr)
-
-    out_dir = data_root_p / results_dir / dataset_name / f"vaq_{slug}_{ts}"
+    out_dir = (
+        Path(reuse_artifact_dir).resolve()
+        if reuse_artifact_dir
+        else data_root_p / results_dir / dataset_name / f"vaq_{slug}_{ts}"
+    )
     ensure_dir(out_dir)
     codes_fp = str(out_dir / "codes.fvecs")
     centroids_fp = str(out_dir / "centroids.fvecs")
     result_csv = str(out_dir / "vaq_results.csv")
 
-    env = os.environ.copy()
-    env["LD_LIBRARY_PATH"] = (
-        f"{os.path.expanduser('~')}/local/glpk/lib:"
-        f"{os.path.expanduser('~')}/local/armadillo/lib:"
-        f"{env.get('CONDA_PREFIX', '')}/lib:"
-        f"{env.get('LD_LIBRARY_PATH', '')}"
-    )
-
-    cmd = [
-        str(vb),
-        "--dataset",
-        dataset_fp,
-        "--trainset",
-        train_fp,
-        "--file-format-ori",
-        "fvecs",
-        "--timeseries-size",
-        str(dim),
-        "--dataset-size",
-        str(nb),
-        "--trainset-size",
-        str(train_size),
-        "--method",
-        method,
-        "--save-enc",
-        codes_fp,
-        "--save",
-        centroids_fp,
-        "--learn-ratio",
-        str(learn_ratio),
-    ]
-    if skip_search:
-        cmd.extend(["--skip-query", "1"])
-    else:
-        cmd.extend(
-            [
-                "--queries",
-                queries_fp,
-                "--queries-size",
-                str(nq),
-                "--result",
-                result_csv,
-                "--k",
-                str(k),
-                "--refine",
-                refine,
-            ]
-        )
-
     train_time = None
     encoding_time = None
-    t0 = time.time()
-    proc = subprocess.Popen(
-        cmd, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True
-    )
-    assert proc.stdout is not None
     vaq_cpp_log: list[str] = []
-    for line in proc.stdout:
-        vaq_cpp_log.append(line)
-        print(line, end="")
-        if "Training time:" in line:
+    cmd: list[str] = []
+    if reuse_artifact_dir:
+        metadata_fp = out_dir / "metadata.json"
+        if metadata_fp.exists():
             try:
-                train_time = float(line.split("Training time:")[1].split("s")[0].strip())
+                old_summary = json.loads(metadata_fp.read_text()).get("summary", {})
+                train_time = float(old_summary.get("train_time_s", 0.0))
+                encoding_time = float(old_summary.get("encoding_time_s", 0.0))
             except Exception:
-                pass
-        if "Encoding time:" in line:
-            try:
-                encoding_time = float(
-                    line.split("Encoding time:")[1].split("s")[0].strip()
-                )
-            except Exception:
-                pass
-    proc.wait()
-    total_cpp = time.time() - t0
-    if train_time is None:
-        train_time = total_cpp * 0.3
-    if encoding_time is None:
-        encoding_time = total_cpp * 0.7
+                train_time = encoding_time = None
+        print(f"♻️  Reusing VAQ artifacts from {out_dir}")
+    else:
+        temp_dir = Path(tempfile.mkdtemp(prefix="vaq_"))
+        train_fp = str(temp_dir / "trainset.fvecs")
+        dataset_fp = str(temp_dir / "dataset.fvecs")
+        queries_fp = str(temp_dir / "queries.fvecs")
+        write_fvecs(train_fp, train_db)
+        write_fvecs(dataset_fp, test_db)
+        if not skip_search:
+            write_fvecs(queries_fp, qr)
 
-    shutil.rmtree(temp_dir)
+        env = os.environ.copy()
+        env["LD_LIBRARY_PATH"] = (
+            f"{os.path.expanduser('~')}/local/glpk/lib:"
+            f"{os.path.expanduser('~')}/local/armadillo/lib:"
+            f"{env.get('CONDA_PREFIX', '')}/lib:"
+            f"{env.get('LD_LIBRARY_PATH', '')}"
+        )
+
+        cmd = [
+            str(vb),
+            "--dataset",
+            dataset_fp,
+            "--trainset",
+            train_fp,
+            "--file-format-ori",
+            "fvecs",
+            "--timeseries-size",
+            str(dim),
+            "--dataset-size",
+            str(nb),
+            "--trainset-size",
+            str(train_size),
+            "--method",
+            method,
+            "--save-enc",
+            codes_fp,
+            "--save",
+            centroids_fp,
+            "--learn-ratio",
+            str(learn_ratio),
+        ]
+        if skip_search:
+            cmd.extend(["--skip-query", "1"])
+        else:
+            cmd.extend(
+                [
+                    "--queries",
+                    queries_fp,
+                    "--queries-size",
+                    str(nq),
+                    "--result",
+                    result_csv,
+                    "--k",
+                    str(k),
+                    "--refine",
+                    refine,
+                ]
+            )
+
+        t0 = time.time()
+        proc = subprocess.Popen(
+            cmd, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True
+        )
+        assert proc.stdout is not None
+        for line in proc.stdout:
+            vaq_cpp_log.append(line)
+            print(line, end="")
+            if "Training time:" in line:
+                try:
+                    train_time = float(
+                        line.split("Training time:")[1].split("s")[0].strip()
+                    )
+                except Exception:
+                    pass
+            if "Encoding time:" in line:
+                try:
+                    encoding_time = float(
+                        line.split("Encoding time:")[1].split("s")[0].strip()
+                    )
+                except Exception:
+                    pass
+        proc.wait()
+        total_cpp = time.time() - t0
+        if train_time is None:
+            train_time = total_cpp * 0.3
+        if encoding_time is None:
+            encoding_time = total_cpp * 0.7
+
+        shutil.rmtree(temp_dir)
+
+    if train_time is None:
+        train_time = 0.0
+    if encoding_time is None:
+        encoding_time = 0.0
+    if train_time_override is not None:
+        train_time = train_time_override
+    if encoding_time_override is not None:
+        encoding_time = encoding_time_override
 
     if not os.path.exists(codes_fp):
         log = "".join(vaq_cpp_log)
@@ -337,8 +368,9 @@ def run_vaq_eval(
     exact_sample = exact_distances_sqeuclidean(qr_sample, test_db_sample)
     cdist_time = time.time() - t0
 
-    t0 = time.time()
-    luts: list[np.ndarray] = []
+    adc_sample = np.zeros((nq_sample, nb_sample), dtype=np.float32)
+    distance_table_time = 0.0
+    adc_time = 0.0
     for subs in range(n_subspaces):
         start_dim = subs * subs_len
         end_dim = min(start_dim + subs_len, dim)
@@ -352,19 +384,18 @@ def run_vaq_eval(
                 query_subvecs = padded
             else:
                 query_subvecs = query_subvecs[:, :sd]
-        diff = query_subvecs[:, np.newaxis, :] - centroids_subs[np.newaxis, :, :]
-        luts.append(np.sum(diff * diff, axis=2).astype(np.float32))
-    distance_table_time = time.time() - t0
 
-    t0 = time.time()
-    adc_sample = np.zeros((nq_sample, nb_sample), dtype=np.float32)
-    for db_i in range(nb_sample):
-        for subs in range(n_subspaces):
-            code = int(codes_sample[db_i, subs])
-            lut = luts[subs]
-            if 0 <= code < lut.shape[1]:
-                adc_sample[:, db_i] += lut[:, code]
-    adc_time = time.time() - t0
+        t_lut = time.time()
+        diff = query_subvecs[:, np.newaxis, :] - centroids_subs[np.newaxis, :, :]
+        lut = np.sum(diff * diff, axis=2).astype(np.float32)
+        distance_table_time += time.time() - t_lut
+
+        t_adc = time.time()
+        codes_sub = codes_sample[:, subs].astype(np.int64, copy=False)
+        valid = (codes_sub >= 0) & (codes_sub < lut.shape[1])
+        if np.any(valid):
+            adc_sample[:, valid] += lut[:, codes_sub[valid]]
+        adc_time += time.time() - t_adc
 
     rel_error, mean_rel, std_rel = compute_rel_error_pq_style(adc_sample, exact_sample)
     print(f"Mean rel. error: {mean_rel:.4f}, std: {std_rel:.4f}")
@@ -418,7 +449,50 @@ def run_vaq_eval(
             w.writeheader()
         w.writerow(summary)
 
+    metadata = {
+        "summary": summary,
+        "vaq_method_params": {
+            "total_bits": int(total_b),
+            "n_subspaces": int(n_subspaces),
+            "min_bits": int(min_b),
+            "max_bits": int(max_b),
+            "variance": float(var_f),
+            "search": method.split(",", 1)[1] if "," in method else "",
+        },
+        "inputs": {
+            "dataset_path": dataset_path,
+            "train_path": train_path or "",
+            "query_path": query_path or "",
+            "dim": int(dim),
+        },
+        "eval_config": {
+            "train_size": int(train_size),
+            "sample_db": int(sample_db),
+            "sample_queries": int(sample_queries),
+            "refine": refine,
+            "k": int(k),
+            "learn_ratio": float(learn_ratio),
+            "seed": int(seed),
+            "sample_mode": sample_mode,
+            "skip_search": bool(skip_search),
+            "reuse_artifact_dir": reuse_artifact_dir or "",
+            "adc_eval_mode": "streaming_vectorized",
+        },
+        "artifacts": {
+            "codes": codes_fp,
+            "centroids": centroids_fp,
+            "rel_error_bin": str(out_bin),
+            "summary_csv": str(run_csv),
+            "aggregate_csv": str(csv_agg),
+        },
+        "run_vaq_command": cmd,
+    }
+    metadata_json = out_dir / "metadata.json"
+    with open(metadata_json, "w") as f:
+        json.dump(metadata, f, indent=2, sort_keys=True)
+
     print(f"✅ Run summary: {run_csv}")
+    print(f"✅ Run metadata: {metadata_json}")
     print(f"✅ Appended: {csv_agg}")
     print(f"✅ Rel. error bin: {out_bin}")
 
@@ -458,6 +532,15 @@ def main():
         help="Train/encode only: pass --skip-query to run_vaq (no C++ ANN/query). "
         "Python still loads queries for ADC vs exact rel. error and CSV output.",
     )
+    p.add_argument(
+        "--reuse_artifact_dir",
+        type=str,
+        default=None,
+        help="Reuse an existing VAQ run directory containing codes.fvecs and centroids.fvecs; "
+        "skips C++ train/encode and recomputes ADC/relative-error outputs.",
+    )
+    p.add_argument("--train_time_override", type=float, default=None)
+    p.add_argument("--encoding_time_override", type=float, default=None)
     args = p.parse_args()
     run_vaq_eval(**vars(args))
 

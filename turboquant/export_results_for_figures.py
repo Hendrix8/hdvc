@@ -8,16 +8,24 @@ Splits TQ-MSE-* and TQ-Prod-* into separate method families (TQMSE, TQProd).
 Usage:
   python export_results_for_figures.py \\
     --turboquant-root /home/cpanourg/projects/2-hdvc/turboquant \\
-    --out-dir /data/cpanourg/2-hdvc/results/turboquant
+    --out-dir /path/to/repo/results/turboquant
 """
 
 from __future__ import annotations
 
 import argparse
 import re
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+for _anc in Path(__file__).resolve().parents:
+    if (_anc / "hdvc_paths.py").is_file():
+        if str(_anc) not in sys.path:
+            sys.path.insert(0, str(_anc))
+        break
+from hdvc_paths import get_results_root  # noqa: E402
 
 METHOD_MAP = {
     "MSE": "TQMSE",
@@ -167,7 +175,7 @@ def main() -> None:
     p.add_argument(
         "--out-dir",
         type=Path,
-        default=Path("/data/cpanourg/2-hdvc/results/turboquant"),
+        default=get_results_root() / "turboquant",
         help="Output directory (created if missing).",
     )
     args = p.parse_args()

@@ -1,0 +1,2 @@
+dataset,M,K,setting_id,bits_per_vector,A,B,L,de,dh,metric_type,rel_error_mean,rel_error_std,status,zip_path
+bigann,2,16,0,8.0,16,16,16.0,384.0,384.0,distance_relerr,0.3289535966212225,0.12104234497719452,distance_ready,/data/cpanourg/2-hdvc/results/qinco2/compressed_qinco_res/bigann_M_2_K_16.zip

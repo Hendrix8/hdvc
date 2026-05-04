@@ -3,6 +3,16 @@ Dataset configuration: maps dataset name to (dataset_path, query_path).
 Paths point to database/test vectors and query vectors (not train/learn).
 """
 
+import sys
+from pathlib import Path
+
+for _anc in Path(__file__).resolve().parents:
+    if (_anc / "hdvc_paths.py").is_file():
+        if str(_anc) not in sys.path:
+            sys.path.insert(0, str(_anc))
+        break
+from hdvc_paths import get_results_root  # noqa: E402
+
 DATA_ROOT = "/data/cpanourg/2-hdvc/data"
 
 DATASET_CONFIG = {

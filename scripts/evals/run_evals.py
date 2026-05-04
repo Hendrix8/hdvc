@@ -38,7 +38,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.utils import load_dataset
-from scripts.evals.config import DATASET_CONFIG, DATA_ROOT
+from scripts.evals.config import DATASET_CONFIG, DATA_ROOT, get_results_root
 
 # Temp dir for exact distance cache (datetime-stamped to avoid false loading)
 TEMP_DIR = Path("/data/cpanourg/99-temp")
@@ -486,7 +486,12 @@ def run_evals(
 
 def main():
     parser = argparse.ArgumentParser(description="Run evals on PQ/OPQ models from CSV")
-    parser.add_argument("--input_csv", type=Path, default="/data/cpanourg/2-hdvc/results/relerr_cpp/bigann_PQ_adc_vs_exact_eval.csv", help="Path to adc_vs_exact_eval CSV")
+    parser.add_argument(
+        "--input_csv",
+        type=Path,
+        default=get_results_root() / "relerr_cpp" / "bigann_PQ_adc_vs_exact_eval.csv",
+        help="Path to adc_vs_exact_eval CSV",
+    )
     parser.add_argument("--output_dir", type=Path, default=None, help="Output directory (default: same as input)")
     parser.add_argument("--data_root", type=Path, default='/data/cpanourg/2-hdvc/data', help="Data root for dataset paths")
     parser.add_argument("--max_db", type=int, default=1_000_000, help="Max database vectors to load")

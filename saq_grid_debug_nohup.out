@@ -1,0 +1,60 @@
++ set -euo pipefail
++ ROOT=/home/cpanourg/projects/2-hdvc
++ DATA_ROOT=/data/cpanourg/2-hdvc/data
+++ date +%Y%m%d_%H%M%S
++ LOG_DIR=/home/cpanourg/projects/2-hdvc/logs/saq_grid_20260503_121503
++ MAX_DATASET_JOBS=2
++ SAQ_THREADS=16
++ CLUSTERS=4096
++ BITS='1 2 4 8'
++ MAX_BASE=1000000
++ MAX_QUERY=200
++ PCA_TRAIN_SIZE=100000
++ HDVC_RESULTS_ROOT=/data/cpanourg/2-hdvc/results
++ PYTHON_BIN=/home/cpanourg/.miniconda3/envs/dtwrl_env2/bin/python
++ mkdir -p /home/cpanourg/projects/2-hdvc/logs/saq_grid_20260503_121503 /data/cpanourg/2-hdvc/results/saq
++ cd /home/cpanourg/projects/2-hdvc
++ echo 'Logs: /home/cpanourg/projects/2-hdvc/logs/saq_grid_20260503_121503'
+Logs: /home/cpanourg/projects/2-hdvc/logs/saq_grid_20260503_121503
++ echo 'Results: /data/cpanourg/2-hdvc/results/saq'
+Results: /data/cpanourg/2-hdvc/results/saq
++ echo 'Dataset parallelism: 2'
+Dataset parallelism: 2
++ wait_for_slot
++ running_jobs=()
++ local running_jobs
++ true
++ mapfile -t running_jobs
+++ jobs -pr
++ ((  0 < MAX_DATASET_JOBS  ))
++ break
++ return 0
++ wait_for_slot
++ running_jobs=()
++ local running_jobs
++ true
++ mapfile -t running_jobs
++ run_one deep fvecs /data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs /data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
++ local dataset=deep
++ local vec_type=fvecs
++ local base=/data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/test_1m.fvecs
+++ jobs -pr
++ local query=/data/cpanourg/2-hdvc/data/deep1b/dataset/fvecs/query_10k.fvecs
++ local log=/home/cpanourg/projects/2-hdvc/logs/saq_grid_20260503_121503/deep.log
++ ((  1 < MAX_DATASET_JOBS  ))
++ break
++ return 0
++ wait_for_slot
++ running_jobs=()
++ local running_jobs
++ true
++ mapfile -t running_jobs
++ run_one bigann bvecs /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_base.bvecs /data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_query.bvecs
++ local dataset=bigann
+++ jobs -pr
++ local vec_type=bvecs
++ local base=/data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_base.bvecs
++ local query=/data/cpanourg/2-hdvc/data/bigann/SIFT1M/bigann_query.bvecs
++ local log=/home/cpanourg/projects/2-hdvc/logs/saq_grid_20260503_121503/bigann.log
++ ((  2 < MAX_DATASET_JOBS  ))
++ sleep 30

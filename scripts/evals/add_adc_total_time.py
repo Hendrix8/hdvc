@@ -12,12 +12,19 @@ Usage:
 """
 
 import argparse
+import sys
 from pathlib import Path
 
 import pandas as pd
 
+for _anc in Path(__file__).resolve().parents:
+    if (_anc / "hdvc_paths.py").is_file():
+        if str(_anc) not in sys.path:
+            sys.path.insert(0, str(_anc))
+        break
+from hdvc_paths import get_results_root  # noqa: E402
 
-DEFAULT_RESULTS_DIR = Path("/data/cpanourg/2-hdvc/results/relerr_cpp")
+DEFAULT_RESULTS_DIR = get_results_root() / "relerr_cpp"
 COL_NAME = "adc_time_2"
 
 

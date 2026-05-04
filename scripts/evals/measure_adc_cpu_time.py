@@ -37,10 +37,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.evals.config import DATASET_CONFIG
+from scripts.evals.config import DATASET_CONFIG, get_results_root
 from scripts.evals.run_evals import load_db_and_queries, resolve_model_folder
 
-DEFAULT_RESULTS_DIR = Path("/data/cpanourg/2-hdvc/results/relerr_cpp")
+DEFAULT_RESULTS_DIR = get_results_root() / "relerr_cpp"
 CPU_COLS = ["adc_cpu_time", "adc_cpu_time_pp"]
 
 

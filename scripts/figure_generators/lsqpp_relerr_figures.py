@@ -10,7 +10,7 @@ grid; by default we filter to one ``train_size`` and draw **one curve per**
 Example::
 
     python3 scripts/figure_generators/lsqpp_relerr_figures.py \\
-        --data-dir /data/cpanourg/2-hdvc/results \\
+        --data-dir /path/to/repo/results/lsqpp \\
         --train-size 100000
 
 Figures go under ``{data_dir}/figures/LSQpp/``.
@@ -23,6 +23,13 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+
+for _anc in Path(__file__).resolve().parents:
+    if (_anc / "hdvc_paths.py").is_file():
+        if str(_anc) not in sys.path:
+            sys.path.insert(0, str(_anc))
+        break
+from hdvc_paths import get_results_root  # noqa: E402
 
 _GEN = Path(__file__).resolve().parent
 if str(_GEN) not in sys.path:
@@ -57,8 +64,8 @@ def main() -> None:
     ap.add_argument(
         "--data-dir",
         type=Path,
-        default=Path("/data/cpanourg/2-hdvc/results"),
-        help="Directory that contains *_LSQpp_adc_vs_exact_eval.csv",
+        default=get_results_root() / "lsqpp",
+        help="Directory that contains *_LSQpp_adc_vs_exact_eval.csv (default: {results}/lsqpp).",
     )
     ap.add_argument(
         "--train-size",

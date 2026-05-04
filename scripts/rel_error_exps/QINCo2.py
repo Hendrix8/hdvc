@@ -38,6 +38,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
+from hdvc_paths import get_results_root  # noqa: E402
+
 from src.utils import (  # noqa: E402
     append_or_create_csv,
     ensure_dir,
@@ -513,7 +515,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--data_root", default="/data/cpanourg/2-hdvc", help="Root directory for results.")
     parser.add_argument("--results_dir", default="results/relerr", help="Subdirectory for CSV / artifacts.")
     parser.add_argument("--temp_dir", default="/data/cpanourg/2-hdvc/temp/qinco2", help="Where to store intermediate fvecs.")
-    parser.add_argument("--model_output_dir", default="/data/cpanourg/2-hdvc/results/qinco2/models", help="Where to store trained checkpoints.")
+    parser.add_argument(
+        "--model_output_dir",
+        default=str(get_results_root() / "qinco2" / "models"),
+        help="Where to store trained checkpoints.",
+    )
 
     # Experiment sizing
     parser.add_argument("--train_size", type=int, default=1_000_000, help="Training set size for QINCo2.")

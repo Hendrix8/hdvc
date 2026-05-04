@@ -16,7 +16,7 @@ Two outputs (see ``--mode``):
 Example::
 
     python3 scripts/figure_generators/all_methods_relerr_figures.py \\
-        --data-root /data/cpanourg/2-hdvc/results \\
+        --data-root /path/to/repo/results \\
         --mode both \\
         --target-bpv 256 512 1024
 """
@@ -26,6 +26,13 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+
+for _anc in Path(__file__).resolve().parents:
+    if (_anc / "hdvc_paths.py").is_file():
+        if str(_anc) not in sys.path:
+            sys.path.insert(0, str(_anc))
+        break
+from hdvc_paths import get_results_root  # noqa: E402
 
 import pandas as pd
 
@@ -114,7 +121,7 @@ def build_deep_curve_series(
             ),
         )
     if "LSQ++" in methods:
-        for lsq_path in sorted(data_root.glob("*_LSQpp_adc_vs_exact_eval.csv")):
+        for lsq_path in sorted((data_root / "lsqpp").glob("*_LSQpp_adc_vs_exact_eval.csv")):
             add_from_path(
                 lsq_path,
                 f"LSQ++ (M={n_subq}, train={pq_opq_lsq_train})",
@@ -230,8 +237,8 @@ def main() -> None:
     ap.add_argument(
         "--data-root",
         type=Path,
-        default=Path("/data/cpanourg/2-hdvc/results"),
-        help="Root directory containing turboquant/, relerr_cpp/, rabitq/, vaq/, and *_LSQpp_*.csv",
+        default=get_results_root(),
+        help="Results root (turboquant/, relerr_cpp/, rabitq/, vaq/, lsqpp/). Override with HDVC_RESULTS_ROOT.",
     )
     ap.add_argument(
         "--out-dir",
