@@ -1,0 +1,162 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\graphicspath{{../figures/}}
+
+% Only two fields must match your official allocation form (eDARI/Genci):
+\newcommand{\AllocHours}{\textit{\textcolor{gray}{[insert GPU-hours or node-hours from your form]}}}
+\newcommand{\AllocPartition}{\textit{\textcolor{gray}{[insert partition / GPU model from your form]}}}
+
+\newcommand{\maybegraphics}[2]{%
+  \IfFileExists{../figures/#2}{%
+    \includegraphics[#1]{#2}%
+  }{%
+    \fbox{\parbox[c][0.22\textheight][c]{0.95\linewidth}{\centering
+      \small\textit{Missing: \texttt{#2}\\See \texttt{idris\_sub/figures/MANIFEST.md}}}}%
+  }%
+}
+
+\title{\textbf{Project description}\\
+\large High-dimensional vector compression at scale,\\
+retrieval-based model selection for time-series anomaly detection,\\
+and efficient DTW-consistent metrics for data series}
+\author{Christos Panourgias\\
+  LIPADE, Université Paris Cité, France\\
+  \texttt{christos.panourgias@etu.u-paris.fr}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This research program develops and evaluates methods at the intersection of \textbf{large-scale vector retrieval}, \textbf{learned and classical vector compression}, and \textbf{time-series analytics}. Workstream~(A), aligned with the manuscript \textit{A Systematic Benchmark of High-Dimensional Vector Compression Methods}, isolates compression behavior from confounding factors in full ANNS pipelines and measures intrinsic quality (distance and ranking preservation), resource usage (encoding, decoding, compressed-domain distance computation), and downstream recall under controlled workloads, across multiple public embedding benchmarks. Workstream~(B), aligned with \textit{Retrieval Over Training} / \textsc{RAMSAD}, studies similarity-search-based \emph{model selection} for time-series anomaly detection: given a new series, retrieve nearest neighbors in a knowledge base and transfer detector recommendations, with emphasis on robustness under distribution shift. Workstream~(C), aligned with \textit{WETW: Efficient DTW Approximation over DTW-Preserving Embeddings}, learns fixed-length series embeddings and a weighted Euclidean surrogate that approximates Dynamic Time Warping (DTW), enabling orders-of-magnitude speedups on classification and clustering while staying close to DTW-grade accuracy. The experimental stack combines Python and PyTorch, GPU-accelerated libraries such as FAISS, and custom C++/CUDA evaluation harnesses developed in the associated codebases.
+\end{abstract}
+
+\section{Motivation and scientific positioning}
+
+\subsection{Embeddings, compression, and approximate search}
+Dense embeddings from neural models underpin semantic search, recommendation, retrieval-augmented generation, clustering, and scientific pipelines. Operational systems must often maintain collections of millions to billions of high-dimensional vectors; raw floating-point storage and linear-time distance computation become dominant costs in memory, bandwidth, latency, and energy.
+
+Approximate nearest-neighbor search (ANNS) is the standard approach at scale, but end-to-end benchmarks that couple compression with a particular index, pruning policy, and hardware easily \emph{conflate} effects: gains may stem from the index or from the compression scheme itself. Yet practitioners need to know, under a fixed memory or latency budget, which \emph{compression family} to deploy and how to tune code length, subquantizers, training-set size, bit allocation, and related knobs---choices that strongly affect accuracy--efficiency trade-offs and are often reported only at default settings.
+
+\subsection{Time series: heterogeneous detectors and scalable similarity}
+Time-series anomaly detection is critical in healthcare, industry, and monitoring. Large-scale evaluations show that \textbf{no single detector} is uniformly best across heterogeneous series; \textbf{model selection} (choosing a detector suited to each context) is therefore essential. Trainable meta-selectors add complexity and can degrade under out-of-distribution (OOD) conditions. \textbf{Retrieval over a knowledge base} of past series and their detector outcomes offers a scalable alternative when similarity in an appropriate representation aligns with transferable performance.
+
+Separately, DTW remains a reference similarity measure for temporally misaligned series but scales quadratically with length. Learning embeddings in which a \textbf{weighted Euclidean} measure mimics DTW enables large-scale nearest-neighbor workflows (classification, clustering, similarity search) that would be impractical with naive DTW on massive archives.
+
+\section{Workstream A: systematic benchmark of vector compression (HDVC)}
+
+\subsection{Objectives}
+The HDVC line of work evaluates \emph{vector compression as a first-class object}: intrinsic metrics (reconstruction distortion, distance estimation error, ranking preservation), storage and compute for encoding and decoding, cost of distance evaluation in compressed form, and---in a second layer---translation of these properties into retrieval quality under explicit search workloads. This separation addresses research questions such as: How well do different compression \emph{families} preserve distances and neighbor rankings under equal bit budgets? Which hyperparameters dominate? Are default configurations portable across datasets (e.g.\ Deep1B-style subsets, BIGANN, GIST, MS~MARCO and OpenAI-scale embeddings in our experiments)?
+
+\subsection{Methods and implementation}
+Experiments cover classical and recent compression families (including product-style quantization and variants, learned residual quantizers, and randomized schemes among those implemented in our benchmark codebase). Evaluations are scripted for reproducibility; GPU acceleration is used for large-scale index operations, training phases for learned quantizers, and throughput-sensitive measurement campaigns.
+
+\begin{figure}[htbp]
+  \centering
+  \maybegraphics{width=\linewidth}{hdvc_pareto_deep.pdf}
+  \caption{Accuracy--efficiency view (relative error vs.\ computational cost proxy) for compression methods on a Deep1B-style benchmark setting; full manuscript provides analogous panels across datasets.}
+  \label{fig:hdvc-pareto}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \maybegraphics{width=\linewidth}{hdvc_adc_vs_bpv_deep.pdf}
+  \caption{Compressed-domain distance computation (ADC-style) vs.\ bits per vector on the same setting; illustrates bitrate--cost trade-offs.}
+  \label{fig:hdvc-adc}
+\end{figure}
+
+\section{Workstream B: \textsc{RAMSAD}---retrieval for anomaly-detector selection}
+
+\subsection{Objectives}
+\textsc{RAMSAD} (\textit{Retrieval-based framework for model selection in time-series anomaly detection}) targets the failure of one-size-fits-all detectors and the fragility of heavy trainable selectors under OOD conditions. The idea is to maintain a \textbf{knowledge base} of time series (with stored anomaly-detector performance profiles). For a \textbf{new} series, the method retrieves the top-$k$ most similar instances---using raw series distances or embedding-based similarity---and \textbf{transfers} which detectors worked well on those neighbors. This leverages similarity search as the core operation for scalable model selection.
+
+\subsection{Expected outcomes}
+The companion manuscript reports strong gains vs.\ automatic TSAD model-selection baselines, particularly in OOD settings, with favorable runtime compared to training-heavy alternatives. Ongoing work extends retrieval protocols, $k$ and embedding choices, and evaluation on broader benchmark suites.
+
+\begin{figure}[htbp]
+  \centering
+  \maybegraphics{width=\linewidth}{ramsad_overview.pdf}
+  \caption{Overview of the \textsc{RAMSAD} pipeline: knowledge base, similarity, and transfer of detector recommendations.}
+  \label{fig:ramsad-overview}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \maybegraphics{width=\linewidth}{ramsad_retrieval.pdf}
+  \caption{Retrieval-centric view of neighbor-based transfer for detector selection.}
+  \label{fig:ramsad-retrieval}
+\end{figure}
+
+\section{Workstream C: \textsc{WETW} and \textsc{WESee}---DTW in embedding space}
+
+\subsection{Method summary}
+\textsc{WETW} combines (a)~\textbf{\textsc{WESee}}, an encoder using dilated convolutions for long-range structure and strided convolutions to compress the temporal axis into a fixed-length embedding per series, with (b)~a \textbf{weight generator} that, given a pair of embeddings, produces alignment weights so that a \textbf{weighted Euclidean} distance approximates DTW. Training aligns this surrogate with DTW while enabling fast inference-scale similarity.
+
+\subsection{Empirical claims (UCR and additional datasets)}
+On the UCR archive and complementary real and synthetic data, the published experiments report low DTW-relative error and stable variance across domains, with order-of-magnitude \textbf{speedups} in downstream tasks (e.g.\ classification and clustering in the hundreds $\times$ regime compared to direct DTW pipelines at comparable accuracy targets), making large-scale DTW-consistent protocols feasible.
+
+\begin{figure}[htbp]
+  \centering
+  \maybegraphics{width=\linewidth}{wetw_wesee_architecture.pdf}
+  \caption{\textsc{WESee} encoder architecture (conceptual diagram from the WETW manuscript).}
+  \label{fig:wetw-arch}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \maybegraphics{width=\linewidth}{wetw_workflow.pdf}
+  \caption{Comparison of DTW-based workflow vs.\ \textsc{WETW} weighted-Euclidean computation in embedding space.}
+  \label{fig:wetw-workflow}
+\end{figure}
+
+\section{Software stack and repository mapping}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages and libraries:} Python~3, PyTorch, NumPy/SciPy ecosystem; FAISS and related ANNS tooling; CUDA and C++ for performance-critical kernels and batch evaluators.
+  \item \textbf{Vector compression and benchmarking:} development under the \texttt{2-hdvc} tree (benchmark harnesses, codec integrations, plotting pipelines); manuscript sources in \texttt{HDVC\_bench\_paper/} (Overleaf-linked).
+  \item \textbf{Time-series foundation models and \textsc{RAMSAD}:} \texttt{3-tsfm} (and related experiment scripts); manuscript in \texttt{RAMSAD\_paper/}.
+  \item \textbf{\textsc{WETW}:} \texttt{WETW/} repository; manuscript in \texttt{wetw\_paper/}.
+\end{itemize}
+
+\section{Requested computing resources (align with submitted form)}
+
+The workloads are \textbf{GPU-heavy} for training (learned quantizers, encoders, embeddings) and for large-scale ANNS experiments (index builds, batched queries, reranking). CPU RAM and parallel preprocessing matter for data ingestion and feature extraction; I/O scales with dataset replication across hyperparameter sweeps.
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Requested volume (official figure):} \AllocHours
+  \item \textbf{Partition / accelerator type (official figure):} \AllocPartition
+  \item \textbf{Job structure:} many independent jobs (minutes to a few hours wall-clock): hyperparameter sweeps, repeated trials for variance, index construction, and long GPU batches for training; suited to \textbf{dynamic} or queue-based access rather than a single long reservation.
+  \item \textbf{Scientific justification:} The three workstreams require systematic repetition over multiple public benchmarks and model checkpoints; embedding-based and compression-heavy pipelines saturate GPU arithmetic and memory bandwidth; rejection of failed runs and ablation studies multiplies the number of jobs beyond a minimal ``single training'' estimate.
+\end{itemize}
+
+\section{Work plan (next 4--6 months)}
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{HDVC:} finalize benchmark coverage for additional codecs and operating points; publish artifact scripts and consolidated tables; optional extension to new embedding sets as they appear in the literature.
+  \item \textbf{\textsc{RAMSAD}:} expand retrieval experiments (embedding backends, $k$, distance metrics); strengthen OOD protocols and runtime comparisons to trainable selectors.
+  \item \textbf{\textsc{WETW}:} scaling studies on larger archives; ablations on encoder depth and weight-generator design; integration with similarity-search pipelines where appropriate.
+\end{enumerate}
+
+\section{Deliverables}
+
+\begin{itemize}[leftmargin=*]
+  \item Peer-reviewed or preprint manuscripts tied to the three Overleaf projects: \textit{A Systematic Benchmark of High-Dimensional Vector Compression Methods}; \textit{Retrieval Over Training} / \textsc{RAMSAD}; \textit{WETW: Efficient DTW Approximation over DTW-Preserving Embeddings}.
+  \item Open, reproducible experiment scripts and versioned software aligned with those submissions (subject to venue and lab release policies).
+\end{itemize}
+
+\vfill
+\noindent\textit{Build note:} PDF generated from \texttt{2-hdvc/idris\_sub/project\_description/main.tex}; figures listed in \texttt{idris\_sub/figures/MANIFEST.md}. Replace \texttt{\textbackslash AllocHours} and \texttt{\textbackslash AllocPartition} in the preamble with your final numbers or paste them from the allocation form before upload.
+
+\end{document}

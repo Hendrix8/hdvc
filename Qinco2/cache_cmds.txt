@@ -1,0 +1,28 @@
+python ./slurm/submit_job_Qinco.py "./run.py task=train output=test_bigann.pt resume=true model_args=qinco2-S L=2 M=16 K=256 dh=256 de=128 A=16 B=32 db=bigann trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/bigann/SIFT1M/bigann_learn.bvecs ds.trainset=1000 verbose=true" --job_id test_bigann --slurm_time 00:30:00
+python ./slurm/submit_job_Qinco.py "./run.sh task=train output=test_bigann_multigpu.pt resume=true model_args=qinco2-S L=2 M=16 K=256 dh=256 de=128 A=16 B=32 db=bigann trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/bigann/SIFT1M/bigann_learn.bvecs ds.trainset=1000 verbose=true" --multi_gpu --job_id test_bigann_multigpu --slurm_time 00:30:00
+
+python ./slurm/submit_job_Qinco.py "./run.sh task=train output=Qinco2L_bigann_M_16_K_256.pt resume=true model_args=qinco2-L L=16 M=16 K=256 dh=384 de=384 A=16 B=32 db=bigann trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/bigann/SIFT1M/bigann_learn.bvecs epochs=70 verbose=true model=Qinco2L_bigann_M_16_K_256.pt" --multi_gpu --job_id Qinco2L_bigann --slurm_time 20:00:00
+
+
+python $VQ_CODE/slurm/submit_job_Qinco.py "/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/run.sh task=train output=/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/deep/Qinco2L_deep_M_16_K_256.pt resume=true model_args=qinco2-L L=16 M=16 K=256 dh=384 de=384 A=16 B=32 db=deep trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/deep/learn_100m.fvecs epochs=70 verbose=true" --multi_gpu --job_id Qinco2L_deep --slurm_time 20:00:00
+
+======================================================
+
+cd $VQ_CODE/BigANN
+python $VQ_CODE/slurm/submit_job_Qinco.py "/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/run.sh task=train output=/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/deep/Qinco2L_deep_M_16_K_256.pt resume=true model_args=qinco2-L L=16 M=16 K=256 dh=384 de=384 A=16 B=32 db=bigann trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/deep/learn_100m.fvecs verbose=true" --multi_gpu --job_id Qinco2L_deep --slurm_time 20:00:00
+
+
+
+cd $VQ_CODE/deep
+python $VQ_CODE/slurm/submit_job_Qinco.py "/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/run.sh task=train output=/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/deep/Qinco2L_deep_M_16_K_256.pt resume=true model_args=qinco2-L L=16 M=16 K=256 dh=384 de=384 A=16 B=32 db=deep trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/deep/learn_100m.fvecs verbose=true" --multi_gpu --job_id Qinco2L_deep --slurm_time 20:00:00
+
+
+
+cd $VQ_CODE/msmarco
+
+python $VQ_CODE/slurm/submit_job_Qinco.py "/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/run.sh task=train output=/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/msmarco/Qinco2L_msmarco_M_16_K_256.pt resume=true model_args=qinco2-L L=16 M=16 K=256 dh=384 de=384 A=16 B=32 db=msmarco trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/msmarco/train.fvecs verbose=true" --multi_gpu --job_id Qinco2L_msmarco --slurm_time 20:00:00
+
+cd $VQ_CODE
+cd ./openai
+
+python $VQ_CODE/slurm/submit_job_Qinco.py "/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/run.sh task=train output=/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/openai/Qinco2L_openai_M_16_K_256.pt resume=true model_args=qinco2-L L=16 M=16 K=256 dh=384 de=384 A=16 B=32 db=openai trainset=/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/openai/openai_train1m.fvecs verbose=true" --multi_gpu --job_id Qinco2L_openai --slurm_time 20:00:00
