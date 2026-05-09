@@ -1,0 +1,51 @@
+dataset,column,n_unique,values
+bigann,nbits,4,"1, 2, 4, 8"
+bigann,bits_per_vector,4,"128, 256, 512, 1024"
+bigann,bpv_ratio,4,"1, 2, 4, 8"
+bigann,dim,1,128
+bigann,n_subquantizers,1,0
+bigann,train_size,1,1000000
+bigann,nb_sample,1,1000000
+bigann,nq_sample,1,200
+bigann,sample_mode,1,saq_native_nprobe=200
+bigann,seed,0,
+deep,nbits,4,"1, 2, 4, 8"
+deep,bits_per_vector,4,"96, 192, 384, 768"
+deep,bpv_ratio,4,"1, 2, 4, 8"
+deep,dim,1,96
+deep,n_subquantizers,1,0
+deep,train_size,1,1000000
+deep,nb_sample,1,1000000
+deep,nq_sample,1,200
+deep,sample_mode,1,saq_native_nprobe=200
+deep,seed,0,
+gist,nbits,4,"1, 2, 4, 8"
+gist,bits_per_vector,4,"960, 1920, 3840, 7680"
+gist,bpv_ratio,4,"1, 2, 4, 8"
+gist,dim,1,960
+gist,n_subquantizers,1,0
+gist,train_size,1,1000000
+gist,nb_sample,1,1000000
+gist,nq_sample,1,200
+gist,sample_mode,1,saq_native_nprobe=200
+gist,seed,0,
+msmarco,nbits,4,"1, 2, 4, 8"
+msmarco,bits_per_vector,4,"1024, 2048, 4096, 8192"
+msmarco,bpv_ratio,4,"1, 2, 4, 8"
+msmarco,dim,1,1024
+msmarco,n_subquantizers,1,0
+msmarco,train_size,1,1000000
+msmarco,nb_sample,1,1000000
+msmarco,nq_sample,1,200
+msmarco,sample_mode,1,saq_native_nprobe=200
+msmarco,seed,0,
+openai,nbits,4,"1, 2, 4, 8"
+openai,bits_per_vector,4,"1536, 3072, 6144, 12288"
+openai,bpv_ratio,4,"1, 2, 4, 8"
+openai,dim,1,1536
+openai,n_subquantizers,1,0
+openai,train_size,1,1000000
+openai,nb_sample,1,1000000
+openai,nq_sample,1,200
+openai,sample_mode,1,saq_native_nprobe=200
+openai,seed,0,

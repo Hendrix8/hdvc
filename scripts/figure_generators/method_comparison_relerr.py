@@ -213,3 +213,26 @@ def default_method_sources(
 
 
 DEFAULT_SOURCES: tuple[MethodSource, ...] = default_method_sources()
+
+
+def plot_unified_adc_pareto_if_available(
+    *,
+    timing_csv: Path | None = None,
+    output_png: Path | None = None,
+    dataset: str | None = None,
+) -> Path | None:
+    """
+    If ``distance_eval/results/unified_adc_timing.csv`` exists (from
+    ``python -m distance_eval.harness``), write a Pareto-style scatter
+    (rel_error_mean vs adc_total_time_pp_mean) next to it.
+    """
+    root = Path(__file__).resolve().parents[2]
+    timing = timing_csv or (root / "distance_eval" / "results" / "unified_adc_timing.csv")
+    if not timing.is_file():
+        return None
+    out = output_png or (root / "distance_eval" / "results" / "unified_adc_pareto.png")
+    # Import here so scripts work when distance_eval is optional
+    from distance_eval.figures import plot_unified_timing
+
+    plot_unified_timing(timing, out, dataset=dataset)
+    return out

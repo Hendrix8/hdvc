@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """
+DEPRECATED — use ``python -m distance_eval.harness`` (see ``distance_eval/README.md``).
+Kept as PQ-only legacy reference.
+
 Measure ADC timing with CPU process time (time.process_time).
 
 time.process_time() counts only the CPU time consumed by the current

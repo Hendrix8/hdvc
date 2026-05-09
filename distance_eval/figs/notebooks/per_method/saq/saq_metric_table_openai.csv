@@ -1,0 +1,5 @@
+dataset,nbits,bits_per_vector,rel_error_mean,rel_error_std,adc_time_per_pair_s,encoding_time_s,train_time_s,distance_table_time_s,cdist_time_s
+openai,1.0,1536.0,0.00719982,0.00556368,4.731770038604736e-08,151.685,0.0,,
+openai,2.0,3072.0,0.00268993,0.00208552,4.8659152984619144e-08,162.369,0.0,,
+openai,4.0,6144.0,0.000701461,0.000543592,5.1147712469100945e-08,169.142,0.0,,
+openai,8.0,12288.0,5.06471e-05,3.93833e-05,5.508678674697876e-08,139.425,0.0,,

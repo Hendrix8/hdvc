@@ -1,5 +1,12 @@
 # PQ/OPQ Evaluation Scripts
 
+> **Cross-method ADC timing:** use the **`distance_eval/`** package
+> (`python -m distance_eval.manifest`, `python -m distance_eval.harness`).
+> See [distance_eval/README.md](../../distance_eval/README.md).
+>
+> **Deprecated (PQ-only legacy):** `measure_adc_cpu_time.py` and `measure_all_adc.py`
+> — kept for reference; prefer `distance_eval` for fair IP+norm timing across methods.
+
 Run evaluation metrics on models from `*_adc_vs_exact_eval.csv` files.
 
 ## Metrics

@@ -45,6 +45,7 @@ from method_comparison_relerr import (
     default_method_sources,
     load_concat_sources,
     plot_grouped_bar_relerr,
+    plot_unified_adc_pareto_if_available,
 )
 from relerr_quick_plot_style import figure_relerr_vs_bits_per_vector_multi, savefig_relerr
 
@@ -296,6 +297,11 @@ def main() -> None:
         default=100_000,
         help="Curves mode: train_size filter for RaBitQ Deep (if column present).",
     )
+    ap.add_argument(
+        "--unified-adc",
+        action="store_true",
+        help="If distance_eval/results/unified_adc_timing.csv exists, write unified_adc_pareto.png.",
+    )
     args = ap.parse_args()
 
     data_root: Path = args.data_root
@@ -324,6 +330,11 @@ def main() -> None:
             pq_opq_lsq_train=int(args.curve_pq_opq_lsq_train),
             rabitq_train=int(args.curve_rabitq_train),
         )
+
+    if args.unified_adc:
+        p = plot_unified_adc_pareto_if_available()
+        if p:
+            print(f"Unified ADC Pareto: {p}")
 
 
 if __name__ == "__main__":

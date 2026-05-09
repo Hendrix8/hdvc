@@ -8,6 +8,7 @@ Works for .fvecs or .bin datasets (float32), dataset-agnostic.
 import numpy as np
 import faiss
 import time, csv, os, sys
+from datetime import datetime
 from pathlib import Path
 from scipy.spatial.distance import cdist
 import argparse
@@ -176,6 +177,15 @@ def run_opq_eval(
     train_time = time.time() - start
     print(f"✅ OPQ trained in {train_time:.2f}s")
 
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_dir = Path(data_root) / results_dir / "opq" / dataset_name / (
+        f"subq{n_subquantizers}_nbits{nbits}_train{train_size}_{timestamp}"
+    )
+    ensure_dir(out_dir)
+    opq_model_path = out_dir / "opq_model.index"
+    faiss.write_index(index, str(opq_model_path))
+    print(f"✅ OPQ index saved to {opq_model_path}")
+
     # --- Encode database ---
     print("Encoding database...")
     start = time.time()
@@ -217,8 +227,6 @@ def run_opq_eval(
     print(f"Mean rel. error: {mean_rel:.4f}, std: {std_rel:.4f}")
 
     # --- Save results ---
-    out_dir = Path(data_root) / results_dir / 'opq' / dataset_name
-    ensure_dir(out_dir)
     out_bin = out_dir / f"rel_error_subq{n_subquantizers}_nbits{nbits}_db{sample_db//1000}k_qr{sample_queries//1000}k.bin"
     rel_error.astype(np.float32).tofile(out_bin)
 
@@ -226,6 +234,7 @@ def run_opq_eval(
     summary = {
         "method": "OPQ",
         "dataset": dataset_name,
+        "experiment_folder": str(out_dir),
         "nq": nq,
         "nb": nb,
         "nb_sample": len(db_idx),

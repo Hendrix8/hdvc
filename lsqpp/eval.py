@@ -113,7 +113,7 @@ def run_lsqpp_eval(
         f"train_db={train_db.shape}, test_db={test_db.shape}, qr={qr.shape}, dim={dim}"
     )
 
-    lsq = faiss.LocalSearchQuantizer(
+    index_lsq = faiss.IndexLocalSearchQuantizer(
         dim,
         M,
         nbits,
@@ -122,12 +122,13 @@ def run_lsqpp_eval(
     print(f"Training LSQ++ {M}x{nbits} => {M * nbits} bits/vector")
 
     t0 = time.time()
-    lsq.train(train_db)
+    index_lsq.train(train_db)
     train_time = time.time() - t0
     print(f"✅ LSQ++ trained in {train_time:.2f}s")
+    lsq = index_lsq.lsq
 
     t0 = time.time()
-    codes_u8 = np.asarray(lsq.compute_codes(test_db), dtype=np.uint8)
+    codes_u8 = np.asarray(index_lsq.sa_encode(test_db), dtype=np.uint8)
     encoding_time = time.time() - t0
     csz = codes_u8.shape[1]
     min_cs = (M * nbits + 7) // 8
@@ -181,6 +182,9 @@ def run_lsqpp_eval(
     safe = f"{M}x{nbits}"
     out_dir = data_root_p / results_dir / dataset_name / f"lsqpp_{safe}_{ts}"
     ensure_dir(out_dir)
+    lsq_index_path = out_dir / "lsq_model.index"
+    faiss.write_index(index_lsq, str(lsq_index_path))
+    print(f"✅ LSQ++ index saved to {lsq_index_path}")
     out_bin = out_dir / f"rel_error_lsqpp_{safe}_db{n_sample_db}_qr{n_sample_q}.bin"
     rel_error.astype(np.float32).tofile(out_bin)
 

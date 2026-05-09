@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """
+DEPRECATED — use ``python -m distance_eval.manifest`` + ``python -m distance_eval.harness``
+(see ``distance_eval/README.md``). This script remains as a PQ-only legacy reference.
+
 Measure ADC CPU time for ALL PQ experiments (not just optimal per bits_per_vector).
 
 For every row in *_PQ_adc_vs_exact_eval.csv:
