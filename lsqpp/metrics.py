@@ -35,3 +35,55 @@ def exact_distances_sqeuclidean(
     with np.errstate(over="ignore"):
         exact_64 = cdist(qr_sample, db_sample, metric="sqeuclidean")
     return np.clip(exact_64, 0, MAX_SAFE_FLOAT32).astype(np.float32)
+
+
+def _rank_1d(values: np.ndarray) -> np.ndarray:
+    """Fast ranks for distance arrays. Ties get arbitrary stable ranks; adequate for float distances."""
+    order = np.argsort(values, kind="mergesort")
+    ranks = np.empty(order.shape[0], dtype=np.float64)
+    ranks[order] = np.arange(order.shape[0], dtype=np.float64)
+    return ranks
+
+
+def _pearson_corr(x: np.ndarray, y: np.ndarray) -> float:
+    x = x.astype(np.float64, copy=False)
+    y = y.astype(np.float64, copy=False)
+    x = x - x.mean()
+    y = y - y.mean()
+    denom = float(np.sqrt(np.dot(x, x) * np.dot(y, y)))
+    if denom == 0.0 or not np.isfinite(denom):
+        return float("nan")
+    return float(np.dot(x, y) / denom)
+
+
+def mean_spearman_rank(adc_sample: np.ndarray, exact_sample: np.ndarray) -> float:
+    if exact_sample.shape != adc_sample.shape:
+        raise ValueError(f"shape mismatch exact={exact_sample.shape}, adc={adc_sample.shape}")
+    nq = exact_sample.shape[0]
+    vals: list[float] = []
+    for query_index in range(nq):
+        r_exact = _rank_1d(exact_sample[query_index])
+        r_adc = _rank_1d(adc_sample[query_index])
+        corr = _pearson_corr(r_exact, r_adc)
+        if np.isfinite(corr):
+            vals.append(corr)
+    if not vals:
+        return float("nan")
+    return float(np.mean(vals))
+
+
+def compute_lsq_reconstruction_error(
+    test_db_sample: np.ndarray, codes_ix_sample: np.ndarray, codebooks: np.ndarray
+) -> float:
+    """
+    codebooks: (M, ksub, dim)
+    codes_ix_sample: (n_sample, M)
+    """
+    nb, d = test_db_sample.shape
+    M = codes_ix_sample.shape[1]
+    recon = np.zeros_like(test_db_sample)
+    for i in range(nb):
+        for m in range(M):
+            recon[i] += codebooks[m, codes_ix_sample[i, m]]
+    distances = np.linalg.norm(test_db_sample - recon, axis=1)
+    return float(np.mean(distances))

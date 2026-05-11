@@ -1,13 +1,21 @@
+import os
+
+_lustre_data_root = '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc'
+_default_data_root = os.environ.get('QINCO2_DATA_ROOT', _lustre_data_root).rstrip('/')
+
 default_log_path = '/lustre/fsn1/projects/rech/thj/uth68ud/slurm_out/'
 default_code_path = '/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2/'
-default_data_path = '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/'
-default_result_path = '/lustre/fsn1/projects/rech/thj/uth68ud/qinco2_results'
+default_data_path = _default_data_root + '/'
+default_result_path = os.environ.get(
+    'QINCO2_RESULT_PATH',
+    '/lustre/fsn1/projects/rech/thj/uth68ud/qinco2_results',
+)
 
 
 default_data_info = {
 
     'bigann': {
-        'path': '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/bigann/SIFT1M',
+        'path': os.path.join(_default_data_root, 'bigann', 'SIFT1M'),
         'train_fname': 'bigann_learn.bvecs',
         'test_fname': 'bigann_base.bvecs',
         'query_fname': 'bigann_query.bvecs',
@@ -15,7 +23,7 @@ default_data_info = {
     },
 
     'deep': {
-        'path': '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/deep',
+        'path': os.path.join(_default_data_root, 'deep'),
         'train_fname': 'learn_100m.fvecs',
         'test_fname': 'test_1m.fvecs',
         'query_fname': 'query_10k.fvecs',
@@ -23,7 +31,7 @@ default_data_info = {
     },
 
     'gist': {
-        'path': '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/gist',
+        'path': os.path.join(_default_data_root, 'gist'),
         'train_fname': 'gist_learn.fvecs',
         'test_fname': 'gist_base.fvecs',
         'query_fname': 'gist_query.fvecs',
@@ -31,7 +39,7 @@ default_data_info = {
     },
 
     'msmarco': {
-        'path': '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/msmarco',
+        'path': os.path.join(_default_data_root, 'msmarco'),
         'train_fname': 'train.fvecs',
         'test_fname': 'base.fvecs',
         'query_fname': 'query.fvecs',
@@ -39,7 +47,7 @@ default_data_info = {
     },
 
     'openai': {
-        'path': '/lustre/fswork/projects/rech/thj/ufq64xt/data_hdvc/openai',
+        'path': os.path.join(_default_data_root, 'openai'),
         'train_fname': 'openai_train1m.fvecs',
         'test_fname': 'openai_base1m.fvecs',
         'query_fname': 'openai_query10k.fvecs',

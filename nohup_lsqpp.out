@@ -1,0 +1,8 @@
+nohup: ignoring input
+Launched deep as PID 1190909 (log: /mnthdd/cpanourg/2-hdvc/results/lsqpp/lsqpp_grid_M2-7-15_nbits4-8-12_train10k-100k_20260511_133253/logs/deep.log)
+Launched bigann as PID 1190910 (log: /mnthdd/cpanourg/2-hdvc/results/lsqpp/lsqpp_grid_M2-7-15_nbits4-8-12_train10k-100k_20260511_133253/logs/bigann.log)
+Launched gist as PID 1190911 (log: /mnthdd/cpanourg/2-hdvc/results/lsqpp/lsqpp_grid_M2-7-15_nbits4-8-12_train10k-100k_20260511_133253/logs/gist.log)
+Launched msmarco as PID 1190912 (log: /mnthdd/cpanourg/2-hdvc/results/lsqpp/lsqpp_grid_M2-7-15_nbits4-8-12_train10k-100k_20260511_133253/logs/msmarco.log)
+Launched openai as PID 1190914 (log: /mnthdd/cpanourg/2-hdvc/results/lsqpp/lsqpp_grid_M2-7-15_nbits4-8-12_train10k-100k_20260511_133253/logs/openai.log)
+[2026-05-11T13:33:03+00:00] all dataset branches finished status=0
+Results root: /mnthdd/cpanourg/2-hdvc/results/lsqpp/lsqpp_grid_M2-7-15_nbits4-8-12_train10k-100k_20260511_133253

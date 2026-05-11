@@ -1,0 +1,9 @@
+- task=qinco_aq_faiss_compute_distances
+- cpu=True
+- output=/tmp/qinco_gist40_4096_repro.npz
+- qinco_aq_codebooks=/mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/compressed_qinco_res/unzip/gist_M_40_K_4096/setting_0/encode_train/setting_0/train_qinco_aq/setting_0/train_qinco_aq_setting_0.npz
+- encoded_db=/mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/compressed_qinco_res/unzip/gist_M_40_K_4096/setting_0/encode_test/setting_0/encode_test_setting_0_0-9999.npz
+- db=/mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/.adc_data_symlinks/gist/gist_base.fvecs
+- queries=/mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/.adc_data_symlinks/gist/gist_query.fvecs
+- ds.db=10000
+- ds.query=2

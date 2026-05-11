@@ -163,3 +163,6 @@ shen_search:
 
 shen_indices: null
 qinco_aq_codebooks: null
+
+# Batched vectorized ADC over queries (qinco_aq_compute_distances); 1 reproduces per-query loop.
+qinco_aq_query_batch_size: 256

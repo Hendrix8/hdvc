@@ -1,0 +1,116 @@
+task: qinco_aq_faiss_compute_distances
+cpu: true
+inference: true
+verbose: true
+resume: false
+max_sec_per_epoch: 3600
+max_sec_total: 18000
+M: null
+K: null
+L: null
+de: null
+dh: null
+A: null
+B: null
+ivf_K: null
+optimizer: adamw
+lr: 0.0008
+wd: 0.1
+grad_clip: 0.1
+batch: 1024
+epochs: 60
+grad_accumulate: 1
+save_every_epochs: 5
+output_dir: null
+save_id: null
+output: /tmp/qinco_gist40_4096_repro.npz
+model: null
+tensorboard: null
+ivf_centroids: null
+index: null
+encoded_db: /mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/compressed_qinco_res/unzip/gist_M_40_K_4096/setting_0/encode_test/setting_0/encode_test_setting_0_0-9999.npz
+encoded_trainset: null
+pairwise_decoder: null
+db: /mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/.adc_data_symlinks/gist/gist_base.fvecs
+trainset: null
+queries: /mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/.adc_data_symlinks/gist/gist_query.fvecs
+queries_gt: null
+ds:
+  trainset: null
+  valset: 10000
+  db: 10000
+  query: 2
+  loop: 10000000
+encode_trainset: false
+n_pairwise_codebooks: 2
+env:
+  PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True
+  PYTORCH_JIT: '1'
+seed: 0
+qinco1_mode: null
+codebook_noise_init: 0.1
+enc_max_bs: 65536
+ivf_in_use: null
+mse_scale: 1
+scheduler:
+  name: cosine
+  ramp_epochs: 3
+  lr_min_fact: 0.001
+  stop_patience: 10
+default_datasets:
+  FB_ssnpp1M:
+    db: data/fb_ssnpp/database1M.npy
+    trainset: data/fb_ssnpp/training_set10010k.npy
+    queries: data/fb_ssnpp/queries.npy
+    queries_gt: data/fb_ssnpp/ground_truth1M.npy
+    mse_scale: 0.0001
+  contriever1M:
+    db: data/contriever/database1M.npy
+    trainset: data/contriever/training_set.npy
+    queries: data/contriever/queries.npy
+    queries_gt: data/contriever/ground_truth1M.npy
+  bigann1M:
+    db: data/bigann/bigann_base.bvecs
+    trainset: data/bigann/bigann_learn.bvecs
+    queries: data/bigann/bigann_query.bvecs
+    queries_gt: data/bigann/gnd/idx_1M.ivecs
+    limit_db: 1000000
+    mse_scale: 0.0001
+  bigann1B:
+    db: data/bigann/bigann_base.bvecs
+    trainset: data/bigann/bigann_learn.bvecs
+    queries: data/bigann/bigann_query.bvecs
+    queries_gt: data/bigann/gnd/idx_1000M.ivecs
+    mse_scale: 0.0001
+  deep1M:
+    db: data/deep1b/base.fvecs
+    trainset: data/deep1b/learn.fvecs
+    queries: data/deep1b/deep1B_queries.fvecs
+    queries_gt: data/deep1b/deep1M_groundtruth.ivecs
+    limit_db: 1000000
+  deep1B:
+    db: data/deep1b/base.fvecs
+    trainset: data/deep1b/learn.fvecs
+    queries: data/deep1b/deep1B_queries.fvecs
+    queries_gt: data/deep1b/deep1B_groundtruth.ivecs
+search:
+  index_key: IVF${ivf_K}_HNSW32,RQ${M}x8_Nqint8
+  aq_training_samples: 1000000
+  nthreads: 32
+  batch_size: 12288
+  nshort:
+  - 4
+  - 10
+  nprobe:
+  - 4
+  quantizer_efSearch:
+  - 4
+  nmid_short:
+  - 1
+  - 4
+shen_search:
+  first_n_queries: 1000
+  first_n_db: 10000
+shen_indices: null
+qinco_aq_codebooks: /mnthdd/cpanourg/2-hdvc/results/urania_results/results/qinco2/compressed_qinco_res/unzip/gist_M_40_K_4096/setting_0/encode_train/setting_0/train_qinco_aq/setting_0/train_qinco_aq_setting_0.npz
+qinco_aq_query_batch_size: 256

@@ -1,5 +1,9 @@
+import os
 import sys
-sys.path.append('/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2')
+
+_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if _repo_root not in sys.path:
+    sys.path.insert(0, _repo_root)
 
 from util.var_util import *
 import argparse
@@ -576,7 +580,6 @@ def generate_cmds(args, dataset, M, K):
             else:
                 run_option = 'from_scratch'
 
-        print("!!!!!!!!!!!!!!!!!!")
         if run_option == 'from_scratch':
             cur_no_encode_log, cur_no_tqa_log = None, None
             if not os.path.exists(encode_test_save_full_fname):
@@ -999,7 +1002,6 @@ if __name__ == '__main__':
                     no_tpd_logs.append(cur_no_tpd_log)
             elif args.mode == 'qinco_aq_compute_distances':
                 cur_cmds, cur_no_encode_log, cur_no_tqa_log = generate_cmds(args, dataset, M, K)
-                exec(gen_cmd_print_variables('cur_cmds, cur_no_encode_log, cur_no_tqa_log'))
                 if cur_cmds is not None:
                     cmds += cur_cmds   # 注意不是append
                 if cur_no_encode_log is not None:

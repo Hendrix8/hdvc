@@ -28,8 +28,12 @@ from lsqpp.lsq_adc import (
     lsq_distances_batch_numba,
     lsq_dot_tables_vectorized,
 )
-from lsqpp.metrics import compute_rel_error_pq_style, exact_distances_sqeuclidean
-
+from lsqpp.metrics import (
+    compute_rel_error_pq_style,
+    exact_distances_sqeuclidean,
+    mean_spearman_rank,
+    compute_lsq_reconstruction_error,
+)
 TEST_CAP = 1_000_000
 
 
@@ -179,6 +183,14 @@ def run_lsqpp_eval(
     rel_error, mean_rel, std_rel = compute_rel_error_pq_style(adc_sample, exact_sample)
     print(f"Mean rel. error: {mean_rel:.4f}, std: {std_rel:.4f}")
 
+    spearman = mean_spearman_rank(adc_sample, exact_sample)
+    print(f"Spearman rank: {spearman:.4f}")
+
+    recon_error = compute_lsq_reconstruction_error(test_db_sample, codes_sub, codebooks)
+    print(f"Reconstruction error: {recon_error:.4f}")
+
+    per_pair_adc_time_ns = ((distance_table_time + adc_time) / (nq * n_sample_db)) * 1e9
+
     safe = f"{M}x{nbits}"
     out_dir = data_root_p / results_dir / dataset_name / f"lsqpp_{safe}_{ts}"
     ensure_dir(out_dir)
@@ -207,8 +219,11 @@ def run_lsqpp_eval(
         "distance_table_time_s": float(distance_table_time),
         "cdist_time_s": float(cdist_time),
         "adc_time_s": float(adc_time),
+        "per_pair_adc_time_ns": float(per_pair_adc_time_ns),
         "rel_error_mean": mean_rel,
         "rel_error_std": std_rel,
+        "spearman": float(spearman),
+        "reconstruction_error": float(recon_error),
         "sample_mode": sample_mode,
         "train_path": train_path or "",
         "seed": seed,

@@ -1,11 +1,14 @@
+import os
 import sys
-sys.path.append('/lustre/fswork/projects/rech/thj/uth68ud/PycharmProjects/Qinco2')
+
+_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+if _repo_root not in sys.path:
+    sys.path.insert(0, _repo_root)
 
 from util.var_util import *
 import argparse
 from util.file_util import FileWriter, FileReader, DirProcessor
 import itertools
-import os
 # import matplotlib.pyplot as plt
 # import numpy as np
 # import re

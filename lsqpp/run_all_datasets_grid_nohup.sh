@@ -109,7 +109,9 @@ resolve_dataset() {
 
 already_done() {
   local ds="$1" M="$2" nbits="$3" train_size="$4"
-  "${PYTHON}" - "$ROOT_OUT" "$DATA_ROOT" "$ds" "$M" "$nbits" "$train_size" <<'PY'
+  local tmp
+  tmp=$(mktemp)
+  cat >"${tmp}" <<'PY'
 import csv, pathlib, sys
 root_out=pathlib.Path(sys.argv[1])
 data_root=pathlib.Path(sys.argv[2])
@@ -135,6 +137,10 @@ for p in paths:
         continue
 raise SystemExit(1)
 PY
+  "${PYTHON}" "${tmp}" "$ROOT_OUT" "$DATA_ROOT" "$ds" "$M" "$nbits" "$train_size"
+  local rc=$?
+  rm -f "${tmp}"
+  return "${rc}"
 }
 
 run_dataset() {
