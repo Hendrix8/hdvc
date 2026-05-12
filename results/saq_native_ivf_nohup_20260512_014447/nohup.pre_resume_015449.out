@@ -1,0 +1,2435 @@
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:05.119413 140127397858944 create_index.cpp:82] ivf64_b0.25_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:44:05.155759 140127397858944 ivf.hpp:133] Start IVF construction...
+I20260512 01:44:05.155778 140127397858944 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:44:05.155785 140127397858944 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:44:05.157020 140127397858944 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:05.199274 140127397858944 ivf.hpp:182] Quantization done. tm: 0.040081 S
+I20260512 01:44:05.200607 140127397858944 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_seg_pca.index
+Indexing time: 0.070783seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:05.207378 140299100683904 test_relative_error.cpp:313] ivf64_b0.25_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:44:05.212506 140299100683904 ivf.hpp:233] Loading IVF...
+I20260512 01:44:05.212519 140299100683904 ivf.hpp:238] 	Loading meta data...
+I20260512 01:44:05.215287 140299100683904 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:05.215652 140299100683904 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.835133	per_query_us_mean: 835.133	per_pair_ns_mean: 526.125
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:06.005827 139985769475712 create_index.cpp:82] ivf64_b0.25_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:44:06.035933 139985769475712 ivf.hpp:133] Start IVF construction...
+I20260512 01:44:06.035951 139985769475712 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:44:06.035958 139985769475712 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:44:06.037173 139985769475712 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:06.067541 139985769475712 ivf.hpp:182] Quantization done. tm: 0.028408 S
+I20260512 01:44:06.068470 139985769475712 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_seg_pca.index
+Indexing time: 0.058584seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:06.074007 140433033559680 test_relative_error.cpp:313] ivf64_b0.25_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:44:06.078622 140433033559680 ivf.hpp:233] Loading IVF...
+I20260512 01:44:06.078633 140433033559680 ivf.hpp:238] 	Loading meta data...
+I20260512 01:44:06.081130 140433033559680 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:06.081565 140433033559680 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.825359	per_query_us_mean: 825.359	per_pair_ns_mean: 519.968
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:06.864294 139632187702912 create_index.cpp:82] ivf64_b0.25_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:44:06.899850 139632187702912 ivf.hpp:133] Start IVF construction...
+I20260512 01:44:06.899867 139632187702912 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:44:06.899874 139632187702912 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:44:06.901104 139632187702912 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:06.931118 139632187702912 ivf.hpp:182] Quantization done. tm: 0.028219 S
+I20260512 01:44:06.932089 139632187702912 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.061754seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:06.936478 140182760865408 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:44:06.940191 140182760865408 ivf.hpp:233] Loading IVF...
+I20260512 01:44:06.940204 140182760865408 ivf.hpp:238] 	Loading meta data...
+I20260512 01:44:06.943089 140182760865408 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:06.943494 140182760865408 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.845458	per_query_us_mean: 845.458	per_pair_ns_mean: 532.63
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:07.737471 140222764818048 create_index.cpp:82] ivf64_b0.25_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:44:07.768500 140222764818048 ivf.hpp:133] Start IVF construction...
+I20260512 01:44:07.768516 140222764818048 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:44:07.768523 140222764818048 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:44:07.769736 140222764818048 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:07.808988 140222764818048 ivf.hpp:182] Quantization done. tm: 0.037525 S
+I20260512 01:44:07.810831 140222764818048 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.069668seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:44:07.820609 139733546425984 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:44:07.826773 139733546425984 ivf.hpp:233] Loading IVF...
+I20260512 01:44:07.826783 139733546425984 ivf.hpp:238] 	Loading meta data...
+I20260512 01:44:07.829061 139733546425984 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:44:07.829479 139733546425984 ivf.hpp:263] Index loaded
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:04.960541 140117485080192 create_index.cpp:82] ivf64_b0.25_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:45:04.995815 140117485080192 ivf.hpp:133] Start IVF construction...
+I20260512 01:45:04.995833 140117485080192 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:45:04.995841 140117485080192 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:45:04.997071 140117485080192 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:05.039799 140117485080192 ivf.hpp:182] Quantization done. tm: 0.04068 S
+I20260512 01:45:05.041015 140117485080192 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.070559seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:05.048167 139876004892288 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:45:05.052743 139876004892288 ivf.hpp:233] Loading IVF...
+I20260512 01:45:05.052756 139876004892288 ivf.hpp:238] 	Loading meta data...
+I20260512 01:45:05.055599 139876004892288 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:05.056052 139876004892288 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.900894	per_query_us_mean: 900.894	per_pair_ns_mean: 567.554
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:05.889670 140111035883136 create_index.cpp:82] ivf64_b0.25_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:45:05.922438 140111035883136 ivf.hpp:133] Start IVF construction...
+I20260512 01:45:05.922455 140111035883136 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:45:05.922462 140111035883136 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:45:05.923692 140111035883136 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:05.959987 140111035883136 ivf.hpp:182] Quantization done. tm: 0.034431 S
+I20260512 01:45:05.960887 140111035883136 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_seg_pca.index
+Indexing time: 0.066174seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:05.966254 140164536979072 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:45:05.970278 140164536979072 ivf.hpp:233] Loading IVF...
+I20260512 01:45:05.970291 140164536979072 ivf.hpp:238] 	Loading meta data...
+I20260512 01:45:05.973041 140164536979072 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:05.973527 140164536979072 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.844533	per_query_us_mean: 844.533	per_pair_ns_mean: 532.048
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:06.769531 140173313314432 create_index.cpp:82] ivf64_b0.25_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:45:06.800822 140173313314432 ivf.hpp:133] Start IVF construction...
+I20260512 01:45:06.800838 140173313314432 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:45:06.800845 140173313314432 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:45:06.802101 140173313314432 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:06.832121 140173313314432 ivf.hpp:182] Quantization done. tm: 0.028028 S
+I20260512 01:45:06.833385 140173313314432 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_seg_pca.index
+Indexing time: 0.060106seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:06.840542 140245922340480 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:45:06.845178 140245922340480 ivf.hpp:233] Loading IVF...
+I20260512 01:45:06.845191 140245922340480 ivf.hpp:238] 	Loading meta data...
+I20260512 01:45:06.848074 140245922340480 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:06.848537 140245922340480 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.83699	per_query_us_mean: 836.99	per_pair_ns_mean: 527.295
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:07.635988 139811880205952 create_index.cpp:82] ivf64_b0.25_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:45:07.668255 139811880205952 ivf.hpp:133] Start IVF construction...
+I20260512 01:45:07.668272 139811880205952 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:45:07.668278 139811880205952 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:45:07.669507 139811880205952 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:07.705477 139811880205952 ivf.hpp:182] Quantization done. tm: 0.034042 S
+I20260512 01:45:07.706608 139811880205952 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.066766seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:07.712025 140535181733504 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:45:07.717145 140535181733504 ivf.hpp:233] Loading IVF...
+I20260512 01:45:07.717158 140535181733504 ivf.hpp:238] 	Loading meta data...
+I20260512 01:45:07.719859 140535181733504 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:07.720254 140535181733504 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.833501	per_query_us_mean: 833.501	per_pair_ns_mean: 525.097
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:08.505629 140224628379264 create_index.cpp:82] ivf64_b0.25_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:45:08.535940 140224628379264 ivf.hpp:133] Start IVF construction...
+I20260512 01:45:08.535956 140224628379264 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:45:08.535963 140224628379264 ivf.hpp:119] 0.25bits: | 0 -> 128 (128d 0b) 
+I20260512 01:45:08.537196 140224628379264 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:08.565633 140224628379264 ivf.hpp:182] Quantization done. tm: 0.026355 S
+I20260512 01:45:08.566672 140224628379264 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.25_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.057216seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:08.571815 140485816143488 test_relative_error.cpp:313] ivf64_b0.25_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:45:08.575961 140485816143488 ivf.hpp:233] Loading IVF...
+I20260512 01:45:08.575972 140485816143488 ivf.hpp:238] 	Loading meta data...
+I20260512 01:45:08.578866 140485816143488 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:45:08.579251 140485816143488 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 0.832743	per_query_us_mean: 832.743	per_pair_ns_mean: 524.62
+reletive error - visited - total: 12.8487	7878.5
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.25_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:45:09.363972 139954750582400 create_index.cpp:82] ivf64_b0.5_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:45:09.388592 139954750582400 ivf.hpp:133] Start IVF construction...
+I20260512 01:45:09.388607 139954750582400 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:45:09.388613 139954750582400 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:45:09.390007 139954750582400 ivf.hpp:194] Initializing done... num_points: 10000
+create_index: /home/cpanourg/projects/2-hdvc/lib/SAQ/saqlib/quantization/cluster_packer.hpp:65: void saqlib::ClusterPacker::store_and_pack(size_t, const saqlib::QuantBaseCode&): Assertion `num_dim_pad_ == static_cast<size_t>(base_code.code.size())' failed.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/cpanourg/projects/2-hdvc/saq/saq_ivf_grid.py", line 432, in <module>
+    main()
+  File "/home/cpanourg/projects/2-hdvc/saq/saq_ivf_grid.py", line 332, in main
+    _run([str(create_index), *common_flags], cwd=saq_root)
+  File "/home/cpanourg/projects/2-hdvc/saq/saq_relerr.py", line 33, in _run
+    return subprocess.run(cmd, cwd=str(cwd), check=True, text=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cpanourg/.conda/envs/dtwrl_env2/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/cpanourg/projects/2-hdvc/lib/SAQ/bin/create_index', '-dataset=deep10k', '-K=64', '-B=0.5', '-enable_PCA=true', '-enable_segmentation=true', '-rand_rotate=true', '-caq_adj_rd_lmt=0', '-caq_adj_eps=1e-08', '-searcher_vars_bound_m=2', '-nprobe=10', '-n_runs=5', '-warmup_runs=2']' died with <Signals.SIGABRT: 6>.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:32.727121 139893618986624 create_index.cpp:82] ivf64_b0.5_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:32.753260 139893618986624 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:32.753278 139893618986624 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:32.753287 139893618986624 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:32.754692 139893618986624 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:32.788343 139893618986624 ivf.hpp:182] Quantization done. tm: 0.03149 S
+I20260512 01:48:32.789375 139893618986624 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_seg_pca.index
+Indexing time: 0.051585seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:32.796187 140544459837056 test_relative_error.cpp:313] ivf64_b0.5_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:32.801179 140544459837056 ivf.hpp:233] Loading IVF...
+I20260512 01:48:32.801193 140544459837056 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:32.803134 140544459837056 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:32.803732 140544459837056 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.05336	per_query_us_mean: 1053.36	per_pair_ns_mean: 663.606
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:33.651749 139890096115328 create_index.cpp:82] ivf64_b0.5_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:33.671126 139890096115328 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:33.671143 139890096115328 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:33.671151 139890096115328 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:33.672565 139890096115328 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:33.712498 139890096115328 ivf.hpp:182] Quantization done. tm: 0.038042 S
+I20260512 01:48:33.713300 139890096115328 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_seg_pca.index
+Indexing time: 0.057871seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:33.719003 139857892195968 test_relative_error.cpp:313] ivf64_b0.5_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:33.723227 139857892195968 ivf.hpp:233] Loading IVF...
+I20260512 01:48:33.723237 139857892195968 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:33.725132 139857892195968 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:33.725853 139857892195968 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.07456	per_query_us_mean: 1074.56	per_pair_ns_mean: 676.961
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:34.593527 140385988681344 create_index.cpp:82] ivf64_b0.5_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:34.612971 140385988681344 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:34.612989 140385988681344 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:34.612996 140385988681344 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:34.614457 140385988681344 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:34.659713 140385988681344 ivf.hpp:182] Quantization done. tm: 0.043352 S
+I20260512 01:48:34.660552 140385988681344 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.063305seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:34.665780 139849951882880 test_relative_error.cpp:313] ivf64_b0.5_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:34.668869 139849951882880 ivf.hpp:233] Loading IVF...
+I20260512 01:48:34.668878 139849951882880 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:34.670086 139849951882880 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:34.670577 139849951882880 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.05985	per_query_us_mean: 1059.85	per_pair_ns_mean: 667.696
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:35.523580 140325028404864 create_index.cpp:82] ivf64_b0.5_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:35.546221 140325028404864 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:35.546243 140325028404864 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:35.546250 140325028404864 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:35.547729 140325028404864 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:35.578142 140325028404864 ivf.hpp:182] Quantization done. tm: 0.028552 S
+I20260512 01:48:35.579034 140325028404864 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.050169seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:35.583422 140203942776448 test_relative_error.cpp:313] ivf64_b0.5_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:35.586455 140203942776448 ivf.hpp:233] Loading IVF...
+I20260512 01:48:35.586464 140203942776448 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:35.587775 140203942776448 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:35.588279 140203942776448 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.05921	per_query_us_mean: 1059.21	per_pair_ns_mean: 667.295
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:36.443749 139661965434496 create_index.cpp:82] ivf64_b0.5_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:36.463113 139661965434496 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:36.463128 139661965434496 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:36.463136 139661965434496 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:36.464589 139661965434496 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:36.501201 139661965434496 ivf.hpp:182] Quantization done. tm: 0.034517 S
+I20260512 01:48:36.502204 139661965434496 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_adj_seg_pca.index
+Indexing time: 0.054845seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:36.508120 140244980747904 test_relative_error.cpp:313] ivf64_b0.5_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:36.512780 140244980747904 ivf.hpp:233] Loading IVF...
+I20260512 01:48:36.512792 140244980747904 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:36.514737 140244980747904 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:36.515308 140244980747904 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.0472	per_query_us_mean: 1047.2	per_pair_ns_mean: 659.725
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:37.359669 139916137500288 create_index.cpp:82] ivf64_b0.5_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:37.380313 139916137500288 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:37.380328 139916137500288 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:37.380334 139916137500288 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:37.381719 139916137500288 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:37.420677 139916137500288 ivf.hpp:182] Quantization done. tm: 0.037111 S
+I20260512 01:48:37.421552 139916137500288 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_adj_seg_pca.index
+Indexing time: 0.058238seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:37.426998 140295250525824 test_relative_error.cpp:313] ivf64_b0.5_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:37.429868 140295250525824 ivf.hpp:233] Loading IVF...
+I20260512 01:48:37.429876 140295250525824 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:37.431146 140295250525824 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:37.431619 140295250525824 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.05989	per_query_us_mean: 1059.89	per_pair_ns_mean: 667.721
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:38.296431 140584402321024 create_index.cpp:82] ivf64_b0.5_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:38.316849 140584402321024 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:38.316863 140584402321024 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:38.316869 140584402321024 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:38.318315 140584402321024 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:38.356931 140584402321024 ivf.hpp:182] Quantization done. tm: 0.036601 S
+I20260512 01:48:38.357919 140584402321024 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.057892seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:38.363715 140521356291712 test_relative_error.cpp:313] ivf64_b0.5_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:38.367851 140521356291712 ivf.hpp:233] Loading IVF...
+I20260512 01:48:38.367862 140521356291712 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:38.369779 140521356291712 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:38.370501 140521356291712 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.09652	per_query_us_mean: 1096.52	per_pair_ns_mean: 690.794
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:39.247112 140063134080640 create_index.cpp:82] ivf64_b0.5_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:39.272965 140063134080640 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:39.272979 140063134080640 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:39.272986 140063134080640 ivf.hpp:119] 0.5bits: | 0 -> 64 (64d 1b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:39.274393 140063134080640 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:39.318000 140063134080640 ivf.hpp:182] Quantization done. tm: 0.040699 S
+I20260512 01:48:39.319118 140063134080640 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b0.5_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.063358seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:39.325376 139888395554432 test_relative_error.cpp:313] ivf64_b0.5_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:39.329829 139888395554432 ivf.hpp:233] Loading IVF...
+I20260512 01:48:39.329841 139888395554432 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:39.331543 139888395554432 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:39.332169 139888395554432 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.07624	per_query_us_mean: 1076.24	per_pair_ns_mean: 678.021
+reletive error - visited - total: 12.8487	7878.49
+reletive error - visited - query-avg: 12.8519	157.333
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b0.5_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:40.195170 140183423479424 create_index.cpp:82] ivf64_b1_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:40.214380 140183423479424 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:40.214396 140183423479424 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:40.214403 140183423479424 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:40.215951 140183423479424 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:40.259194 140183423479424 ivf.hpp:182] Quantization done. tm: 0.041334 S
+I20260512 01:48:40.260024 140183423479424 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_seg_pca.index
+Indexing time: 0.061321seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:40.265124 140534828715648 test_relative_error.cpp:313] ivf64_b1_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:40.269657 140534828715648 ivf.hpp:233] Loading IVF...
+I20260512 01:48:40.269669 140534828715648 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:40.271346 140534828715648 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:40.271931 140534828715648 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.15569	per_query_us_mean: 1155.69	per_pair_ns_mean: 728.073
+reletive error - visited - total: 3.96974	856.244
+reletive error - visited - query-avg: 3.97457	27.8839
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:41.154812 139627535031936 create_index.cpp:82] ivf64_b1_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:41.175224 139627535031936 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:41.175239 139627535031936 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:41.175257 139627535031936 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:41.176677 139627535031936 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:41.223038 139627535031936 ivf.hpp:182] Quantization done. tm: 0.044467 S
+I20260512 01:48:41.224138 139627535031936 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_seg_pca.index
+Indexing time: 0.065874seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:41.230418 140438584123008 test_relative_error.cpp:313] ivf64_b1_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:41.234665 140438584123008 ivf.hpp:233] Loading IVF...
+I20260512 01:48:41.234676 140438584123008 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:41.236476 140438584123008 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:41.237184 140438584123008 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.14123	per_query_us_mean: 1141.23	per_pair_ns_mean: 718.965
+reletive error - visited - total: 3.96974	856.244
+reletive error - visited - query-avg: 3.97457	27.8839
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:42.110710 140365586763392 create_index.cpp:82] ivf64_b1_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:42.129909 140365586763392 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:42.129923 140365586763392 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:42.129930 140365586763392 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:42.131608 140365586763392 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:42.174745 140365586763392 ivf.hpp:182] Quantization done. tm: 0.041061 S
+I20260512 01:48:42.176017 140365586763392 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.061759seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:42.183870 140203569200768 test_relative_error.cpp:313] ivf64_b1_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:42.188696 140203569200768 ivf.hpp:233] Loading IVF...
+I20260512 01:48:42.188709 140203569200768 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:42.191024 140203569200768 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:42.191905 140203569200768 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.13977	per_query_us_mean: 1139.77	per_pair_ns_mean: 718.044
+reletive error - visited - total: 3.71763	848.559
+reletive error - visited - query-avg: 3.72336	26.337
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:43.075237 140683272289920 create_index.cpp:82] ivf64_b1_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:43.095077 140683272289920 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:43.095093 140683272289920 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:43.095101 140683272289920 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:43.096605 140683272289920 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:43.144209 140683272289920 ivf.hpp:182] Quantization done. tm: 0.045481 S
+I20260512 01:48:43.145232 140683272289920 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.066183seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:43.151014 139720623767168 test_relative_error.cpp:313] ivf64_b1_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:43.154980 139720623767168 ivf.hpp:233] Loading IVF...
+I20260512 01:48:43.154991 139720623767168 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:43.156854 139720623767168 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:43.157560 139720623767168 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.13573	per_query_us_mean: 1135.73	per_pair_ns_mean: 715.498
+reletive error - visited - total: 3.71763	848.559
+reletive error - visited - query-avg: 3.72336	26.337
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:44.028296 140098201013888 create_index.cpp:82] ivf64_b1_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:44.047484 140098201013888 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:44.047499 140098201013888 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:44.047506 140098201013888 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:44.048912 140098201013888 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:44.106972 140098201013888 ivf.hpp:182] Quantization done. tm: 0.056226 S
+I20260512 01:48:44.107804 140098201013888 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_adj_seg_pca.index
+Indexing time: 0.076seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:44.112748 139731394752128 test_relative_error.cpp:313] ivf64_b1_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:44.115923 139731394752128 ivf.hpp:233] Loading IVF...
+I20260512 01:48:44.115933 139731394752128 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:44.117435 139731394752128 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:44.118027 139731394752128 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.14297	per_query_us_mean: 1142.97	per_pair_ns_mean: 720.062
+reletive error - visited - total: 3.70849	893.995
+reletive error - visited - query-avg: 3.71421	26.265
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:44.997125 140309097393792 create_index.cpp:82] ivf64_b1_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:45.016773 140309097393792 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:45.016789 140309097393792 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:45.016796 140309097393792 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:45.018248 140309097393792 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:45.078526 140309097393792 ivf.hpp:182] Quantization done. tm: 0.058449 S
+I20260512 01:48:45.079252 140309097393792 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_adj_seg_pca.index
+Indexing time: 0.078176seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:45.085353 140295920627328 test_relative_error.cpp:313] ivf64_b1_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:45.089927 140295920627328 ivf.hpp:233] Loading IVF...
+I20260512 01:48:45.089940 140295920627328 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:45.091723 140295920627328 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:45.092346 140295920627328 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.13506	per_query_us_mean: 1135.06	per_pair_ns_mean: 715.078
+reletive error - visited - total: 3.70849	893.995
+reletive error - visited - query-avg: 3.71421	26.265
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:45.963327 139629743836800 create_index.cpp:82] ivf64_b1_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:45.984826 139629743836800 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:45.984841 139629743836800 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:45.984848 139629743836800 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:45.986383 139629743836800 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:46.029462 139629743836800 ivf.hpp:182] Quantization done. tm: 0.041043 S
+I20260512 01:48:46.030584 139629743836800 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.063509seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:46.035658 139786570702464 test_relative_error.cpp:313] ivf64_b1_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:46.039781 139786570702464 ivf.hpp:233] Loading IVF...
+I20260512 01:48:46.039792 139786570702464 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:46.041675 139786570702464 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:46.042400 139786570702464 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.15951	per_query_us_mean: 1159.51	per_pair_ns_mean: 730.481
+reletive error - visited - total: 3.70841	893.995
+reletive error - visited - query-avg: 3.71412	26.265
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:46.927699 140466573254272 create_index.cpp:82] ivf64_b1_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:46.954255 140466573254272 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:46.954271 140466573254272 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:46.954278 140466573254272 ivf.hpp:119] 1bits: | 0 -> 64 (64d 2b) | 64 -> 128 (64d 0b) 
+I20260512 01:48:46.955872 140466573254272 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:47.012321 140466573254272 ivf.hpp:182] Quantization done. tm: 0.054505 S
+I20260512 01:48:47.013992 140466573254272 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b1_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.079608seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:47.024651 139720913710720 test_relative_error.cpp:313] ivf64_b1_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:47.029395 139720913710720 ivf.hpp:233] Loading IVF...
+I20260512 01:48:47.029408 139720913710720 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:47.032098 139720913710720 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:47.033284 139720913710720 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.1379	per_query_us_mean: 1137.9	per_pair_ns_mean: 716.865
+reletive error - visited - total: 3.70841	893.995
+reletive error - visited - query-avg: 3.71412	26.265
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b1_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:47.913718 140127800635008 create_index.cpp:82] ivf64_b2_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:47.946903 140127800635008 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:47.946925 140127800635008 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:47.946931 140127800635008 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:47.948327 140127800635008 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:48.003697 140127800635008 ivf.hpp:182] Quantization done. tm: 0.053354 S
+I20260512 01:48:48.004820 140127800635008 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_seg_pca.index
+Indexing time: 0.087297seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:48.011566 139984770834048 test_relative_error.cpp:313] ivf64_b2_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:48.016031 139984770834048 ivf.hpp:233] Loading IVF...
+I20260512 01:48:48.016042 139984770834048 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:48.019540 139984770834048 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:48.020200 139984770834048 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.15142	per_query_us_mean: 1151.42	per_pair_ns_mean: 725.384
+reletive error - visited - total: 2.91942	46.1924
+reletive error - visited - query-avg: 2.91877	16.2777
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:48.901315 139742231035520 create_index.cpp:82] ivf64_b2_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:48.934693 139742231035520 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:48.934710 139742231035520 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:48.934717 139742231035520 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:48.936145 139742231035520 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:48.999693 139742231035520 ivf.hpp:182] Quantization done. tm: 0.061576 S
+I20260512 01:48:49.000899 139742231035520 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_seg_pca.index
+Indexing time: 0.095638seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:49.008257 140657723231872 test_relative_error.cpp:313] ivf64_b2_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:49.012539 140657723231872 ivf.hpp:233] Loading IVF...
+I20260512 01:48:49.012550 140657723231872 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:49.015643 140657723231872 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:49.016201 140657723231872 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.13977	per_query_us_mean: 1139.77	per_pair_ns_mean: 718.045
+reletive error - visited - total: 2.91942	46.1924
+reletive error - visited - query-avg: 2.91877	16.2777
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:49.890862 140553408192128 create_index.cpp:82] ivf64_b2_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:49.920857 140553408192128 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:49.920873 140553408192128 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:49.920879 140553408192128 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:49.922296 140553408192128 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:49.983229 140553408192128 ivf.hpp:182] Quantization done. tm: 0.05892 S
+I20260512 01:48:49.984196 140553408192128 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.089534seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:49.989370 139997283602048 test_relative_error.cpp:313] ivf64_b2_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:49.992842 139997283602048 ivf.hpp:233] Loading IVF...
+I20260512 01:48:49.992851 139997283602048 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:49.995345 139997283602048 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:49.995825 139997283602048 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.1497	per_query_us_mean: 1149.7	per_pair_ns_mean: 724.299
+reletive error - visited - total: 2.53579	36.9906
+reletive error - visited - query-avg: 2.53524	13.3586
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:50.879753 140354934918784 create_index.cpp:82] ivf64_b2_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:50.912334 140354934918784 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:50.912350 140354934918784 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:50.912357 140354934918784 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:50.913732 140354934918784 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:50.987635 140354934918784 ivf.hpp:182] Quantization done. tm: 0.071794 S
+I20260512 01:48:50.988854 140354934918784 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.105342seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:50.996054 140706063879808 test_relative_error.cpp:313] ivf64_b2_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:51.000353 140706063879808 ivf.hpp:233] Loading IVF...
+I20260512 01:48:51.000365 140706063879808 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:51.003539 140706063879808 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:51.004085 140706063879808 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.13902	per_query_us_mean: 1139.02	per_pair_ns_mean: 717.571
+reletive error - visited - total: 2.53579	36.9906
+reletive error - visited - query-avg: 2.53524	13.3586
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:51.880684 140352838639232 create_index.cpp:82] ivf64_b2_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:51.916857 140352838639232 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:51.916873 140352838639232 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:51.916879 140352838639232 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:51.918281 140352838639232 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:51.999827 140352838639232 ivf.hpp:182] Quantization done. tm: 0.079538 S
+I20260512 01:48:52.000915 140352838639232 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_adj_seg_pca.index
+Indexing time: 0.110292seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:52.007037 140289703345792 test_relative_error.cpp:313] ivf64_b2_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:52.011677 140289703345792 ivf.hpp:233] Loading IVF...
+I20260512 01:48:52.011688 140289703345792 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:52.014937 140289703345792 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:52.015387 140289703345792 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.16407	per_query_us_mean: 1164.07	per_pair_ns_mean: 733.355
+reletive error - visited - total: 2.51846	37.7935
+reletive error - visited - query-avg: 2.51783	13.2403
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:52.906153 140140080766592 create_index.cpp:82] ivf64_b2_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:52.936770 140140080766592 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:52.936787 140140080766592 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:52.936793 140140080766592 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:52.938206 140140080766592 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:53.027445 140140080766592 ivf.hpp:182] Quantization done. tm: 0.087296 S
+I20260512 01:48:53.028701 140140080766592 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_adj_seg_pca.index
+Indexing time: 0.118781seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:53.036241 140067161325184 test_relative_error.cpp:313] ivf64_b2_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:53.040468 140067161325184 ivf.hpp:233] Loading IVF...
+I20260512 01:48:53.040478 140067161325184 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:53.043271 140067161325184 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:53.043805 140067161325184 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.15589	per_query_us_mean: 1155.89	per_pair_ns_mean: 728.201
+reletive error - visited - total: 2.51846	37.7935
+reletive error - visited - query-avg: 2.51783	13.2403
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:53.930085 139645005074048 create_index.cpp:82] ivf64_b2_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:53.960166 139645005074048 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:53.960182 139645005074048 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:53.960189 139645005074048 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:53.961534 139645005074048 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:54.038604 139645005074048 ivf.hpp:182] Quantization done. tm: 0.075193 S
+I20260512 01:48:54.039828 139645005074048 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.106071seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:54.047285 140358021435008 test_relative_error.cpp:313] ivf64_b2_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:54.051599 140358021435008 ivf.hpp:233] Loading IVF...
+I20260512 01:48:54.051611 140358021435008 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:54.054875 140358021435008 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:54.055538 140358021435008 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.14096	per_query_us_mean: 1140.96	per_pair_ns_mean: 718.79
+reletive error - visited - total: 2.51851	37.7935
+reletive error - visited - query-avg: 2.51787	13.2469
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:54.927605 140280759651968 create_index.cpp:82] ivf64_b2_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:54.957924 140280759651968 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:54.957940 140280759651968 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:54.957946 140280759651968 ivf.hpp:119] 2bits: | 0 -> 128 (128d 2b) 
+I20260512 01:48:54.959455 140280759651968 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:55.035472 140280759651968 ivf.hpp:182] Quantization done. tm: 0.074216 S
+I20260512 01:48:55.036630 140280759651968 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b2_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.105223seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:55.043963 140021190491776 test_relative_error.cpp:313] ivf64_b2_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:55.048594 140021190491776 ivf.hpp:233] Loading IVF...
+I20260512 01:48:55.048606 140021190491776 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:55.052278 140021190491776 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:55.052970 140021190491776 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.14603	per_query_us_mean: 1146.03	per_pair_ns_mean: 721.99
+reletive error - visited - total: 2.51851	37.7935
+reletive error - visited - query-avg: 2.51787	13.2469
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b2_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:55.936463 139751098859136 create_index.cpp:82] ivf64_b3_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:55.968814 139751098859136 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:55.968829 139751098859136 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:55.968835 139751098859136 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:48:55.970337 139751098859136 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:56.032283 139751098859136 ivf.hpp:182] Quantization done. tm: 0.06013 S
+I20260512 01:48:56.033192 139751098859136 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_seg_pca.index
+Indexing time: 0.092955seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:56.039667 140383771827840 test_relative_error.cpp:313] ivf64_b3_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:56.044402 140383771827840 ivf.hpp:233] Loading IVF...
+I20260512 01:48:56.044415 140383771827840 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:56.047485 140383771827840 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:56.047984 140383771827840 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.16191	per_query_us_mean: 1161.91	per_pair_ns_mean: 731.993
+reletive error - visited - total: 1.44335	16.8707
+reletive error - visited - query-avg: 1.44318	8.00016
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:56.926073 140095386586752 create_index.cpp:82] ivf64_b3_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:56.958680 140095386586752 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:56.958698 140095386586752 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:56.958705 140095386586752 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:48:56.960215 140095386586752 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:57.023178 140095386586752 ivf.hpp:182] Quantization done. tm: 0.061039 S
+I20260512 01:48:57.024304 140095386586752 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_seg_pca.index
+Indexing time: 0.09431seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:57.031479 140647907372672 test_relative_error.cpp:313] ivf64_b3_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:57.036067 140647907372672 ivf.hpp:233] Loading IVF...
+I20260512 01:48:57.036079 140647907372672 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:57.039637 140647907372672 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:57.040342 140647907372672 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.19101	per_query_us_mean: 1191.01	per_pair_ns_mean: 750.322
+reletive error - visited - total: 1.44335	16.8707
+reletive error - visited - query-avg: 1.44318	8.00016
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:57.941308 140280760192640 create_index.cpp:82] ivf64_b3_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:57.972844 140280760192640 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:57.972860 140280760192640 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:57.972867 140280760192640 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:48:57.974358 140280760192640 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:58.041787 140280760192640 ivf.hpp:182] Quantization done. tm: 0.065586 S
+I20260512 01:48:58.043093 140280760192640 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.097831seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:58.050549 140374813257344 test_relative_error.cpp:313] ivf64_b3_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:58.055206 140374813257344 ivf.hpp:233] Loading IVF...
+I20260512 01:48:58.055218 140374813257344 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:58.058516 140374813257344 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:58.059169 140374813257344 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.19063	per_query_us_mean: 1190.63	per_pair_ns_mean: 750.085
+reletive error - visited - total: 1.36268	27.0231
+reletive error - visited - query-avg: 1.36241	7.52293
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:58.953082 140201318686336 create_index.cpp:82] ivf64_b3_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:58.988868 140201318686336 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:58.988886 140201318686336 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:58.988893 140201318686336 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:48:58.990391 140201318686336 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:59.057540 140201318686336 ivf.hpp:182] Quantization done. tm: 0.06529 S
+I20260512 01:48:59.058889 140201318686336 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.096844seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:59.065535 140443115564672 test_relative_error.cpp:313] ivf64_b3_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:48:59.070422 140443115564672 ivf.hpp:233] Loading IVF...
+I20260512 01:48:59.070433 140443115564672 ivf.hpp:238] 	Loading meta data...
+I20260512 01:48:59.073341 140443115564672 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:48:59.074014 140443115564672 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.1804	per_query_us_mean: 1180.4	per_pair_ns_mean: 743.642
+reletive error - visited - total: 1.36268	27.0231
+reletive error - visited - query-avg: 1.36241	7.52293
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:48:59.960234 140607567027840 create_index.cpp:82] ivf64_b3_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:48:59.992307 140607567027840 ivf.hpp:133] Start IVF construction...
+I20260512 01:48:59.992322 140607567027840 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:48:59.992328 140607567027840 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:48:59.993711 140607567027840 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:00.085170 140607567027840 ivf.hpp:182] Quantization done. tm: 0.089663 S
+I20260512 01:49:00.086582 140607567027840 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_adj_seg_pca.index
+Indexing time: 0.122714seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:00.095340 140234614316672 test_relative_error.cpp:313] ivf64_b3_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:00.100193 140234614316672 ivf.hpp:233] Loading IVF...
+I20260512 01:49:00.100207 140234614316672 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:00.104081 140234614316672 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:00.104842 140234614316672 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.18352	per_query_us_mean: 1183.52	per_pair_ns_mean: 745.603
+reletive error - visited - total: 1.3392	21.2793
+reletive error - visited - query-avg: 1.33903	7.25527
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:00.998097 140620842552960 create_index.cpp:82] ivf64_b3_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:01.029640 140620842552960 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:01.029656 140620842552960 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:01.029662 140620842552960 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:49:01.031152 140620842552960 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:01.108622 140620842552960 ivf.hpp:182] Quantization done. tm: 0.075708 S
+I20260512 01:49:01.109851 140620842552960 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_adj_seg_pca.index
+Indexing time: 0.107952seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:01.117841 140417613594240 test_relative_error.cpp:313] ivf64_b3_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:01.122859 140417613594240 ivf.hpp:233] Loading IVF...
+I20260512 01:49:01.122871 140417613594240 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:01.126247 140417613594240 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:01.126996 140417613594240 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.18566	per_query_us_mean: 1185.66	per_pair_ns_mean: 746.954
+reletive error - visited - total: 1.3392	21.2793
+reletive error - visited - query-avg: 1.33903	7.25527
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:02.015663 140594119884416 create_index.cpp:82] ivf64_b3_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:02.048092 140594119884416 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:02.048107 140594119884416 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:02.048114 140594119884416 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:49:02.049552 140594119884416 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:02.128934 140594119884416 ivf.hpp:182] Quantization done. tm: 0.077485 S
+I20260512 01:49:02.130078 140594119884416 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.110583seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:02.135846 140013189418624 test_relative_error.cpp:313] ivf64_b3_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:02.140564 140013189418624 ivf.hpp:233] Loading IVF...
+I20260512 01:49:02.140577 140013189418624 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:02.143790 140013189418624 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:02.144313 140013189418624 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.19297	per_query_us_mean: 1192.97	per_pair_ns_mean: 751.556
+reletive error - visited - total: 1.33875	20.29
+reletive error - visited - query-avg: 1.33855	7.23474
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:03.039416 139859891138176 create_index.cpp:82] ivf64_b3_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:03.070924 139859891138176 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:03.070946 139859891138176 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:03.070953 139859891138176 ivf.hpp:119] 3bits: | 0 -> 128 (128d 3b) 
+I20260512 01:49:03.072437 139859891138176 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:03.167539 139859891138176 ivf.hpp:182] Quantization done. tm: 0.093175 S
+I20260512 01:49:03.168729 139859891138176 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b3_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.125511seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:03.176296 140659751644800 test_relative_error.cpp:313] ivf64_b3_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:03.180747 140659751644800 ivf.hpp:233] Loading IVF...
+I20260512 01:49:03.180758 140659751644800 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:03.183986 140659751644800 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:03.184577 140659751644800 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.19366	per_query_us_mean: 1193.66	per_pair_ns_mean: 751.993
+reletive error - visited - total: 1.33875	20.29
+reletive error - visited - query-avg: 1.33855	7.23474
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b3_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:04.079865 140016473923200 create_index.cpp:82] ivf64_b4_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:04.112443 140016473923200 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:04.112459 140016473923200 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:04.112465 140016473923200 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:04.113978 140016473923200 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:04.175675 140016473923200 ivf.hpp:182] Quantization done. tm: 0.059791 S
+I20260512 01:49:04.176733 140016473923200 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_seg_pca.index
+Indexing time: 0.093seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:04.183423 140282916355712 test_relative_error.cpp:313] ivf64_b4_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:04.186734 140282916355712 ivf.hpp:233] Loading IVF...
+I20260512 01:49:04.186743 140282916355712 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:04.189128 140282916355712 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:04.189634 140282916355712 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.25495	per_query_us_mean: 1254.95	per_pair_ns_mean: 790.606
+reletive error - visited - total: 0.720116	11.3884
+reletive error - visited - query-avg: 0.719744	3.97658
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:05.097328 140509061893760 create_index.cpp:82] ivf64_b4_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:05.127641 140509061893760 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:05.127656 140509061893760 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:05.127663 140509061893760 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:05.129165 140509061893760 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:05.188886 140509061893760 ivf.hpp:182] Quantization done. tm: 0.057856 S
+I20260512 01:49:05.189963 140509061893760 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_seg_pca.index
+Indexing time: 0.088232seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:05.196548 139962601942656 test_relative_error.cpp:313] ivf64_b4_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:05.200760 139962601942656 ivf.hpp:233] Loading IVF...
+I20260512 01:49:05.200771 139962601942656 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:05.204033 139962601942656 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:05.204697 139962601942656 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.25355	per_query_us_mean: 1253.55	per_pair_ns_mean: 789.723
+reletive error - visited - total: 0.720116	11.3884
+reletive error - visited - query-avg: 0.719744	3.97658
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:06.115009 139808774954624 create_index.cpp:82] ivf64_b4_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:06.146104 139808774954624 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:06.146121 139808774954624 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:06.146128 139808774954624 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:06.147720 139808774954624 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:06.219578 139808774954624 ivf.hpp:182] Quantization done. tm: 0.070024 S
+I20260512 01:49:06.220815 139808774954624 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.101748seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:06.228137 139637888302720 test_relative_error.cpp:313] ivf64_b4_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:06.232791 139637888302720 ivf.hpp:233] Loading IVF...
+I20260512 01:49:06.232804 139637888302720 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:06.236115 139637888302720 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:06.236724 139637888302720 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.2593	per_query_us_mean: 1259.3	per_pair_ns_mean: 793.345
+reletive error - visited - total: 0.70594	12.2503
+reletive error - visited - query-avg: 0.705765	3.88248
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:07.149926 140028726468224 create_index.cpp:82] ivf64_b4_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:07.182466 140028726468224 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:07.182482 140028726468224 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:07.182489 140028726468224 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:07.184043 140028726468224 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:07.244726 140028726468224 ivf.hpp:182] Quantization done. tm: 0.058939 S
+I20260512 01:49:07.245858 140028726468224 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.092013seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:07.253261 140677044084352 test_relative_error.cpp:313] ivf64_b4_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:07.258179 140677044084352 ivf.hpp:233] Loading IVF...
+I20260512 01:49:07.258193 140677044084352 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:07.261431 140677044084352 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:07.262093 140677044084352 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.26639	per_query_us_mean: 1266.39	per_pair_ns_mean: 797.814
+reletive error - visited - total: 0.70594	12.2503
+reletive error - visited - query-avg: 0.705765	3.88248
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:08.179757 139957121789568 create_index.cpp:82] ivf64_b4_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:08.215794 139957121789568 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:08.215810 139957121789568 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:08.215816 139957121789568 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:08.217313 139957121789568 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:08.303381 139957121789568 ivf.hpp:182] Quantization done. tm: 0.084186 S
+I20260512 01:49:08.304655 139957121789568 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_adj_seg_pca.index
+Indexing time: 0.116463seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:08.312201 140665059380864 test_relative_error.cpp:313] ivf64_b4_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:08.316850 140665059380864 ivf.hpp:233] Loading IVF...
+I20260512 01:49:08.316863 140665059380864 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:08.320678 140665059380864 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:08.321448 140665059380864 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.26148	per_query_us_mean: 1261.48	per_pair_ns_mean: 794.722
+reletive error - visited - total: 0.701643	12.2503
+reletive error - visited - query-avg: 0.701475	3.86558
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:09.236316 140235419364992 create_index.cpp:82] ivf64_b4_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:09.272838 140235419364992 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:09.272854 140235419364992 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:09.272860 140235419364992 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:09.274406 140235419364992 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:09.341868 140235419364992 ivf.hpp:182] Quantization done. tm: 0.065651 S
+I20260512 01:49:09.343027 140235419364992 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_adj_seg_pca.index
+Indexing time: 0.096711seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:09.350842 140435272384128 test_relative_error.cpp:313] ivf64_b4_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:09.355208 140435272384128 ivf.hpp:233] Loading IVF...
+I20260512 01:49:09.355219 140435272384128 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:09.358635 140435272384128 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:09.359355 140435272384128 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.24954	per_query_us_mean: 1249.54	per_pair_ns_mean: 787.2
+reletive error - visited - total: 0.701643	12.2503
+reletive error - visited - query-avg: 0.701475	3.86558
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:10.266465 140094968532608 create_index.cpp:82] ivf64_b4_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:10.299598 140094968532608 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:10.299615 140094968532608 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:10.299622 140094968532608 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:10.301210 140094968532608 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:10.373339 140094968532608 ivf.hpp:182] Quantization done. tm: 0.070189 S
+I20260512 01:49:10.374490 140094968532608 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.103933seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:10.380404 140648158776960 test_relative_error.cpp:313] ivf64_b4_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:10.384903 140648158776960 ivf.hpp:233] Loading IVF...
+I20260512 01:49:10.384914 140648158776960 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:10.387962 140648158776960 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:10.388648 140648158776960 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.24955	per_query_us_mean: 1249.55	per_pair_ns_mean: 787.203
+reletive error - visited - total: 0.701706	12.2503
+reletive error - visited - query-avg: 0.701541	3.86331
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:11.298722 139882369883776 create_index.cpp:82] ivf64_b4_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:11.329181 139882369883776 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:11.329198 139882369883776 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:11.329205 139882369883776 ivf.hpp:119] 4bits: | 0 -> 128 (128d 4b) 
+I20260512 01:49:11.330765 139882369883776 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:11.406334 139882369883776 ivf.hpp:182] Quantization done. tm: 0.073664 S
+I20260512 01:49:11.407693 139882369883776 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b4_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.104941seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:11.416782 140637714574976 test_relative_error.cpp:313] ivf64_b4_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:11.422203 140637714574976 ivf.hpp:233] Loading IVF...
+I20260512 01:49:11.422218 140637714574976 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:11.426902 140637714574976 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:11.427831 140637714574976 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.25173	per_query_us_mean: 1251.73	per_pair_ns_mean: 788.575
+reletive error - visited - total: 0.701706	12.2503
+reletive error - visited - query-avg: 0.701541	3.86331
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b4_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:12.341429 139911404920448 create_index.cpp:82] ivf64_b6_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:12.375349 139911404920448 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:12.375366 139911404920448 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:12.375372 139911404920448 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:12.377010 139911404920448 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:12.431315 139911404920448 ivf.hpp:182] Quantization done. tm: 0.052465 S
+I20260512 01:49:12.432382 139911404920448 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_seg_pca.index
+Indexing time: 0.086678seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:12.439229 140105953234560 test_relative_error.cpp:313] ivf64_b6_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:12.443140 140105953234560 ivf.hpp:233] Loading IVF...
+I20260512 01:49:12.443152 140105953234560 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:12.446691 140105953234560 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:12.447437 140105953234560 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.35739	per_query_us_mean: 1357.39	per_pair_ns_mean: 855.145
+reletive error - visited - total: 10.4704	1112.68
+reletive error - visited - query-avg: 10.4056	58.7992
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:13.393323 140408765673088 create_index.cpp:82] ivf64_b6_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:13.427461 140408765673088 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:13.427476 140408765673088 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:13.427483 140408765673088 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:13.429118 140408765673088 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:13.484700 140408765673088 ivf.hpp:182] Quantization done. tm: 0.053699 S
+I20260512 01:49:13.485824 140408765673088 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_seg_pca.index
+Indexing time: 0.088211seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:13.494108 139675923656320 test_relative_error.cpp:313] ivf64_b6_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:13.498929 139675923656320 ivf.hpp:233] Loading IVF...
+I20260512 01:49:13.498942 139675923656320 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:13.502776 139675923656320 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:13.503576 139675923656320 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.33443	per_query_us_mean: 1334.43	per_pair_ns_mean: 840.68
+reletive error - visited - total: 10.4704	1112.68
+reletive error - visited - query-avg: 10.4056	58.7992
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:14.436107 140300455038592 create_index.cpp:82] ivf64_b6_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:14.468724 140300455038592 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:14.468740 140300455038592 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:14.468746 140300455038592 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:14.470444 140300455038592 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:14.539634 140300455038592 ivf.hpp:182] Quantization done. tm: 0.067385 S
+I20260512 01:49:14.540959 140300455038592 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.100901seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:14.548869 140472006704768 test_relative_error.cpp:313] ivf64_b6_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:14.553714 140472006704768 ivf.hpp:233] Loading IVF...
+I20260512 01:49:14.553726 140472006704768 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:14.558077 140472006704768 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:14.559146 140472006704768 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.38167	per_query_us_mean: 1381.67	per_pair_ns_mean: 870.44
+reletive error - visited - total: 10.4813	1097.42
+reletive error - visited - query-avg: 10.4163	58.912
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:15.528853 140234390183552 create_index.cpp:82] ivf64_b6_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:15.564277 140234390183552 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:15.564293 140234390183552 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:15.564300 140234390183552 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:15.565876 140234390183552 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:15.632460 140234390183552 ivf.hpp:182] Quantization done. tm: 0.064732 S
+I20260512 01:49:15.633637 140234390183552 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.096414seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:15.642259 140719361269376 test_relative_error.cpp:313] ivf64_b6_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:15.646930 140719361269376 ivf.hpp:233] Loading IVF...
+I20260512 01:49:15.646942 140719361269376 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:15.650806 140719361269376 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:15.651586 140719361269376 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.33023	per_query_us_mean: 1330.23	per_pair_ns_mean: 838.033
+reletive error - visited - total: 10.4813	1097.42
+reletive error - visited - query-avg: 10.4163	58.912
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:16.585404 140675636702848 create_index.cpp:82] ivf64_b6_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:16.619064 140675636702848 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:16.619081 140675636702848 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:16.619088 140675636702848 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:16.620762 140675636702848 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:16.701873 140675636702848 ivf.hpp:182] Quantization done. tm: 0.079202 S
+I20260512 01:49:16.703061 140675636702848 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_adj_seg_pca.index
+Indexing time: 0.11329seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:16.710565 140638824849024 test_relative_error.cpp:313] ivf64_b6_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:16.715019 140638824849024 ivf.hpp:233] Loading IVF...
+I20260512 01:49:16.715029 140638824849024 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:16.718554 140638824849024 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:16.719306 140638824849024 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.36589	per_query_us_mean: 1365.89	per_pair_ns_mean: 860.494
+reletive error - visited - total: 10.4859	1097.42
+reletive error - visited - query-avg: 10.4209	58.9898
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:17.673499 139978679479936 create_index.cpp:82] ivf64_b6_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:17.705610 139978679479936 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:17.705625 139978679479936 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:17.705631 139978679479936 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:17.707362 139978679479936 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:17.778428 139978679479936 ivf.hpp:182] Quantization done. tm: 0.069161 S
+I20260512 01:49:17.779552 139978679479936 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_adj_seg_pca.index
+Indexing time: 0.101979seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:17.787890 140303732256384 test_relative_error.cpp:313] ivf64_b6_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:17.792448 140303732256384 ivf.hpp:233] Loading IVF...
+I20260512 01:49:17.792459 140303732256384 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:17.796404 140303732256384 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:17.797232 140303732256384 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.34274	per_query_us_mean: 1342.74	per_pair_ns_mean: 845.911
+reletive error - visited - total: 10.4859	1097.42
+reletive error - visited - query-avg: 10.4209	58.9898
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:18.751154 139880210321024 create_index.cpp:82] ivf64_b6_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:18.782901 139880210321024 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:18.782917 139880210321024 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:18.782928 139880210321024 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:18.784584 139880210321024 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:18.867595 139880210321024 ivf.hpp:182] Quantization done. tm: 0.081154 S
+I20260512 01:49:18.868847 139880210321024 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.113603seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:18.876264 140508918496896 test_relative_error.cpp:313] ivf64_b6_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:18.880934 140508918496896 ivf.hpp:233] Loading IVF...
+I20260512 01:49:18.880947 140508918496896 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:18.884383 140508918496896 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:18.885061 140508918496896 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.33817	per_query_us_mean: 1338.17	per_pair_ns_mean: 843.036
+reletive error - visited - total: 10.4861	1097.42
+reletive error - visited - query-avg: 10.4212	58.9952
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:19.819655 140560491769472 create_index.cpp:82] ivf64_b6_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:19.849794 140560491769472 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:19.849810 140560491769472 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:19.849816 140560491769472 ivf.hpp:119] 6bits: | 0 -> 128 (128d 6b) 
+I20260512 01:49:19.851524 140560491769472 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:19.920564 140560491769472 ivf.hpp:182] Quantization done. tm: 0.067202 S
+I20260512 01:49:19.921776 140560491769472 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b6_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.09825seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:19.929855 140327280086656 test_relative_error.cpp:313] ivf64_b6_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:19.934348 140327280086656 ivf.hpp:233] Loading IVF...
+I20260512 01:49:19.934360 140327280086656 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:19.938044 140327280086656 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:19.938828 140327280086656 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.3926	per_query_us_mean: 1392.6	per_pair_ns_mean: 877.326
+reletive error - visited - total: 10.4861	1097.42
+reletive error - visited - query-avg: 10.4212	58.9952
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b6_caq_adj_rdlmt12_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:20.900206 139845434490496 create_index.cpp:82] ivf64_b8_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:20.936407 139845434490496 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:20.936424 139845434490496 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:20.936430 139845434490496 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:20.938276 139845434490496 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:20.984190 139845434490496 ivf.hpp:182] Quantization done. tm: 0.043995 S
+I20260512 01:49:20.985314 139845434490496 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_seg_pca.index
+Indexing time: 0.075595seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:20.991565 139879907131008 test_relative_error.cpp:313] ivf64_b8_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:20.996375 139879907131008 ivf.hpp:233] Loading IVF...
+I20260512 01:49:20.996390 139879907131008 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:20.999908 139879907131008 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:21.000547 139879907131008 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.32089	per_query_us_mean: 1320.89	per_pair_ns_mean: 832.145
+reletive error - visited - total: 0.0447314	1.3511
+reletive error - visited - query-avg: 0.0447281	0.247033
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:21.934383 140285864693376 create_index.cpp:82] ivf64_b8_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:21.964813 140285864693376 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:21.964831 140285864693376 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:21.964838 140285864693376 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:21.966661 140285864693376 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:22.010765 140285864693376 ivf.hpp:182] Quantization done. tm: 0.042169 S
+I20260512 01:49:22.011874 140285864693376 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_seg_pca.index
+Indexing time: 0.073561seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:22.020179 140565972086400 test_relative_error.cpp:313] ivf64_b8_caq_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:22.025514 140565972086400 ivf.hpp:233] Loading IVF...
+I20260512 01:49:22.025529 140565972086400 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:22.030366 140565972086400 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:22.030952 140565972086400 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.31768	per_query_us_mean: 1317.68	per_pair_ns_mean: 830.125
+reletive error - visited - total: 0.0447314	1.3511
+reletive error - visited - query-avg: 0.0447281	0.247033
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:22.964028 140637140549248 create_index.cpp:82] ivf64_b8_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:22.994325 140637140549248 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:22.994343 140637140549248 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:22.994350 140637140549248 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:22.996201 140637140549248 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:23.050613 140637140549248 ivf.hpp:182] Quantization done. tm: 0.052537 S
+I20260512 01:49:23.051679 140637140549248 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.083713seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:23.059264 140021473189504 test_relative_error.cpp:313] ivf64_b8_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:23.062422 140021473189504 ivf.hpp:233] Loading IVF...
+I20260512 01:49:23.062432 140021473189504 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:23.064904 140021473189504 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:23.065439 140021473189504 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.33363	per_query_us_mean: 1333.63	per_pair_ns_mean: 840.17
+reletive error - visited - total: 0.0442301	1.50874
+reletive error - visited - query-avg: 0.044219	0.24715
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt2_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:23.997947 140271245172352 create_index.cpp:82] ivf64_b8_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:24.028170 140271245172352 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:24.028187 140271245172352 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:24.028193 140271245172352 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:24.029955 140271245172352 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:24.103749 140271245172352 ivf.hpp:182] Quantization done. tm: 0.071938 S
+I20260512 01:49:24.105048 140271245172352 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_adj_rdlmt2_seg_pca.index
+Indexing time: 0.103203seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt2_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:24.113129 139875463327360 test_relative_error.cpp:313] ivf64_b8_caq_adj_rdlmt2_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:24.118386 139875463327360 ivf.hpp:233] Loading IVF...
+I20260512 01:49:24.118402 139875463327360 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:24.123185 139875463327360 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:24.124189 139875463327360 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.30966	per_query_us_mean: 1309.66	per_pair_ns_mean: 825.07
+reletive error - visited - total: 0.0442301	1.50874
+reletive error - visited - query-avg: 0.044219	0.24715
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt2_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:25.051812 139772250148480 create_index.cpp:82] ivf64_b8_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:25.082088 139772250148480 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:25.082107 139772250148480 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:25.082114 139772250148480 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:25.083944 139772250148480 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:25.159699 139772250148480 ivf.hpp:182] Quantization done. tm: 0.073841 S
+I20260512 01:49:25.161145 139772250148480 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_adj_seg_pca.index
+Indexing time: 0.105536seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:25.169529 140432516488832 test_relative_error.cpp:313] ivf64_b8_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:25.174846 140432516488832 ivf.hpp:233] Loading IVF...
+I20260512 01:49:25.174863 140432516488832 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:25.180000 140432516488832 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:25.181256 140432516488832 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.32064	per_query_us_mean: 1320.64	per_pair_ns_mean: 831.99
+reletive error - visited - total: 0.0440243	1.50874
+reletive error - visited - query-avg: 0.044011	0.246059
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:26.115176 140445450288768 create_index.cpp:82] ivf64_b8_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:26.148935 140445450288768 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:26.148953 140445450288768 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:26.148961 140445450288768 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:26.150837 140445450288768 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:26.215034 140445450288768 ivf.hpp:182] Quantization done. tm: 0.062348 S
+I20260512 01:49:26.216088 140445450288768 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_adj_seg_pca.index
+Indexing time: 0.096487seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:26.223797 140032592395904 test_relative_error.cpp:313] ivf64_b8_caq_adj_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:26.228813 140032592395904 ivf.hpp:233] Loading IVF...
+I20260512 01:49:26.228826 140032592395904 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:26.232677 140032592395904 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:26.233518 140032592395904 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.31875	per_query_us_mean: 1318.75	per_pair_ns_mean: 830.798
+reletive error - visited - total: 0.0440243	1.50874
+reletive error - visited - query-avg: 0.044011	0.246059
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_seg_pca_sm4.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:27.164123 140040549867136 create_index.cpp:82] ivf64_b8_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:27.194746 140040549867136 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:27.194765 140040549867136 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:27.194772 140040549867136 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:27.196623 140040549867136 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:27.272229 140040549867136 ivf.hpp:182] Quantization done. tm: 0.073703 S
+I20260512 01:49:27.273487 140040549867136 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.105481seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:27.281624 139975665872512 test_relative_error.cpp:313] ivf64_b8_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:27.286139 139975665872512 ivf.hpp:233] Loading IVF...
+I20260512 01:49:27.286154 139975665872512 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:27.290028 139975665872512 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:27.290853 139975665872512 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.31736	per_query_us_mean: 1317.36	per_pair_ns_mean: 829.926
+reletive error - visited - total: 0.0440197	1.50874
+reletive error - visited - query-avg: 0.0440067	0.246029
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt12_seg_pca_sm2.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:28.222296 139760490417792 create_index.cpp:82] ivf64_b8_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_centroid_64_pca.fvecs loaded (Rows 64 Cols 96)
+File ./data/deep10k/deep10k_cluster_id_64.ivecs loaded (Rows 10000 Cols 1)
+File ./data/deep10k/deep10k_base_pca.vars.fvecs loaded (Rows 1 Cols 96)
+I20260512 01:49:28.252332 139760490417792 ivf.hpp:133] Start IVF construction...
+I20260512 01:49:28.252350 139760490417792 ivf.hpp:111] Dynamic bits allocation plan:
+I20260512 01:49:28.252356 139760490417792 ivf.hpp:119] 8bits: | 0 -> 128 (128d 8b) 
+I20260512 01:49:28.254118 139760490417792 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:28.320182 139760490417792 ivf.hpp:182] Quantization done. tm: 0.064204 S
+I20260512 01:49:28.321318 139760490417792 create_index.cpp:55] ivf constructed 
+data loaded
+	N: 10000
+	DIM: 96
+index saved at: ./data/deep10k/ivf64_b8_caq_adj_rdlmt12_seg_pca.index
+Indexing time: 0.095274seconds
+Basic Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt12_seg_pca.index.csv
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20260512 01:49:28.329514 139719035166336 test_relative_error.cpp:313] ivf64_b8_caq_adj_rdlmt12_seg_pca
+File ./data/deep10k/deep10k_base_pca.fvecs loaded (Rows 10000 Cols 96)
+File ./data/deep10k/deep10k_query_pca.fvecs loaded (Rows 1000 Cols 96)
+I20260512 01:49:28.334061 139719035166336 ivf.hpp:233] Loading IVF...
+I20260512 01:49:28.334074 139719035166336 ivf.hpp:238] 	Loading meta data...
+I20260512 01:49:28.337769 139719035166336 ivf.hpp:194] Initializing done... num_points: 10000
+I20260512 01:49:28.338566 139719035166336 ivf.hpp:263] Index loaded
+data loaded
+	N: 10000
+	DIM: 96
+query loaded
+	NQ: 1000
+load index from index file
+	nprobe: 10	adc_time_s_mean: 1.34152	per_query_us_mean: 1341.52	per_pair_ns_mean: 845.141
+reletive error - visited - total: 0.0440197	1.50874
+reletive error - visited - query-avg: 0.0440067	0.246029
+Real Dist - total: 151.221	264.015
+Statistics logged to: ./results/saq//deep10k_ivf64_b8_caq_adj_rdlmt12_seg_pca_sm4.csv
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/cpanourg/projects/2-hdvc/saq/saq_ivf_grid.py", line 432, in <module>
+    main()
+  File "/home/cpanourg/projects/2-hdvc/saq/saq_ivf_grid.py", line 263, in main
+    centroid_src, cids_src = _find_shared_artifacts(shared_ivf_roots, dataset, clusters)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cpanourg/projects/2-hdvc/saq/saq_ivf_grid.py", line 123, in _find_shared_artifacts
+    raise FileNotFoundError(f"Missing shared IVF artifacts for {dataset} K={clusters} under: {roots}")
+FileNotFoundError: Missing shared IVF artifacts for deep10k K=128 under: /home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_run_20260511_212349/shared_ivf, /home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_addK128_20260511_222801/shared_ivf
+
+===== RESUME 2026-05-12T01:53:27+00:00 =====
+/home/cpanourg/.conda/envs/dtwrl_env2/bin/python -u -m saq.saq_ivf_grid --skip_build --output_root /home/cpanourg/projects/2-hdvc/results/saq_native_ivf_nohup_20260512_014447
+
+===== RESUME 2026-05-12T01:54:27+00:00 =====
+nohup bash -lc exec /home/cpanourg/.conda/envs/dtwrl_env2/bin/python -u -m saq.saq_ivf_grid --skip_build --output_root /home/cpanourg/projects/2-hdvc/results/saq_native_ivf_nohup_20260512_014447

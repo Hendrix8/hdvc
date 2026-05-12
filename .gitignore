@@ -53,3 +53,9 @@ local/dataset_subsets/openai/openai_base_10k.fvecs
 distance_eval/results/*.csv
 distance_eval/results/*.png
 distance_eval/results/_tmp_qinco/
+
+# Heavy generated SAQ artifacts
+lib/SAQ/data/
+lib/SAQ/results/saq/
+results/saq_native_ivf_nohup_*/
+results/saq_native_ivf_*/

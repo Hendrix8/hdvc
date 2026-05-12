@@ -58,6 +58,14 @@ python -m distance_eval.figures \
 
 Use **`--num_threads 1`** (default) when comparing `time.process_time()` across runs; otherwise multi-threaded Numba/FAISS kernels can make process-time misleading.
 
+Before collecting timings, run:
+
+```bash
+python scripts/evals/check_benchmark_env.py
+```
+
+This flags common timing hazards such as a non-`performance` CPU governor, turbo/SMT state, missing FAISS/Numba dependencies, and unexpected thread-count environment variables.
+
 ## QINCo2 manifest fields
 
 Rows need **`model_path`** (from eval CSV), **`codes_npz`** (globbed under the results root), and **`config_path`** (defaults to `lib/Qinco/config/qinco_cfg.yaml` when present). The harness writes a temporary `.fvecs` slice of the evaluation database so `QincoEvalTask` can load the model.

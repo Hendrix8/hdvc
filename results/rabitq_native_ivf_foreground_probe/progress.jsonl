@@ -1,0 +1,207 @@
+{"bits": [10], "event": "skip_bits", "reason": "RaBitQ-Library currently supports total bits 1..9 only", "ts": 1778534461.254826}
+{"clusters": 1, "dataset": "deep10k", "event": "prepared_ivf", "nprobe": 1, "prep_time_s": 0.11532771587371826, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/deep10k", "ts": 1778534461.7685738}
+{"bits": 1, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534461.7687428}
+{"adc_time_s": 0.0666803, "bits": 1, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.112285, "ts": 1778534462.3369472}
+{"bits": 2, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534462.3372846}
+{"adc_time_s": 0.107872, "bits": 2, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0508281, "ts": 1778534463.321348}
+{"bits": 3, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534463.3216612}
+{"adc_time_s": 0.108397, "bits": 3, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0248987, "ts": 1778534464.3815463}
+{"bits": 4, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534464.3818862}
+{"adc_time_s": 0.116283, "bits": 4, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0147925, "ts": 1778534465.4910114}
+{"bits": 5, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534465.4913533}
+{"adc_time_s": 0.113666, "bits": 5, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00647019, "ts": 1778534466.6600645}
+{"bits": 6, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534466.6604187}
+{"adc_time_s": 0.116989, "bits": 6, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00322315, "ts": 1778534467.894807}
+{"bits": 7, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534467.895109}
+{"adc_time_s": 0.111635, "bits": 7, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0015993, "ts": 1778534469.228159}
+{"bits": 8, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534469.2285454}
+{"adc_time_s": 0.123439, "bits": 8, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000772094, "ts": 1778534470.8876667}
+{"bits": 9, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534470.8880215}
+{"adc_time_s": 0.16822, "bits": 9, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000384826, "ts": 1778534473.271861}
+{"clusters": 16, "dataset": "deep10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.18835731595754623, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/deep10k", "ts": 1778534473.4640732}
+{"bits": 1, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534473.464279}
+{"adc_time_s": 0.0420307, "bits": 1, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0891788, "ts": 1778534473.8383663}
+{"bits": 2, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534473.8386395}
+{"adc_time_s": 0.0650943, "bits": 2, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0405116, "ts": 1778534474.4756153}
+{"bits": 3, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534474.47596}
+{"adc_time_s": 0.0645523, "bits": 3, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0195411, "ts": 1778534475.1854432}
+{"bits": 4, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534475.185778}
+{"adc_time_s": 0.0693957, "bits": 4, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0117588, "ts": 1778534475.9455934}
+{"bits": 5, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534475.9459434}
+{"adc_time_s": 0.0661945, "bits": 5, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00514313, "ts": 1778534476.733039}
+{"bits": 6, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534476.733383}
+{"adc_time_s": 0.0720488, "bits": 6, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00253623, "ts": 1778534477.6033077}
+{"bits": 7, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534477.6036646}
+{"adc_time_s": 0.0684219, "bits": 7, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00126518, "ts": 1778534478.5695753}
+{"bits": 8, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534478.5699005}
+{"adc_time_s": 0.0729218, "bits": 8, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000624124, "ts": 1778534479.834079}
+{"bits": 9, "clusters": 16, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534479.8344398}
+{"adc_time_s": 0.0962185, "bits": 9, "clusters": 16, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000303896, "ts": 1778534481.6277027}
+{"clusters": 64, "dataset": "deep10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.15309212356805801, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/deep10k", "ts": 1778534481.7827067}
+{"bits": 1, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534481.7829058}
+{"adc_time_s": 0.0208305, "bits": 1, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0745932, "ts": 1778534481.986829}
+{"bits": 2, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534481.987162}
+{"adc_time_s": 0.034077, "bits": 2, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0353478, "ts": 1778534482.376046}
+{"bits": 3, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534482.3763993}
+{"adc_time_s": 0.0337632, "bits": 3, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0172214, "ts": 1778534482.836467}
+{"bits": 4, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534482.8367994}
+{"adc_time_s": 0.0352019, "bits": 4, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.010451, "ts": 1778534483.3114126}
+{"bits": 5, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534483.3117213}
+{"adc_time_s": 0.033945, "bits": 5, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00452148, "ts": 1778534483.8478014}
+{"bits": 6, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534483.848156}
+{"adc_time_s": 0.0358424, "bits": 6, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00223449, "ts": 1778534484.4297934}
+{"bits": 7, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534484.4300745}
+{"adc_time_s": 0.0337573, "bits": 7, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00111195, "ts": 1778534485.1049347}
+{"bits": 8, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534485.105195}
+{"adc_time_s": 0.0361411, "bits": 8, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000548542, "ts": 1778534486.0858316}
+{"bits": 9, "clusters": 64, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534486.0863388}
+{"adc_time_s": 0.0509513, "bits": 9, "clusters": 64, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000267663, "ts": 1778534487.5346565}
+{"clusters": 256, "dataset": "deep10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.20646852999925613, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/deep10k", "ts": 1778534487.7429368}
+{"bits": 1, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534487.743163}
+{"adc_time_s": 0.0159874, "bits": 1, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0621459, "ts": 1778534487.9051652}
+{"bits": 2, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534487.9054198}
+{"adc_time_s": 0.0224617, "bits": 2, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0307441, "ts": 1778534488.2037826}
+{"bits": 3, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534488.2041252}
+{"adc_time_s": 0.0235257, "bits": 3, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.0152607, "ts": 1778534488.5859656}
+{"bits": 4, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534488.5863135}
+{"adc_time_s": 0.0229854, "bits": 4, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00925171, "ts": 1778534488.9585278}
+{"bits": 5, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534488.9588587}
+{"adc_time_s": 0.0228965, "bits": 5, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00405084, "ts": 1778534489.3888242}
+{"bits": 6, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534489.3891757}
+{"adc_time_s": 0.023941, "bits": 6, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00201292, "ts": 1778534489.8788233}
+{"bits": 7, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534489.8791637}
+{"adc_time_s": 0.022435, "bits": 7, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.00099017, "ts": 1778534490.4797583}
+{"bits": 8, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534490.4801152}
+{"adc_time_s": 0.0243963, "bits": 8, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000490815, "ts": 1778534491.343436}
+{"bits": 9, "clusters": 256, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534491.343782}
+{"adc_time_s": 0.0316268, "bits": 9, "clusters": 256, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.000240653, "ts": 1778534492.639919}
+{"clusters": 1024, "dataset": "deep10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.3466941565275192, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/deep10k", "ts": 1778534492.988637}
+{"bits": 1, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534492.9888258}
+{"adc_time_s": 0.019699, "bits": 1, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534493.184945}
+{"bits": 2, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534493.1852784}
+{"adc_time_s": 0.0236878, "bits": 2, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534493.4976707}
+{"bits": 3, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534493.498045}
+{"adc_time_s": 0.0240841, "bits": 3, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534493.8811843}
+{"bits": 4, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534493.8815284}
+{"adc_time_s": 0.0240511, "bits": 4, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534494.2716446}
+{"bits": 5, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534494.2719789}
+{"adc_time_s": 0.0238043, "bits": 5, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534494.7157004}
+{"bits": 6, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534494.7160485}
+{"adc_time_s": 0.0238788, "bits": 6, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534495.2006803}
+{"bits": 7, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534495.201004}
+{"adc_time_s": 0.02338, "bits": 7, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534495.8082082}
+{"bits": 8, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534495.808532}
+{"adc_time_s": 0.0237721, "bits": 8, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534496.6729772}
+{"bits": 9, "clusters": 1024, "dataset": "deep10k", "event": "start_run", "nprobe": 10, "ts": 1778534496.6733294}
+{"adc_time_s": 0.0279223, "bits": 9, "clusters": 1024, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534497.9344573}
+{"dataset": "deep10k", "event": "write_csv", "path": "/home/cpanourg/projects/2-hdvc/results/rabitq/deep10k_RaBitQ-Library_adc_vs_exact_eval.csv", "rows": 45, "ts": 1778534498.1407099}
+{"clusters": 1, "dataset": "bigann10k", "event": "prepared_ivf", "nprobe": 1, "prep_time_s": 0.145829938352108, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/bigann10k", "ts": 1778534498.446875}
+{"bits": 1, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534498.4470918}
+{"adc_time_s": 0.0645011, "bits": 1, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.119918, "ts": 1778534499.0036564}
+{"bits": 2, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534499.0040157}
+{"adc_time_s": 0.102667, "bits": 2, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0532711, "ts": 1778534499.9502976}
+{"bits": 3, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534499.9506302}
+{"adc_time_s": 0.103992, "bits": 3, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0256579, "ts": 1778534500.9833448}
+{"bits": 4, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534500.9836874}
+{"adc_time_s": 0.109841, "bits": 4, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0154853, "ts": 1778534502.064665}
+{"bits": 5, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534502.0650048}
+{"adc_time_s": 0.108176, "bits": 5, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00679499, "ts": 1778534503.202167}
+{"bits": 6, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534503.2024877}
+{"adc_time_s": 0.113689, "bits": 6, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00339171, "ts": 1778534504.410157}
+{"bits": 7, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534504.4105155}
+{"adc_time_s": 0.109349, "bits": 7, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00164509, "ts": 1778534505.7111628}
+{"bits": 8, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534505.7115135}
+{"adc_time_s": 0.119436, "bits": 8, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000801762, "ts": 1778534507.3486176}
+{"bits": 9, "clusters": 1, "dataset": "bigann10k", "event": "start_run", "nprobe": 1, "ts": 1778534507.3487895}
+{"adc_time_s": 0.161411, "bits": 9, "clusters": 1, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000401886, "ts": 1778534509.6646433}
+{"clusters": 16, "dataset": "bigann10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.14674173295497894, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/bigann10k", "ts": 1778534509.8137758}
+{"bits": 1, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534509.813949}
+{"adc_time_s": 0.0420348, "bits": 1, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0913939, "ts": 1778534510.1823673}
+{"bits": 2, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534510.1826181}
+{"adc_time_s": 0.0619824, "bits": 2, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0412194, "ts": 1778534510.8027442}
+{"bits": 3, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534510.8030121}
+{"adc_time_s": 0.0641061, "bits": 3, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0199811, "ts": 1778534511.5102072}
+{"bits": 4, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534511.510481}
+{"adc_time_s": 0.0662185, "bits": 4, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0120622, "ts": 1778534512.2355661}
+{"bits": 5, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534512.2358837}
+{"adc_time_s": 0.0662103, "bits": 5, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00522462, "ts": 1778534513.0242016}
+{"bits": 6, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534513.0244405}
+{"adc_time_s": 0.0703104, "bits": 6, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00260729, "ts": 1778534513.9098396}
+{"bits": 7, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534513.9101682}
+{"adc_time_s": 0.0644852, "bits": 7, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00128755, "ts": 1778534514.8605218}
+{"bits": 8, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534514.8608527}
+{"adc_time_s": 0.0688942, "bits": 8, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00063781, "ts": 1778534516.091871}
+{"bits": 9, "clusters": 16, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534516.0922217}
+{"adc_time_s": 0.0931591, "bits": 9, "clusters": 16, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000312475, "ts": 1778534517.8709757}
+{"clusters": 64, "dataset": "bigann10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.16703616827726364, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/bigann10k", "ts": 1778534518.0403879}
+{"bits": 1, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534518.0406969}
+{"adc_time_s": 0.0217505, "bits": 1, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0764045, "ts": 1778534518.2505922}
+{"bits": 2, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534518.251084}
+{"adc_time_s": 0.0333371, "bits": 2, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0358734, "ts": 1778534518.644093}
+{"bits": 3, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534518.6444743}
+{"adc_time_s": 0.0334507, "bits": 3, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0178268, "ts": 1778534519.0985606}
+{"bits": 4, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534519.0989108}
+{"adc_time_s": 0.0363766, "bits": 4, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0106857, "ts": 1778534519.5771766}
+{"bits": 5, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534519.5774472}
+{"adc_time_s": 0.0343472, "bits": 5, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00465894, "ts": 1778534520.1097512}
+{"bits": 6, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534520.1100976}
+{"adc_time_s": 0.0366402, "bits": 6, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00230237, "ts": 1778534520.7009847}
+{"bits": 7, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534520.7013638}
+{"adc_time_s": 0.0347636, "bits": 7, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0011402, "ts": 1778534521.4006577}
+{"bits": 8, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534521.4009342}
+{"adc_time_s": 0.0403982, "bits": 8, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000565537, "ts": 1778534522.4001677}
+{"bits": 9, "clusters": 64, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534522.4005234}
+{"adc_time_s": 0.0508894, "bits": 9, "clusters": 64, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000277095, "ts": 1778534523.8389769}
+{"clusters": 256, "dataset": "bigann10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.21040181815624237, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/bigann10k", "ts": 1778534524.0517128}
+{"bits": 1, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534524.0519319}
+{"adc_time_s": 0.0159257, "bits": 1, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0627746, "ts": 1778534524.215459}
+{"bits": 2, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534524.21571}
+{"adc_time_s": 0.0225209, "bits": 2, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0311466, "ts": 1778534524.5201497}
+{"bits": 3, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534524.5204272}
+{"adc_time_s": 0.0219889, "bits": 3, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.0155069, "ts": 1778534524.8904035}
+{"bits": 4, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534524.89061}
+{"adc_time_s": 0.0232411, "bits": 4, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00927173, "ts": 1778534525.2626398}
+{"bits": 5, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534525.2629397}
+{"adc_time_s": 0.0227645, "bits": 5, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00408526, "ts": 1778534525.6927724}
+{"bits": 6, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534525.6930978}
+{"adc_time_s": 0.0243564, "bits": 6, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.00203424, "ts": 1778534526.1826346}
+{"bits": 7, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534526.1828885}
+{"adc_time_s": 0.0224634, "bits": 7, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000999516, "ts": 1778534526.7873893}
+{"bits": 8, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534526.7877285}
+{"adc_time_s": 0.0247953, "bits": 8, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000510485, "ts": 1778534527.6611817}
+{"bits": 9, "clusters": 256, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534527.6614988}
+{"adc_time_s": 0.0316706, "bits": 9, "clusters": 256, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": 0.000244401, "ts": 1778534528.9509592}
+{"clusters": 1024, "dataset": "bigann10k", "event": "prepared_ivf", "nprobe": 10, "prep_time_s": 0.3943958058953285, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/bigann10k", "ts": 1778534529.347753}
+{"bits": 1, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534529.3479552}
+{"adc_time_s": 0.0205071, "bits": 1, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534529.5534556}
+{"bits": 2, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534529.5537994}
+{"adc_time_s": 0.0226224, "bits": 2, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534529.8574493}
+{"bits": 3, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534529.8577743}
+{"adc_time_s": 0.0232394, "bits": 3, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534530.2380817}
+{"bits": 4, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534530.238365}
+{"adc_time_s": 0.023098, "bits": 4, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534530.6203802}
+{"bits": 5, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534530.6207054}
+{"adc_time_s": 0.0227962, "bits": 5, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534531.054878}
+{"bits": 6, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534531.0551827}
+{"adc_time_s": 0.024425, "bits": 6, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534531.5494976}
+{"bits": 7, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534531.5498607}
+{"adc_time_s": 0.0228495, "bits": 7, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534532.1470087}
+{"bits": 8, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534532.1473534}
+{"adc_time_s": 0.0250501, "bits": 8, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534533.060222}
+{"bits": 9, "clusters": 1024, "dataset": "bigann10k", "event": "start_run", "nprobe": 10, "ts": 1778534533.0605857}
+{"adc_time_s": 0.0282514, "bits": 9, "clusters": 1024, "dataset": "bigann10k", "event": "finish_run", "rel_error_mean": Infinity, "ts": 1778534534.3182433}
+{"dataset": "bigann10k", "event": "write_csv", "path": "/home/cpanourg/projects/2-hdvc/results/rabitq/bigann10k_RaBitQ-Library_adc_vs_exact_eval.csv", "rows": 45, "ts": 1778534534.3307579}
+{"clusters": 1, "dataset": "gist10k", "event": "prepared_ivf", "nprobe": 1, "prep_time_s": 0.13203374296426773, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_foreground_probe/shared_ivf/gist10k", "ts": 1778534535.038736}
+{"bits": 1, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534535.0389593}
+{"adc_time_s": 0.131565, "bits": 1, "clusters": 1, "dataset": "gist10k", "event": "finish_run", "rel_error_mean": 0.0328942, "ts": 1778534536.23539}
+{"bits": 2, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534536.2357748}
+{"adc_time_s": 0.213714, "bits": 2, "clusters": 1, "dataset": "gist10k", "event": "finish_run", "rel_error_mean": 0.0154286, "ts": 1778534538.8809752}
+{"bits": 3, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534538.8813615}
+{"adc_time_s": 0.215875, "bits": 3, "clusters": 1, "dataset": "gist10k", "event": "finish_run", "rel_error_mean": 0.00817005, "ts": 1778534542.162161}
+{"bits": 4, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534542.162362}
+{"adc_time_s": 0.238221, "bits": 4, "clusters": 1, "dataset": "gist10k", "event": "finish_run", "rel_error_mean": 0.00443568, "ts": 1778534545.6001785}
+{"bits": 5, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534545.6005483}
+{"adc_time_s": 0.233716, "bits": 5, "clusters": 1, "dataset": "gist10k", "event": "finish_run", "rel_error_mean": 0.00233351, "ts": 1778534549.4599147}
+{"bits": 6, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534549.4602795}
+{"adc_time_s": 0.238867, "bits": 6, "clusters": 1, "dataset": "gist10k", "event": "finish_run", "rel_error_mean": 0.00122024, "ts": 1778534553.7208953}
+{"bits": 7, "clusters": 1, "dataset": "gist10k", "event": "start_run", "nprobe": 1, "ts": 1778534553.7212489}

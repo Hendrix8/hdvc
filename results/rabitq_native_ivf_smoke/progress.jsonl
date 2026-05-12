@@ -1,0 +1,4 @@
+{"clusters": 1, "dataset": "deep10k", "event": "prepared_ivf", "nprobe": 1, "prep_time_s": 0.10135895013809204, "shared_dir": "/home/cpanourg/projects/2-hdvc/results/rabitq_native_ivf_smoke/shared_ivf/deep10k", "ts": 1778534320.2163324}
+{"bits": 1, "clusters": 1, "dataset": "deep10k", "event": "start_run", "nprobe": 1, "ts": 1778534320.2165747}
+{"adc_time_s": 0.0605967, "bits": 1, "clusters": 1, "dataset": "deep10k", "event": "finish_run", "rel_error_mean": 0.113591, "ts": 1778534320.371808}
+{"dataset": "deep10k", "event": "write_csv", "path": "/home/cpanourg/projects/2-hdvc/results/rabitq/deep10k_RaBitQ-Library_adc_vs_exact_eval.csv", "rows": 1, "ts": 1778534320.5883763}

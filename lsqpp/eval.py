@@ -189,7 +189,8 @@ def run_lsqpp_eval(
     recon_error = compute_lsq_reconstruction_error(test_db_sample, codes_sub, codebooks)
     print(f"Reconstruction error: {recon_error:.4f}")
 
-    per_pair_adc_time_ns = ((distance_table_time + adc_time) / (nq * n_sample_db)) * 1e9
+    pair_count = max(1, n_sample_q * n_sample_db)
+    per_pair_adc_time_ns = ((distance_table_time + adc_time) / pair_count) * 1e9
 
     safe = f"{M}x{nbits}"
     out_dir = data_root_p / results_dir / dataset_name / f"lsqpp_{safe}_{ts}"
@@ -209,6 +210,7 @@ def run_lsqpp_eval(
         "nb": nb,
         "nb_sample": int(n_sample_db),
         "nq_sample": int(n_sample_q),
+        "pair_count": int(pair_count),
         "dim": dim,
         "n_subquantizers": M,
         "nbits": nbits,

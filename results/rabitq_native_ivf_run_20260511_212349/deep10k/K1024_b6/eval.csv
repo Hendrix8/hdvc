@@ -1,0 +1,2 @@
+bits,topk,nprobe,nq,nb,rel_error_mean,rel_error_std,adc_time_s_mean,adc_time_s_std,per_query_us_mean,per_pair_ns_mean,n_runs,warmup_runs,use_hacc
+6,100,10,1000,10000,0.00177603,0.00143993,0.0233703,0.000231479,23.3703,233.703,5,2,true

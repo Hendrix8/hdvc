@@ -35,9 +35,12 @@ def _run(cmd: list[str], cwd: Path) -> subprocess.CompletedProcess[str]:
 
 def _conda_cmake_prefix_path() -> str:
     roots: list[Path] = []
+    roots.append(Path(sys.prefix))
     if "CONDA_PREFIX" in os.environ:
         roots.append(Path(os.environ["CONDA_PREFIX"]))
     roots.append(Path.home() / ".miniconda3")
+    roots.append(Path.home() / ".conda")
+    roots.append(Path.home() / ".local" / "saq-deps")
 
     prefixes: list[Path] = []
     package_globs = ("glog-*", "gflags-*", "fmt-*")
