@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import shutil
 import subprocess
 import sys
@@ -235,6 +236,44 @@ def _write_rows_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+def _load_rows_csv(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open("r", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def _normalize_key_value(value):
+    if isinstance(value, float):
+        if math.isnan(value):
+            return "nan"
+        return f"{value:g}"
+    if isinstance(value, (int, np.integer)):
+        return str(int(value))
+    return str(value)
+
+
+def _row_merge_key(row: dict) -> tuple[str, ...]:
+    return (
+        _normalize_key_value(row["method"]),
+        _normalize_key_value(row["dataset"]),
+        _normalize_key_value(row["n_centroids"]),
+        _normalize_key_value(row["nbits"]),
+        _normalize_key_value(row["caq_adj_rd_lmt"]),
+        _normalize_key_value(row["searcher_vars_bound_m"]),
+        _normalize_key_value(row.get("use_fastscan", True)),
+    )
+
+
+def _merge_summary_rows(existing_rows: list[dict], new_rows: list[dict]) -> list[dict]:
+    merged: dict[tuple[str, ...], dict] = {}
+    for row in existing_rows:
+        merged[_row_merge_key(row)] = row
+    for row in new_rows:
+        merged[_row_merge_key(row)] = row
+    return list(merged.values())
+
+
 def _saq_args_token(
     clusters: int,
     bits: float,
@@ -322,6 +361,7 @@ def main() -> None:
         rows: list[dict] = []
 
         for clusters in sorted(set(args.clusters)):
+            effective_nprobe = max(1, min(args.nprobe, clusters))
             centroid_src, cids_src, artifact_source, artifact_prep_time_s = _resolve_shared_artifacts(
                 spec=spec,
                 shared_ivf_roots=shared_ivf_roots,
@@ -345,7 +385,8 @@ def main() -> None:
                     "event": "prepared_dataset",
                     "dataset": dataset,
                     "clusters": clusters,
-                    "nprobe": args.nprobe,
+                    "nprobe": effective_nprobe,
+                    "requested_nprobe": args.nprobe,
                     "prep_time_s": prep_time_s,
                     "artifact_prep_time_s": artifact_prep_time_s,
                     "artifact_source": artifact_source,
@@ -378,7 +419,7 @@ def main() -> None:
                             f"-caq_adj_rd_lmt={adj_rounds}",
                             f"-caq_adj_eps={args.caq_adj_eps}",
                             f"-searcher_vars_bound_m={bound_m:g}",
-                            f"-nprobe={args.nprobe}",
+                            f"-nprobe={effective_nprobe}",
                             f"-n_runs={args.n_runs}",
                             f"-warmup_runs={args.warmup_runs}",
                         ]
@@ -394,7 +435,8 @@ def main() -> None:
                                 "bits": bits,
                                 "caq_adj_rd_lmt": adj_rounds,
                                 "searcher_vars_bound_m": bound_m,
-                                "nprobe": args.nprobe,
+                                "nprobe": effective_nprobe,
+                                "requested_nprobe": args.nprobe,
                                 "ts": time.time(),
                             },
                         )
@@ -453,6 +495,7 @@ def main() -> None:
                             "seed": np.nan,
                             "n_centroids": clusters,
                             "nprobe": int(metrics["nprobe"]),
+                            "requested_nprobe": args.nprobe,
                             "caq_adj_rd_lmt": adj_rounds,
                             "use_fastscan": args.use_fastscan == "true",
                             "searcher_vars_bound_m": bound_m,
@@ -485,6 +528,8 @@ def main() -> None:
                                 "caq_adj_rd_lmt": adj_rounds,
                                 "use_fastscan": args.use_fastscan == "true",
                                 "searcher_vars_bound_m": bound_m,
+                                "nprobe": effective_nprobe,
+                                "requested_nprobe": args.nprobe,
                                 "adc_time_s": row["adc_time_s"],
                                 "per_pair_ns_mean": row["per_pair_ns_mean"],
                                 "rel_error_mean": row["rel_error_mean"],
@@ -495,14 +540,24 @@ def main() -> None:
         if rows:
             rows.sort(key=lambda row: (row["n_centroids"], row["nbits"], row["caq_adj_rd_lmt"], row["searcher_vars_bound_m"]))
             out_csv = get_results_root() / "saq" / f"{dataset}_SAQ_adc_vs_exact_eval.csv"
-            _write_rows_csv(out_csv, rows)
+            merged_rows = _merge_summary_rows(_load_rows_csv(out_csv), rows)
+            merged_rows.sort(
+                key=lambda row: (
+                    float(row["n_centroids"]),
+                    float(row["nbits"]),
+                    float(row["caq_adj_rd_lmt"]),
+                    float(row["searcher_vars_bound_m"]),
+                )
+            )
+            _write_rows_csv(out_csv, merged_rows)
             _append_jsonl(
                 progress_log,
                 {
                     "event": "write_csv",
                     "dataset": dataset,
                     "path": str(out_csv),
-                    "rows": len(rows),
+                    "rows": len(merged_rows),
+                    "rows_added_or_updated": len(rows),
                     "ts": time.time(),
                 },
             )
