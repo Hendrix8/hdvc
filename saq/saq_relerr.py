@@ -325,6 +325,7 @@ def main() -> None:
     p.add_argument("--force_ivf_pca", action="store_true")
     p.add_argument("--no_segmentation", action="store_true", help="Run CAQ only by disabling SAQ segmentation.")
     p.add_argument("--rand_rotate", choices=["true", "false"], default="true")
+    p.add_argument("--use_fastscan", choices=["true", "false"], default="true")
     p.add_argument("--caq_adj_rd_lmt", type=int, default=6)
     p.add_argument("--caq_adj_eps", type=float, default=1e-8)
     p.add_argument("--max_base", type=int, default=None)
@@ -389,6 +390,7 @@ def main() -> None:
             "-enable_PCA=true",
             f"-enable_segmentation={'false' if args.no_segmentation else 'true'}",
             f"-rand_rotate={args.rand_rotate}",
+            f"-use_fastscan={args.use_fastscan}",
             f"-caq_adj_rd_lmt={args.caq_adj_rd_lmt}",
             f"-caq_adj_eps={args.caq_adj_eps}",
             f"-searcher_vars_bound_m={args.searcher_vars_bound_m:g}",
@@ -428,6 +430,7 @@ def main() -> None:
                 "relerr_count": int(float(rr.get("relerr_count", "0"))),
                 "relerr_skipped_small_dist_count": int(float(rr.get("skipped_small_dist_count", "0"))),
                 "sample_mode": f"saq_native_nprobe={rr.get('nprobe', '')}",
+                "use_fastscan": args.use_fastscan == "true",
             }
         )
 

@@ -235,10 +235,19 @@ def _write_rows_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def _saq_args_token(clusters: int, bits: float, rand_rotate: str, caq_adj_rd_lmt: int, caq_adj_eps: float) -> str:
+def _saq_args_token(
+    clusters: int,
+    bits: float,
+    rand_rotate: str,
+    use_fastscan: str,
+    caq_adj_rd_lmt: int,
+    caq_adj_eps: float,
+) -> str:
     token = f"ivf{clusters}_b{bits:g}"
     if rand_rotate == "false":
         token += "_norotate"
+    if use_fastscan == "false":
+        token += "_nofastscan"
     token += "_caq"
     if caq_adj_rd_lmt:
         token += "_adj"
@@ -267,6 +276,7 @@ def main() -> None:
     p.add_argument("--warmup_runs", type=int, default=2)
     p.add_argument("--num_threads", type=int, default=0)
     p.add_argument("--rand_rotate", choices=["true", "false"], default="true")
+    p.add_argument("--use_fastscan", choices=["true", "false"], default="true")
     p.add_argument("--caq_adj_eps", type=float, default=1e-8)
     p.add_argument("--pca_train_size", type=int, default=None)
     p.add_argument("--force_prepare", action="store_true")
@@ -364,6 +374,7 @@ def main() -> None:
                             "-enable_PCA=true",
                             "-enable_segmentation=true",
                             f"-rand_rotate={args.rand_rotate}",
+                            f"-use_fastscan={args.use_fastscan}",
                             f"-caq_adj_rd_lmt={adj_rounds}",
                             f"-caq_adj_eps={args.caq_adj_eps}",
                             f"-searcher_vars_bound_m={bound_m:g}",
@@ -391,7 +402,14 @@ def main() -> None:
                         t0 = time.perf_counter()
                         _run([str(create_index), *common_flags], cwd=saq_root)
                         encoding_time_s = time.perf_counter() - t0
-                        args_token = _saq_args_token(clusters, bits, args.rand_rotate, adj_rounds, args.caq_adj_eps)
+                        args_token = _saq_args_token(
+                            clusters,
+                            bits,
+                            args.rand_rotate,
+                            args.use_fastscan,
+                            adj_rounds,
+                            args.caq_adj_eps,
+                        )
                         index_csv = saq_root / "results" / "saq" / f"{dataset}_{args_token}.index.csv"
                         if index_csv.exists():
                             try:
@@ -436,6 +454,7 @@ def main() -> None:
                             "n_centroids": clusters,
                             "nprobe": int(metrics["nprobe"]),
                             "caq_adj_rd_lmt": adj_rounds,
+                            "use_fastscan": args.use_fastscan == "true",
                             "searcher_vars_bound_m": bound_m,
                             "centroid_fvecs": str(centroid_src),
                             "cluster_ids_ivecs": str(cids_src),
@@ -448,6 +467,7 @@ def main() -> None:
                             "clusters": clusters,
                             "bits": bits,
                             "caq_adj_rd_lmt": adj_rounds,
+                            "use_fastscan": args.use_fastscan == "true",
                             "searcher_vars_bound_m": bound_m,
                             "row": row,
                             "metrics": metrics,
@@ -463,6 +483,7 @@ def main() -> None:
                                 "clusters": clusters,
                                 "bits": bits,
                                 "caq_adj_rd_lmt": adj_rounds,
+                                "use_fastscan": args.use_fastscan == "true",
                                 "searcher_vars_bound_m": bound_m,
                                 "adc_time_s": row["adc_time_s"],
                                 "per_pair_ns_mean": row["per_pair_ns_mean"],

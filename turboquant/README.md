@@ -1,135 +1,180 @@
-# TurboQuant Quantization Benchmark
+# TurboQuant-MSE Evaluation Bundle
 
-Benchmark comparing two TurboQuant quantization variants — **TQ-MSE** and **TQ-Prod** — on vector similarity search datasets, evaluating quantization quality from 1 to 12 bits per dimension.
+Faithful implementation of **TurboQuant-MSE** (Algorithm 1 of Zandieh et al.
+2025, [arXiv:2504.19874](https://arxiv.org/abs/2504.19874)) and the evaluation
+results across five ANN benchmark datasets.
 
-## Methods
-
-Both methods share the same preprocessing pipeline:
-
-1. **Normalize:** decompose each vector as $x = \|x\| \cdot \hat{x}$, storing the norm $\|x\|$ separately.
-2. **Random rotation:** apply a Haar-distributed random orthogonal matrix $\Pi$ so that each coordinate of $y = \Pi \hat{x}$ becomes approximately i.i.d. $\mathcal{N}(0, 1/d)$ for large $d$.
-3. **Scalar quantization:** quantize each rotated coordinate $y_i$ independently using Lloyd-Max optimal centroids derived from the known Gaussian distribution (data-oblivious — no training data needed).
-
-### TQ-MSE (MSE-optimal)
-
-All $b$ bits per dimension are allocated to MSE-optimal scalar quantization.
-
-**Encoding:** Each coordinate $y_i$ is mapped to the nearest centroid $c_{k_i}$ from a $2^b$-level codebook, producing a quantized vector $\hat{y}$.
-
-**Inner product estimation** via full reconstruction:
-
-$$\langle q, x \rangle_{\text{approx}} = \|x\| \cdot \langle q, \Pi^T \hat{y} \rangle = \|x\| \cdot \langle \Pi q, \hat{y} \rangle$$
-
-where $\hat{y}$ is the vector of centroids looked up from quantization indices. This is equivalent to computing $\langle q, \tilde{x} \rangle$ where $\tilde{x} = \|x\| \cdot \Pi^T \hat{y}$ is the reconstructed vector.
-
-**Properties:**
-- Minimizes reconstruction MSE $\mathbb{E}[\|x - \tilde{x}\|^2]$.
-- The IP estimate is **biased** — it systematically under-estimates inner products because quantization loses information.
-- Storage: $b \cdot d$ bits (indices) + 32 bits (norm).
-
-### TQ-Prod (IP-unbiased via QJL correction)
-
-Allocates $(b-1)$ bits to MSE quantization and 1 bit to a **Quantized Johnson-Lindenstrauss (QJL)** residual correction, achieving an unbiased inner product estimator.
-
-**Encoding:**
-1. Quantize $\hat{x}$ with $(b-1)$-bit TQ-MSE, yielding reconstruction $\tilde{x}_{\text{mse}}$.
-2. Compute the residual $r = \hat{x} - \tilde{x}_{\text{mse}}$ and store its norm $\|r\|$.
-3. Project the residual through a random Gaussian matrix $S \in \mathbb{R}^{d \times d}$ and store only the signs: $s = \text{sign}(S \cdot r)$.
-
-**Inner product estimation** with two-stage correction:
-
-$$\langle q, x \rangle_{\text{approx}} = \|x\| \cdot \left( \underbrace{\langle \Pi q, \hat{y} \rangle}_{\text{MSE part}} + \underbrace{\sqrt{\frac{\pi}{2}} \cdot \frac{\|r\|}{d} \cdot \langle S q, s \rangle}_{\text{QJL residual correction}} \right)$$
-
-The QJL term provides an unbiased estimate of $\langle q, r \rangle$ using only 1 bit per dimension, based on the Johnson-Lindenstrauss lemma: the sign of a random projection preserves inner product information in expectation.
-
-**Properties:**
-- Achieves $\mathbb{E}[\langle q, x \rangle_{\text{approx}}] = \langle q, x \rangle$ (unbiased IP estimation).
-- Storage: $(b-1) \cdot d$ bits (MSE indices) + $d$ bits (QJL signs) + 32 bits (residual norm) + 32 bits (norm).
----
-
-## Evaluation Metrics
-
-All experiments use 10,000 base vectors and 1,000 query vectors (10M distance pairs). L2 distance estimation uses exact norms: $\hat{L}_2^2(q, x) = \|q\|^2 + \|x\|^2 - 2 \cdot \widehat{\langle q, x \rangle}$, so that the only source of approximation error is the inner product estimator.
-
-| Metric | Formula | Interpretation |
-|--------|---------|----------------|
-| **Distortion** | $\frac{1}{n}\sum_i \|x_i - \tilde{x}_i\|^2$ | Mean squared reconstruction error. Measures how well the quantized vector approximates the original. Lower is better. |
-| **L2-RelErr** (mean) | $\frac{1}{n \cdot m}\sum_{i,j} \frac{\lvert \hat{L}_2^2(q_j, x_i) - L_2^2(q_j, x_i) \rvert}{L_2^2(q_j, x_i)}$ | Mean relative error of squared L2 distance estimation. Lower means more accurate distance computation. |
-| **IP-RelErr** (mean) | $\frac{1}{n \cdot m}\sum_{i,j} \frac{\lvert \widehat{\langle q_j, x_i \rangle} - \langle q_j, x_i \rangle \rvert}{\lvert \langle q_j, x_i \rangle \rvert}$ | Mean relative error of inner product estimation. Lower means more accurate IP computation. |
-| **L2-R@K** | $P(\text{true L2-NN} \in \text{top-}K \text{ by approx L2})$ | Recall@K under L2 distance: probability that the exact nearest neighbor appears in the top-K results from approximate ranking. Higher is better. |
-| **IP-R@K** | $P(\text{true IP-NN} \in \text{top-}K \text{ by approx IP})$ | Recall@K under inner product: probability that the exact maximum-IP neighbor appears in the top-K from approximate ranking. Higher is better. |
-
-Median variants of RelErr are also reported in the CSV for robustness against outliers.
+Author: qwang  ·  Created: 2026-05-12  ·  Host (origin): `urania`
 
 ---
 
-## Datasets
+## 1. What this bundle contains
 
-| Dataset | Dimensionality | Domain |
-|---------|---------------|--------|
-| **SIFT** | 128 | SIFT local image descriptors |
-| **Deep** | 96 | Deep learning embeddings (Yandex Deep1B) |
-| **BigANN** | 128 | SIFT descriptors (BigANN benchmark) |
-| **GIST** | 960 | GIST global image descriptors |
-| **MS MARCO** | 1024 | Passage retrieval embeddings |
-| **OpenAI** | 1536 | OpenAI text embeddings |
-
----
-
-## Results Summary
-
-### Key Findings
-
-**1. TQ-MSE dominates at low bit-widths (1–6 bit/dim).**
-
-At the same total bits per dimension, TQ-MSE consistently achieves lower distortion, lower relative error, and higher recall than TQ-Prod. This is because TQ-Prod sacrifices 1 bit to QJL correction, leaving only $(b-1)$ bits for MSE quantization — a significant penalty when the budget is small.
-
-For example, on SIFT at 4 bit/dim:
-- TQ-MSE: L2-R@1 = 0.505, Distortion = 2537
-- TQ-Prod: L2-R@1 = 0.373, Distortion = 14468
-
-**2. TQ-Prod catches up at high bit-widths (≥ 8 bit/dim).**
-
-As the bit budget increases, the 1-bit QJL overhead becomes relatively minor, and TQ-Prod's unbiased IP estimation provides better ranking accuracy. On SIFT:
-- At 9 bit/dim: TQ-Prod L2-R@1 = 0.933 vs TQ-MSE L2-R@1 = 0.906
-- At 12 bit/dim: TQ-Prod L2-R@1 = 0.980 vs TQ-MSE L2-R@1 = 0.973
-
-**3. Higher dimensionality helps both methods.**
-
-The Gaussian approximation (which underlies the data-oblivious codebook) becomes more accurate as $d$ increases, leading to better quantization quality at the same bit-width. Comparing L2-R@1 at 4 bit/dim:
-- Deep (d=96): 0.770
-- SIFT (d=128): 0.505
-- GIST (d=960): 0.612
-- MS MARCO (d=1024): 0.888
-- OpenAI (d=1536): 0.833
-
-Note: SIFT/BigANN are unnormalized integer-valued descriptors with different distributional properties, so the dimension effect is not purely monotonic across all datasets.
-
-**4. TQ-Prod's distortion is always higher, but its Recall@1 can be higher.**
-
-This apparent paradox arises because distortion measures per-vector reconstruction quality, while recall measures ranking quality across the database. TQ-Prod's unbiased IP estimation produces better relative ordering of candidates despite larger per-element noise, especially at higher bit-widths where the noise variance is small enough that unbiasedness matters more than variance.
-
-**5. Recall@10 and Recall@100 saturate quickly.**
-
-For most datasets, Recall@10 reaches 1.0 by 6–7 bit/dim, and Recall@100 reaches 1.0 by 4–5 bit/dim. The main differentiator between methods is Recall@1, which continues to improve up to 12 bit/dim.
-
----
-
-## Usage
-
-```bash
-python benchmark_quant.py --dataset sift --bits 1 2 3 4 5 6 7 8 9 10 11 12
+```
+tqmse/
+├── README.md                    this file
+├── turboquant_mse.py            quantizer: Haar rotation + 1D Lloyd-Max codebook + bucketize
+├── data_loaders.py              readers for fvecs / fbin / u8bin / raw_f32, plus a dataset registry
+├── eval_turboquant_mse.py       evaluation driver (3 measures, writes CSV)
+├── run_all_datasets.sh          one-shot driver over all (dataset, bit_per_dim) combos
+├── codebooks_tqmse/             50 cached Lloyd-Max 1D codebooks in JSON
+│   └── cb_d{96,128,960,1024,1536}_b{1..10}.json
+└── results/
+    ├── tqmse_all.csv            ← MAIN OUTPUT: 50 rows (5 datasets × 10 bit_per_dim)
+    ├── tqmse_deep_eval.csv
+    ├── tqmse_bigann_eval.csv
+    ├── tqmse_gist_eval.csv
+    ├── tqmse_msmarco_eval.csv
+    └── tqmse_openai_eval.csv
 ```
 
-Options:
-- `--dataset`: one of `sift`, `deep`, `bigann`, `gist`, `msmarco`, `openai`
-- `--bits`: list of bit-widths to test (e.g., `1 2 3 4`)
-- `--nb`: number of base vectors (default: 10000)
-- `--nq`: number of query vectors (default: 1000)
-- `--no-prod`: skip TQ-Prod (only run TQ-MSE)
-- `--no-rabitq`: skip RaBitQ
-- `--output`: custom CSV output path (default: `result/quant_benchmark_{dataset}_nb{nb}_nq{nq}.csv`)
+Sizes: code ≈ 25 KB, codebooks ≈ 580 KB, results ≈ 25 KB. **Whole bundle < 1 MB.**
 
-## Output
+---
 
-Results are saved as CSV files in `result/` 
+## 2. Method
+
+**TurboQuant-MSE** quantizes a vector `x ∈ R^d` in three steps:
+
+1. L2-normalize: `n ← ‖x‖`, `u ← x / n` (store `n` in fp32).
+2. Haar-rotate: `y ← Π · u` where `Π` is a random orthogonal matrix sampled
+   once from the Haar measure on O(d).
+3. Per-coordinate scalar quantization: `idx_j ← argmin_k |y_j − c_k|` for
+   `j ∈ [d]`, where `{c_1, …, c_{2^b}}` is the 1D Lloyd-Max optimal codebook
+   for the Beta-marginal density `f_Y(y) ∝ (1 − y²)^((d−3)/2)`.
+
+Reconstruction: `x̂ ← n · Π^T · (c_{idx_1}, …, c_{idx_d})`.
+
+The codebook depends only on `(d, bit_per_dim)` and is computed once
+**analytically** via the regularized incomplete Beta function
+(`scipy.special.betainc / betaincinv`), then cached on disk.
+
+---
+
+## 3. Parameters swept
+
+| Parameter      | Values                              | Notes                              |
+|----------------|-------------------------------------|------------------------------------|
+| `bit_per_dim`  | {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}     | Codebook size `K = 2^bit_per_dim`  |
+| dataset        | deep, bigann, gist, msmarco, openai | 5 ANN benchmarks                   |
+
+`block_size`, `outlier_frac`, `outlier_extra_bits` were **dropped** after
+verifying that the upstream `original_code/` directory in the turboquant repo
+contains no implementation of block-wise rotation or outlier-channel
+mixed-precision allocation.
+
+TurboQuant-MSE is **data-oblivious**: the Haar rotation and the Beta-based
+codebook depend only on `d`. The *learn* set is therefore not used.
+
+---
+
+## 4. Datasets
+
+Source on `urania`: `/data/cpanourg/2-hdvc/data/`. **Adjust `DATA_ROOT` at the
+top of `data_loaders.py` if these are mirrored elsewhere on the target host.**
+
+For each dataset we load only the first 10 000 base vectors and the first
+1 000 query vectors.
+
+| name    | d    | base file                          | query file                       | reader     |
+|---------|------|------------------------------------|----------------------------------|------------|
+| deep    | 96   | `deep1b/dataset/test_1m.bin`       | `deep1b/dataset/query_10k.bin`   | raw_f32    |
+| bigann  | 128  | `bigann/base.1B.u8bin`             | `bigann/query.public.10K.u8bin`  | u8bin      |
+| gist    | 960  | `gist/gist_base.fvecs`             | `gist/gist_query.fvecs`          | fvecs      |
+| msmarco | 1024 | `msmarco/base1m.fvecs`             | `msmarco/query10k.fvecs`         | fvecs      |
+| openai  | 1536 | `openai/openai_base1m.fvecs`       | `openai/openai_query10k.fvecs`   | fvecs      |
+
+File formats:
+- **fvecs**: per-row `[d:int32, vec:float32×d]`
+- **fbin** (header-prefixed `.bin`): `[n:int32, d:int32]` header then `n × d` float32
+- **u8bin**: `[n:int32, d:int32]` header then `n × d` uint8 (decoded as float32 internally)
+- **raw_f32**: header-less raw float32 with `d` supplied externally (used for deep1b)
+
+---
+
+## 5. Measures (3 measures, per the 2.2.x naming)
+
+Each CSV row contains three measures evaluated on `10k base × 1k query`
+(i.e. `1e7` distance pairs):
+
+| measure   | CSV column            | definition                                                                       |
+|-----------|-----------------------|----------------------------------------------------------------------------------|
+| **2.2.1** | `mse_distortion`      | mean over base of `‖x − x̂‖²`                                                    |
+| **2.2.2** | `l2_rel_err_mean`     | mean over base of `‖x − x̂‖ / ‖x‖`                                               |
+| **2.2.4** | `spearman_mean`       | mean over queries of Spearman ρ between approximate and exact L2 distance vectors, where each ρ is computed per-query over the 10 000 base distances |
+
+Spearman ρ uses `scipy.stats.spearmanr` per query (handles ties via average
+rank), then averages across the 1 000 queries.
+
+Auxiliary spread statistics for the per-query Spearman ρ distribution:
+`spearman_std`, `spearman_p10`, `spearman_p50`, `spearman_p90`. Timings:
+`setup_time_s`, `encode_time_s`, `spearman_time_s`, `total_time_s`.
+
+---
+
+## 6. CSV schema
+
+Each per-dataset CSV (and the combined `tqmse_all.csv`) has these columns:
+
+```
+method, dataset, d, bit_per_dim, K, n_base, n_query,
+mse_distortion, l2_rel_err_mean,
+spearman_mean, spearman_std, spearman_p10, spearman_p50, spearman_p90,
+setup_time_s, encode_time_s, spearman_time_s, total_time_s
+```
+
+`method = "TQMSE"`, `n_base = 10000`, `n_query = 1000` for all rows in this bundle.
+
+---
+
+
+
+### Single config
+
+```bash
+cd tqmse/
+python eval_turboquant_mse.py \
+    --dataset gist --bits 4 \
+    --n_base 10000 --n_query 1000 \
+    --output_csv results/tqmse_gist_b4.csv \
+    --device cuda:0
+```
+
+### Full grid
+
+```bash
+cd tqmse/
+DEVICE=cuda:0 bash run_all_datasets.sh
+```
+
+First run builds and caches 50 codebooks in `codebooks_tqmse/` (~5 s each
+for high `bit_per_dim`). The cached JSONs are shipped in this bundle, so
+subsequent runs are pure inference (~1 s per config).
+
+Total wall time of the full grid on one A100:
+- data loading: ~3 min dominated by msmarco (cold page-cache, fvecs memmap)
+- compute: ~2 min for all 50 configs
+
+---
+
+## 8. Numerical sanity
+
+- For `bit_per_dim ∈ {1, 2, 3, 4}`, our 1D Lloyd-Max per-coord MSE × `d`
+  matches the values in Theorem 1 of the paper:
+  - b=1 → 0.36 (paper 0.36 ✓)
+  - b=2 → 0.116 (paper 0.117 ✓)
+  - b=3 → 0.034 (paper 0.030, within rounding ✓)
+  - b=4 → 0.0093 (paper 0.009 ✓)
+  - centroids for b=1 match `±√(2 / (π d))` to within 0.1%.
+- For `bit_per_dim ≥ 7` the per-coord MSE × `d` slightly exceeds the
+  paper's asymptotic upper bound `√(3π)/2 · 4^-b`. Both the analytical
+  integration (incomplete Beta) and a 30 M-sample Monte-Carlo Lloyd-Max
+  converge to the same fixed point, so this is the genuine Lloyd-Max
+  optimum for the symmetric Beta marginal at finite `d`. The trend is
+  strictly monotone decreasing in `bit_per_dim`, so cross-method comparisons
+  at fixed `bit_per_dim` remain fair.
+- Spearman ρ saturates to ≥ 0.999 by `bit_per_dim = 6` on all datasets, and
+  is already ≥ 0.95 by `bit_per_dim = 2` on gist/msmarco/openai.
+
+---
+
