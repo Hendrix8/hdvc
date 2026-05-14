@@ -390,6 +390,18 @@ def run_evals(
         dataset_path, query_path = DATASET_CONFIG[dataset_name]
         dataset_path = Path(dataset_path)
         query_path = Path(query_path)
+        # Allow alternate dataset trees: paths in DATASET_CONFIG are anchored at DATA_ROOT from config;
+        # when callers pass a different `data_root` with the same relative layout, rebase here.
+        cfg_root = Path(DATA_ROOT).resolve()
+        dr = Path(data_root).resolve()
+        if dr != cfg_root:
+            try:
+                dataset_path = dr / dataset_path.resolve().relative_to(cfg_root)
+                query_path = dr / query_path.resolve().relative_to(cfg_root)
+            except ValueError:
+                tqdm.write(
+                    f"  ⚠️  data_root {dr} is not a prefix swap for {cfg_root}; using config paths"
+                )
 
         # Load model (fallback to first subq_M_nbits_B_train_T_* folder if exact path has no model)
         n_subq = int(row.get("n_subquantizers", 0))

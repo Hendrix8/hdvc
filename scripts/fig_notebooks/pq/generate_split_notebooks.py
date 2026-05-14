@@ -133,8 +133,9 @@ def _write(path: Path, nb: dict) -> None:
 
 # Line slices are tied to scripts/figure_generators/relerr_cpp_plots.ipynb cell 2;
 # if that cell shifts, update these ranges (see ADC_TIME_UNIT / X_COLUMNS_TO_PLOT / Y_METRICS).
-_C2_ADC_AND_XCOL_SLICE = slice(149, 168)  # 1-based lines 150–168
-_C2_Y_METRICS_SLICE = slice(248, 259)  # Y_METRICS + Y_METRIC_MAP block
+# Tied to relerr_cpp_plots.ipynb cell 2 — recompute if that cell shifts (run a quick exec test).
+_C2_ADC_AND_XCOL_SLICE = slice(149, 168)  # ADC_TIME_UNIT … through X_COLUMNS_TO_PLOT closing `]`
+_C2_Y_METRICS_SLICE = slice(246, 259)  # Y_METRICS + Y_METRIC_MAP through closing `}`
 
 
 def _discover_main_xy_pairs(
@@ -222,7 +223,7 @@ USER_Y_METRICS = ["relerr"]
 """
     new = f"""# Pin one main-loop figure (same keys as Y_METRICS in the data cell)
 TARGET_Y_METRIC = {target_y!r}  # relerr | spearman | recall | recon_error (Distortion error → recon_error)
-TARGET_X_COL = {target_x!r}  # e.g. n_subquantizers, nbits, bits_per_vector, adc_cpu_time_pp / adc_cpu_time_pp_ms
+TARGET_X_COL = {target_x!r}  # e.g. n_subquantizers, nbits, bits_per_vector, adc_time_s
 
 USER_Y_METRICS = None  # xy split: use TARGET_Y_METRIC (plot cell pins the sweep)
 
@@ -230,6 +231,24 @@ USER_Y_METRICS = None  # xy split: use TARGET_Y_METRIC (plot cell pins the sweep
     if old not in cfg_intro:
         raise RuntimeError("cfg_intro template changed; update _cfg_intro_for_xy")
     return cfg_intro.replace(old, new, 1)
+
+
+def _cfg_intro_for_xy_with_data(cfg_intro: str, target_y: str, target_x: str) -> str:
+    """Apply xy pin; for distortion (recon_error), default USER_DATA_DIR to repo results/relerr_cpp."""
+    text = _cfg_intro_for_xy(cfg_intro, target_y, target_x)
+    if target_y != "recon_error":
+        return text
+    relerr_cpp = REPO / "results" / "relerr_cpp"
+    if not relerr_cpp.is_dir():
+        return text
+    needle = 'USER_DATA_DIR = None  # e.g. Path("/home/.../results/relerr_cpp")'
+    if needle not in text:
+        raise RuntimeError("cfg_intro USER_DATA_DIR line changed; update _cfg_intro_for_xy_with_data")
+    return text.replace(
+        needle,
+        f'USER_DATA_DIR = Path(r"{relerr_cpp.resolve()}")  # default: repo results/relerr_cpp (*_reconstruction_error.csv)',
+        1,
+    )
 
 
 def main() -> None:
@@ -256,6 +275,7 @@ from pathlib import Path
 # Paths (optional overrides)
 USER_DATA_DIR = None  # e.g. Path("/home/.../results/relerr_cpp")
 USER_PQ_FAISS_ADC_SUMMARY = None  # e.g. Path(".../pq_faiss_adc_summary.csv")
+USER_USE_PQ_FAISS_ADC_SUMMARY = False  # False: PQ from *_adc_vs_exact_eval.csv (same as relerr); True: replace PQ from summary CSV when present
 
 # Who to plot (all datasets in one go)
 USER_METHODS_TO_PLOT = ["PQ"]
@@ -315,7 +335,7 @@ USER_BAR_PLOTS = None
         )
         _write(
             xy_dir / f"xy_{stem}.ipynb",
-            pack_xy(title, _cfg_intro_for_xy(cfg_intro, ykey, xc), c3_xy_body),
+            pack_xy(title, _cfg_intro_for_xy_with_data(cfg_intro, ykey, xc), c3_xy_body),
         )
 
     print("Wrote", len(pairs), "notebooks under", xy_dir)

@@ -128,7 +128,7 @@ def main(argv: list[str] | None = None) -> int:
         "--x",
         dest="x_col",
         required=True,
-        help="X column name, e.g. nbits, n_subquantizers, bits_per_vector, adc_cpu_time_pp",
+        help="X column name, e.g. nbits, n_subquantizers, bits_per_vector, adc_time_s",
     )
     p.add_argument(
         "--data-dir",
