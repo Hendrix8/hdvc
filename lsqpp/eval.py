@@ -131,9 +131,9 @@ def run_lsqpp_eval(
     print(f"✅ LSQ++ trained in {train_time:.2f}s")
     lsq = index_lsq.lsq
 
-    t0 = time.time()
+    t0 = time.process_time()
     codes_u8 = np.asarray(index_lsq.sa_encode(test_db), dtype=np.uint8)
-    encoding_time = time.time() - t0
+    encoding_time = time.process_time() - t0
     csz = codes_u8.shape[1]
     min_cs = (M * nbits + 7) // 8
     if csz < min_cs:
@@ -165,20 +165,20 @@ def run_lsqpp_eval(
         qr_sample = qr[q_ch]
         codes_sub = codes_ix[db_ch]
 
-    t0 = time.time()
+    t0 = time.process_time()
     alpha = lsq_alpha_from_codes(codebooks, codes_sub)
     dot_tables = lsq_dot_tables_vectorized(qr_sample, codebooks)
-    distance_table_time = time.time() - t0
+    distance_table_time = time.process_time() - t0
 
     qnorms = np.einsum("ij,ij->i", qr_sample, qr_sample).astype(np.float32)
 
-    t0 = time.time()
+    t0 = time.process_time()
     adc_sample = lsq_distances_batch_numba(dot_tables, codes_sub, alpha, qnorms)
-    adc_time = time.time() - t0
+    adc_time = time.process_time() - t0
 
-    t0 = time.time()
+    t0 = time.process_time()
     exact_sample = exact_distances_sqeuclidean(qr_sample, test_db_sample)
-    cdist_time = time.time() - t0
+    cdist_time = time.process_time() - t0
 
     rel_error, mean_rel, std_rel = compute_rel_error_pq_style(adc_sample, exact_sample)
     print(f"Mean rel. error: {mean_rel:.4f}, std: {std_rel:.4f}")
