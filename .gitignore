@@ -1,6 +1,8 @@
 # Build artifacts
 lib/faiss/build/
 lib/faiss_gpu_off/build/
+lib/RaBitQ-Library/bin/
+lib/RaBitQ-Library/.cache/
 **/build/
 **/cmake-build-*/
 
